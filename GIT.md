@@ -1,7 +1,7 @@
 ---
 title: GIT
 created: '2019-11-21T07:58:37.665Z'
-modified: '2019-11-28T08:24:21.589Z'
+modified: '2019-12-05T08:02:18.494Z'
 ---
 
 # GIT
@@ -12,6 +12,8 @@ Un sistema di controllo di versione dei programmi (VCS, Version Control System),
 Prima dell'avvento di GIT vi erano solo sistemi basati su file e cartelle (e bestemmie). è il sistema di version control più semplice ma per grandi progetti potrebbe risultare difficile vedere i cambiamenti applicati.<br>
 Di VCS ne esistono versioni distribuite e locali, Git e un DVCS (Distributed VCS).<br>
 Git nasce come riga di comando, ma alcuni editor sofisticati hanno alcune funzionalità Git già costruite al loro interno, come tool grafici e scorciatorie varie.
+
+
 
 Inizializzare git su una repository (locale sul pc)
 ```
@@ -58,4 +60,14 @@ git tag -a v1.0 -m "Prima versione del programma"
 Per tornare ad un commit precedente ANNULLANDO i cambiamenti successivi crea un commit uguale a quello specificato, basta che sia avvenuto prima dei o del commit che voglio annullare
 ```
 git revert
+```
+
+Per tornare alla versione del file tracciato dal commit alla versione precedente senza creare nuovi commit come potrebbe fare il comando "revert"
+```
+git reset --hard
+```
+
+Per eliminare i file non tracciati e pulire la working directory
+```
+git clean -f
 ```
