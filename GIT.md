@@ -1,9 +1,3 @@
----
-title: GIT
-created: '2019-11-21T07:58:37.665Z'
-modified: '2019-12-05T08:02:18.494Z'
----
-
 # GIT
 
 ## <span style="color:#fca40c">Introduzione</span>
@@ -71,3 +65,8 @@ Per eliminare i file non tracciati e pulire la working directory
 ```
 git clean -f
 ```
+
+## <span style="color:#fca40c">I branch</span>
+
+Sono linee di sviluppo indipendente<br>
+Hanno diversi utilizzi, per esempio: il master può essere visto come "branch di produzione", questa modalità di utilizzo implica però che ci devono essere delle politiche di gestione dei file, perché è molto facile incorrere in dei "merge conflict". Quando voglio pushare un file nel branch che ho modificato aggiungendo le mie funzionalità, potrei andare in conflitto con una copia dello stesso file ma con funzionalità diverse, in questo caso va deciso quale delle due versioni tenere o come modificare il file nel modo più opportuno
