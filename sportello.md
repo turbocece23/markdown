@@ -10,7 +10,7 @@
 8 Frighetto SI
 9 Guazzo    **NO**
 10 Guidolin SI
-11 Gusella  FORSE
+11 Gusella  SI
 12 Lucchin  SI
 13 Milani   SI
 14 Mujagic  SI
