@@ -1,6 +1,6 @@
 # Sportello
 
-1 Andoniu   SI
+1 Andoniu   **NO**
 2 Basso     SI
 3 Bernardi  SI
 4 Brunello  SI
