@@ -20,3 +20,6 @@ Queste le parole di quel guascone di **Pio IX** dopo che le truppe francesi sono
 |---|----|
 |Politica avanguardista|Politica conservatrice|
 |||
+
+<span style="color:#32739C">Arminio</span> <span style="color:#eb2e31">Davonda</span> <span style="color:#f76210">Sinatoeri</span>
+<span style="color:#fa9c20">è il mio</span> <span style="color:#c4c0be">spirito animale</span>
