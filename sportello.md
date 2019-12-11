@@ -12,8 +12,10 @@
 10 Guidolin SI
 11 Gusella  SI
 12 Lucchin  SI
-13 Milani   SI
+13 Milani   SI (si è dimenticato ma c'era)
 14 Mujagic  SI (1.50 li ho messi io sguru)
 15 Pivotto  **NO**
 16 Rigoni   SI (ma non è venuto)
 17 Zen      **NO**
+
+Sono stati raccolti 15 euro e già consegnati martedì 10/12/2019
