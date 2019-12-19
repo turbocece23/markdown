@@ -116,10 +116,6 @@ Grandi innovazioni tecnologiche:
 
 La grande guerra fun acnhe il conflitto che donò un potere senza precedenti agli alti comandi militari, la Prima guerra mondiale determinò la crescita smisurata del potere e delle prerogative degli esecutivi a scapito dei parlamentari
 
-COSE IMPORANTI BOH:
-
-Battaglie di Tannenberg e dei Laghi Masuri (entrambi circa Polonia), Verdun (Francia, 800.000 morti), Somme (Francia, 1.000.000 morti inglesi), battaglia navale dello Jutland
-
 Cronologia
 
 - 1915: Viene impiegato un dirigibile, un dirigibile tedesco sorvola l'inghilterra
