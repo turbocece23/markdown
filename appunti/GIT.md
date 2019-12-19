@@ -70,3 +70,17 @@ git clean -f
 
 Sono linee di sviluppo indipendente<br>
 Hanno diversi utilizzi, per esempio: il master può essere visto come "branch di produzione", questa modalità di utilizzo implica però che ci devono essere delle politiche di gestione dei file, perché è molto facile incorrere in dei "merge conflict". Quando voglio pushare un file nel branch che ho modificato aggiungendo le mie funzionalità, potrei andare in conflitto con una copia dello stesso file ma con funzionalità diverse, in questo caso va deciso quale delle due versioni tenere o come modificare il file nel modo più opportuno
+
+Per unire i nostri cambiamenti di un branch con mastera lo si riposiziona alla stesso punto di master con il comando
+```
+git rebase [master]
+```
+
+## <span style="color:#fca40c">I branch remoti</span>
+
+Scarica i commit che sono stati fatti sul branch remoto che mancano dalla repository locale, inoltre, aggiorna dove il branch remoto punterò
+
+
+# MAI PUSHARE COSE IN PRODUZIONE IL VENERDI SERA
+
+## Cosi se ci sono casini sei reperibile :)
