@@ -45,13 +45,13 @@ La scelta della neutralità era conveniente sotto diversi punti di vista, permet
 
 ## **<span style="color:#FFBA08">Neutralisti e interventisti</span>**
 
-<span style="color:#00ff27">Neutralisti</span>
+**<span style="color:#ff0027">Neutralisti</span>**
 
 - **Socialisti:** guerra considerata un valore "borghese" da cui operai e contadini non avrebbero ottenuto vantaggi
 - **Cattolici:** seguivano l'insegnamento pacifista del papa Benedetto XV
 - **Liberali:** Giolitti temeva una guerra lunga e l'impreparazione italiana al conflitto
 
-<span style="color:#ff0027">Interventisti</span>
+**<span style="color:#ff0027">Interventisti</span>**
 
 - **Nazionalisti:** miravano ad accrescere il prestigio dell'Italia attraverso la guerra
 - **Irredentisti:** desideravano l'annessione di Trento e Trieste per portare a termine il processo di unità nazionale
@@ -70,7 +70,51 @@ All'Italia vengono promessi alcuni territori che potevano finalmente concludere 
 
 ## **<span style="color:#3F88C5">1914: dalla guerra di movimento alla guerra di posizione</span>**
 
-Il piano tedesco prevedeva a ovest una rapida vittoria sulla Francia, prima che a oriente la Russia si mobilitasse. La resistenza dei Belgi e dei Francesi superò tuttavia le previsioni dei tedeschi. Giunte a 40km da Parigi i tedeschi vengono fermati sul fiume Marna.
+Il piano tedesco prevedeva a ovest una rapida vittoria sulla Francia, prima che a oriente la Russia si mobilitasse. La resistenza dei Belgi e dei Francesi superò tuttavia le previsioni dei tedeschi. Giunte a 40km da Parigi i tedeschi vengono fermati sul fiume Marna. A est le cose non andavano tanto meglio. Nelle due grandi battaglie di **Tannenberg** e dei **Laghi Masuri** i tedeschi riuscirono a fermare l'avanzata dei russi verso la Germania. Vienna perse la Galizia (nella attuale Ucraina e Polonia) e dovette attestarsi sulla difensiva.
+
+Nel giro di pochi mesi svaniva la speranza di una vittoria rapida e appariva concreta la prospettiva di un lungo e logrante conflitto.
+
+## **<span style="color:#3F88C5">1915-1916: battaglie sanguinose e inutili</span>**
+
+Il 1915 e il 1916 furono anni di battaglie durissime. Nell'attacco tedesco al fronte francese di **Verdun** persero la vita 800.000 uomini, mentre nell'assalto inglese sulla **Somme** i caduti erano un milione. A oriente la Russia perse la Polonia e la Lituania, Serbia e Romania furono costrette alla resa dalla Germania. Le flotte di Germania e Regno UNito si affrontarono nella battaglia dello **Jütland**, al largo della Danimarca. Aveva più successo il blocco navale sottoposto alla germania da Francia e Gran Bretagna, la Germania però compie l'errore di affondare una nave piena di civili statunitensi, questo complica di molto la sua situazione diplomatica.
+
+## **<span style="color:#3F88C5">Il fronte italiano: dall'Isonzo a Caporetto</span>**
+
+Nel 1915 l'esercito italiano guidato dal generale Luigi Cadorna si lanciò in ripetuti assalti, oltre 250.000 soldati persero la vita nei primi mesi di guerra, nel maggio del 1916 furono gli austriaci a lanciare contro l'italia, ex alleato traditore, la ***Strafexpedition*** (Spedizione punitiva), pur subendo gravi perdite, gli italiani riuscirono a respingere l'offensiva.
+
+Con l'ausilio di alcune divisioni tedesche gli austriaci attaccano il fronte, lo sfondano a Caporetto, una disfatta. Gli austriaci dilagarono nella pianura. Fu solo la resistenza disperata dei soldati italiani, tra cui i ragazzi del 99, ad arrestare lungo il fiume Piave l'avanzata austriaca. Cadorna venne comunque destituito pochi giorni dopo e sostituito dal generale Armando Diaz.
+
+## **<span style="color:#3F88C5">1917: la Rivoluzione in Russia e la discesa in campo degli Stati Uniti</span>**
+
+Fu l'anno della svolta, episodi di insubordinazione sempre più frequenti, le popolazioni civili mostrano un ostilità alla guerra. Le frange socialiste contrarei alla guerra lanciarono un appello alla pace, lo setsso fece papa Benedetto XV.
+
+Due eventi cambiarono radicalmente le prospettive del conflitto. In Russia crollò il potere degli zar: i bolscevichi di Lenin nel novembre di quell'anno si impadronirono del potere e decretarono l'immediata uscita della Russia dalla guerra. Germania e Austria-Ungheria si trovarono libere dall'impegno su due fronti.
+
+Il 6 aprile 1917 erano però entrati in guerra gli Stati Uniti, Woodrow Wilson voleva ristabilire il diritto internazionale, compattere il militarismo e l'autoritarismo degli imperi centrali, tali obiettivi insieme al principio di autodeterminazione dei popoli erano al centro dei famosi Quattordici Punti che Wilson rese noti nel gennaio del 1918.
+
+## **<span style="color:#3F88C5">1918: l'ultima offensia degli imperi centrali e la fine della guerra</span>**
+
+Il fronte interno tedesco si disgregò. Il Kaiser Guglielmo II fu costretto ad abdicare fuggendo in Olanda, il 9 novembre fu proclamata la repubblica. L'Austria-Ungheria lanciò in giugno una grande offesnciva sul Piave, che venne però respinta dall'esercito italiano, alla fine di ottobre nella battaglia di Vittorio Veneto costrinsero gli avversari alla rotta. L'armistizio fu firmato il 3 novembre.
+
+# **<span style="color:#d91d29">Le caratteristiche della nuova guerra</span>**
+
+## **<span style="color:#d91d29">La guerra di massa</span>**
+
+GLi eserciti mobilitarono decine di milioni di uomini, il numero delle vittime fu enorme, 8.750.000 i morti in totale e 20 milioni di feriti. Masse enormi vennero mobilitate sui fronti interni, nelle fabbriche e nei campi per supportare lo sforzo di guerra. Spicca in questo quadro la terribile sorte che colpì gli armeni di religione cristiana, nel 1915, con l'accusa di connivenza con le potenze dell'intesa i turchi procedettero alla loro sistematica deportazione verso il deserto siriano. Fu la prima delle grandi stragi civili della storia del novecento.
+
+## **<span style="color:#d91d29">Le innovazioni tecnologiche e gli alti comandi</span>**
+
+Grandi innovazioni tecnologiche:
+
+- Sottomarino
+- Aereoplano
+- Mitragliatrice
+- I gas asfissianti
+- Cannoni 
+- Esplosivi
+- Comunicazioni più efficaci
+
+La grande guerra fun acnhe il conflitto che donò un potere senza precedenti agli alti comandi militari, la Prima guerra mondiale determinò la crescita smisurata del potere e delle prerogative degli esecutivi a scapito dei parlamentari
 
 COSE IMPORANTI BOH:
 
