@@ -70,3 +70,7 @@ git clean -f
 
 Sono linee di sviluppo indipendente<br>
 Hanno diversi utilizzi, per esempio: il master può essere visto come "branch di produzione", questa modalità di utilizzo implica però che ci devono essere delle politiche di gestione dei file, perché è molto facile incorrere in dei "merge conflict". Quando voglio pushare un file nel branch che ho modificato aggiungendo le mie funzionalità, potrei andare in conflitto con una copia dello stesso file ma con funzionalità diverse, in questo caso va deciso quale delle due versioni tenere o come modificare il file nel modo più opportuno
+
+# MAI PUSHARE COSE IN PRODUZIONE IL VENERDI SERA
+
+## Cosi se ci sono casini sei reperibile :)
