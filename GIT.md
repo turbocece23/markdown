@@ -78,8 +78,11 @@ git rebase [master]
 
 ## <span style="color:#fca40c">I branch remoti</span>
 
-Scarica i commit che sono stati fatti sul branch remoto che mancano dalla repository locale, inoltre, aggiorna dove il branch remoto punterò
+Scarica i commit che sono stati fatti sul branch remoto che mancano dalla repository locale, inoltre, aggiorna dove il branch remoto punterò. Può essere visto come uno step per scaricare 
 
+```
+git fetch
+```
 
 # MAI PUSHARE COSE IN PRODUZIONE IL VENERDI SERA
 
