@@ -68,10 +68,21 @@ git clean -f
 
 ## <span style="color:#fca40c">I branch</span>
 
-Sono linee di sviluppo indipendente<br>
+Sono linee di sviluppo indipendenti<br>
 Hanno diversi utilizzi, per esempio: il master può essere visto come "branch di produzione", questa modalità di utilizzo implica però che ci devono essere delle politiche di gestione dei file, perché è molto facile incorrere in dei "merge conflict". Quando voglio pushare un file nel branch che ho modificato aggiungendo le mie funzionalità, potrei andare in conflitto con una copia dello stesso file ma con funzionalità diverse, in questo caso va deciso quale delle due versioni tenere o come modificare il file nel modo più opportuno
 
-Per unire i nostri cambiamenti di un branch con mastera lo si riposiziona alla stesso punto di master con il comando
+Se voglio creare un nuovo branch devo utilizzare il comando
+```
+git branch
+```
+
+Per spostarmi però all'interno del branch devo usare
+```
+git checkout
+```
+
+Quando eseguiamo questo comando il puntatore HEAD del nostro branch si sposta e non si trova più dove lo abbiamo lasciato, bensì dove si sposta dove gli diciamo noi, in questo caso, in un branch diverso dal master, in caso volessimo tornare al master, dobbiamo usare un altro comando.<br>
+Per unire i nostri cambiamenti di un branch con master lo si riposiziona alla stesso punto di master con il comando
 ```
 git rebase [master]
 ```
@@ -83,7 +94,3 @@ Scarica i commit che sono stati fatti sul branch remoto che mancano dalla reposi
 ```
 git fetch
 ```
-
-# MAI PUSHARE COSE IN PRODUZIONE IL VENERDI SERA
-
-## Cosi se ci sono casini sei reperibile :)
