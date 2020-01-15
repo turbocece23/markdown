@@ -4,10 +4,10 @@
 
 Un sistema di controllo di versione dei programmi (VCS, Version Control System), tiene traccia di ciascun cambiamento che avviene nel progetto.<br>
 Prima dell'avvento di GIT vi erano solo sistemi basati su file e cartelle (e bestemmie). è il sistema di version control più semplice ma per grandi progetti potrebbe risultare difficile vedere i cambiamenti applicati.<br>
-Di VCS ne esistono versioni distribuite e locali, Git e un DVCS (Distributed VCS).<br>
+Di VCS ne esistono versioni distribuite e locali, Git è un DVCS (Distributed VCS).<br>
 Git nasce come riga di comando, ma alcuni editor sofisticati hanno alcune funzionalità Git già costruite al loro interno, come tool grafici e scorciatorie varie.
 
-
+## <span style="color:#fca40c">Primi comandi</span>
 
 Inizializzare git su una repository (locale sul pc)
 ```
@@ -29,16 +29,16 @@ Creiamo il commit che porterà le nostre modifiche su git
 git commit -m "Messaggio di commit"
 ```
 
-Per tornare ad aggiornamenti precedenti del file
-
 Per vedere i commit
 ```
 git log --oneline
 ```
 
-Per controllare un commit che è stato fatto in precedenza
+##  <span style="color:#fca40c">Undoing changes</span>
+
+Per tornare ad aggiornamenti precedenti del file quindi controllare un commit che è stato fatto in precedenza
 ```
-git checkout <HASH del commit>
+git checkout <ID del commit>
 ```
 
 Per tornare alla versione corrente
@@ -51,15 +51,22 @@ Per taggare un programma con la sua versione
 git tag -a v1.0 -m "Prima versione del programma"
 ```
 
-Per tornare ad un commit precedente ANNULLANDO i cambiamenti successivi crea un commit uguale a quello specificato, basta che sia avvenuto prima dei o del commit che voglio annullare
+Ora che abbiamo taggato la nostra versione stabile del programma possiamo accedervi tramite il comando
 ```
-git revert
+git checkout v1.0
+```
+In questo modo facciamo riferimento alla versione del nostro programma taggata "v1.0"
+
+Per tornare ad un commit precedente ANNULLANDO i cambiamenti successivi (al commit preso in esame), GIT crea un commit uguale a quello specificato, basta che sia avvenuto prima dei o del commit che voglio annullare. GIT non cancella il commit da cancellare, bensì lo "evita" creando un commit che porta il mio file esattamente allo stato specificato
+```
+git revert <ID del commit>
 ```
 
 Per tornare alla versione del file tracciato dal commit alla versione precedente senza creare nuovi commit come potrebbe fare il comando "revert"
 ```
 git reset --hard
 ```
+Questo comando funziona in tale maniera: la flag "--hard" cancella le modifiche più recenti al file, senza questa flag, GIT semplicemente sposterebbe il file dai tracked agli untracked, senza annullare le modfiche, ma semplicemente spostandolo come se non venisse incluso nel *git add*
 
 Per eliminare i file non tracciati e pulire la working directory
 ```
@@ -78,8 +85,10 @@ git branch
 
 Per spostarmi però all'interno del branch devo usare
 ```
-git checkout
+git checkout <nome branch>
 ```
+
+C'è da dire che ora che ci troviamo in un branch diverso da master, quando eseguiamo il comando *git log* ci verrà mostrato lo storico solamente del branch corrente. I commit precedenti alla creazione del branch sono considerati comunque parte della storia del nuovo branch
 
 Quando eseguiamo questo comando il puntatore HEAD del nostro branch si sposta e non si trova più dove lo abbiamo lasciato, bensì dove si sposta dove gli diciamo noi, in questo caso, in un branch diverso dal master, in caso volessimo tornare al master, dobbiamo usare un altro comando.<br>
 Per unire i nostri cambiamenti di un branch con master lo si riposiziona alla stesso punto di master con il comando
