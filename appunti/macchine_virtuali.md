@@ -235,12 +235,13 @@ abilitare opzione log-append su un file di log, questo servirà a capire cosa fu
 tail -f <nomefile> il programma rimane in attesa di modifiche del file e le visualizza sul terminale,
 serve a seguire gli aggiornamenti.
 
-è una impostazione del file di configurazione che dobbiamo aggiungere noi (al file di configurazione che
-dobbiamo creare da 0)
+è una impostazione del file di configurazione che dobbiamo aggiungere noi
 
 1. Utilizzando il dnat, reindirizzare il traffico UDP della porta 1194 al server
 2. Creare una VPN con chiave simmetrica fra server, vi sono due modi di strutturarla,
 uno dei due server agirà da client oppure la comunicazione sarà comunque fra server e server
-3. Creare un file di configurazione la quale logga informazioni sulla VPN in un file apposito,
+3. Modificare il file di configurazione la quale logga informazioni sulla VPN in un file apposito,
 il file sarò .ovpn viene "interpretato" dal programma openvpn, il quale legge il file e applica tutte
 le impostazioni lette nel file per creare la VPN, come un comando normale, per stopparla si usa CTRL+C
+
+Per la chiave simmetrica: https://openvpn.net/community-resources/static-key-mini-howto/
