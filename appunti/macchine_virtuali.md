@@ -195,10 +195,52 @@ Protocollo
 Livello
 Protocollo
 
-    IP----------------->
-1 2 3    4   5   6   7
-    IPsecX---X---X---X->
+          IP-------------------->
+1    2    3    4    5    6    7
+          IPsecX----X----X----X->
 
 IPSec crea due livelli 3, "uno sotto e uno sopra", quello più in basso
 ancora in chiaro, serve al client di destinazione per controllare qual'è la sorgente
 del pachetto
+
+16/01/2020
+
+Gli ultimi tre livelli (5, 6, 7) sono dedicati all'user space.
+Il programma OpenVPN, a cavallo fra il livello 4 e 5, riesce a gestire interamente
+pacchetti IP dal livello 2 al 7
+
+7
+6
+5|
+4|-----OpenVPN che gestisce pacchetti IP interi
+3
+2
+1
+
+OpenVPN utilizza due interfacce virtuali affacciate sul kernel, tun e tap, due canali
+per lettura e scrittura
+
+tun è un interfaccia di tipo punto punto (dal livello 3 al 7)
+tap è un interfaccia di tipo ethernet e accetta solo trame in ingresso (dal livello 2 al 7)
+
+OpenVPN ha due modalità di funzionamento per cifrare il traffico
+metodo semplice: semplici canali punto punto, canali a due, si basa su chiave simmetrica
+metodo non semplice: certificati, chiavi pubbliche e private, permette connessioni punto multi-punto
+
+la nuova interfaccia (tun o tap) dovrà avere indirizzo
+indirizzo 192.168.(200+npc).1
+
+abilitare opzione log-append su un file di log, questo servirà a capire cosa funziona e cosa no
+
+tail -f <nomefile> il programma rimane in attesa di modifiche del file e le visualizza sul terminale,
+serve a seguire gli aggiornamenti.
+
+è una impostazione del file di configurazione che dobbiamo aggiungere noi (al file di configurazione che
+dobbiamo creare da 0)
+
+1. Utilizzando il dnat, reindirizzare il traffico UDP della porta 1194 al server
+2. Creare una VPN con chiave simmetrica fra server, vi sono due modi di strutturarla,
+uno dei due server agirà da client oppure la comunicazione sarà comunque fra server e server
+3. Creare un file di configurazione la quale logga informazioni sulla VPN in un file apposito,
+il file sarò .ovpn viene "interpretato" dal programma openvpn, il quale legge il file e applica tutte
+le impostazioni lette nel file per creare la VPN, come un comando normale, per stopparla si usa CTRL+C
