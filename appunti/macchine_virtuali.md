@@ -209,13 +209,13 @@ Gli ultimi tre livelli (5, 6, 7) sono dedicati all'user space.
 Il programma OpenVPN, a cavallo fra il livello 4 e 5, riesce a gestire interamente
 pacchetti IP dal livello 2 al 7
 
-7
-6
-5|
-4|-----OpenVPN che gestisce pacchetti IP interi
-3
-2
-1
+ 7
+ 6
+|5|
+|4|-----OpenVPN che gestisce pacchetti IP interi
+|3|
+ 2
+ 1
 
 OpenVPN utilizza due interfacce virtuali affacciate sul kernel, tun e tap, due canali
 per lettura e scrittura
@@ -245,3 +245,32 @@ il file sarò .ovpn viene "interpretato" dal programma openvpn, il quale legge i
 le impostazioni lette nel file per creare la VPN, come un comando normale, per stopparla si usa CTRL+C
 
 Per la chiave simmetrica: https://openvpn.net/community-resources/static-key-mini-howto/
+
+18/01/2020
+
+Per instaurare una configurazione iniziale della VPN dobbiamo creare il file che conterrà le seguenti
+righe, il nome per ora non è importante, basta che sia quello che richiamiamo quando eseguiamo openvpn:
+
+#Indirizzo remoto della macchina di Michele
+remote 172.30.4.93
+#Avvio l'interfaccia virtuale tun, senza specificare se è tun0 o tun1 che sia
+dev tun
+#Associamo i due indirizzi ip perché comunichino fra di loro
+ifconfig 192.168.210.1 192.168.209.1
+#Utilizziamo la chiave creata in precedenza
+secret static.key
+
+Questa associazione di IP viene fatta a livello 3, non tramite un vero comando, qui infatti prende
+il nome di direttiva
+------------------------------------------------------------------------
+Configurazione server					Configurazione client
+ifconfig 192.168.209.1 192.168.210.1	ifconfig 192.168.210.1 192.168.209.1
+										remote IPWAN2
+
+Il file .key va messo in /etc/openvpn/chiave.key, e per comodità deve avere lo stesso nome del file
+.conf usato per la vpn
+
+Il file di log va messo in /var/log/openvpn-miavpn.log
+
+Openvpn può utilizzare diversi algoritmi di codifica tramite la direttiva "cipher [algoritmo]"
+per esempio: cipher aes, cipher idea...
