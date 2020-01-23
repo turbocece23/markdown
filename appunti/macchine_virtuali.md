@@ -274,3 +274,36 @@ Il file di log va messo in /var/log/openvpn-miavpn.log
 
 Openvpn può utilizzare diversi algoritmi di codifica tramite la direttiva "cipher [algoritmo]"
 per esempio: cipher aes, cipher idea...
+
+23/1/2020
+
+Prima di system.d vi erano alcuni script che avviavano tutti i servizi all'avvio della macchina (init5).
+Questi file sono ancora presenti e si trovano in /etc/init.d/
+
+Per avviare il servizio e configurare in modo che esso si avvi all'accensione della macchina:
+systemctl enable openvpn@server.service
+
+tre rotte
+una rotta per mettere in comunicazione gli indirizzi di vpn con quelli dei server locali
+(.110.250 parla direttamente con .109.250 senza passare per .210.1 e .209.1)
+
+mettere in comunicazione i client attraverso il server con indirizzo .110.250
+
+abilitare reinoltro pacchetti:
+cd /proc/sys/net/ipvr/
+cat ip_forward darà come risultato 0
+se mettiamo 1 il pc inizierà a fare routing (echo 1 > ip_forward)
+
+per farlo automaticamente
+cd /etc/
+less sysctl.conf
+decommentare la riga "net.ipv4.ip_forward=1"
+
+cd /etc/sysctl.d/
+e creiamo fowarding.conf
+
+#Abilito il forwarding (2020/01/23)
+net.ipv4.ip_forward=1
+
+applichiamo le modifiche
+sysctl --system
