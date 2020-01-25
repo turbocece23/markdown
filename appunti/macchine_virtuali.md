@@ -307,3 +307,11 @@ net.ipv4.ip_forward=1
 
 applichiamo le modifiche
 sysctl --system
+
+25/01/2020
+Per far andare la VPN devo avere alcune cose
+-OpenVPN attivo
+-Le direttive route statiche di openvpn
+-Abilitare il routing del server
+-Rotte statiche nel m0n0wall
+-Verificare il funzionamento
