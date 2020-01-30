@@ -195,10 +195,123 @@ Protocollo
 Livello
 Protocollo
 
-    IP----------------->
-1 2 3    4   5   6   7
-    IPsecX---X---X---X->
+          IP-------------------->
+1    2    3    4    5    6    7
+          IPsecX----X----X----X->
 
 IPSec crea due livelli 3, "uno sotto e uno sopra", quello più in basso
 ancora in chiaro, serve al client di destinazione per controllare qual'è la sorgente
 del pachetto
+
+16/01/2020
+
+Gli ultimi tre livelli (5, 6, 7) sono dedicati all'user space.
+Il programma OpenVPN, a cavallo fra il livello 4 e 5, riesce a gestire interamente
+pacchetti IP dal livello 2 al 7
+
+ 7
+ 6
+|5|
+|4|-----OpenVPN che gestisce pacchetti IP interi
+|3|
+ 2
+ 1
+
+OpenVPN utilizza due interfacce virtuali affacciate sul kernel, tun e tap, due canali
+per lettura e scrittura
+
+tun è un interfaccia di tipo punto punto (dal livello 3 al 7)
+tap è un interfaccia di tipo ethernet e accetta solo trame in ingresso (dal livello 2 al 7)
+
+OpenVPN ha due modalità di funzionamento per cifrare il traffico
+metodo semplice: semplici canali punto punto, canali a due, si basa su chiave simmetrica
+metodo non semplice: certificati, chiavi pubbliche e private, permette connessioni punto multi-punto
+
+la nuova interfaccia (tun o tap) dovrà avere indirizzo
+indirizzo 192.168.(200+npc).1
+
+abilitare opzione log-append su un file di log, questo servirà a capire cosa funziona e cosa no
+
+tail -f <nomefile> il programma rimane in attesa di modifiche del file e le visualizza sul terminale,
+serve a seguire gli aggiornamenti.
+
+è una impostazione del file di configurazione che dobbiamo aggiungere noi
+
+1. Utilizzando il dnat, reindirizzare il traffico UDP della porta 1194 al server
+2. Creare una VPN con chiave simmetrica fra server, vi sono due modi di strutturarla,
+uno dei due server agirà da client oppure la comunicazione sarà comunque fra server e server
+3. Modificare il file di configurazione la quale logga informazioni sulla VPN in un file apposito,
+il file sarò .ovpn viene "interpretato" dal programma openvpn, il quale legge il file e applica tutte
+le impostazioni lette nel file per creare la VPN, come un comando normale, per stopparla si usa CTRL+C
+
+Per la chiave simmetrica: https://openvpn.net/community-resources/static-key-mini-howto/
+
+18/01/2020
+
+Per instaurare una configurazione iniziale della VPN dobbiamo creare il file che conterrà le seguenti
+righe, il nome per ora non è importante, basta che sia quello che richiamiamo quando eseguiamo openvpn:
+
+#Indirizzo remoto della macchina di Michele
+remote 172.30.4.93
+#Avvio l'interfaccia virtuale tun, senza specificare se è tun0 o tun1 che sia
+dev tun
+#Associamo i due indirizzi ip perché comunichino fra di loro
+ifconfig 192.168.210.1 192.168.209.1
+#Utilizziamo la chiave creata in precedenza
+secret static.key
+
+Questa associazione di IP viene fatta a livello 3, non tramite un vero comando, qui infatti prende
+il nome di direttiva
+------------------------------------------------------------------------
+Configurazione server					Configurazione client
+ifconfig 192.168.209.1 192.168.210.1	ifconfig 192.168.210.1 192.168.209.1
+										remote IPWAN2
+
+Il file .key va messo in /etc/openvpn/chiave.key, e per comodità deve avere lo stesso nome del file
+.conf usato per la vpn
+
+Il file di log va messo in /var/log/openvpn-miavpn.log
+
+Openvpn può utilizzare diversi algoritmi di codifica tramite la direttiva "cipher [algoritmo]"
+per esempio: cipher aes, cipher idea...
+
+23/1/2020
+
+Prima di system.d vi erano alcuni script che avviavano tutti i servizi all'avvio della macchina (init5).
+Questi file sono ancora presenti e si trovano in /etc/init.d/
+
+Per avviare il servizio e configurare in modo che esso si avvi all'accensione della macchina:
+systemctl enable openvpn@server.service
+
+tre rotte
+una rotta per mettere in comunicazione gli indirizzi di vpn con quelli dei server locali
+(.110.250 parla direttamente con .109.250 senza passare per .210.1 e .209.1)
+
+mettere in comunicazione i client attraverso il server con indirizzo .110.250
+
+abilitare reinoltro pacchetti:
+cd /proc/sys/net/ipvr/
+cat ip_forward darà come risultato 0
+se mettiamo 1 il pc inizierà a fare routing (echo 1 > ip_forward)
+
+per farlo automaticamente
+cd /etc/
+less sysctl.conf
+decommentare la riga "net.ipv4.ip_forward=1"
+
+cd /etc/sysctl.d/
+e creiamo fowarding.conf
+
+#Abilito il forwarding (2020/01/23)
+net.ipv4.ip_forward=1
+
+applichiamo le modifiche
+sysctl --system
+
+25/01/2020
+Per far andare la VPN devo avere alcune cose
+-OpenVPN attivo
+-Le direttive route statiche di openvpn
+-Abilitare il routing del server
+-Rotte statiche nel m0n0wall
+-Verificare il funzionamento
