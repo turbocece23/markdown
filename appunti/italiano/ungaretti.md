@@ -18,25 +18,29 @@
 
 **Da Parigi all'Italia: i viaggi e la crisi religiosa:** Finita la guerra si stabilì a Parigi, cominciò a lavorare come corrispondente per il "Popolo d'Italia", il giornale fondato da Benito Mussolini. Dopo le tragiche esperienze di guerra per Ungaretti era giunto il momento di cercare un rinnovato rapporto tra uomo e Dio da questa ricerca nasceranno le liriche di "Sentimento del tempo".
 
-Dal 1931 al 1935 fu inviato speciale della Gazzetta del Popolo, tenne conferenze sulla letteratura italiana contemporanea inoltre organizzò le sue prime raccolte: "Il porto sepolto" e "Allegria di naufragi" in un'unica opera dal titolo "L'allegria" (1931) è pubblico un nuovo volume di liriche, "Sentimento del tempo" (1933)
+Dal 1931 al 1935 fu inviato speciale della Gazzetta del Popolo, tenne conferenze sulla letteratura italiana contemporanea inoltre organizzò le sue prime raccolte: "Il porto sepolto" e "Allegria di naufragi" in un'unica opera dal titolo "L'allegria" (1931) e pubblicò un nuovo volume di liriche, "Sentimento del tempo" (1933)
 
 **In Brasile:** Nel 1936 si trasferì in Brasile dove rimase fino al 1942 per occupare una cattedra di lingua e letteratura italiana all'Università di San Paolo. A segnare il periodo della sua permanenza fu la morte del suo unico fratello e del figlio Antonietto di 9 anni.
 
-**Gli ultimi anni:** Rientrato in Italia ottenne nel 1943 la cattedra di letteratura italiana all'Università di Roma e pubblicò altre raccolte tra cui "Il dolore" (1947). rimasto vedovo nel 1958 continua la sua attività di poeta e traduttore. Morì a Milano nel 1970 
+**Gli ultimi anni:** Rientrato in Italia ottenne nel 1943 la cattedra di letteratura italiana all'Università di Roma e pubblicò altre raccolte tra cui "Il dolore" (1947). Rimasto vedovo nel 1958 continua la sua attività di poeta e traduttore. Morì a Milano nel 1970 
 
 ## Le opere p. 598
 
 ### L'allegria - 1931
-Pubblicata nel 1916 con il titolo di "Il porto sepolto", in seguito trasformata in allegria di naufragi nel 1919 fu a sua volta ampliata e modificata con il titolo "L'allegria" nel 1931.
+Pubblicata nel 1916 con il titolo di "Il porto sepolto", in seguito trasformata in "Allegria di naufragi" nel 1919 fu a sua volta ampliata e modificata con il titolo "L'allegria" nel 1931.
 
 ### Sentimento del tempo - 1933
-È la raccolta che coincide con la seconda fase della produzione poetica ungarettiana. Recupero della dimensione religiosa e recupero di moduli espressiviL tradizionali tipici degli anni del primo dopoguerra propri della rivista "La ronda" alla quale Ungaretti collaborà.
+È la raccolta che coincide con la seconda fase della produzione poetica ungarettiana. Recupero della dimensione religiosa e recupero di moduli espressivi tradizionali tipici degli anni del primo dopoguerra propri della rivista "La ronda" alla quale Ungaretti collaborò.
 
 ### Il dolore - 1947
-"Il dolore" segna il passaggio alla terza fase della poesia di Ungaretti. Emergono la sensazione di vuoto di fronte al dolore per la perdita dei cari e la sofferenza per le atrocità della guerra
+"Il dolore" segna il passaggio alla terza fase della poesia di Ungaretti. Emergono la sensazione di vuoto di fronte al dolore per la perdita dei cari e la sofferenza per le atrocità della guerra.
+
+> Non l'amavo neanche allora [la guerra], ma pareva che la guerra s'imponesse per eliminare finalmente la guerra. Erano **bubbole** (menzogne), ma gli uomini, a volte, s'illudono e si mettono in fila dietro le **bubbole**.
 
 ### Vita d'un uomo - 1969
-Nel 1969 pubblico vita d'un uomo una raccolta della sua intera produzione poetica. doveva costituire una sorta di autobiografia poetica ideale sul modello del canzoniere di Petrarca. Quest'idea fu motivata dalle esigenze di far coincidere vita e letteratura di fornire al lettore un immagine unitaria di Ungaretti uomo e poeta. "Volevo lasciare una bella biografia".
+Nel 1969 pubblico vita d'un uomo una raccolta della sua intera produzione poetica. doveva costituire una sorta di autobiografia poetica ideale, sul modello del canzoniere di Petrarca. Quest'idea fu motivata dalle esigenze di far coincidere vita e letteratura di fornire al lettore un immagine unitaria di Ungaretti uomo e poeta.
+
+> Volevo lasciare una bella biografia.
 
 ## Il pensiero e la poetica
 
@@ -44,23 +48,24 @@ Nel 1969 pubblico vita d'un uomo una raccolta della sua intera produzione poetic
 
 #### La lezione simbolista
 
-La prima fase della produzione poetica presenta un forte sperimentalismo che risente dell'influsso della poesia simbolista francese la cui conoscenza fu approfondita dal poeta Durante gli anni parigini, e da una decisa impronta autobiografica. la poesia trova fondamento nelle esperienze esistenziali che cooperate attraverso la memoria. Ungaretti intende innalzare la dimensione privata a simbolo di una condizione universale proprio in questo aspetto si riconosce la lezione simbolista. Si serve di ardite metafore e dell'analogia che gli permettono di superare i legami logici in favore di associazione basate sull' intuizione immediata.
+La prima fase della produzione poetica presenta un forte sperimentalismo che risente dell'influsso della poesia simbolista francese la cui conoscenza fu approfondita dal poeta Durante gli anni parigini, e da una decisa impronta autobiografica. la poesia trova fondamento nelle esperienze esistenziali recuperate attraverso la memoria. Ungaretti intende innalzare la dimensione privata a simbolo di una condizione universale, proprio in questo aspetto si riconosce la lezione simbolista. Si serve di ardite metafore e dell'analogia che gli permettono di superare i legami logici in favore di associazione basate sull' intuizione immediata.
 
 #### Autobiografismo e parola poetica
 
 
-La poesia di questa fase risente dell'inno vamento del linguaggio poetico promosso dei futuristi di cui Ungaretti tuttavia rifiutava il carattere casuale e meccanico.
+La poesia di questa fase risente dell'innovamento del linguaggio poetico promosso dai futuristi di cui Ungaretti tuttavia rifiutava il carattere casuale e meccanico.
 
 #### Le innovazioni stilistiche
 
 le liriche di questa prima fase sono improntate soprattutto le seguenti innovazioni stilistiche:
-- linguaggio scarno essenziale
-- verso Libero anche se unendo due o più versi consecutivi se mi ricompone la misura di un verso regolare
+
+- linguaggio scarno ed essenziale
+- verso Libero anche se unendo due o più versi consecutivi si ricompone la misura di un verso regolare
 - la riduzione del verso anche a una singola parola
 - l'uso dell'analogia
 - frantumazione della sintassi e accostamento delle parole
-- la presenza di spazi bianchi che simboleggiavano pause silenzi
-- verticalizzazione della lirica versi molto brevi, effetto di essenzialità
+- la presenza di spazi bianchi che simboleggiavano pause e silenzi
+- verticalizzazione della lirica, versi molto brevi, effetto di essenzialità
 
 ### La seconda fase: il recupero della tradizione
 
@@ -74,26 +79,29 @@ Il linguaggio ricercato ricco di aggettivi di immagini originali e preziose, pre
 
 #### Un nuovo stile e una nuova sensibilità
 
-fusione tra esperienza barocca e linguaggio enologico di matrice simbolista. Una poesia di ampio respiro che rinuncia l'essenzialità aforismi un'espressione molto elaborata recupero di una mente religiosa di una forte tensione verso Dio.
+fusione tra esperienza barocca e linguaggio analogico di matrice simbolista. Una poesia di ampio respiro che rinuncia l'essenzialità aforismi un'espressione molto elaborata, recupero di una mente religiosa di una forte tensione verso Dio.
 
 ### La terza fase: la compostezza formale
 
 #### Le ultime raccolte
 
-Recupero della tradizione classica attraverso l'Impiego di nuovi ritmi ottenuti mediante pause e suggestioni musicali l'autore si apra il colloquio con gli altri uomini trattando temi concreti di carattere universale comunicando il proprio dolore per la morte del figlio è quello dell'umanità intera per la seconda guerra mondiale
+Recupero della tradizione classica attraverso l'impiego di nuovi ritmi ottenuti mediante pause e suggestioni musicali. L'autore si apre al colloquio con gli altri uomini trattando temi concreti di carattere universale comunicando il proprio dolore per la morte del figlio e quello dell'umanità intera per la seconda guerra mondiale
 
 #### Compostezza formale
 
-la riflessione degli ultimi anni condusse l'autore ha un progressivo distacco dalla vita
+la riflessione degli ultimi anni condusse l'autore ad un progressivo distacco dalla vita, alla serenità di chi guarda le cose terrene da un punto di vista privilegiato di chii si accinge a separarsi definitivamente dall'esistenza per approdare alla meta più alta: la morte e la dimensione ultraterrena
 
 ## Ungaretti precursore dell'Ermetismo p. 603
 
-l'esperienza poetica del Novecento fu influenzato dalla lezione ungarettiana tuttavia è soprattutto una corrente dell'ermetismo, di cui lungaretti fu considerato il precursore, a presentare consistenti tratti comuni.
-Adozione del verso libero, ricerca della parola essenziale, uso dell'analogia
+l'esperienza poetica del Novecento fu influenzata dalla lezione ungarettiana. Tuttavia, è soprattutto la corrente dell'Ermetismo, di cui l'ungaretti fu considerato il precursore, a presentare consistenti tratti comuni:
+
+- Adozione del verso libero
+- Ricerca della parola essenziale
+- Uso dell'analogia
 
 ## L'allegria 606 610
 
-Nel 1916 pubblicò Il Porto sepolto, che comprende le poesie scritte a partire dal 1914, durante la prima guerra mondiale. Nel 1919 la raccolta fu inserita in una più ampia, "Allegria di naufragi", il cui titolo allude al naufragio della civiltà europea travolta dalla guerra. L'edizione definitiva uscì nel 1942
+Nel 1916 pubblicò "Il Porto sepolto", che comprende le poesie scritte a partire dal 1914, durante la prima guerra mondiale. Nel 1919 la raccolta fu inserita in una più ampia, "Allegria di naufragi", il cui titolo allude al naufragio della civiltà europea travolta dalla guerra. L'edizione definitiva uscì nel 1942
 
 Temi:
 
@@ -106,14 +114,26 @@ Temi:
 
 Ne fanno parte le opere:
 
-- *In memoria:* dedicata a moammed sceab, la poesia È un mezzo per acquisire consapevolezza di se stessi e arrivare alla definizione di una propria identità
+- *In memoria:* dedicata a Moammed Sceab, la poesia è un mezzo per acquisire consapevolezza di se stessi e arrivare alla definizione di una propria identità
 
 - *Il porto sepolto:* riflessione sull'origine della poesia e dell'ispirazione poetica, la concezione che ne deriva è quella di una ricerca laboriosa di "ciò che di segreto rimane in noi, indecifrabile"
 
-- *Allegria di naufragi:* definizione del processo che è alla base della creazione poetica la poesia si configura come un viaggio senza fine il poeta è colui che, anche dopo il naufragio a cui la vita lo sottopone, riprende il cammino con slancio vitale
+- *Allegria di naufragi:* definizione del processo che è alla base della creazione poetica la poesia si configura come un viaggio senza fine. Il poeta è colui che, anche dopo il naufragio a cui la vita lo sottopone, riprende il cammino con slancio vitale
 
-## Probabilmente anche Sentimento del tempo 642
+## Sentimento del tempo p. 642
+
+Temi:
+
+- La ricerca del senso dell'esistenza
+- I miti classici
+- La tensione verso il divino
 
 ## Opere:
-- In memoria
-- I fiumi
+
+### In memoria
+
+Scritta per ricordare l'amico morto suicida Moammed Sceab. Convivevano a Parigi dopo essersi trasferiti dall'Egitto, il tema dominante è la negazione dell' identità di Moammed, culminata con il suo suicidio perché rigettato dalla comunità parigina e dalla società europea. Importante nella lirica la funzione dell'analogia attraverso cui Ungaretti connota simbolicamente i luoghi di Parigi in cui Moammed ha vissuto.
+
+### I fiumi
+
+In un momento di tregua dalla guerra il poeta ricorda la sua immersione nelle acque dell'Isonzo. Il fiume Isonzo richiama per via analogica altri fiumi come il Serchio, il Nilo, la Senna, che hanno separato le tappe della sua vita.
