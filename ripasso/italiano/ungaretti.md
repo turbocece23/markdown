@@ -117,7 +117,7 @@ Scritta negli anni del soggiorno a Roma (<u>1920 - 1936</u>), nel 1943 esce la v
 > Volevo lasciare una bella biografia.
 
 ## Il pensiero e la poetica
-### La prima fase: lo sperimentalismo
+### La prima fase: lo sperimentalismo (opera chiave: raccolta *L'Allegria*)
 
 La prima fase della produzione poetica presenta un forte sperimentalismo che risente dell'influsso della poesia simbolista francese la cui conoscenza fu approfondita dal poeta durante gli anni parigini, e da una decisa impronta autobiografica.
 
@@ -143,7 +143,7 @@ La poesia trova fondamento nelle esperienze esistenziali recuperate attraverso l
 	- Recupero di una purezza originale
 	- Sofferto scavo interiore
 
-### La seconda fase: il recupero della tradizione
+### La seconda fase: il recupero della tradizione (opera chiave: raccola *Sentimento del tempo*)
 
 Scoperta del poeta di un rinnovato sentimento religioso è nuova attenzione al tempo interiore (ereditato da Bergson) che scandisce la vita umana. Percezione del tempo come nuovo tema centrale diventa occasione per riflettere sulla morte
 
@@ -162,7 +162,7 @@ Il linguaggio ricercato ricco di aggettivi di immagini originali e preziose, pre
 - Senso di decadenza (grandiosità della forma)
 - Fusione tra esperienza barocca e linguaggio analogico di matrice simbolista
 
-## La terza fase: la compostezza formale
+## La terza fase: la compostezza formale (opera chiave: lirica *Il dolore*)
 
 La riflessione degli ultimi anni condusse l'autore ad un progressivo distacco dalla vita, alla serenità di chi guarda le cose terrene da un punto di vista privilegiato di chi si accinge a separarsi definitivamente dall'esistenza per approdare alla meta più alta: la morte e la dimensione ultraterrena
 
