@@ -1,10 +1,22 @@
+<style type="text/css">
+	.sep
+	{
+		color:#ffa11a;
+		text-align: center;
+	}
+	h1
+	{
+		color: #ee2020;
+	}
+</style>
+
 # Indice
 
 1. Introduzione ai database
 2. Fasi di progettazione di un DB
 3. Vincoli di integrità
 4. Linguaggio SQL
-	- [DDL e DML
+	- DDL e DML
 5. Transazioni
 6. Stored procedures
 7. Ristrutturazione
@@ -17,7 +29,7 @@
 	- BCNF
 11. Viste
 
-## <span style="color:#ffa11a">════════════════════════════════════════════</span>
+## <span class="sep">════════════════════════════</span>
 
 # Fasi
 
@@ -29,7 +41,7 @@ Preso in input un diagramma ER genera uno schema logico delle relazioni rapprese
 - **Fisica**: implementa lo schema logico definendone gli aspetti fisici di memorizzazione e rappresentazione in memoria di massa
 Preso in input lo schema logico con le tabelle le implementa nella memoria di massa
 
-## <span style="color:#ffa11a">════════════════════════════════════════════</span>
+## <span class="sep">════════════════════════════</span>
 
 # Introduzione
 
@@ -47,7 +59,7 @@ Un DBMS (come SQL server, Access, MySQL..) è un insieme di strumenti software c
 - Logico: Riguarda la struttura logica assunta dai dati registrati, quindi il loro schema  astratto
 - Esterno: si riferisce al modo in cui ciascun utente vede i dati che vengono messi a disposizione secondo il formato richiesto
 
-## <span style="color:#ffa11a">════════════════════════════════════════════</span>
+## <span class="sep">════════════════════════════</span>
 
 # Vincoli
 
@@ -60,7 +72,7 @@ Vincoli **intra**-relazionali (all’interno della tabella)
 Vincoli **inter**-relazionali (che riguardano le chiavi esterne)
 - integrità relazionale
 
-## <span style="color:#ffa11a">════════════════════════════════════════════</span>
+## <span class="sep">════════════════════════════</span>
 
 # SQL
 
@@ -77,7 +89,7 @@ Data Definition Language (Create, Alter, Drop)
 ## DML
 Data Manipulation Language (Insert, Select, Delete, Update)
 
-## <span style="color:#ffa11a">════════════════════════════════════════════</span>
+## <span class="sep">════════════════════════════</span>
 
 # Transazioni
 
@@ -93,9 +105,9 @@ Le Transazioni rispettano le proprietà **ACID**
 - <span style="color:#fa4545">Isolamento</span>: ogni transazione deve essere eseguita in modo isolato e indipendente dalle altre transazioni, l'eventuale fallimento di una transazione non deve interferire con le altre transazioni in esecuzione.
 - <span style="color:#fa4545">Durabilità</span> detta anche persistenza, si riferisce al fatto che una volta che una transazione abbia richiesto un commit work, i cambiamenti apportati non dovranno essere più persi. Per evitare che nel lasso di tempo fra il momento in cui la base di dati si impegna a scrivere le modifiche e quello in cui li scrive effettivamente si verifichino perdite di dati dovuti a malfunzionamenti, vengono tenuti dei registri di log dove sono annotate tutte le operazioni sul DB.
 
-## <span style="color:#ffa11a">════════════════════════════════════════════</span>
+## <span class="sep">════════════════════════════</span>
 
-# Stored_procedures
+# Stored procedures
 
 Durante lo sviluppo di un applicazione client le richieste per l'interrogazione di dati possono essere inviate direttamente al database. dal programma, tramite istruzioni, oppure è possibile creare piccoli programmi o funzioni all'interno del database e poi farle eseguire dal programma esterno. Queste procedure si chiamano Stored Procedure.
 
@@ -109,18 +121,19 @@ Un linguaggio dichiarativo viene invece denominato **procedurale** quando per es
 
 Le stored procedure accettano parametri in input (IN), parametri in output (OUT) e vi è anche una combinazione di questi due che si chiama (INOUT)
 
-## <span style="color:#ffa11a">════════════════════════════════════════════</span>
+## <span class="sep">════════════════════════════</span>
 
 # Ristrutturazione
 
 Fasi:
+
 - **Analisi delle rindondanze**: si decidere se mantenere o eliminare eventuali ridondanze (ripetizioni) presenti nello schema
 - **Partizionamento di entità e associazioni**: si decide se è opportuno partizionare concetti dello schema, i più sottoconcetti più semplici, o viceversa, accorpare concetti separati in un unico concetto
 - **Eliminazione delle gerarchie "Is A"**: il modello relazionale non rappresenta le gerarchie, e quindi vanno sono sostituite da entità e associazioni
 - **Selezione delle chiavi primarie**: si seleziona un identificatore per quelle entità che ne hanno più di uno. Vengono invece eliminate le identificazioni esterne
 - **Normalizzazione**: degli attributi composti o multipli
 
-## <span style="color:#ffa11a">════════════════════════════════════════════</span>
+## <span class="sep">════════════════════════════</span>
 
 # Trigger
 
@@ -145,7 +158,7 @@ I trigger a livello di tupla vengono eseguiti tante volte quante sono le righe d
 - TRIGGER_TIME: rappresenta il tipo di trigger (BEFORE o AFTER)
 - TRIGGER_EVENT: indica il tipo che attiva il trigger (come insert)
 
-## <span style="color:#ffa11a">════════════════════════════════════════════</span>
+## <span class="sep">════════════════════════════</span>
 
 # Algebra
 
@@ -175,13 +188,14 @@ ed è basato su *5* operazioni fondamentali:
 
 ## <span style="color:#f76b2a">L'interrogazione dei dati</span>
 L'operazione fondamentale per manipolare una base di dati è l'*interrogazione*. Con l'interrogazione si esegue l'accesso ai dati desiderati, dopo aver ottentuo questo accesso è possibile:
+
 - modificarli (**update**)
 - cancellarli (**delete**)
 - inserirne di nuovi (**insert**)
 - aggiungerne (**append**)
 - ingorarli
 
-## <span style="color:#ffa11a">════════════════════════════════════════════</span>
+## <span class="sep">════════════════════════════</span>
 
 # Normalizzazione
 
@@ -213,7 +227,7 @@ Una relazione in **BCNF** (*Boyce-Codd Normal Form*) è anche in **2FN** e in **
 
 Quindi una relazione che rispetta la forma normale di Boyce-Codd è anche in terza forma normale (è già in 1FN, in 2FN e quindi ora è in 3FN, tipo evoluzione finale di un Pokémon), ma non è vero l'opposto, cioè che una relazione in **3FN** è anche in **BCFN**.
 
-## <span style="color:#ffa11a">════════════════════════════════════════════</span>
+## <span class="sep">════════════════════════════</span>
 
 # Viste
 
