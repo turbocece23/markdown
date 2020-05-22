@@ -1,2 +1,0 @@
-# I sistemi distribuiti
-
