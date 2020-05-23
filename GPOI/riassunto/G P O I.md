@@ -27,6 +27,11 @@
 		margin-right: auto;
 		display: block;
 	}
+
+	.hig/*hlight*/
+	{
+		color:#32739C;
+	}
 	/*Per attivare la "dark mode"*/
 	/*p, li, ul{ color:white; }*/
 	/*html { color:white; background-color: black; }*/
@@ -44,7 +49,6 @@
 - U2
 	- **L1** *46* Catena del valore, processi primari e processi di supporto
 	- **L2** *60* Le prestazioni dei processi aziendali
-	- **L3** *66* Modellizzazione dei processi aziendali e principi della gestione per processi
 - U4
 	- **L1** *112* Il progetto e le sue fasi
 	- **L2** *117* Il principio di chiave nella gestione di un progetto e gli obiettivi di progetto
@@ -199,8 +203,233 @@ La forma divisionale risponde ai limiti della struttura funzionale seguendo i cr
 <img src="struttura_divisionale.png" alt="Struttura divisionale"/>
 
 #### La struttura ibrida
-##### Un p0' di funzionale e di divisionale
+##### Usa criteri di raggruppamento in base a output e input
 
 Per la definizione di unità organizzative al primo livello gerarchico utilizza diversi criteri di raggruppamento, sia in base all'output che in base all'input
 
 <img src="struttura_ibrida.png" alt="Struttura ibrida"/>
+
+#### La struttura a matrice
+##### Un po' di funzionale e di divisionale, unicità del comando non rispettata
+
+In questa struttura le risorse fanno capo a più persone, questa organizzazione viola il principio di unicità del comando di Fayol
+
+<img src="struttura_matrice.png" alt="Struttura a matrice"/>
+
+### **L4** - I costi di un'organizzazione aziendale
+#### Le tipologie di costo
+##### Poche spese tanto guadagno
+
+I risultati di un unità organizzativa dipendono dalle risorse che l'unità utlizza (concettualmente, i **costi**) e dai risultati che essa produce (i **ricavi**). Il funzionamento di un'organizzazione aziendale è quindi volto alla *minimizzazione dei costi* e alla *massimizzazione dei ricavi*.
+
+Una configurazione di costo può essere definita come un "set di risorse" il cui valore determina il **costo** di un prodotto o di un'unità organizzativa.
+
+Le classificazioni dei costi:
+
+- distinzione tra costi di **prodotto** e **di periodo**
+- distinzione tra costi **fissi** e **variabili**
+- distinzione tra costi **evitabili** e **non evitabili**
+
+##### Costi di **prodotto** e **di periodo**
+
+**Costi di prodotto**
+
+- *costi di lavoro diretto*: relativi agli addetti alle opreazioni di produzione e assemnblaggio
+- *costi di materiali diretti*: relativi agli acquisti esterni di materie prime, semilavorati e componenti necessare per la produzione
+- *costi indiretti di produzione*: costi associabili direttamente all'attività produttiva nel suo complesso, ma non alla realizzazione di una singola unità di prodotto
+
+**Costi di periodo**
+
+Detti anche spese discrezionali, comprendono attività non direttamente associabili alla realizzazione di un prodotto (come ricerca e sviluppo, amministrazione, come gli stipendi dei dirigenti)
+
+- distinzione tra costi **fissi e variabili**
+- distinzione tra costi **evitabili** e **non evitabili**
+
+|Operatore 1|**+**|Operatore 2|**=**|Risultato|
+|:---|:---:|:---|:---:|:---|
+|costi di lavoro diretto|**+**|costi indiretti di produzione|**=**|costo di conversione|
+|costo di conversione|**+**|costi di materiali diretti|**=**|costo pieno industriale|
+|costo pieno industriale|**+**|quota costi di pericolo|**=**|costo pieno aziendale|
+
+##### Costi **fissi** e **variabili**
+
+Si definiscono come *fissi* i costi che, nell'ambito di un intervallo significativo del livello di attività e nel breve periodo, rimangono inalterati, *variabili* gli altri costi. Una terza categoria di costi intermedia è detto *semivariabili*, il cui andamento è rappresentato da una curva spezzata, ovvero restano fissi rispetto a determinati range di variazione del livello di attività d'impresa.
+
+##### Costi **evitabili** e **non evitabili**
+
+La classificazione dei costi in evitabili e non evitabili distingue i costi in base alla loro rilevanza decisionale. Rispetto a una decisione, i costi evitabili sono quelli influenzati dalla decisione, mentre i costi non evitabili sono quelli che non dipendono da essa e che verranno comunque sostenuti qualunque sia l'esito.
+
+## U2
+
+### **L1** - Il flusso delle attività
+#### La visione per processi da una visione dimanica dell'organizzazione
+
+Per capire bene come funziona un'azienda dobbiamo avere una visione globale, ma per farlo non bastano l'analisi di macro e micro struttura (organigramma e mansionario rispettivamente), bisogna analizzare le interdipendenze tra le attività, in questo modo posso ottenre un'ottimizzazione globale e non solo locale.
+
+- ottimizzazione locale: di una sola unità organizzativa
+- ottimizzazione globale: ottimizzazione dei processi aziendali
+
+#### I processi aziendali
+
+Il *processo aziendale* è un insieme organizzato di attività finalizzato alla creazione di un output richiesto da un cliente al quale questo attribuisce un "valore" ben definito.
+
+#### Processi primari e processi di supporto
+
+- **Primari**: concorrono alla creazione di un output apprezzabile per il suo lavoro da parte del cliente
+- **Di supporto**: non creano un valore riconosciuto direttamente dal cliente, ma sono tuttavia necessari per il funzionamento di quelli primari
+
+#### Catena del valore di Porter
+
+Modello utilizzato in ogni azienda, si suddivide in due parti principali, quella dei processi primari e qualli di supporto. La chiave è trovare collegamenti interni ed esterni all'azienda. Un esempio di collegamento estenro è l'approvigionamento di materie prime da parte di un fornitore.
+
+#### Il cilo di vita del prodotto
+
+<img src="ciclo_vita_prodotto.png" alt="Ciclo di vita del prodotto"/>
+
+#### Processi produttivi e logistici
+
+Esiste forte distinzione tra attività produttive organizzate per reparti e la produzione in linea.
+
+- **Reparti**: in ciascun reparto vengono svolte attività omogenee dal punto di vista tecnologico basate su un insieme limitato di competenze
+- **Produzione in linea**: cammino predeterminato per la produzione del prodotto (usato se ho un prodotto che si diversifica poco, catena di montaggio)
+- **Cellular manufacturing**: raggruppamento delle tecnologie in base al suo utilizzo, rompe i canoni standard del concetto di reparti
+
+#### Mission e Vision
+
+- **Mission**: qualcosa che qualcuno fà, quindi quello che fà un'azienda (tipo promuovere e migliorare i prodotti per il networking, se parlassimo della BluePrint Networks, azienda leader nel settore)
+- **Vision**: quello che l'azienda vuole diventare, qualcosa di inspirational (molto tumblr, tipo "Forniamo gli strumenti per creare il futuro del domani" e altre cagate simili)
+
+### **L2** - Le prestazioni dei processi aziendali
+#### Processi efficaci ed efficienti
+
+Le <span style="color:#FA9C20">prestazioni dei processi</span> quantificano la capacità degli output di soddisfare le richieste e le esigenze del cliente e dunque il loro ruolo nel creare valore per l'azienda.
+
+Un processo aziendale è caratterizzato da quattro prestazioni operative: <span class="hig">costi, tempi, qualità, flessibilità</span>.
+
+Le quali nel loro complesso determinano l'<span style="color:#98a33c">efficacia</span> e l'<span style="color:#98a33c">efficienza</span> del processo.
+
+- L'<span style="color:#98a33c">Efficacia</span> costituisce una misura della capacità del processo di raggiungere gli obiettivi prefissati, ovvero un processo è tanto più efficace quanto più soddisfa le esigenze del cliente
+- L'<span style="color:#98a33c">Efficienza</span> individuata anche con il termine di produttività, esprime la capacità del processo di ottimizzare il rapproto tra il valore dell'output e impiego di risorse
+
+#### Costi, qualità, tempi e flessibilità
+
+- <span style="color:#F76120">Costi</span>: è una prestazione espressa dal costo di output, in un proceso produttivo il costo dell'output coincide con il <span style="color:#3273EC">costo del prodotto realizzato</span>, in un processo di servizio consiste nel <span style="color:#3273EC">costo di erogazione</span>.
+
+- <span style="color:#F76120">Qualità</span>: può essere valutata attraverso la qualità dell'output, ovvero la sua capacità di soddisfare esigenze d'uso espresse o implicite del cliente del processo. <span style="color:#3273EC">La qualità teorica o di progetto</span>, è l'insieme delle caratteristiche che l'output possiede sulla carta. In particolare i <span style="color:#3273EC">service level agreement</span> (<span style="color:#3273EC">SLA</span>), sono gli elementi contrattuali che il cliente e fornitore del servizio specificano accordandosi sulla qualità che il cliente si aspetta. L'utilizzo degli SLA nella fornitura dei servizi ha il vantaggio di pianificare in anticipo le aspettative plausibili sulla qualità del servizio.<br> La <span style="color:#3273EC">qualità di conformità</span> è la rispondenza di ogni singola unità di output alle specifiche del processo. La misura è la percentuale di output non conformi sul totale degli output realizzati. La <span style="color:#3273EC">disponibilità</span> ovvero la capacità dell'output di mantenere nel tempo le specifiche, di essere quindi affidabile, e la facilità di ripristino, intesa come manuntebilità.<br>Concetti spesso associati alla qualità sono quelli di servizio e di assistenza, relativamente al supporto informativo pre e post-vendita.
+
+- <span style="color:#F76120">Tempo</span> del processo, espresso mediante un parametro indicatore, il <span style="color:#3273EC">tempo di risposta</span>, pari al tempo che intercorre tra il momento in cui il cliente richiede l'output del processo e il momento in cui la sua richiesta è soddisfatta.<br>Una seconda prestazione temporale, definita a partire dal tempo di risposta è la <span style="color:#3273EC">puntualità</span> ovvero il rispetto dei tempi di risposta pattuiti o dichiarati.
+
+- <span style="color:#F76120">Flessibilità</span> misura la capacità di un processo di rispondere a cambiamenti richiesti dal cliente. I cambiamenti possono avere natura sia <span style="color:#3273EC">qualitativa</span> (cambiamenti nelle caratteristiche dell'output richiesto) sia <span style="color:#3273EC">quantitativa</span> (variazioni di quantità di output richiesto).<br>Per piccole variazioni nelle richieste dei clienti i <span style="color:#3273EC">tempi/costi</span> di adattamento sono limitati, quasi nulli in certi casi, oltre un certo range di variazione poi vi è una discontinuità nei costi di adeguamento, in quanto si rendono necessarie nuove risorse, nuove competenze, nuove tecnologie. <br> La dimensione di flessibilità può essere di tre tipi:
+	- <span class="hig">Flessibilità in piccolo</span>: capacità di rispondere a piccole variazioni della domanda
+	- <span class="hig">Flessibilità in grande</span>: capacità di rispondere a grandi variazioni della domanda
+	- <span class="hig">Range di variazione</span>: rappresenta il limite oltre il quale si passa dalla flessibilità in piccolo a quella in grande
+
+## U3
+### **L1** - Il progetto
+#### Il progetto
+
+Un progetto è un processo limitato finalizzato a creare un output unico
+
+> Il **progetto** è un processo che richiede uno sforzo concenctrato nel tempo finalizzato a realizzare un output unico
+
+Gli elementi costituenti del progetto sono:
+
+- Obiettivo
+- Limitazioni temporali, economico-finanziarie, di personale o di altra natura
+- Specificità rispetto ad altri piani
+- Organizzazione specifica di progetto
+
+#### Le fasi del progetto
+
+|Nome|Descrizione|
+|:---:|:---|
+|<span class="hig">**Concezione**</span>|viene valutata l'utilità del progetto, se ha senso sfruttare le risorse per la sua realizzazione, creazione documento "studio di fattibilità" e "piano di progetto"|
+|<span class="hig">**Definizione**</span>|Il progetto viene pianificato in tutti i suoi aspetti|
+|<span class="hig">**Realizzazione**</span>|Creazione concentrata dell'output, momento di uso maggiore delle risorse|
+|<span class="hig">**Chiusura**</span>|L'output viene rilasciato per il funzionamento "a regime", passaggio di consegne tra chi ha gestito il progetto e chi dovrà gestire l'output|
+
+### L2 - Il principio chiave nella gestione di un progetto e gli obiettivi di progetto
+#### Anticipazione dei vincoli e delle opportunità
+
+I **vincoli** rendono difficoltosa la realizzazione della soluzione che si stava adottando e le **opportunità** non incorporate nella soluzione stessa la rendono potenzialmente suscettibile a miglioramenti
+
+Se emergono vincoli e opportunità inattesi, il progetto va incontro a tre tipi di inconvenienti:
+
+- Si compiono dei *ricicli* cioè si torna alla fase iniziale per rendere la soluzione compatibile con i nuovi vincoli/opportunità
+- Si prosegue *scaricando i problemi sulle fasi finali*
+- *Si degrada la qualità dell'output* perché quando i costi e i tempi di modifica della soluzione sono elavati si rinuncia a correggere l'errore
+
+#### Obiettivi di progetto
+
+- Obiettivi di **continuità**: la vita della nostra azienda
+- Obiettivi **specifici**: specifici del progetto
+	- obiettivi di *qualità* (funzioni da realizzare)
+	- obiettivi di *costi*
+	- obiettivi di *tempi*
+
+Gli obiettivi che ci poniamo devono essere sempre verificabili e devono seguire le caratteristiche SMART
+
+<table>
+	<tr>
+		<td><b><span class="hig">S</span></b>pecifici</td>
+		<td>Definiti, circoscritti e chiaramente espressi</td>
+	</tr>
+	<tr>
+		<td><b><span class="hig">M</span></b>isurabili</td>
+		<td>Bisogna identificare degli indicatori che ci fanno capire se l'obiettivo è raggiunto</td>
+	</tr>
+	<tr>
+		<td><b><span class="hig">A</span></b>ccordati</td>
+		<td>per evitare conflitti e lavoro addizionale</td>
+	</tr>
+	<tr>
+		<td><b><span class="hig">R</span></b>realistici</td>
+		<td>Raggiungibile all'interno dei limiti posti dal progetto</td>
+	</tr>
+	<tr>
+		<td><b><span class="hig">T</span></b>emporalmente definiti</td>
+		<td>Corredato con le indicazioni tempporali necessarie</td>
+	</tr>
+</table>
+
+### L3 - L'organizzazione dei progetti
+#### Le strutture organizzative
+
+- Nella **struttura funzionale** il progetto viene decomposto in sottoprogetti, assegnati a dei *responsabili funzionali*
+- Nella **Task Force (141)** il project manajer è fondamentale, si suddividono in gruppi di reparto stagni ben divisi fra di loro (come in tante stanze di un edificio chiuse e separate)
+
+La prima privilegia l'efficienza nell'uso delle risorse a discapito dell'efficacia del progetto. La seconda viceversa, privilegia il progetto creando inefficienza nell'uso delle risorse.
+
+La **struttura a matrice** cerca di mediare queste due soluzioni, viene nominato un Project Manager ma i membri del team non vengono staccati dalle funzioni di appartenenza
+
+#### Il ruolo del project manager
+
+Gestisce il progetto, dice cosa fare e decide gli obiettivi del progetto
+
+- <span class="hig">Peso Leggero</span>
+	- Facilitatore
+	- Presidio sui tempi
+- <span class="hig">Peso Medio</span>
+	- Coordinatore
+	- Negoziatore
+	- Presidio su tempi e costi
+- <span class="hig">Peso Medio</span>
+	- Decisore
+	- Presidio su tempi, costi e qualità
+
+Il *PM* è dotato di autorevolezza:
+
+- **Di merito**: data dalla qualità della persona, skill tecniche e manageriali, stile di leadership
+- **Di diritto**: si acquisisce in funzione di determinate condizioni organizzative
+
+Il *PM* possiede le conosccenze tecniche essenziali, indispensabili alla comprensione e conduzione delle attività di progetto ma sopratutto gli sono richieste elevate capacità gestionali e relazionali. Il PM si distingue da un manager tecnico perché ricerca soluzioni fattibili sotto i vincoli di tempo, budget e risorse e non soluzioni perfette e perché guarda i risultati globali di progetto e non solo l'output tecnico.
+
+Il *PM* è un ruolo multidimensionale, può essere visto come ruolo di confine (con i clienti), ruolo di interfaccia (scambio di informazioni), ruolo intermedio (tra linee gerarchice) e ruolo di agente del cambiamento (perché si occupa di progetti per loro natura innovativi)
+
+#### La gestione delle risorse umane e della comunicazione
+
+Quando si verifica un conflitto le vie percorribili sono:
+
+- **Il compromesso**: dare qualcosa per ottenere qualcosa
+- **La pressione**: far prevalere la propria opinione
+- **Il confronto**: sviscerare il problema cercando un punto di incontro
