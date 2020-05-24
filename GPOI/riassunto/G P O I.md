@@ -471,3 +471,15 @@ Quando si verifica un conflitto le vie percorribili sono:
 		<td align="center">Rancore</td>
 	</tr>
 </table>
+
+Il secondo punto fontamentale per la gestione delle risorse umane nei progetti riguarda il gruppo di lavoro, definito come un gruppo di persone interdipendenti, interagenti, impegnate a raggiungere obiettivi comuni assegnati.
+
+Le fasi di creazione del gruppo di lavoro sono:
+
+<ol start="0">
+	<li><b>Staffing</b> - vengono scelte le persone</li>
+	<li><b>Forming</b> - il gruppo inizia a conoscersi</li>
+	<li><b>Storming</b> - il gruppo che ora si conosce, potrebbe far insorgere dei conflitti</li>
+	<li><b>Norming</b> - normalizzazione dei rapporti all'interno del gruppo</li>
+	<li><b>Performing</b> - si inizia a produrre, le energie collettive si spostano dall'interno all'esterno</li>
+</ol>
