@@ -433,3 +433,41 @@ Quando si verifica un conflitto le vie percorribili sono:
 - **Il compromesso**: dare qualcosa per ottenere qualcosa
 - **La pressione**: far prevalere la propria opinione
 - **Il confronto**: sviscerare il problema cercando un punto di incontro
+
+<table>
+	<tr>
+		<td colspan="2" align="center"><b>Condizioni antecedenti</b></td>
+	</tr>
+	<tr>
+		<td align="center">Atto di ostilità</td>
+		<td align="center">Non equità</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center"><b>Conflitto percepito</b></td>
+	</tr>
+	<tr>
+		<td align="center">Frustrazione</td>
+		<td align="center">Rivalsa</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center"><b>Conflitto manifesto</b></td>
+	</tr>
+	<tr>
+		<td align="center">Discussioni</td>
+		<td align="center">Rifiuto di dialogo</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center"><b>Risoluzione o soppressione del conflitto</b></td>
+	</tr>
+	<tr>
+		<td align="center">Terza parte o vittoria di una parte</td>
+		<td align="center">Decisione di ingorarsi nel momendo ti disaccordo</td>
+	</tr>
+	<tr>
+		<td colspan="2" align="center"><b>Il dopo conflitto</b></td>
+	</tr>
+	<tr>
+		<td align="center">Armonia</td>
+		<td align="center">Rancore</td>
+	</tr>
+</table>
