@@ -55,7 +55,6 @@
 	- **L3** *125* L'organizzazione dei progetti
 	- **L4** *142* Tecniche di pianificazione e controllo temporale
 	- **L5** *156* La programmazione e il controllo dei costi e la gestione della aree di rischio
-	- **L6** *167* Pianificazione e controllo della qualità e gestione della documentazione
 - U5
 	- **L1** *174* I progetti informatici
 	- **L1** *183* Il processo di produzione del software
@@ -65,7 +64,7 @@
 
 ## U1
 
-### **L1** - Informazione e l'organizzazione
+### L1 - Informazione e l'organizzazione
 #### L'informazione come risorsa organizzativa
 
 La classificazione delle tencologie informatiche è fatta basandosi sull'utilizzo che se ne fa:
@@ -96,7 +95,7 @@ Due categorie:
 	- *Standardizzazione dei risultati*: si rende uniforme il "cosa fare", non importa come, ma i risultati che si ottengono
 	- *Standardizzazione delle competenze*: gli operatori sono in grado di svolgere un assegnazione sulla base di conoscenze standardizzate attraverso la formazione richiesta per eseguire il lavoro
 
-### **L2** - Micro e macrostruttura
+### L2 - Micro e macrostruttura
 #### La posizione individuale e la mansione
 ##### Microstruttura, Mansionario
 
@@ -175,7 +174,7 @@ Le unità organizzative vengono create dividendo i lavoratori in gruppi di dimen
 - Raggruppamento in base al **cliente**: si distinguono i piccoli clienti dai grandi, come nel caso delle banche
 - Raggruppamento in base all'**area geografica**: le U.O. raggruppano le attività svolte in un'unica area geografica, come nel caso delle filiali di un'azienda multimediale
 
-### **L3** - Le strutture organizzative (composte da Unità organizzative)
+### L3 - Le strutture organizzative (composte da Unità organizzative)
 #### La struttura semplice
 ##### è semplice, è nel nome
 
@@ -216,7 +215,7 @@ In questa struttura le risorse fanno capo a più persone, questa organizzazione 
 
 <img src="struttura_matrice.png" alt="Struttura a matrice"/>
 
-### **L4** - I costi di un'organizzazione aziendale
+### L4 - I costi di un'organizzazione aziendale
 #### Le tipologie di costo
 ##### Poche spese tanto guadagno
 
@@ -261,7 +260,7 @@ La classificazione dei costi in evitabili e non evitabili distingue i costi in b
 
 ## U2
 
-### **L1** - Il flusso delle attività
+### L1 - Il flusso delle attività
 #### La visione per processi da una visione dimanica dell'organizzazione
 
 Per capire bene come funziona un'azienda dobbiamo avere una visione globale, ma per farlo non bastano l'analisi di macro e micro struttura (organigramma e mansionario rispettivamente), bisogna analizzare le interdipendenze tra le attività, in questo modo posso ottenre un'ottimizzazione globale e non solo locale.
@@ -299,7 +298,7 @@ Esiste forte distinzione tra attività produttive organizzate per reparti e la p
 - **Mission**: qualcosa che qualcuno fà, quindi quello che fà un'azienda (tipo promuovere e migliorare i prodotti per il networking, se parlassimo della BluePrint Networks, azienda leader nel settore)
 - **Vision**: quello che l'azienda vuole diventare, qualcosa di inspirational (molto tumblr, tipo "Forniamo gli strumenti per creare il futuro del domani" e altre cagate simili)
 
-### **L2** - Le prestazioni dei processi aziendali
+### L2 - Le prestazioni dei processi aziendali
 #### Processi efficaci ed efficienti
 
 Le <span style="color:#FA9C20">prestazioni dei processi</span> quantificano la capacità degli output di soddisfare le richieste e le esigenze del cliente e dunque il loro ruolo nel creare valore per l'azienda.
@@ -325,7 +324,7 @@ Le quali nel loro complesso determinano l'<span style="color:#98a33c">efficacia<
 	- <span class="hig">Range di variazione</span>: rappresenta il limite oltre il quale si passa dalla flessibilità in piccolo a quella in grande
 
 ## U3
-### **L1** - Il progetto
+### L1 - Il progetto
 #### Il progetto
 
 Un progetto è un processo limitato finalizzato a creare un output unico
@@ -494,3 +493,181 @@ Le fasi di creazione del gruppo di lavoro sono:
 - Stakeholder (chi ha interessi nel progetto, chi è coinvolto, termine generale che descrive un po' tutti)
 - Sponsor (finanziano il progetto)
 - Committente e utilizzatore finale
+
+### L4 - Tecniche di pianificazione e controllo temporale
+#### Pianificare  le attività di un progetto
+La fase di preprogetto si divide in:
+
+- studio di fattibilità: parte da una idea di progetto nato in seguito all'individuazione di una situazione di insoddisfazione emersa, per esempio, durante gli audit della qualità
+- analisi dei requisiti: analisi del problema, definizione delle funzionalità, redazione di un documento SRS (Software Requirement Specification), convalida delle specifiche
+- pinaificazione del progetto
+
+e precede la fase di progetto vera e propria la quale è strutturato in attività attraverso la **WBS**, Work Breakdown Structure in cui sono definiti alcuni rilasci intermedi chiamati deliverable. Il progetto viene frazionato in **Work Package**, un insieme di attività elementari caratterizzato in modo univoco da input, output e attività interne.
+
+#### Logiche di disgregazione di un progetto
+
+- **Per parti**: si decompone l'output nelle sue parti (frontend e backend)
+- **Per funzioni**: si decompone il progetto secondo le funzionalità che deve svolgere l'output
+- **Per obiettivi**: secondo le prestazioni dell'output
+- **Per fasi**: secondo la sequenza delle fasi da svolgere (prima le fondamenta, poi il resto)
+- **Per rilasci progressivi**: individuando evantuali rilasci progressivi dell'output
+
+#### Gantt
+
+Il **Gantt** (o diagramma a barre) è uno strumento puramente grafico in cui la durata delle attività è indicata con linee i momenti critici del progetto con simboli. Il Gantt fornisce una visione rapida del piano temporale di un progetto.
+
+<img src="gantt.png" alt="Diagramma di Gantt"/>
+
+#### Le tecniche reticolari
+
+- **Pert**: permette di valutare le conseguenze di ritardi che concorrono sulle attività critiche e su quelle non critiche
+- **CPM** (Critical Path Method): consente di valutare la miglior allocazione delle risorse al fine di ridurre la lunghezza del cammino critico e quindi la durata del progetto
+
+### L5 - La programmazione e il controllo dei costi e la gestione delle aree di rischio
+#### La programmazione dei costi
+
+La **baseline** è la vera somma a disposizione per lo svolgimento delle attività connesse al progetto.
+
+- **BCWS** (Budgeted Cost of Work Scheduled): costo preventivo e budget del lavoro schedulato
+- **ACWP** (Actual Cost of Work Performed): curva del lavoro effettivamente realizzato (performed)
+- **BCWP** (Budgeted Cost of Work Performed): curva del lavoro effettivamente realizzato ma a costi previsti (budgeted)
+- **CV** (Cost Variance): BCWP - ACWP
+- **SV** (Date Variance): BCWP - BCWS
+- **EAC**: Expected Overall Costs
+
+## U5
+### L1 - I progetti informatici
+#### Generalità
+I progetti informatici richiedono due tipi do competenze
+
+- **Top down**: a partire dagli obiettivi li scompone in sotto obiettivi
+- **Bottom up**: parte dalle attività, individua le risorse necessarie
+
+#### Tipologie di progetti informatici
+
+- Ad hoc: per un particolare cliente
+- Prodotto pacchettizzato: per il mercato in generale
+
+I progetti informatici possono essere classificati in 4 tipologie:
+- **Progetti commerciali**: nascono dalla richiesta di un cliente specifico e nascono per soddisfare la fornitura di prodotti/servizi
+- **Progetti di innovazione e investimento**: necessari a seguito di cambiamenti tecnologici e possono riguardare prodotti
+- **Progetti di miglioramento gestionale**: migliora l'infrastruttura gestionale installando sistemi
+- **Progetti di riorganizzazione aziendale**: riguarda i progetti di reingegnerizzazione di attività già esistenti
+
+#### Crisi del software degli anni 80
+
+- **Prima causa**: non sono state utilizzate metodologie efficaci soprattutto per colpa di una carente formazione tecnica
+- **Seconda causa**: legata alla "complessità" delle applicazioni
+- **Terza causa**: il progetto software non ha "struttura regolare" o "requisiti stabili"
+
+L'industria negli anni 60, era profondamente immatura con un enorme tasso di crescita nella dimensione e nella complessità dei progetti da una parte e la mancanza di personale richiesto nel settore (**skill shortage**): inoltre il personale occupato risulta spesso senza le necessarioe competenze tecniche (**skill gap**)
+
+#### La "pianificazione" del progetto
+
+Il **progetto** come un insieme di attività ordinate, è caratterizzato da tre elementi principali:
+
+- obiettivo
+- tempi
+- costi
+
+che devono essere integrati nella pianificazione
+
+### L2 - Il processo di produzione del software
+#### Il processo di produzione del software
+
+Il ciclo del processo di produzione del software si compone di 3 fasi:
+
+- progetto
+	- fase di preprogetto
+		- preanalisi
+		- studio di fattibilità
+		- pianificazione
+	- fase di progetto
+		- formulazione del preventivo
+		- avviene prima di iniziare lo sviluppo
+- sviluppo
+- manutenzione
+	- correttiva
+	- adattiva
+	- perfettiva
+	- preventiva
+
+#### I ruoli in un progetto
+
+##### Principali ruoli del cliente
+- **Committente**: responsabile dell'azienda che individua il fornitore, firma il contratto del progetto (chi caccia i soldi insomma)
+- **Capo progetto**: responsabile che il cliente incarica di verificare il raggiungimento degli obiettivi prefissati
+- **Utenti di riferimento per l'analisi del problema da risolvere** sono gli stakeholder, gli esperti che vengono individuati all'interno dell'organizzazione col compito di contribuire per individuare le specifiche dei requisiti
+- **Utenti di riferimento per i test di accettazione**: durante lo sviluppo di progetto devono verificare che si sita realizzando quanto ci si aspetta
+- **Utenti finali**: tutti gli utenti che utilizzeranno i prodotti del progetto
+- **Specialisti di ambiente**: addetti al CED che devono verificare l'integrazione del nuovo prodotto con il sistema informatico presente in azienda
+
+##### Principali ruoli dalla parte del fornitore
+- **Responsabile commerciale**: colui che cura l'offerta e poi il contratto tenendo conto degli obiettivi economici che la sua azienda vuole fornire
+- **Supervisore**: responsabile delle risorse umane o strumentali distribuite su più progetti
+- **Capo progetto (PM)**: responsabile del raggiungimento degli obiettivi economici del progetto (visti dal fornitore) e dalla soddisfazione del cliente
+- **Analisti programmatori**: sono le risorse umane usualmente utilizzate nelle attività di sviluppo del progetto
+- **Specialisti** partecipano in particolari momenti del progetto per svolgere compiti tecnici di eleavta difficoltà
+- **Personale di supporto** risorse umane usate per particolari attività: formazione, assistenza agli utenti ecc.
+
+#### Modalità dei rapporti cliente/fornitore
+
+Ci sono diverse modalità con le quali il cliente sceglie un fornitore e tra di esse la più importante prende il nome di gara (o gara di appalto), si compone di 5 fasi:
+
+- **Pubblicazione del bando**: il committente comunica la sua intenzione di realizzare un progetto informatico
+- **Preparazione e invio del capitolato**: il committente prepara un documento dove descrive le specifiche del prodotto da realizzare
+- **Preparazione e invio delle offerte**: i fornitori preparano il loro preventivo accompagnato da una relazione tecnica
+- **Esame delle offerte e individuazione del vincitore**: il cliente analizza le proposte e sceglie un vincitore
+- **Firma del contratto**: l'offerta che risulta prima nella graduatoria diviene il fornitore
+
+#### Conduzione dei progetti
+
+- **Chiavi in mano**: il capitolato è estremamente dettagliato, il progetto generalmente è senza rischi di progetto (come la ristrutturazione di un sistema già presente), l'impegno del cliente in questo progetto è limitato. Pianificazione, preparazione del piano e gestione del progetto li fà il fornitore in autonomia
+- **Responsabilità condivisa**: caso più diffuso, ciascuna delle due parti svolge un ruolo attivo, i due capi di progetto conducono e coordinano le attività, parte tecnica gestita dal fornitore, parte gestionale dal cliente
+- **Body rental**: utilizzata per piccole realizzazioni a basso costo, limita le risorse impiegate dal fornitore e la completa responsabilità è del cliente che deve avere all'interno della sua organizzazione le competenze opportune (un muratore pigro assume un muratore per fare il suo lavoro)
+
+#### Le  figure professionali coinvolte nella produzione del software
+Il processo di produzione del software (ruoli, rapporti cliente/fornitore, conduzione dei progett
+
+### L3 - Preprogetto: fattibilità e analisi dei requisiti
+
+Le parti in cui si divide questa fase sono:
+
+- **Studio di fattibilità**
+- **Pianificazione del progetto**
+
+#### Studio di fattibilità
+
+I principali aspetti che uno studio di fattibilità deve analizzare sono:
+
+- **Tecnico**: è possibile realizzare il progetto in base alla tecnologia in nostro possesso
+- **Organizzativo**: deve essere verificato l'impatto con l'organizzazione esistente, se può integrarsi o se comporta stravolgimenti nella struttura dell'azienda
+- **Motivazionale**: il nuovo sistema deve essere "desiderato"
+- **Economico**: analisi costi/benefici per definire se i ritorni giustificano le spese
+- **Temporale**: individuare un orizzonte temporale entro il quale finire il progetto
+
+Lo studio di fattiblità si scompone in:
+
+- <span style="color:#fe3c88;">Analisi dei requisiti</span>
+- <span style="color:#54bfee;">Preanalisi e valutazione dei costi</span>
+
+#### Requisiti software
+
+I requisiti software sono classificati secondo due punti di vista:
+
+- Livello di dettaglio
+	- requisiti **di utente**: quelli che osserva il cliente
+	- requisiti **di sistema**: imposti da vincoli esistenti, come l'uso di apparecchi specifici
+- Tipo di requisito che rappresentano
+	- requisiti **funzionali**: descrivono le funzionalità che il sistema deve avere
+	- requisiti **non funzionali**: imposti da fattori esterni
+	- requisiti **di dominio**: imposti dal domio in cui sono posti, come privacy in caso si tratti di una banca
+
+### L4 - Preprogetto: pianificazione del progetto
+#### Work Breakdown Structure
+
+Ciascuna fase del progetto prevede un elenco di possibili attività ed eventi, descritti nella WBS. La WBS non è altro che un metodo per la scomposizione di un progetto in sub componenti, il progetto viene strutturato in piùù livelli fino a che vengono individuate le attività elementari
+
+### L5 - Le metriche del software
+
+- **L5** *219* Le metriche del software
