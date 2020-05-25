@@ -19,7 +19,13 @@
 		color:white;
 	}
 
-	h4, small { color: #29335C; }
+	h4
+	{
+		color: #384682;
+		background-color: #c2ceff;
+		padding-top: 0.7%;
+		padding-left: 0.7%;
+	}
 	h5 { color: #7C839D; }
 	img
 	{
@@ -41,28 +47,28 @@
 
 ## Indice
 
-- U1
+- U1 - Elementi di economia e organizzazione aziendale
 	- **L1** *2* Informazione e l'organizzazione
 	- **L2** *13* Micro e macrostruttura
 	- **L3** *26* Le strutture organizzative
 	- **L4** *37* I costi di un'organizzazione aziendale
-- U2
+- U2 - I processi aziendali
 	- **L1** *46* Catena del valore, processi primari e processi di supporto
 	- **L2** *60* Le prestazioni dei processi aziendali
-- U4
+- U4 - Pricipi e tecniche di Project Management
 	- **L1** *112* Il progetto e le sue fasi
 	- **L2** *117* Il principio di chiave nella gestione di un progetto e gli obiettivi di progetto
 	- **L3** *125* L'organizzazione dei progetti
 	- **L4** *142* Tecniche di pianificazione e controllo temporale
 	- **L5** *156* La programmazione e il controllo dei costi e la gestione della aree di rischio
-- U5
+- U5 - Gestione di progetti informatici
 	- **L1** *174* I progetti informatici
 	- **L1** *183* Il processo di produzione del software
 	- **L3** *191* Preprogetto: fattibilità e analisi dei requisiti
 	- **L4** *206* Preprogetto: pianificazione del progetto
 	- **L5** *219* Le metriche del software
 
-## U1
+## U1 - Elementi di economia e organizzazione aziendale
 
 ### L1 - Informazione e l'organizzazione
 #### L'informazione come risorsa organizzativa
@@ -77,13 +83,13 @@ La classificazione delle tencologie informatiche è fatta basandosi sull'utilizz
 L'impresa è un sistema dinamico, è definita come l'attività svolta dall'imprenditore, l'azienda è l'insieme di beni organizzati per svolgere l'attività preposta. "Chi fa che cosa" si chiama specializzazione del lavoro verticale.
 
 #### Elementi di organizzazione
-##### Specializzazione del lavoro verticale/orizzontale
+##### Specializzazione del lavoro verticale (ernichment) / orizzontale (enlargement)
 
 - **Specializzazione Verticale**: La suddivisione fra chi progetta e chi produce è verticale, il responsabile organizza i sottoposti, i "livelli" più bassi eseguono. Per ridurre la specializzazione verticale si usa il *job enrichment*: arricchimento delle mansioni, aumento dell'autonomia decisionale, minore distinzione tra chi decide e chi esegue.
 - **Specializzazione Orizzontale**: Chiamata anche parcellizzazione del lavoro, poche semplici attività a tutti i lavoratori. Come una catena di montaggio. Per ridurre la specializzazione orizzontale si usa il *job enlargement*: allargamento delle mansioni per contrastare la monotonia, al lavoratore vengono afffidate più attività tra loro collegate e non una singola operazione.
 
 #### Meccanismi di coordinamento
-##### Ex Post, Ex Ante
+##### Ex Post (adattamento reciproco, supervisione) / Ex Ante (standardizzazione di processi, risultati, competenze)
 
 Due categorie:
 
@@ -97,7 +103,7 @@ Due categorie:
 
 ### L2 - Micro e macrostruttura
 #### La posizione individuale e la mansione
-##### Microstruttura, Mansionario
+##### Microstruttura, definita dal mansionario
 
 La **microstruttura** si occupa delle posizione lavorative dei singoli. È rappresentata nel **mansionario**, una raccolta dei compiti previsti per ogni mansione.
 
@@ -106,8 +112,9 @@ Al concetto di *posizione individuale* si aggancia quello di *mansione*, a sua v
 - Quanti compiti: grado di specializzazione orizzontale
 - Grado di autonomia: grado di specializzazione verticale
 
-I compiti sono legati da interdipendenze, possono essere: 
-- sequenziali (catena di ontaggio, produzione in linea)
+I compiti sono legati da interdipendenze, possono essere:
+
+- sequenziali (catena di montaggio, produzione in linea)
 - reciproche (il prodotto si sposta tra reparti anche se ci è già stato)
 - legate alle risorse (due compiti condividono le stesse risorse)
 - spazio-temporali (i compiti anche se non interagiscono vengono eseguiti nello stesso luogo/momento)
@@ -117,17 +124,17 @@ I compiti sono legati da interdipendenze, possono essere:
 La *progettazione organizzativa* della microstruttura consiste nel definire il contenuto del lavoro dei singoli individui all'interno dell'organizzazione.
 
 #### Le unità organizzative
-##### Macrostruttura, organigramma, span of control orizzontale, gerarchia verticale
+##### Macrostruttura definita dall'organigramma, span of control orizzontale, gerarchia verticale
 
 La **macrostruttura** comprende l'aggregazione degli individui, raggruppati secondo criteri di unità organizzative, cioè strutture relativamente autonome costituite da un insieme di persone che svolgono attività fra loro collegate. È rappresentata dall'**organigramma**, una rappresentazione grafica delle unità organizzative.
 
-Una delle scelte fonamentali della progettazione organizzativa a livello macrostrutturale riguarda la detemrinazione del numero di persone che dipendono da un capo, ovvero la dimensione dell'unità organizzativa, questo concetto prende il nome di *ampiezza del controllo* (*span of control*) inteso come il numero di persone direttamente dipendenti da un capo.
+Una delle scelte fonamentali della progettazione organizzativa a livello macrostrutturale riguarda la detemrinazione del numero di persone che dipendono da un capo, ovvero la dimensione dell'unità organizzativa, questo concetto prende il nome di *ampiezza del controllo* (*span of control*).
 
 L'ampiezza di controllo fornisce una misura cosiddetta *orizzontale* dell'organizzazione, tante unità che dipendono direttamente dal vertice e poche unità subordinate ai vari livelli gerarchici.
 
 <img src="organizzativa_orizzontale.png" alt="Organizzazione orizzontale"/>
 
-Una seconda dimensione caratteristica dell'organizzazione è quella *verticale*, espressa dalla catena gerarchica. Il temrine *gerarchia* sta a indicare la relazione di subordinazione che può esistere tra due posizioni
+Una seconda dimensione caratteristica dell'organizzazione è quella *verticale*, espressa dalla catena gerarchica. Il termine *gerarchia* sta a indicare la relazione di subordinazione che può esistere tra due posizioni
 
 <img src="organizzativa_verticale.png" alt="Organizzazione verticale"/>
 
@@ -143,6 +150,7 @@ La linea gerarchica si rifà al principio di unicità del comando di Fayol, ogni
 |**Corte**: linea gerarchica breve|**Larghe**: linea gerarchica lunga|
 
 #### Linea e staff
+##### Linea: produzione diretta | Staff: di supporto a quelli di linea
 
 Le unità organizzative possono essere:
 
@@ -150,6 +158,7 @@ Le unità organizzative possono essere:
 - **Organi di staff**: non si collocano direttamente sulla linea gerarchica, ma affiancano gli organi di linea a diversi livelli per supportare le attività. Realizzano servizi a supporto dell'operatività dell'azienda, senza partecipare al flusso principale del processo produttivo o di erogazione dei servizi. È un trend recente quello dell'*outsourcing dei processi di supporto*, overro l'affidamento di queste attività a società esterne che si occupano solo di quello.
 
 #### Criteri di raggruppamento
+##### Numerico: numero adeguato di persone | Orientato agli input: in base a conoscenze o funzione svolta | Orientato agli output: in base a prodotto da realizzare, cliente trattato, area geografica coperta
 
 A livello di macrostruttura (organigramma) si raggruppano attività che vengono associate a unità organizzative, a livello di microstruttura (mansionario) si raggruppano compiti che vanno associati a posizioni individuali.
 
@@ -185,17 +194,17 @@ Le unità organizzative vengono create dividendo i lavoratori in gruppi di dimen
 Come su può vedere dal diagramma: la struttura **semplice**, è *semplice*.
 
 #### La struttura funzionale
-##### Evoluzione della semplice
+##### Evoluzione della semplice, orientata agli input
 
 È l'evoluzione più comune dell'organizzazione semplice (si ottiene facendo evolvere la struttura semplice utilizzando una Pietralunare). In una struttura funzionale le unità organizzative al primo livello gerarchico (le più vicine al vertice) sono progettate raggruppando le attività in base allo svolgimento di una funzione comune, secondo il criterio di raggruppamento orientato agli input.
 
 <img src="struttura_funzionale.png" alt="Struttura funzionale"/>
 
-Vantaggio: economia di scala
-Svantaggio: mancanza di focus su specifici prodotti, clienti e mercati
+- Vantaggio: economia di scala
+- Svantaggio: mancanza di focus su specifici prodotti, clienti e mercati (mancanza di orientamento agli output)
 
 #### La struttura divisionale
-##### Sopperisce alle mancanze della funzionale
+##### Sopperisce alle mancanze della funzionale, orientata agli output
 
 La forma divisionale risponde ai limiti della struttura funzionale seguendo i criteri di raggruppamento orientati agli output. Le unità di primo livello sono create con cirteri alternativamente di prodotto, di cliente, di area geografica. Queste unità organizzative vengono dette divisioni o business unit.
 
@@ -233,9 +242,9 @@ Le classificazioni dei costi:
 
 **Costi di prodotto**
 
-- *costi di lavoro diretto*: relativi agli addetti alle opreazioni di produzione e assemnblaggio
-- *costi di materiali diretti*: relativi agli acquisti esterni di materie prime, semilavorati e componenti necessare per la produzione
-- *costi indiretti di produzione*: costi associabili direttamente all'attività produttiva nel suo complesso, ma non alla realizzazione di una singola unità di prodotto
+- costi di **lavoro diretto**: relativi agli addetti alle opreazioni di produzione e assemnblaggio
+- costi di **materiali diretti**: relativi agli acquisti esterni di materie prime, semilavorati e componenti necessare per la produzione
+- costi **indiretti di produzione**: costi associabili direttamente all'attività produttiva nel suo complesso, ma non alla realizzazione di una singola unità di prodotto
 
 **Costi di periodo**
 
@@ -244,11 +253,29 @@ Detti anche spese discrezionali, comprendono attività non direttamente associab
 - distinzione tra costi **fissi e variabili**
 - distinzione tra costi **evitabili** e **non evitabili**
 
-|Operatore 1|**+**|Operatore 2|**=**|Risultato|
-|:---|:---:|:---|:---:|:---|
-|costi di lavoro diretto|**+**|costi indiretti di produzione|**=**|costo di conversione|
-|costo di conversione|**+**|costi di materiali diretti|**=**|costo pieno industriale|
-|costo pieno industriale|**+**|quota costi di pericolo|**=**|costo pieno aziendale|
+<table>
+	<tr>
+		<td>costi di lavoro diretto</td>
+		<td><b>+</b></td>
+		<td>costi indiretti di produzione</td>
+		<td><b>=</b></td>
+		<td>costo di conversione</td>
+	</tr>
+	<tr>
+		<td>costo di conversione</td>
+		<td><b>+</b></td>
+		<td>costi di materiali diretti</td>
+		<td><b>=</b></td>
+		<td>costo pieno industriale</td>
+	</tr>
+	<tr>
+		<td>costo pieno industriale</td>
+		<td><b>+</b></td>
+		<td>quota costi di pericolo</td>
+		<td><b>=</b></td>
+		<td>costo pieno aziendale</td>
+	</tr>
+</table>
 
 ##### Costi **fissi** e **variabili**
 
@@ -258,7 +285,7 @@ Si definiscono come *fissi* i costi che, nell'ambito di un intervallo significat
 
 La classificazione dei costi in evitabili e non evitabili distingue i costi in base alla loro rilevanza decisionale. Rispetto a una decisione, i costi evitabili sono quelli influenzati dalla decisione, mentre i costi non evitabili sono quelli che non dipendono da essa e che verranno comunque sostenuti qualunque sia l'esito.
 
-## U2
+## U2 - I processi aziendali
 
 ### L1 - Il flusso delle attività
 #### La visione per processi da una visione dimanica dell'organizzazione
@@ -279,7 +306,7 @@ Il *processo aziendale* è un insieme organizzato di attività finalizzato alla 
 
 #### Catena del valore di Porter
 
-Modello utilizzato in ogni azienda, si suddivide in due parti principali, quella dei processi primari e qualli di supporto. La chiave è trovare collegamenti interni ed esterni all'azienda. Un esempio di collegamento estenro è l'approvigionamento di materie prime da parte di un fornitore.
+Modello utilizzato in ogni azienda, si suddivide in due parti principali, quella dei processi primari e qualli di supporto. La chiave è trovare collegamenti interni ed esterni all'azienda. Un esempio di collegamento esterno è l'approvigionamento di materie prime da parte di un fornitore.
 
 #### Il cilo di vita del prodotto
 
@@ -300,6 +327,7 @@ Esiste forte distinzione tra attività produttive organizzate per reparti e la p
 
 ### L2 - Le prestazioni dei processi aziendali
 #### Processi efficaci ed efficienti
+##### Efficacia = fare il proprio lavoro | Efficienza = farlo bene o male
 
 Le <span style="color:#FA9C20">prestazioni dei processi</span> quantificano la capacità degli output di soddisfare le richieste e le esigenze del cliente e dunque il loro ruolo nel creare valore per l'azienda.
 
@@ -314,16 +342,16 @@ Le quali nel loro complesso determinano l'<span style="color:#98a33c">efficacia<
 
 - <span style="color:#F76120">Costi</span>: è una prestazione espressa dal costo di output, in un proceso produttivo il costo dell'output coincide con il <span style="color:#3273EC">costo del prodotto realizzato</span>, in un processo di servizio consiste nel <span style="color:#3273EC">costo di erogazione</span>.
 
-- <span style="color:#F76120">Qualità</span>: può essere valutata attraverso la qualità dell'output, ovvero la sua capacità di soddisfare esigenze d'uso espresse o implicite del cliente del processo. <span style="color:#3273EC">La qualità teorica o di progetto</span>, è l'insieme delle caratteristiche che l'output possiede sulla carta. In particolare i <span style="color:#3273EC">service level agreement</span> (<span style="color:#3273EC">SLA</span>), sono gli elementi contrattuali che il cliente e fornitore del servizio specificano accordandosi sulla qualità che il cliente si aspetta. L'utilizzo degli SLA nella fornitura dei servizi ha il vantaggio di pianificare in anticipo le aspettative plausibili sulla qualità del servizio.<br> La <span style="color:#3273EC">qualità di conformità</span> è la rispondenza di ogni singola unità di output alle specifiche del processo. La misura è la percentuale di output non conformi sul totale degli output realizzati. La <span style="color:#3273EC">disponibilità</span> ovvero la capacità dell'output di mantenere nel tempo le specifiche, di essere quindi affidabile, e la facilità di ripristino, intesa come manuntebilità.<br>Concetti spesso associati alla qualità sono quelli di servizio e di assistenza, relativamente al supporto informativo pre e post-vendita.
+- <span style="color:#F76120">Qualità</span>: può essere valutata attraverso la qualità dell'output, ovvero la sua capacità di soddisfare esigenze d'uso espresse dal cliente. <span style="color:#3273EC">La qualità teorica o di progetto</span>, è l'insieme delle caratteristiche che l'output possiede sulla carta. In particolare i <span style="color:#3273EC">service level agreement</span> (<span style="color:#3273EC">SLA</span>), sono gli elementi contrattuali che il cliente e fornitore del servizio specificano accordandosi sulla qualità che il cliente si aspetta. La <span style="color:#3273EC">qualità di conformità</span> è la rispondenza di ogni singola unità di output alle specifiche del processo. La misura è la percentuale di output non conformi sul totale degli output realizzati. La <span style="color:#3273EC">disponibilità</span> ovvero la capacità dell'output di mantenere nel tempo le specifiche, di essere quindi affidabile, e la facilità di ripristino, intesa come manuntebilità.<br>Concetti spesso associati alla qualità sono quelli di servizio e di assistenza, relativamente al supporto informativo pre e post-vendita.
 
 - <span style="color:#F76120">Tempo</span> del processo, espresso mediante un parametro indicatore, il <span style="color:#3273EC">tempo di risposta</span>, pari al tempo che intercorre tra il momento in cui il cliente richiede l'output del processo e il momento in cui la sua richiesta è soddisfatta.<br>Una seconda prestazione temporale, definita a partire dal tempo di risposta è la <span style="color:#3273EC">puntualità</span> ovvero il rispetto dei tempi di risposta pattuiti o dichiarati.
 
-- <span style="color:#F76120">Flessibilità</span> misura la capacità di un processo di rispondere a cambiamenti richiesti dal cliente. I cambiamenti possono avere natura sia <span style="color:#3273EC">qualitativa</span> (cambiamenti nelle caratteristiche dell'output richiesto) sia <span style="color:#3273EC">quantitativa</span> (variazioni di quantità di output richiesto).<br>Per piccole variazioni nelle richieste dei clienti i <span style="color:#3273EC">tempi/costi</span> di adattamento sono limitati, quasi nulli in certi casi, oltre un certo range di variazione poi vi è una discontinuità nei costi di adeguamento, in quanto si rendono necessarie nuove risorse, nuove competenze, nuove tecnologie. <br> La dimensione di flessibilità può essere di tre tipi:
+- <span style="color:#F76120">Flessibilità</span> misura la capacità di un processo di rispondere a cambiamenti richiesti dal cliente. I cambiamenti possono avere natura sia <span style="color:#3273EC">qualitativa</span> (cambiamenti nelle caratteristiche dell'output richiesto) sia <span style="color:#3273EC">quantitativa</span> (variazioni di quantità di output richiesto).<br>Per piccole variazioni nelle richieste dei clienti, i <span style="color:#3273EC">tempi/costi</span> di adattamento sono limitati, quasi nulli in certi casi, oltre un certo range di variazione poi vi è una discontinuità nei costi di adeguamento, in quanto si rendono necessarie nuove risorse, nuove competenze, nuove tecnologie. <br> La dimensione di flessibilità può essere di tre tipi:
 	- <span class="hig">Flessibilità in piccolo</span>: capacità di rispondere a piccole variazioni della domanda
 	- <span class="hig">Flessibilità in grande</span>: capacità di rispondere a grandi variazioni della domanda
 	- <span class="hig">Range di variazione</span>: rappresenta il limite oltre il quale si passa dalla flessibilità in piccolo a quella in grande
 
-## U3
+## U4 - Pricipi e tecniche di Project Management
 ### L1 - Il progetto
 #### Il progetto
 
@@ -339,6 +367,7 @@ Gli elementi costituenti del progetto sono:
 - Organizzazione specifica di progetto
 
 #### Le fasi del progetto
+##### Perché farlo? | Come lo facciamo? | Lo facciamo | Lo abbiamo fatto
 
 |Nome|Descrizione|
 |:---:|:---|
@@ -359,6 +388,7 @@ Se emergono vincoli e opportunità inattesi, il progetto va incontro a tre tipi 
 - *Si degrada la qualità dell'output* perché quando i costi e i tempi di modifica della soluzione sono elavati si rinuncia a correggere l'errore
 
 #### Obiettivi di progetto
+##### Obiettivi di continuità dell'azienda e obiettivi specifici del progetto (qualità, costi, tempi)
 
 - Obiettivi di **continuità**: la vita della nostra azienda
 - Obiettivi **specifici**: specifici del progetto
@@ -395,24 +425,24 @@ Gli obiettivi che ci poniamo devono essere sempre verificabili e devono seguire 
 #### Le strutture organizzative
 
 - Nella **struttura funzionale** il progetto viene decomposto in sottoprogetti, assegnati a dei *responsabili funzionali*
-- Nella **Task Force (141)** il project manajer è fondamentale, si suddividono in gruppi di reparto stagni ben divisi fra di loro (come in tante stanze di un edificio chiuse e separate)
+- Nella **Task Force (141)** il project manajer è fondamentale, si suddividono in gruppi di reparto stagni ben divisi fra di loro
 
 La prima privilegia l'efficienza nell'uso delle risorse a discapito dell'efficacia del progetto. La seconda viceversa, privilegia il progetto creando inefficienza nell'uso delle risorse.
 
-La **struttura a matrice** cerca di mediare queste due soluzioni, viene nominato un Project Manager ma i membri del team non vengono staccati dalle funzioni di appartenenza
+- La **struttura a matrice** cerca di mediare queste due soluzioni, viene nominato un Project Manager ma i membri del team non vengono staccati dalle funzioni di appartenenza
 
 #### Il ruolo del project manager
 
 Gestisce il progetto, dice cosa fare e decide gli obiettivi del progetto
 
-- <span class="hig">Peso Leggero</span>
+- <span class="hig"><b>Peso Leggero</b></span>
 	- Facilitatore
 	- Presidio sui tempi
-- <span class="hig">Peso Medio</span>
+- <span class="hig"><b>Peso Medio</b></span>
 	- Coordinatore
 	- Negoziatore
 	- Presidio su tempi e costi
-- <span class="hig">Peso Medio</span>
+- <span class="hig"><b>Peso Massimo</b></span>
 	- Decisore
 	- Presidio su tempi, costi e qualità
 
@@ -426,6 +456,7 @@ Il *PM* possiede le conosccenze tecniche essenziali, indispensabili alla compren
 Il *PM* è un ruolo multidimensionale, può essere visto come ruolo di confine (con i clienti), ruolo di interfaccia (scambio di informazioni), ruolo intermedio (tra linee gerarchice) e ruolo di agente del cambiamento (perché si occupa di progetti per loro natura innovativi)
 
 #### La gestione delle risorse umane e della comunicazione
+##### Conflitto e fasi di creazione del gruppo di lavoro
 
 Quando si verifica un conflitto le vie percorribili sono:
 
@@ -491,16 +522,17 @@ Le fasi di creazione del gruppo di lavoro sono:
 - Membri del team
 - Consulenti (specialisti interno e/o esterni)
 - Stakeholder (chi ha interessi nel progetto, chi è coinvolto, termine generale che descrive un po' tutti)
-- Sponsor (finanziano il progetto)
+- Sponsor (finanziano il progetto, cacciano il grano)
 - Committente e utilizzatore finale
 
 ### L4 - Tecniche di pianificazione e controllo temporale
 #### Pianificare  le attività di un progetto
+
 La fase di preprogetto si divide in:
 
-- studio di fattibilità: parte da una idea di progetto nato in seguito all'individuazione di una situazione di insoddisfazione emersa, per esempio, durante gli audit della qualità
-- analisi dei requisiti: analisi del problema, definizione delle funzionalità, redazione di un documento SRS (Software Requirement Specification), convalida delle specifiche
-- pinaificazione del progetto
+- **Studio di fattibilità**: parte da una idea di progetto nato in seguito all'individuazione di una situazione di insoddisfazione emersa, per esempio, durante gli audit della qualità
+- **Analisi dei requisiti**: analisi del problema, definizione delle funzionalità, redazione di un documento SRS (Software Requirement Specification), convalida delle specifiche
+- **Pinaificazione del progetto**
 
 e precede la fase di progetto vera e propria la quale è strutturato in attività attraverso la **WBS**, Work Breakdown Structure in cui sono definiti alcuni rilasci intermedi chiamati deliverable. Il progetto viene frazionato in **Work Package**, un insieme di attività elementari caratterizzato in modo univoco da input, output e attività interne.
 
@@ -535,7 +567,7 @@ La **baseline** è la vera somma a disposizione per lo svolgimento delle attivit
 - **SV** (Date Variance): BCWP - BCWS
 - **EAC**: Expected Overall Costs
 
-## U5
+## U5 - Gestione di progetti informatici
 ### L1 - I progetti informatici
 #### Generalità
 I progetti informatici richiedono due tipi do competenze
@@ -545,11 +577,12 @@ I progetti informatici richiedono due tipi do competenze
 
 #### Tipologie di progetti informatici
 
-- Ad hoc: per un particolare cliente
-- Prodotto pacchettizzato: per il mercato in generale
+- **Ad hoc**: per un particolare cliente
+- **Prodotto pacchettizzato**: per il mercato in generale
 
 I progetti informatici possono essere classificati in 4 tipologie:
-- **Progetti commerciali**: nascono dalla richiesta di un cliente specifico e nascono per soddisfare la fornitura di prodotti/servizi
+
+- **Progetti commerciali**: nascono per soddisfare la fornitura di prodotti/servizi
 - **Progetti di innovazione e investimento**: necessari a seguito di cambiamenti tecnologici e possono riguardare prodotti
 - **Progetti di miglioramento gestionale**: migliora l'infrastruttura gestionale installando sistemi
 - **Progetti di riorganizzazione aziendale**: riguarda i progetti di reingegnerizzazione di attività già esistenti
@@ -560,7 +593,7 @@ I progetti informatici possono essere classificati in 4 tipologie:
 - **Seconda causa**: legata alla "complessità" delle applicazioni
 - **Terza causa**: il progetto software non ha "struttura regolare" o "requisiti stabili"
 
-L'industria negli anni 60, era profondamente immatura con un enorme tasso di crescita nella dimensione e nella complessità dei progetti da una parte e la mancanza di personale richiesto nel settore (**skill shortage**): inoltre il personale occupato risulta spesso senza le necessarioe competenze tecniche (**skill gap**)
+L'industria negli anni 60, era profondamente immatura con un enorme tasso di crescita nella dimensione e nella complessità dei progetti da una parte e la mancanza di personale richiesto nel settore (**skill shortage**): inoltre il personale occupato risulta spesso senza le necessarioe competenze tecniche (**skill gap**). In seguito nasce l'ingengeria del software che risolve questi problemi.
 
 #### La "pianificazione" del progetto
 
@@ -577,16 +610,15 @@ che devono essere integrati nella pianificazione
 
 Il ciclo del processo di produzione del software si compone di 3 fasi:
 
-- progetto
+- **Fase di progetto**
 	- fase di preprogetto
 		- preanalisi
 		- studio di fattibilità
 		- pianificazione
 	- fase di progetto
 		- formulazione del preventivo
-		- avviene prima di iniziare lo sviluppo
-- sviluppo
-- manutenzione
+- **Fase di sviluppo**
+- **Fase di manutenzione**
 	- correttiva
 	- adattiva
 	- perfettiva
@@ -600,7 +632,7 @@ Il ciclo del processo di produzione del software si compone di 3 fasi:
 - **Utenti di riferimento per l'analisi del problema da risolvere** sono gli stakeholder, gli esperti che vengono individuati all'interno dell'organizzazione col compito di contribuire per individuare le specifiche dei requisiti
 - **Utenti di riferimento per i test di accettazione**: durante lo sviluppo di progetto devono verificare che si sita realizzando quanto ci si aspetta
 - **Utenti finali**: tutti gli utenti che utilizzeranno i prodotti del progetto
-- **Specialisti di ambiente**: addetti al CED che devono verificare l'integrazione del nuovo prodotto con il sistema informatico presente in azienda
+- **Specialisti di ambiente**: addetti al CED (Centro Elaborativo Dati) che devono verificare l'integrazione del nuovo prodotto con il sistema informatico presente in azienda
 
 ##### Principali ruoli dalla parte del fornitore
 - **Responsabile commerciale**: colui che cura l'offerta e poi il contratto tenendo conto degli obiettivi economici che la sua azienda vuole fornire
@@ -614,20 +646,20 @@ Il ciclo del processo di produzione del software si compone di 3 fasi:
 
 Ci sono diverse modalità con le quali il cliente sceglie un fornitore e tra di esse la più importante prende il nome di gara (o gara di appalto), si compone di 5 fasi:
 
-- **Pubblicazione del bando**: il committente comunica la sua intenzione di realizzare un progetto informatico
-- **Preparazione e invio del capitolato**: il committente prepara un documento dove descrive le specifiche del prodotto da realizzare
-- **Preparazione e invio delle offerte**: i fornitori preparano il loro preventivo accompagnato da una relazione tecnica
-- **Esame delle offerte e individuazione del vincitore**: il cliente analizza le proposte e sceglie un vincitore
-- **Firma del contratto**: l'offerta che risulta prima nella graduatoria diviene il fornitore
+<ol start="1">	
+	<li><b>Pubblicazione del bando</b>: il committente comunica la sua intenzione di realizzare un progetto informatico</li>
+	<li><b>Preparazione e invio del capitolato</b>: il committente prepara un documento dove descrive le specifiche del prodotto da realizzare</li>
+	<li><b>Preparazione e invio delle offerte</b>: i fornitori preparano il loro preventivo accompagnato da una relazione tecnica</li>
+	<li><b>Esame delle offerte e individuazione del vincitore</b>: il cliente analizza le proposte e sceglie un vincitore</li>
+	<li><b>Firma del contratto</b>: l'offerta che risulta prima nella graduatoria diviene il fornitore</li>
+</ol>
 
 #### Conduzione dei progetti
+##### Responsabilità del fornitore totale, parziale, nulla
 
 - **Chiavi in mano**: il capitolato è estremamente dettagliato, il progetto generalmente è senza rischi di progetto (come la ristrutturazione di un sistema già presente), l'impegno del cliente in questo progetto è limitato. Pianificazione, preparazione del piano e gestione del progetto li fà il fornitore in autonomia
 - **Responsabilità condivisa**: caso più diffuso, ciascuna delle due parti svolge un ruolo attivo, i due capi di progetto conducono e coordinano le attività, parte tecnica gestita dal fornitore, parte gestionale dal cliente
 - **Body rental**: utilizzata per piccole realizzazioni a basso costo, limita le risorse impiegate dal fornitore e la completa responsabilità è del cliente che deve avere all'interno della sua organizzazione le competenze opportune (un muratore pigro assume un muratore per fare il suo lavoro)
-
-#### Le  figure professionali coinvolte nella produzione del software
-Il processo di produzione del software (ruoli, rapporti cliente/fornitore, conduzione dei progett
 
 ### L3 - Preprogetto: fattibilità e analisi dei requisiti
 
