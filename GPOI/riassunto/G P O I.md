@@ -483,3 +483,14 @@ Le fasi di creazione del gruppo di lavoro sono:
 	<li><b>Norming</b> - normalizzazione dei rapporti all'interno del gruppo</li>
 	<li><b>Performing</b> - si inizia a produrre, le energie collettive si spostano dall'interno all'esterno</li>
 </ol>
+
+#### Soggetti coinvolti nella comunicazione di progetto
+
+- Project Manager
+- Programme Board (gruppo che si incontra periodicamente per controllare l'andamento del progetto)
+- Project Management Office (specialisti nelle tecniche di project management che assistono il PM)
+- Membri del team
+- Consulenti (specialisti interno e/o esterni)
+- Stakeholder (chi ha interessi nel progetto, chi è coinvolto, termine generale che descrive un po' tutti)
+- Sponsor (finanziano il progetto)
+- Committente e utilizzatore finale
