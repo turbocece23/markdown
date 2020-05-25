@@ -34,10 +34,36 @@
 		display: block;
 	}
 
+	a
+	{
+		text-decoration: none;
+	}
+
+	a:link
+	{
+		color: white;
+	}
+
+	a:visited
+	{
+		color: white;
+	}	
+
+	ul a:link
+	{
+		color: black;
+	}
+
+	ul a:visited
+	{
+		color: black;
+	}
+
 	.hig/*hlight*/
 	{
 		color:#32739C;
 	}
+
 	/*Per attivare la "dark mode"*/
 	/*p, li, ul{ color:white; }*/
 	/*html { color:white; background-color: black; }*/
@@ -45,32 +71,32 @@
 
 # G P O I
 
-## Indice
+## <span id="indice">Indice</span>
 
-- U1 - Elementi di economia e organizzazione aziendale
-	- **L1** *2* Informazione e l'organizzazione
-	- **L2** *13* Micro e macrostruttura
-	- **L3** *26* Le strutture organizzative
-	- **L4** *37* I costi di un'organizzazione aziendale
-- U2 - I processi aziendali
-	- **L1** *46* Catena del valore, processi primari e processi di supporto
-	- **L2** *60* Le prestazioni dei processi aziendali
-- U4 - Pricipi e tecniche di Project Management
-	- **L1** *112* Il progetto e le sue fasi
-	- **L2** *117* Il principio di chiave nella gestione di un progetto e gli obiettivi di progetto
-	- **L3** *125* L'organizzazione dei progetti
-	- **L4** *142* Tecniche di pianificazione e controllo temporale
-	- **L5** *156* La programmazione e il controllo dei costi e la gestione della aree di rischio
-- U5 - Gestione di progetti informatici
-	- **L1** *174* I progetti informatici
-	- **L1** *183* Il processo di produzione del software
-	- **L3** *191* Preprogetto: fattibilità e analisi dei requisiti
-	- **L4** *206* Preprogetto: pianificazione del progetto
-	- **L5** *219* Le metriche del software
+- <a href="#U1">U1 - Elementi di economia e organizzazione aziendale</a>
+	- <a href="#U1L1">**L1** *2* Informazione e l'organizzazione</a>
+	- <a href="#U1L2">**L2** *13* Micro e macrostruttura</a>
+	- <a href="#U1L3">**L3** *26* Le strutture organizzative</a>
+	- <a href="#U1L4">**L4** *37* I costi di un'organizzazione aziendale</a>
+- <a href="#U2">U2 - I processi aziendali</a>
+	- <a href="#U2L1">**L1** *46* Catena del valore, processi primari e processi di supporto</a>
+	- <a href="#U2L2">**L2** *60* Le prestazioni dei processi aziendali</a>
+- <a href="#U4">U4 - Pricipi e tecniche di Project Management</a>
+	- <a href="#U4L1">**L1** *112* Il progetto e le sue fasi</a>
+	- <a href="#U4L2">**L2** *117* Il principio di chiave nella gestione di un progetto e gli obiettivi di progetto</a>
+	- <a href="#U4L3">**L3** *125* L'organizzazione dei progetti</a>
+	- <a href="#U4L4">**L4** *142* Tecniche di pianificazione e controllo temporale</a>
+	- <a href="#U4L5">**L5** *156* La programmazione e il controllo dei costi e la gestione della aree di rischio</a>
+- <a href="#U5">U5 - Gestione di progetti informatici</a>
+	- <a href="#U5L1">**L1** *174* I progetti informatici</a>
+	- <a href="#U5L2">**L1** *183* Il processo di produzione del software</a>
+	- <a href="#U5L3">**L3** *191* Preprogetto: fattibilità e analisi dei requisiti</a>
+	- <a href="#U5L4">**L4** *206* Preprogetto: pianificazione del progetto</a>
+	- <a href="#U5L5">**L5** *219* Le metriche del software</a>
 
-## U1 - Elementi di economia e organizzazione aziendale
+## <a href="#indice" id="U1">U1 - Elementi di economia e organizzazione aziendale</a>
 
-### L1 - Informazione e l'organizzazione
+### <a href="#indice" id="U1L1">L1 - Informazione e l'organizzazione</a>
 #### L'informazione come risorsa organizzativa
 
 La classificazione delle tencologie informatiche è fatta basandosi sull'utilizzo che se ne fa:
@@ -101,7 +127,7 @@ Due categorie:
 	- *Standardizzazione dei risultati*: si rende uniforme il "cosa fare", non importa come, ma i risultati che si ottengono
 	- *Standardizzazione delle competenze*: gli operatori sono in grado di svolgere un assegnazione sulla base di conoscenze standardizzate attraverso la formazione richiesta per eseguire il lavoro
 
-### L2 - Micro e macrostruttura
+### <a href="#indice" id="U1L2">L2 - Micro e macrostruttura</a>
 #### La posizione individuale e la mansione
 ##### Microstruttura, definita dal mansionario
 
@@ -183,7 +209,7 @@ Le unità organizzative vengono create dividendo i lavoratori in gruppi di dimen
 - Raggruppamento in base al **cliente**: si distinguono i piccoli clienti dai grandi, come nel caso delle banche
 - Raggruppamento in base all'**area geografica**: le U.O. raggruppano le attività svolte in un'unica area geografica, come nel caso delle filiali di un'azienda multimediale
 
-### L3 - Le strutture organizzative (composte da Unità organizzative)
+### <a href="#indice" id="U1L3">L3 - Le strutture organizzative (composte da Unità organizzative)</a>
 #### La struttura semplice
 ##### è semplice, è nel nome
 
@@ -224,7 +250,7 @@ In questa struttura le risorse fanno capo a più persone, questa organizzazione 
 
 <img src="struttura_matrice.png" alt="Struttura a matrice"/>
 
-### L4 - I costi di un'organizzazione aziendale
+### <a href="#indice" id="U1L4">L4 - I costi di un'organizzazione aziendale</a>
 #### Le tipologie di costo
 ##### Poche spese tanto guadagno
 
@@ -285,10 +311,11 @@ Si definiscono come *fissi* i costi che, nell'ambito di un intervallo significat
 
 La classificazione dei costi in evitabili e non evitabili distingue i costi in base alla loro rilevanza decisionale. Rispetto a una decisione, i costi evitabili sono quelli influenzati dalla decisione, mentre i costi non evitabili sono quelli che non dipendono da essa e che verranno comunque sostenuti qualunque sia l'esito.
 
-## U2 - I processi aziendali
+## <a href="#indice" id="U2">U2 - I processi aziendali</a>
 
-### L1 - Il flusso delle attività
-#### La visione per processi da una visione dimanica dell'organizzazione
+### <a href="#indice" id="U2L1">L1 - Catena del valore, processi primari e processi di supporto</a>
+#### Il flusso delle attività
+##### La visione per processi da una visione dimanica dell'organizzazione
 
 Per capire bene come funziona un'azienda dobbiamo avere una visione globale, ma per farlo non bastano l'analisi di macro e micro struttura (organigramma e mansionario rispettivamente), bisogna analizzare le interdipendenze tra le attività, in questo modo posso ottenre un'ottimizzazione globale e non solo locale.
 
@@ -325,7 +352,7 @@ Esiste forte distinzione tra attività produttive organizzate per reparti e la p
 - **Mission**: qualcosa che qualcuno fà, quindi quello che fà un'azienda (tipo promuovere e migliorare i prodotti per il networking, se parlassimo della BluePrint Networks, azienda leader nel settore)
 - **Vision**: quello che l'azienda vuole diventare, qualcosa di inspirational (molto tumblr, tipo "Forniamo gli strumenti per creare il futuro del domani" e altre cagate simili)
 
-### L2 - Le prestazioni dei processi aziendali
+### <a href="#indice" id="U2L2">L2 - Le prestazioni dei processi aziendali</a>
 #### Processi efficaci ed efficienti
 ##### Efficacia = fare il proprio lavoro | Efficienza = farlo bene o male
 
@@ -351,8 +378,8 @@ Le quali nel loro complesso determinano l'<span style="color:#98a33c">efficacia<
 	- <span class="hig">Flessibilità in grande</span>: capacità di rispondere a grandi variazioni della domanda
 	- <span class="hig">Range di variazione</span>: rappresenta il limite oltre il quale si passa dalla flessibilità in piccolo a quella in grande
 
-## U4 - Pricipi e tecniche di Project Management
-### L1 - Il progetto
+## <a href="#indice" id="U4">U4 - Pricipi e tecniche di Project Management</a>
+### <a href="#indice" id="U4L1">L1 - Il progetto</a>
 #### Il progetto
 
 Un progetto è un processo limitato finalizzato a creare un output unico
@@ -376,7 +403,7 @@ Gli elementi costituenti del progetto sono:
 |<span class="hig">**Realizzazione**</span>|Creazione concentrata dell'output, momento di uso maggiore delle risorse|
 |<span class="hig">**Chiusura**</span>|L'output viene rilasciato per il funzionamento "a regime", passaggio di consegne tra chi ha gestito il progetto e chi dovrà gestire l'output|
 
-### L2 - Il principio chiave nella gestione di un progetto e gli obiettivi di progetto
+### <a href="#indice" id="U4L2">L2 - Il principio chiave nella gestione di un progetto e gli obiettivi di progetto</a>
 #### Anticipazione dei vincoli e delle opportunità
 
 I **vincoli** rendono difficoltosa la realizzazione della soluzione che si stava adottando e le **opportunità** non incorporate nella soluzione stessa la rendono potenzialmente suscettibile a miglioramenti
@@ -421,7 +448,7 @@ Gli obiettivi che ci poniamo devono essere sempre verificabili e devono seguire 
 	</tr>
 </table>
 
-### L3 - L'organizzazione dei progetti
+### <a href="#indice" id="U4L3">L3 - L'organizzazione dei progetti</a>
 #### Le strutture organizzative
 
 - Nella **struttura funzionale** il progetto viene decomposto in sottoprogetti, assegnati a dei *responsabili funzionali*
@@ -525,7 +552,7 @@ Le fasi di creazione del gruppo di lavoro sono:
 - Sponsor (finanziano il progetto, cacciano il grano)
 - Committente e utilizzatore finale
 
-### L4 - Tecniche di pianificazione e controllo temporale
+### <a href="#indice" id="U4L4">L4 - Tecniche di pianificazione e controllo temporale</a>
 #### Pianificare  le attività di un progetto
 
 La fase di preprogetto si divide in:
@@ -555,7 +582,7 @@ Il **Gantt** (o diagramma a barre) è uno strumento puramente grafico in cui la 
 - **Pert**: permette di valutare le conseguenze di ritardi che concorrono sulle attività critiche e su quelle non critiche
 - **CPM** (Critical Path Method): consente di valutare la miglior allocazione delle risorse al fine di ridurre la lunghezza del cammino critico e quindi la durata del progetto
 
-### L5 - La programmazione e il controllo dei costi e la gestione delle aree di rischio
+### <a href="#indice" id="U4L5">L5 - La programmazione e il controllo dei costi e la gestione delle aree di rischio</a>
 #### La programmazione dei costi
 
 La **baseline** è la vera somma a disposizione per lo svolgimento delle attività connesse al progetto.
@@ -567,8 +594,8 @@ La **baseline** è la vera somma a disposizione per lo svolgimento delle attivit
 - **SV** (Date Variance): BCWP - BCWS
 - **EAC**: Expected Overall Costs
 
-## U5 - Gestione di progetti informatici
-### L1 - I progetti informatici
+## <a href="#indice" id="U5">U5 - Gestione di progetti informatici</a>
+### <a href="#indice" id="U5L1">L1 - I progetti informatici</a>
 #### Generalità
 I progetti informatici richiedono due tipi do competenze
 
@@ -605,7 +632,7 @@ Il **progetto** come un insieme di attività ordinate, è caratterizzato da tre 
 
 che devono essere integrati nella pianificazione
 
-### L2 - Il processo di produzione del software
+### <a href="#indice" id="U5L2">L2 - Il processo di produzione del software</a>
 #### Il processo di produzione del software
 
 Il ciclo del processo di produzione del software si compone di 3 fasi:
@@ -661,7 +688,7 @@ Ci sono diverse modalità con le quali il cliente sceglie un fornitore e tra di 
 - **Responsabilità condivisa**: caso più diffuso, ciascuna delle due parti svolge un ruolo attivo, i due capi di progetto conducono e coordinano le attività, parte tecnica gestita dal fornitore, parte gestionale dal cliente
 - **Body rental**: utilizzata per piccole realizzazioni a basso costo, limita le risorse impiegate dal fornitore e la completa responsabilità è del cliente che deve avere all'interno della sua organizzazione le competenze opportune (un muratore pigro assume un muratore per fare il suo lavoro)
 
-### L3 - Preprogetto: fattibilità e analisi dei requisiti
+### <a href="#indice" id="U5L3">L3 - Preprogetto: fattibilità e analisi dei requisiti</a>
 
 Le parti in cui si divide questa fase sono:
 
@@ -695,12 +722,12 @@ I requisiti software sono classificati secondo due punti di vista:
 	- requisiti **non funzionali**: imposti da fattori esterni
 	- requisiti **di dominio**: imposti dal domio in cui sono posti, come privacy in caso si tratti di una banca
 
-### L4 - Preprogetto: pianificazione del progetto
+### <a href="#indice" id="U5L4">L4 - Preprogetto: pianificazione del progetto</a>
 #### Work Breakdown Structure
 
 Ciascuna fase del progetto prevede un elenco di possibili attività ed eventi, descritti nella WBS. La WBS non è altro che un metodo per la scomposizione di un progetto in sub componenti, il progetto viene strutturato in più livelli fino a che vengono individuate le attività elementari
 
-### L5 - Le metriche del software
+### <a href="#indice" id="U5L5">L5 - Le metriche del software</a>
 
 Le mteriche del software sono stroumenti che forniscono misure quantitative del prodotto, le metriche sono importanti per il produttore e per l'utilizzatore finale
 
