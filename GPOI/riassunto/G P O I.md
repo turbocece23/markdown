@@ -27,6 +27,7 @@
 		padding-left: 0.7%;
 	}
 	h5 { color: #7C839D; }
+	
 	img
 	{
 		margin-left: auto;
@@ -34,44 +35,26 @@
 		display: block;
 	}
 
-	a
-	{
-		text-decoration: none;
-	}
-
-	a:link
-	{
-		color: white;
-	}
-
-	a:visited
-	{
-		color: white;
-	}	
-
-	ul a:link
-	{
-		color: black;
-	}
-
-	ul a:visited
-	{
-		color: black;
-	}
-
-	.hig/*hlight*/
-	{
-		color:#32739C;
-	}
+	a:link { color: white; }
+	a:visited { color: white; }
+	ul a:link { color: black; }
+	ul a:visited { color: black; }
+	.hig/*hlight*/ { color:#32739C; }
 
 	/*Per attivare la "dark mode"*/
-	/*p, li, ul{ color:white; }*/
-	/*html { color:white; background-color: black; }*/
+	/*p, li, ul{ color:white; }
+	html { color:white; background-color: black; }
+	a:link { color: white; }
+	a:visited { color: white; }
+	ul a:link { color: white; }
+	ul a:visited { color: white; }*/
 </style>
 
 # G P O I
 
 ## <span id="indice">Indice</span>
+
+<small>Ogni titoletto è un link per andare alla sezione corrispondente, cliccando poi il nome della sezione (nel documento, non nell'indice) porta all'indice</small>
 
 - <a href="#U1">U1 - Elementi di economia e organizzazione aziendale</a>
 	- <a href="#U1L1">**L1** *2* Informazione e l'organizzazione</a>
