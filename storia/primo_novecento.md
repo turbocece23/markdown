@@ -26,7 +26,6 @@
 		padding-top: 0.7%;
 		padding-left: 0.7%;
 	}
-	h5 { color: #7C839D; }
 
 	a:link { color: white; }
 	a:visited { color: white; }
