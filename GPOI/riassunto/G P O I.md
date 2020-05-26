@@ -40,7 +40,7 @@
 	ul a:link { color: black; }
 	ul a:visited { color: black; }
 	.hig/*hlight*/ { color:#32739C; }
-
+ 
 	/*Per attivare la "dark mode"*/
 	/*p, li, ul{ color:white; }
 	html { color:white; background-color: black; }
