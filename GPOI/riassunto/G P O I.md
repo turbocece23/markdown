@@ -52,6 +52,12 @@
 
 # G P O I
 
+## Possibili domande
+- Nella vosra esperienza di PCTO qual'era il grado di specializzazione verticale o orizzontale
+- Differenza tra Ex-Post ed Ex-Ante
+- Quali meccanismi di coordinamento venivano usati nella esperienza di PCTO
+- Nel gestionale di chimica quale meccanismo di coordinamento veniva usato
+
 ## <span id="indice">Indice</span>
 
 <small>Ogni titoletto è un link per andare alla sezione corrispondente, cliccando poi il nome della sezione (nel documento, non nell'indice) porta all'indice</small>

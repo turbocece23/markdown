@@ -1,0 +1,1199 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>body {
+  max-width: 980px;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 45px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headerlink {
+  font: normal 400 16px fontawesome-mini;
+  vertical-align: middle;
+  margin-left: -16px;
+  float: left;
+  display: inline-block;
+  text-decoration: none;
+  opacity: 0;
+  color: #333;
+}
+
+.markdown-body .headerlink:focus {
+  outline: none;
+}
+
+.markdown-body h1 .headerlink {
+  margin-top: 0.8rem;
+}
+
+.markdown-body h2 .headerlink,
+.markdown-body h3 .headerlink {
+  margin-top: 0.6rem;
+}
+
+.markdown-body h4 .headerlink {
+  margin-top: 0.2rem;
+}
+
+.markdown-body h5 .headerlink,
+.markdown-body h6 .headerlink {
+  margin-top: 0;
+}
+
+.markdown-body .headerlink:hover,
+.markdown-body h1:hover .headerlink,
+.markdown-body h2:hover .headerlink,
+.markdown-body h3:hover .headerlink,
+.markdown-body h4:hover .headerlink,
+.markdown-body h5:hover .headerlink,
+.markdown-body h6:hover .headerlink {
+  opacity: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* MultiMarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px fontawesome-mini;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\e157';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><style>/*GitHub*/
+.codehilite {background-color:#fff;color:#333333;}
+.codehilite .hll {background-color:#ffffcc;}
+.codehilite .c{color:#999988;font-style:italic}
+.codehilite .err{color:#a61717;background-color:#e3d2d2}
+.codehilite .k{font-weight:bold}
+.codehilite .o{font-weight:bold}
+.codehilite .cm{color:#999988;font-style:italic}
+.codehilite .cp{color:#999999;font-weight:bold}
+.codehilite .c1{color:#999988;font-style:italic}
+.codehilite .cs{color:#999999;font-weight:bold;font-style:italic}
+.codehilite .gd{color:#000000;background-color:#ffdddd}
+.codehilite .ge{font-style:italic}
+.codehilite .gr{color:#aa0000}
+.codehilite .gh{color:#999999}
+.codehilite .gi{color:#000000;background-color:#ddffdd}
+.codehilite .go{color:#888888}
+.codehilite .gp{color:#555555}
+.codehilite .gs{font-weight:bold}
+.codehilite .gu{color:#800080;font-weight:bold}
+.codehilite .gt{color:#aa0000}
+.codehilite .kc{font-weight:bold}
+.codehilite .kd{font-weight:bold}
+.codehilite .kn{font-weight:bold}
+.codehilite .kp{font-weight:bold}
+.codehilite .kr{font-weight:bold}
+.codehilite .kt{color:#445588;font-weight:bold}
+.codehilite .m{color:#009999}
+.codehilite .s{color:#dd1144}
+.codehilite .n{color:#333333}
+.codehilite .na{color:teal}
+.codehilite .nb{color:#0086b3}
+.codehilite .nc{color:#445588;font-weight:bold}
+.codehilite .no{color:teal}
+.codehilite .ni{color:purple}
+.codehilite .ne{color:#990000;font-weight:bold}
+.codehilite .nf{color:#990000;font-weight:bold}
+.codehilite .nn{color:#555555}
+.codehilite .nt{color:navy}
+.codehilite .nv{color:teal}
+.codehilite .ow{font-weight:bold}
+.codehilite .w{color:#bbbbbb}
+.codehilite .mf{color:#009999}
+.codehilite .mh{color:#009999}
+.codehilite .mi{color:#009999}
+.codehilite .mo{color:#009999}
+.codehilite .sb{color:#dd1144}
+.codehilite .sc{color:#dd1144}
+.codehilite .sd{color:#dd1144}
+.codehilite .s2{color:#dd1144}
+.codehilite .se{color:#dd1144}
+.codehilite .sh{color:#dd1144}
+.codehilite .si{color:#dd1144}
+.codehilite .sx{color:#dd1144}
+.codehilite .sr{color:#009926}
+.codehilite .s1{color:#dd1144}
+.codehilite .ss{color:#990073}
+.codehilite .bp{color:#999999}
+.codehilite .vc{color:teal}
+.codehilite .vg{color:teal}
+.codehilite .vi{color:teal}
+.codehilite .il{color:#009999}
+.codehilite .gc{color:#999;background-color:#EAF2F5}
+</style><title>svevo</title></head><body><article class="markdown-body"><style type="text/css">
+    h1 { color: #EF3E36; }
+    h2
+    {
+        padding-top: 0.7%;
+        padding-bottom: auto;
+        width: 100%;
+        text-align: center;
+        color: white;
+        background-color: #C01B2D;
+    }
+    h3
+    {
+        padding-top: 0.7%;
+        padding-bottom: auto;
+        text-align: center;
+        width: 100%;
+        background-color: #FF8811;
+        color:white;
+    }
+    img
+    {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    a:link { color: white; }
+    a:visited { color: white; }
+    ul a:link { color: black; }
+    ul a:visited { color: black; }
+</style>
+
+<h1 id="italo-svevo">Italo Svevo<a class="headerlink" href="#italo-svevo" title="Permanent link"></a></h1>
+<h2 id="indice">Indice<a class="headerlink" href="#indice" title="Permanent link"></a></h2>
+<ul>
+<li><a href="#vita">Vita</a><ul>
+<li><a href="#pseudonimo">Il significato dello pseudonimo</a></li>
+<li><a href="#formazione">La formazione</a></li>
+<li><a href="#bancario">Bancario e giornalista</a></li>
+<li><a href="#primo-romanzo">Il primo romanzo e il matrimonio</a></li>
+<li><a href="#secondo-romanzo">L’impegno nel mondo degli affari e il secondo romanzo</a></li>
+<li><a href="#incontro-joyce">L’incontro con Joyce</a></li>
+<li><a href="#caso-svevo">Il caso Svevo</a></li>
+</ul>
+</li>
+<li><a href="#opere">Le opere</a><ul>
+<li><a href="#una-vita">Una vita</a></li>
+<li><a href="#senilita">Senilità</a></li>
+<li><a href="#silenzio-letterario">Periodo del silenzio letterario</a></li>
+<li><a href="#coscienza-di-zeno">La coscienza di Zeno</a></li>
+<li><a href="#profilo-autobiografico">Il profilo autobiografico</a></li>
+<li><a href="#vecchione">Il vecchione / Le confessioni del vegliardo</a></li>
+</ul>
+</li>
+<li><a href="#pensiero-poetica">Il pensiero e la poetica</a><ul>
+<li><a href="#incontro-gente">L’incontro con Schopenhauer, Darwin, Dostoevskij e Nietzsche</a></li>
+<li><a href="#joyce">Joyce e la letteratura contemporanea</a></li>
+<li><a href="#psicanalisi">L’interesse per la psicanalisi</a></li>
+</ul>
+</li>
+<li><a href="#influssi">Gli influssi e le tecniche narrative</a><ul>
+<li><a href="#realismo-naturalismo">Tra Realismo e Naturalismo</a></li>
+<li><a href="#adozione">L’adozione di nuove tecniche narrative</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="vita"><a href="#indice" id="vita">Vita</a><a class="headerlink" href="#vita" title="Permanent link"></a></h2>
+<h3 id="il-significato-dello-pseudonimo"><a href="#indice" id="pseudonimo">Il significato dello pseudonimo</a><a class="headerlink" href="#il-significato-dello-pseudonimo" title="Permanent link"></a></h3>
+<p>Nato a Trieste il 19 dicembre 1861 con il nome di <strong>Ettore Schmitz</strong> da un agiata famiglia borghese ebraica (anno dell&rsquo;<em>Unità d&rsquo;Italia</em>. Quando Veneto e Friuli sono ancora fuori dall&rsquo;Italia). Il padre è di origini austriache, la madre italiana, cosa che favorì una formazione legata a entrambe le tradizioni culturali, come dimostra il nome d&rsquo;arte che più tardi sceglie, in cui sono espliciti i legami con l&rsquo;Italia (<strong>Italo</strong>) e la Germania (<strong>Svevo</strong>, dagli Svevi, dinastia imperiale tedesca del Medioevo).</p>
+<h3 id="la-formazione"><a href="#indice" id="formazione">La formazione</a><a class="headerlink" href="#la-formazione" title="Permanent link"></a></h3>
+<p>Frequenta una scuola israelitica a Trieste dove riceve una formazione bilingue. Successivamente viene mandato dal padre per proseguire gli studi in Germania in un istituto Commerciale nella Baviera.</p>
+<p>Durante la sua permanenza in Germania da subito dimostra interesse per la letteratura tedesca (legge e approfondisce esponenti della letteratura come Goethe e esponenti della filosofia Schopenahuer). Torna a Trieste prima di finire gli studi e frequenta gli utlimi due anni di formazione in un istituto per il Commercio.</p>
+<h3 id="bancario-e-giornalista"><a href="#indice" id="bancario">Bancario e giornalista</a><a class="headerlink" href="#bancario-e-giornalista" title="Permanent link"></a></h3>
+<p>Nel 1880 la fabbrica del padre fallisce, abbandona gli studi, diventa impiegato in una banca triestina (Banca Union) dove resta per 18 anni.</p>
+<p>Nello stesso periodo collabora con un giornale triestino irredentista schierato a favore dell&rsquo;annessione dell&rsquo;Italia: &ldquo;L&rsquo;indipendente&rdquo;. </p>
+<p>Tratta argomenti letterari e teatrali, si firma con lo pseudonimo di &ldquo;Ettore Samigli&rdquo;, inoltre si dedica alla lettura di romanzieri naturalisti francesi e italiani (Fratelli Goncourt, Balzac, Flaubert e Zola per esempio).</p>
+<h3 id="il-primo-romanzo-e-il-matrimonio"><a href="#indice" id="primo-romanzo">Il primo romanzo e il matrimonio</a><a class="headerlink" href="#il-primo-romanzo-e-il-matrimonio" title="Permanent link"></a></h3>
+<p>Pubblica le sue opere non per merito ma in maniera del tutto autonoma (a mio avviso, un comportamento lontano da quello dell&rsquo;inetto)</p>
+<p>Il primo romanzo <strong>Una vita</strong> (originariamente chiamato &ldquo;il Minchione&rdquo; (Un Inetto) titolo considerato poco accattivante che fu cambiato) lo pubblica con lo pseudonimo di Italo Svevo nel <strong>1892</strong>, questo nome accosta la cultura italiana e quella tedesca a lui entrambe vicine.</p>
+<p>Nel 1895 si fidanza con la cugina Livia Veneziani, nel luglio 1896 avviene il matrimonio civile, nel 1897 l&rsquo;abiura della religione ebraica attraverso il rito cattolico. Nello stesso anno (1897) nasce la figlia Letizia. Questo matrimonio lo porta ad un cambio nella sua posizione sociale, da piccolo borghese diventa un alto borghese.</p>
+<p>La storia è un racconto del dramma dell&rsquo;inturbamento di un giovane di campagna, <strong>Alfonso Nitti</strong>, che si trasferisce in città per lavorare come impiegato in una banca ma incapace di adattarsi alla realtà urbana. Incapace di avere relazioni soddisfacenti con gli altri impiegati e i suoi amori: la sua esistenza si conclude con il suicidio. Svevo Inizia i lavori sull&rsquo;opera nel 1888 e lo finisce nel 1892, il libro passa inosservato.</p>
+<h3 id="limpegno-nel-mondo-degli-affari-e-il-secondo-romanzo"><a href="#indice" id="secondo-romanzo">L&rsquo;impegno nel mondo degli affari e il secondo romanzo</a><a class="headerlink" href="#limpegno-nel-mondo-degli-affari-e-il-secondo-romanzo" title="Permanent link"></a></h3>
+<p>Nel 1899 entra come socio nella ditta commerciale del suocero (ditta di vernici) di cui assume poi la direzione, visita per lavoro e riesiede a lungho in Inghilterra, Francia e Germania. A causa della sua nuova posizione, tralascia la produzione letteraria ma si diletta comunque con il violino. Scrive 13 commedie che però non ebbero molto successo.</p>
+<p>A spingere Svevo verso questa scelta fu l&rsquo;insuccesso che seguì la pubblicazione del suo secondo romanzo. Nel <strong>1898</strong> viene pubblicato <strong>Senilità</strong> (p 460). Tratta della storia d&rsquo;amore tra <strong>Emilio Brentani</strong> e la sfuggente Angiolina (probabilmente ispirata ad una donna di Trieste con cui Svevo ha avuto una relazione prima di trovare la moglie)</p>
+<h3 id="lincontro-con-joyce"><a href="#indice" id="incontro-joyce">L&rsquo;incontro con Joyce</a><a class="headerlink" href="#lincontro-con-joyce" title="Permanent link"></a></h3>
+<p>Nel 1906 si iscrive alla Berlitz School per migliorare il suo inglese. L&rsquo;insegnante è James Joyce, le lezioni private che gli dà creano una forte amicizia. Joyce si appassiona ai suoi lavori e gli consiglia di ritornare al lavoro letterario.</p>
+<h3 id="il-caso-svevo"><a href="#indice" id="caso-svevo">Il caso Svevo</a><a class="headerlink" href="#il-caso-svevo" title="Permanent link"></a></h3>
+<p>Lo scoppio della prima guerra mondiale pose un freno all&rsquo;attività della fabbrica di vernici a cui era capo. Pertanto ebbe l&rsquo;opportunità di dedicarsi all&rsquo;approfondimento della psicanalisi</p>
+<p>Inoltre inizia a collaborare  con un nuovo giornale triestino &ldquo;La nazione&rdquo;. Alla fine della guerra segue il consiglio di <em>Joyce</em> e riprese a scrivere un nuovo romanzo nel 1919, <strong>La coscienza di Zeno</strong>, pubblicato nel <strong>1923</strong>. Inizialmente la critica non si esprime, poco dopo però, grazie all&rsquo;intervento di un noto critico Triestino: <u><b>Bobi Bazlen</b></u> il quale scrive il saggio <em>Omaggio a Svevo</em>. Il saggio viene letto da <strong>Eugenio Montale</strong> il quale decreta la qualità delle opere di Svevo. IL successo delle opere sveviane viene riconosciuto a livello europeo, in Francia uscì un numero della rivista <em>Naivre d&rsquo;airgent</em> interamente dedicato a Svevo.</p>
+<p>I riconoscimenti che segurono furono numerosi, a testimonianza dell&rsquo;originalità della sua scrittura.</p>
+<p>L&rsquo;ultimo romanzo del 1928 intitolato &ldquo;Il vecchione&rdquo; o &ldquo;Le confessioni del vegliardo&rdquo; doveva essere la continuazione della coscienza di Zeno, in questa ultima prova letteraria voleva rappresentare la condizione alienata del vecchio nella società moderna.</p>
+<p>Ma non fu mai finito, infatti il 13 settembre 1928 muore a causa delle ferite riportate a seguito di un incidente automobilistico.</p>
+<h2 id="le-opere"><a href="#indice" id="opere">Le opere</a><a class="headerlink" href="#le-opere" title="Permanent link"></a></h2>
+<h3 id="una-vita"><a href="#indice" id="una-vita">Una vita</a><a class="headerlink" href="#una-vita" title="Permanent link"></a></h3>
+<h4 id="alfonso-nitti-1892">Alfonso Nitti - 1892<a class="headerlink" href="#alfonso-nitti-1892" title="Permanent link"></a></h4>
+<p>Pubblicato a spese dell&rsquo;autore in 1000 copie, il titolo originario &ldquo;Un inetto&rdquo; era considerato poco accattivante.</p>
+<p>Si ritrova riflessa l&rsquo;avvilente esperienza autobiografica della monotona routine impiegatizia. Fu ignorato dalla critica ufficiale, l&rsquo;opera è ambietata nella società borghese triestina, e presenta i tratti tipici dei romanzi tipici veristi e naturalisti per il rigore con cui sono descritti gli ambienti, fatti e situazioni. In quest&rsquo;opera Svevo con intento analitico, indaga i rapporti tra società e individuo in particolare sulle difficoltà di chi aspira alla scalata sociale e sulle falsità delle relazioni interpresonali (pensiero di Darwin).</p>
+<p>Al centro della vicenda c&rsquo;è la figura dell&rsquo;inetto, una figura mediocre alienata dalla realtà, vittima della propria inadeguatezza.</p>
+<h3 id="senilita"><a href="#indice" id="senilita">Senilità</a><a class="headerlink" href="#senilita" title="Permanent link"></a></h3>
+<h4 id="emilio-brentani-1898">Emilio Brentani - 1898<a class="headerlink" href="#emilio-brentani-1898" title="Permanent link"></a></h4>
+<p>Molti spunti autobiografici, infatti siamo a Trieste e il protagonista è un impiegato, inetto, che vive tra il rimpianto della carriera letteraria irrealizzata (in realtà è un intellettuale fallito che pubblicò un romanzo senza successo) e la monotnoia di un&rsquo;esistenza destinata al fallimento. Questo protagonista è condannato ad una precoce vecchiaia, la senilità a cui allude il titolo.</p>
+<p>Questa senilità è la condizione psicologia di chi ha l&rsquo;abitudine di &ldquo;ripiegarsi su se stesso ed analizzarsi&rdquo; rinunciando alla lotta per la vita.</p>
+<p>Emilio Brentani, come Alfonso Nitti, mostra l&rsquo;inadeguatezza dell&rsquo;uomo alla vita. Anche in quest&rsquo;opera è presente l&rsquo;analisi dell&rsquo;ambiente sociale, ma rimane sullo sfondo perché da molto più spazio alle interazioni tra i personaggi.</p>
+<h3 id="periodo-del-silenzio-letterario"><a href="#indice" id="silenzio-letterario">Periodo del silenzio letterario</a><a class="headerlink" href="#periodo-del-silenzio-letterario" title="Permanent link"></a></h3>
+<p>Rinuncia alla stesura di romanzi, scrisse 13 commedie che non ebbero fortuna sulla scena, nel 1818 tradusse il saggio dell&rsquo;<em>Interpretazione dei sogni</em> di <strong>Freud</strong> assieme al nipote medico. L&rsquo;interesse per la psicoanalisi si manifestò già quando il cognato si sottopose alle cure di Freud a Vienna, il lavoro di Freud fu importantissimo per la stesura de &ldquo;<em>La coscienza di Zeno</em>&rdquo;.</p>
+<h3 id="la-coscienza-di-zeno"><a href="#indice" id="coscienza-di-zeno">La coscienza di Zeno</a><a class="headerlink" href="#la-coscienza-di-zeno" title="Permanent link"></a></h3>
+<h4 id="zeno-cosini-1923">Zeno Cosini - 1923<a class="headerlink" href="#zeno-cosini-1923" title="Permanent link"></a></h4>
+<p>Pubblicato nel 1923 a Bologna, accolto dal silenzio della critica. Lo scrittore aveva 62 anni e ne rimase amareggiato. Joyce lesse il romanzo e lo trovò interessante. Due anni dopo Montale pubblico una recensione favorevole.</p>
+<p>La figura del protagonista è un evoluzione della figura dell&rsquo;inetto, infatti Zeno Cosini tenta di curare con sedute psicanalitiche una forma di nevrosi che lo fa vivere in una perenne forma di disagio esistenziale, ma grazie a questa nevrosi lui riesce a smascherare gli inganni della società borghese. Zeno rappresenta la condizione nevrotica dell&rsquo;uomo moderno.</p>
+<h3 id="il-profilo-autobiografico"><a href="#indice" id="profilo-autobiografico">Il profilo autobiografico</a><a class="headerlink" href="#il-profilo-autobiografico" title="Permanent link"></a></h3>
+<h4 id="1927">1927<a class="headerlink" href="#1927" title="Permanent link"></a></h4>
+<p>Svevo parla di se stesso in terza persona, ricordando le tappe della sua formazione e il suo percorso artistico</p>
+<h3 id="il-vecchione-le-confessioni-del-vegliardo"><a href="#indice" id="vecchione">Il vecchione / Le confessioni del vegliardo</a><a class="headerlink" href="#il-vecchione-le-confessioni-del-vegliardo" title="Permanent link"></a></h3>
+<h4 id="1928">1928<a class="headerlink" href="#1928" title="Permanent link"></a></h4>
+<p>Solo alcune pagine, continuazione della Coscienza di Zeno, qui oltre a Zeno e la moglie, compaiono i figli, il genero e il nipotino. Attorno a lui è cresciuta una grande famiglia e dietro la tranquilla facciata borghese si nascondono tensioni e malesseri.</p>
+<p>Svevo voleva rappresentare la condizione alienata del vecchio nella società moderna.</p>
+<h2 id="il-pensiero-e-la-poetica"><a href="#indice" id="pensiero-poetica">Il pensiero e la poetica</a><a class="headerlink" href="#il-pensiero-e-la-poetica" title="Permanent link"></a></h2>
+<h3 id="lincontro-con-schopenhauer-darwin-dostoevskij-e-nietzsche"><a href="#indice" id="incontro-gente">L&rsquo;incontro con Schopenhauer, Darwin, Dostoevskij e Nietzsche</a><a class="headerlink" href="#lincontro-con-schopenhauer-darwin-dostoevskij-e-nietzsche" title="Permanent link"></a></h3>
+<p>Particolare attenzione all&rsquo;interiorità dei personaggi e al complesso intreccio delle motivazioni che spingono l&rsquo;individuo ad agire (come nel naturalismo francese).</p>
+<p>Svevo viene influenzato dal pensiero di Schopenahuer e i suoi meccanisimi di auto illusione, per i quali l&rsquo;individuo crede di possedere libertà di scelta in una visione amaramente pessimistica della vanità delle aspirazioni umane.</p>
+<p>Sempre rifacendosi ai lavori di Schopenhauer Svevo individua due categorie di persone:</p>
+<ul>
+<li><strong>il lottatore</strong>: si impegna nella vita ed è vincente</li>
+<li><strong>il contemplatore</strong>: destinato alla sconfitta perché incapace di assumere un ruolo nella società, di questa categoria fa parte l&rsquo;inetto sveviano</li>
+</ul>
+<p>Viene infleunzato dalle teorie di <strong>Darwin</strong> sulla selezione naturale nell&rsquo;analisi e nell&rsquo;interpretazione dei rapporti tra individuo e società perché nella sua lotta per la vita e nel suo scontro con un antagonista, l&rsquo;inetto, è destinato al fallimento.</p>
+<p>Fu influenzato da <strong>Dostoevskij</strong> che indivuò la cusa dell&rsquo;inettitudine nell&rsquo;intelligenza cioè nella capacità di spiegare e indagare la realtà.</p>
+<p>Questa visione pessimistica fu rafforzata con l&rsquo;incontro con il pensiero di <strong>Nietzsche</strong>, interpretato da Svevo in tutti i suoi aspetti negativi, in netto contrasto con la letteratura estetizzante di <em>D&rsquo;Annunzio</em>.</p>
+<h3 id="joyce-e-la-letteratura-contemporanea"><a href="#indice" id="joyce">Joyce e la letteratura contemporanea</a><a class="headerlink" href="#joyce-e-la-letteratura-contemporanea" title="Permanent link"></a></h3>
+<p>Ha un ruolo determinante <strong>Joyce</strong> nelle contaminazioni culturali il cui influsso è da rintracciarsi nell&rsquo;umorismo e ironia usati per sottolineare i comportamenti strani e imprevedibili dei protagonisti di Svevo. Grazie a Joyce svevo conosce le opere come &ldquo;<em>La ricerca</em>&rdquo; di <strong>Proust</strong> da cui ricava l&rsquo;idea del recupero della memoria come mezzo per analizzare il passato e interpretare il presente.</p>
+<h3 id="linteresse-per-la-psicanalisi"><a href="#indice" id="psicanalisi">L&rsquo;interesse per la psicanalisi</a><a class="headerlink" href="#linteresse-per-la-psicanalisi" title="Permanent link"></a></h3>
+<p>La volontà di indagine di Svevo nell&rsquo;indagare la psicologia dei personaggi lo avvicina alla teoria di <strong>Freud</strong>. Non fece mai mistero della sua sfiducia nell&rsquo;efficacia della psicoterapia ma se ne serve come strumento di analisi del labirinto della psiche umana.</p>
+<h2 id="gli-influssi-e-le-tecniche-narrative"><a href="#indice" id="influssi">Gli influssi e le tecniche narrative</a><a class="headerlink" href="#gli-influssi-e-le-tecniche-narrative" title="Permanent link"></a></h2>
+<h3 id="tra-realismo-e-naturalismo"><a href="#indice" id="realismo-naturalismo">Tra Realismo e Naturalismo</a><a class="headerlink" href="#tra-realismo-e-naturalismo" title="Permanent link"></a></h3>
+<ul>
+<li><strong>Una Vita</strong>: sono importanti l&rsquo;influsso del realismo e del naturalismo, il primo romanzo tratta di un inetto incapace di agire, di affrontare la realtà o di prendere decisioni</li>
+<li><strong>Senilità</strong>: secondo romanzo, storia della rinuncia alla vita, da un altro inetto, condannato alla passività e all&rsquo;autoesclusione. Opere legate per certi aspetti all&rsquo;impatto narrativo di stampo naturalista. Elemento di novità è che compaiono 3 co-protagonisti, l&rsquo;attenzione dell&rsquo;autore è orientata alle 4 figure del romanzo e all&rsquo;intrecciarsi dei rapporti. Si allontana dal romanzo naturalista e si concenctra sull&rsquo;indagine psicologica.</li>
+</ul>
+<h3 id="ladozione-di-nuove-tecniche-narrative"><a href="#indice" id="adozione">L&rsquo;adozione di nuove tecniche narrative</a><a class="headerlink" href="#ladozione-di-nuove-tecniche-narrative" title="Permanent link"></a></h3>
+<ul>
+<li><strong>La coscienza di Zeno</strong>: terzo romanzo, approfondisce lo scandaglio sulla psiche umana, adotta nuove tenciche narrative, infatti la narrazione non segue un ordine cronologico ma segue criteri tematici. Ne derivano una continua oscillazione tra passato e presente, e una sfasatura tra l&rsquo;io narrante (Zeno che scrive di se stesso a 57 anni) e l&rsquo;io narrato (Lo Zeno più giovane di cui lui stesso racconta quando è più anziano). La sintassi è complessa, questi elementi rinnovano la narrativa italiana.</li>
+</ul></article></body></html>
