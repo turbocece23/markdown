@@ -222,8 +222,6 @@ Punto fondamentale della politica estera di Giolitti fu la **Conservazione della
     - "Quarta Sponda" -> Terre da coltivare, possibilità di emigrazione
     - Consenso ottenuto dei nazionalisti
 
-
-
 ### <a href="#indice" id="guerra-libia">Guerra di Libia</a>
 
 - 29 Settembre 1911 -> Dichiarazione ostilità all'Impero Ottomano
@@ -243,8 +241,6 @@ La situazione risultava ancora bloccata, a causa dello stallo nelle trattative d
 - Ottobre 1912
   - Trattato di Losanna (Pace)
   - All'Italia rimangono Libia, Rodi, isole del Dodecaneso
-
-
 
 Dopo il trattato di Losanna e quindi la fine degli scontri, venne il momento di fare il rapporto di ciò che era previsto contro ciò che si aveva effettivamente ottenuto, riguardo al piano politico e al piano economico.
 
