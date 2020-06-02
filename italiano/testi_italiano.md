@@ -32,10 +32,8 @@
 		padding: 0.7%;
 	}
 
-	a:link { color: white; }
+	a:link { color:#ECF39E; text-decoration: underline; }
 	a:visited { color: white; }
-	ul a:link { color: black; }
-	ul a:visited { color: black; }
 	.hig/*hlight*/ { color:#32739C; }
  	.cornice
  	{
@@ -94,7 +92,7 @@ Mazzarò rappresenta una nuova classe sociale di possedenti: privo di scrupoli, 
 
 ### Charles baudelaire
 #### da "I fiori del Male"
-##### p.194 Spleen
+##### <a href="https://www.scuolissima.com/2012/06/charles-baudelaire-spleen.html">p.194 Spleen</a>
 <small class="cornice">Tradotto: "Noia", prevalere dell'Angoscia sulla Speranza, originale: quartine di versi a rima alternata (ABAB)</small>
 
 Il poeta guardando la natura, vi legge il riflesso del suo disagio e del suo senso di oppressione: il cielo grava sull'anima come un coperchio:
@@ -133,22 +131,48 @@ Nella notte di San Lorenzo (**10 Agosto**) una pioggia di stelle cade dal cielo.
 ##### p.238 L'assiuolo
 <small class="cornice">1897, Senso di mistero e di inquietudine, linguaggio analogico e allusivo, fonosimbolismo</small>
 
-La lirica si apre con la descrizione di una notte chiara in cui voci, presenze arcane e sussulti
+La lirica si apre con la descrizione di una notte chiara in cui voci, presenze arcane e sussulti creano una sottile trama di corrispondenze, l'atmosfera inizialmente serena e quasi incantata si fa via via inquietante, densa di mistero. Il poeta ode venire dai campi la voce di un assiuolo e il cuore sembra trovare in esso l'eco della sua angoscia, un'angoscia misteriosa, un senso di morte.
+
+Nella lirica domina dapprima il sentimento dell'estasi Ma al senso di attesa e di mistero subentra improvvisamente l'angoscia, uno sgomento profondo che nasce da un grido di dolore che affiora da un passato lontano, ma ancora lacerante.
+
+- **Prima strofa**: paesaggio lunare a tinte sfumate. Qualche lampo lontano, pennellate impressionistiche
+- **Seconda strofa**: nel chiarore lattiginoso ascolta il respiro del mare, fruscio misterioso tra i cespugli e il singulto dell'assiuolo. A queste voci arcane della natura li cuore del poeta è sopraffatto dall'angoscia
+- **Terza strofa**: la strofa ha valore simbolico: il mistero della natura, della vita e della morte accresce l'inquietudine e lo sgomento del poeta
 
 ##### p.247 Il lampo
+<small class="cornice">1894, bagliore del lampo sul paesaggio, stile impressionistico e simbolismo, ballata piccola di endecasillabi rimati secondo lo schema ABCBCCA</small>
+
+Chiaro esempio dell'**impressionismo pascoliano**. Il poeta personifica il cielo e la terra che sono sconvolti e sembrano partecipare alla sua ansia. La loro condizione è svelata da un lampo che assume il significato di rivelazione abbagliante e improvvisa.
+
+Il poeta intravede una casa bianca in mezzo al temporale e la paragona a un occhio spalancato per il terrore, che si apre per un istante e poi si richiude nell'oscurità.
 
 #### da "Canti di Castelvecchio"
-
 ##### p.255 Il gelsomino notturno
+<small class="cornice">1901, amore e rito della fecondazione, mito del "nido", linguaggio allusivo e simbolico, sei quartine di versi novenari a rime alternate (ABAB CDCD EFEF)</small>
+
+Composta nel 1901 per celebrare le nozze del'amico Gabriele Brignati di Lucca.
+
+È sera, l'ora in cui il poeta si abbandona ai ricordi. Tutt'intorno è silenzio: dormono nei loro nidi gli uccelli, tace ogni voce. Solo un bisbigliare sommesso in una casa: gli sposi che si apprestano a trascorrere la loro prima notte di nozze (**bombare duro**).
+
+Questa poesia conferma il senso di **esclusione** del poeta dall'**amore coniugale**. Il desiderio di creare un nuovo nucleo familiare, rimaso inappagato in Pascoli. Viene vissuto in lui con contraddizione e turbamento. Nella lirica emerge questo sentimento ambivalente, espresso con il ricorso a due diverse immagini: accanto ai simboli di morte compaiono simboli che rimandano alla sfera sessuale, legati a un senso di estraneità all'amore.
 
 ### Gabriele D'Annunzio
 #### da "Il Piacere"
-
 ##### p.319 Il ritratto di un esteta
+<small class="cornice">1889, ritratto del protagonista Andrea Sperelli, educazione paterna, culto dell'arte e della bellezza, aspirazione al "vivere inimitabile"</small>
+
+Ritratto morale del protagonista, educato fin da giovanissimo al gusto dell'arte, Andrea Sperelli incarna una delle figure tipiche del 19° secolo, quella dell'esteta, ossia colui che basa la propria vita solo sulla ricerca del piacere e del bello, ingorando ogni valore morale.
+
+La sua educazione estetica si riassume nella massima: "Bisogna fare la propria vita come si fa un'opera d'arte": vivere il culto della bellezza, inseguire l'ideale di un "vivere inimitabile" è l'unico modo per elevarsi da una vita mediocre e sottrarsi alla volgarità dell'esistenza comune e borghese. La formazione di Andrea è equamente divisa tra lo studio e le esperienze della vita reale: da un lato accrescono la sua passione per la vita improntata all'arte, dall'altro distruggono progressivamente la sua forza morale. Il tutto avviene sotto il segno della più assoluta libertà, poiché, secondo il padre, la regola di ogni artista e uomo di intelletto su può riassumere nella celebre massima: "Possedere, non essere posseduto!"
+
+Questo assunto estetico è vissuto dal protagonista in modo problematico e sofferto: sembra essere più che una gioia, una **condanna**, un eredità demoniaca lasciatagli dal padre. È un insegnamento che si trasforma in forza distruttrice, in malattia dello spirito che lo priva di ogni energia morale, persino creativa. Anche a lui, infatti, manca quella **forza di volontà**, come a tanti personaggi decadenti, inetti e indifferenti, che affollano la letteratura del tempo.
 
 #### da "Le Laudi"
+##### <a href="https://www.fareletteratura.it/2013/01/09/analisi-del-testo-e-parafrasi-la-sera-fiesolana-dannunzio/">p.301 La sera fiesolana</a>
+<small class="cornice">1899, pubblicata sulla "Nuova Antologia", paesaggio al tramonto dopo la pioggia, trasfigurazione mitica della sera, misticismo francescano, panismo e superonismo, linguaggio analogico e musicale, 3 strofe di 14 versi alternate a riprese di 3 versi</small>
 
-##### p.301 La sera fiesolana
+L'io poetico immagina di parlare alla sua donna mentre assieme a lei contempla, dopo la pioggia, un dolce paesaggui collinare nell'ora del crepuscolo di una sera di giugno. **La Sera**, qui **personificata**, produce l'incanto di una natura placida e rasserenante, fitta di immagini più evocative che descritte, densa di dolci misteri. Ne deriva il senso di bellezza e armonia che il poeta sa rendere attraverso preziosi effetti musicali.
+
 ##### p.305 La pioggia nel pineto
 
 ### F.T. Marinetti
