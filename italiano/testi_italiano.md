@@ -169,15 +169,32 @@ Questo assunto estetico è vissuto dal protagonista in modo problematico e soffe
 
 #### da "Le Laudi"
 ##### <a href="https://www.fareletteratura.it/2013/01/09/analisi-del-testo-e-parafrasi-la-sera-fiesolana-dannunzio/">p.301 La sera fiesolana</a>
-<small class="cornice">1899, pubblicata sulla "Nuova Antologia", paesaggio al tramonto dopo la pioggia, trasfigurazione mitica della sera, misticismo francescano, panismo e superonismo, linguaggio analogico e musicale, 3 strofe di 14 versi alternate a riprese di 3 versi</small>
+<small class="cornice">1899, ispirata al  pubblicata sulla "Nuova Antologia", paesaggio al tramonto dopo la pioggia, trasfigurazione mitica della sera, misticismo francescano, panismo e superonismo, linguaggio analogico e musicale, 3 strofe di 14 versi alternate a riprese di 3 versi</small>
 
 L'io poetico immagina di parlare alla sua donna mentre assieme a lei contempla, dopo la pioggia, un dolce paesaggui collinare nell'ora del crepuscolo di una sera di giugno. **La Sera**, qui **personificata**, produce l'incanto di una natura placida e rasserenante, fitta di immagini più evocative che descritte, densa di dolci misteri. Ne deriva il senso di bellezza e armonia che il poeta sa rendere attraverso preziosi effetti musicali.
 
 ##### p.305 La pioggia nel pineto
+<small class="cornice">1902, la voce della pioggia, l'intima fusione di uomo e natura, panismo e superonismo, la sensualità e il languore, la poesia come musica</small>
+
+**Una delle liriche più note** ed emblematiche del panismo dannunziano. Qui la poesia diventa musica: non contano tanto i significati delle parole, quanto la novità delle immagini e, sopratutto, le variazioni di note timbriche e melodiche.
+
+- **Prima strofa**: si apre con l'invito del poeta rivolto alla sua donna a cogliere parole "più nuove", non umane, pronunciate da "gocciole e foglie" del bosco. L'aggettivo "silvani", riferito ai volti, sottolinea l'inizio della metamorfosi panica
+- **Seconda strofa**: introduce il **canto delle cicale** che si unisce a quello dell'orchestra di alberi suonati dalle "dita" della pioggia. Subentra poi la ripresa del motivo panico con una vera e propria metamorfosi del poeta e di Ermione in creature silvestri, già avviata nella prima strofa ("volti silvani")
+- **Terza strofa**: le voci della natura si mescolano in un'ampia trama melodica: il coro delle cicale si attutisce, subentra quello delle rane e poi si spegne del tutto. Nel silenzio si sente solo il suono vario della pioggia
 
 ### F.T. Marinetti
-
 ##### p.428 Zang Tumb Tumb. Il bombardamento di Adrianopoli
+<small class="cornice">1913, conflitto bulgaro-turco, celebrazione della guerra e delle macchine belliche</small>
+
+Marinetti volle rappresentare e celebrare, secondo la sua innovativa e provocatoria poetica, il conflitto **bulgaro-turco**.
+
+Il poema "parolibero" di Marinetti è basato sulla ricerca fonosimbolica, cioè sull'uso di parole il cui suono e la cui disposizione sulla pagina dovrebbero trasmettere simultaneamente la realtà sul piano sia visivo sia uditivo.
+
+Marinetti, nel **Manifesto del futurismo** del 1909 aveva celebrato la guerra come "sola igiene del mondo" ed esaltato il "militarismo, patriottismo, il gesto distruttore dei liberatori", fu inviato nel 1913 come corrispondente sul fronte balcanico, dove assistette al conflitto. Nel passo che riportiamo, il poeta trascrive simultaneamente le sensazioni visive, uditive e olfattive suggeritegli dallo spettacolo dell'assedio bulgaro alla città di Adrianopoli, nella Turchia europea.
+
+Di fronte alla potenza delle macchine da guerra, cannoni e mitragliatrici, i cui rumori sollecitano le facoltà sensoriali come i suoni prodotti da un'orchestra, si manifesta tutta l'esaltazione psicofisica di Marinetti.
+
+Il componimento è un esempio  Le parole si susseguono **in libertà** senza legami logici.
 
 ### Giuseppe Ungretti​
 #### da "L’allegria"
