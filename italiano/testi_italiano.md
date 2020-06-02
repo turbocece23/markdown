@@ -194,23 +194,68 @@ Marinetti, nel **Manifesto del futurismo** del 1909 aveva celebrato la guerra co
 
 Di fronte alla potenza delle macchine da guerra, cannoni e mitragliatrici, i cui rumori sollecitano le facoltà sensoriali come i suoni prodotti da un'orchestra, si manifesta tutta l'esaltazione psicofisica di Marinetti.
 
-Il componimento è un esempio  Le parole si susseguono **in libertà** senza legami logici.
+Il componimento è un esempio di narrazione alla maniera futurista. L'autore ricostrusice le sensazioni simultanee che provò durante il bombardamento di Adrianopoli. elencando in successione confusa immagini, rumori, esplosioni, tensioni di cuori e di corpi in uno spasimo di fuoco, in un'esaltazione di erosimo. Le parole si susseguono **in libertà** senza legami logici.
 
 ### Giuseppe Ungretti​
 #### da "L’allegria"
-
 ##### p.611 In memoria
+<small class="cornice">Scritta nel 1916, dedicata a Moammed Sceab, prima fase della produzione di Ungaretti, senso di sradicamento, ricerca dell'essenzialità espressiva</small>
+
+Dedicata all'amico di infanzia Moammed Sceab con il quale si era trasferito a Parigi nel 1912 dopo aver lasciato Alessandria d'Egitto. Qui pero Sceab si suicida dopo pochi mesi perché non riusciva ad accettare la sua condizione di esule.
+
+Anche se in Francia egli aveva assunto il nome di Marcel, non era però riuscito a sentirsi veramente francese e, nello stesso tempo, aveva dimenticato le usanze della sua gente. Tema dominante della prima parte è la **negazione dell'identità di Moammed**. Nella seconda parte si parla della rievocazione del passato al presente, il poeta si sofferma per fornitere una serie di particolari geografici che contrastano con la vaghezza quasi mitica del mondo arabo da cui Moammed proveniva. Il testo chiude con l'amara consapevolecca zche la vita e la morte dell'amico sono state ignorate dal mondo, con l'unica eccezzione del poeta.
+
 ##### p.616 Veglia
+<small class="cornice">1915, orrore e pietà davanti al dramma della guerra, stretta vicinanza alla morte suscita l'amore per la vita, sperimentalismo formale</small>
+
+Ispirata a un episodio realmente vissuto da Ungaretti durante la guerra: la veglia accanto al cadavere di un compagno rimasto ucciso ruante il combattimento. Il contatto così ravvicinato con la morte suscita in lui un grande desiderio di vita.
+
 ##### p.620 Fratelli
+<small class="cornice">1619, l'atrocità della guerra fa riscoprire la fratellanza e la solidarietà, la poesia come ricerca dell'essenza intima della realtà, essenzialità espressiva</small>
+
+L'aria è squarciata da lampi di battaglia. Due reparti combattenti si incontrano sulla linea del fronte. Mentre si salutano e si scambiano notizie, ecco nel buio risuonare la parola che il mondo impazzito sembra aver dimenticato "fratelli". È come un grido di rivolta contro gli orrori della guerra. "Fratelli" è la parola che apre e chiude la poesia.
+
 ##### p.626 I fiumi
+<small class="cornice">1916, scritta durante la prima guerra mondiale, il riemergere dei ricordi del pasato come una sorta di sintesi biografica, armonia interiore ritrovata grazie alla natura, uso dell'analogia, ricerca dell'essenzialità espressiva</small>
+
+Durante la prima guerra mondiale, il fiume Isonzo, che costeggia il Carso, è stato teatro di ben undici sanguinose battaglie. In quel fiume il poeta soldato un giorno si immerge per trovare un po' di sollievo. Nella sua mente affiorano i ricordi del passato, le immagini di altri fiumi (il Serchio, il Nilo, la Senna), cui sono legati i momenti importanti della sua vita. È la piena scoperta di sé e la conquista di sentirsi parte di un'armonia universale.
+
+La lirica ha un **carattere autobiografico**. In un momento di tregua dalla guerra il poeta ricorda la sua immersione nelle acque dell'Isonzo. L'acqua del fiume è l'elemento naturale primordiale che lo riconcilia con la vita, gli fa recuperare la dimensione di creatura nell'universo, gli consente di ricapitolare la propria vicenda e di comprenderne il senso, ritrovando l'armonia con gli elementi della natura.
+
+- **Serchio**: in Lucchesia, da dove proveniva la sua famiglia
+- **Nilo**: dove nacque, crebbe e si sentì "ardere" dal desiderio di nuove esperienze
+- **Senna**: a Parigi si era "conosciuto" aveva capito quali fossero la sua vita e la sua vocazione poetica
+
 ##### p.636 San Martino del Carso
+<small class="cornice">1916, analogia tra paesaggio distrutto e animo del poeta, sperimentalismo formale</small>
+
+Anche in questa lirica il poeta ricorre a parole essenziali, scanre, per esprimere, con ritmo franto il senso tragico della devastazione di un paesee del proprio animo, "il paese più straziato". Le case sono ridotte a "qualche brandello di muro" e tanti cari amici sono morti, ma tutti sono presenti e vivi nel suo cuore, lacerato dai ricordi brucianti e di quei giorni di tragedia e di rovina.
+
+Da ricordare l'elemento religioso quando dice "nel mio cuore nessuna croce manca" in riferimento ai compagni caduti che porta nel cuore.
 
 #### da “Sentimento del tempo”
-
 ##### p.644 La madre
+<small class="cornice">1930, attesa del perdono divino, riscoperta della religiosità, recupero dei metri della tradizione, libera alternanza di endecasillabi e settenari (tutte le altre poesie erano a verso libero)</small>
+
+Il poeta immagina che, una volta morto, sarà condotto al cospetto di Dio dalla madre. Ella invocherà per lui la grazia e, solo quando Dio l'avrà concessa, volgerà i suoi occhi al figlio con un sospiro di gioia.
+
+Il componimento può essere diviso in quattro parti:
+
+- **Prima quartina**: il poeta immagina l'incontro con la madre subito dopo la propria morte
+- **Seconda quartina**: il poeta rappresenta la madre inginocchiata davanti "all'Eterno"
+- **Terza quartina**: si alternano ancora il futuro e il passato, che sembrano congiungersi nel riferimento alla stessa immagine
+- **Due strofe conclusive**: il poeta esprime il verificarsi del ricongiungimento atteso con la madre, dopo il perdono divino
 
 ### Italo Svevo
 #### da "La coscienza di Zeno"
-
 ##### p.472 L'ultima sigaretta
+<small class="cornice">Il contrastato e morboso rapporto di Zeno con le sigarette, il "tempo misto". l'ironia come strumento per evidenziare lo scarto tra dato oggettivo e interpretazione del personaggio</small>
+
+Zeno ricorda i suoi reiterati tentativi di liberarsi dal vizio del fumo, tutti miseramente falliti a causa della sua mancanza di volontà, nella sua inguaribile inetttitudine.
+
+L'**ossesisone del fumo** ha accompagnato Zeno per tutta la vita, piena di vani propositi di smettere di fumare preceduti da una specie di compenso: "**l'utlima sigaretta**". Liberarsi dal fumo significa per Zeno passare dalla malattia alla salute, dall'immaturità alla vita autonoma, adulta, costruttiva. Ma se questo è il suo obiettivo a livello razionale, a livello inconscio egli vuole esattamente il contrario: vuole rimandare a tempo indeterminato il momento di assumersi le responsabilità della vita adulta.
+
+Fumando, Zeno continua simbolicamente a ribellarsi a un'autorità della quale però non può fare a meno, tant'è vero che, dopo la morte del padre, quel ruolo sarà assuno dalla moglie Augusta. Diverso è invece il rapporto che Zeno ha avuto con la **madre**, di cui ricorda il sorriso, quasi complice, in occasione del sigaro sparito (**complesso di Edipo** a 1000 diagnosticato dal dottor S)
+
 ##### p.479 Un rapporto conflittuale
+<small class="cornice"></small>

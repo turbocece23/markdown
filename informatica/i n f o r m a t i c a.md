@@ -79,6 +79,7 @@ Vincoli **inter**-relazionali (che riguardano le chiavi esterne)
 Structured Query Language, è un linguaggio per l’interrogazione e la gestione di basi di dati
 
 Comandi SQL, divisi in 3 categorie: DDL,DML,DCL:
+
 - DDL = Data Definition Language (Create, Alter, Drop)
 - DML = Data Manipulation Language (Insert, Select, Delete, Update)
 - DCL = Data Control Language
