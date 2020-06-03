@@ -47,3 +47,15 @@ Con questi programmi è diventato sempre più facile (anche per utenti inesperti
 
 Uno dei rischi maggiori che si incontra quando si sceglie di usare versioni pirata di un software è quello di incappare in exploit posizionati da altri utenti, con il fine di prendere il controllo della macchina di altri utenti ignari.
 
+
+### Consiglio prof
+
+Sistemi: log
+informatica: inserire i log nei databse non relazionali o relazionali
+
+collegamento con pcto: come ho fatto log durante l'alternanza e quali sono stati i rischi dei software contraffatti
+
+Ogni attività viene monitorata, big data, (database con modello a oggetti, database reticolari)
+
+https://lorenzogovoni.com/database-relazionali-e-big-data/
+https://www.rackone.it/big-data-con-database-nosql-unintroduzione-pratica/
