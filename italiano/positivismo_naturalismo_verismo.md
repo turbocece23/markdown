@@ -121,6 +121,9 @@ Alcuni pensatori estesero le nozioni di lotta per l'esistenza e di sopravvivenza
 
 Parallelamente al positivismo si affermano nella letteratura dell'epoca le poetiche del **Naturalismo** (Francia) e del **Verismo** (Italia). Possono essere considerate prosecuzioni del **Realismo**, termine che indica la tendenza della narrativa a rappresentare la realtà in maniera concreta e oggettiva.
 
+- Positivismo: movimento filosofico
+- Naturalismo, Verismo, Realismo: movimenti letterari
+
 I capiscuola:
 
 - **Charles Dickens** in Inghilterra
