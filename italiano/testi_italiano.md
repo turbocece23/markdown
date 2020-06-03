@@ -34,6 +34,8 @@
 
 	a:link { color:#ECF39E; text-decoration: underline; }
 	a:visited { color: white; }
+	ul a:link { color: black; }
+	ul a:visited { color: black; }
 	.hig/*hlight*/ { color:#32739C; }
  	.cornice
  	{
@@ -45,7 +47,18 @@
 
 # Testi di italiano
 
-### E. Zola
+## Indice
+
+- <a href="#zola">E. Zola</a>
+- <a href="#verga">G. Verga</a>
+- <a href="#baudelaire">Charles Baudelaire</a>
+- <a href="#pascoli">Giovanni Pascoli</a>
+- <a href="#dannunzio">Gabriele D'Annunzio</a>
+- <a href="#marinetti">F.T. Marinetti</a>
+- <a href="#ungaretti">Giuseppe Ungaretti</a>
+- <a href="#svevo">Italo Svevo</a>
+
+### <a href="#indice" id="zola">E. Zola</a>
 #### da "Il romanzo perimentale"
 ##### p.32 Gervasia all'Assomoir
 <small class="cornice">1880, Francia, Naturalismo</small>
@@ -56,7 +69,7 @@ Quando Gervasia è ancora sobria considera con distacco gli uomini ubriachi, pro
 
 Testo esemplare dello **stile naturalista** di **Zola**, alla base vi è il principio del determinismo, studia e descrive l'Assomoir convinto che la donna, messa a dura prova dalla vita, non possa sottrarsi alla sua rovinosa influenza. Ambienti e comportamenti sono descritti nel dettaglio 
 
-### G. Verga
+### <a href="#indice" id="verga">G. Verga</a>
 #### da "Vita dei campi"
 ##### p.79 Un documento umano (Prefazione alla novella "Amante di Gramigna")
 <small class="cornice">1880, Italia, Fase verista di Verga, Raccolta di novelle ispirate alle figure della vita contadina della Sicilia</small>
@@ -90,7 +103,7 @@ Protagonista della novella è **Mazzarò** (il Minchione), che con tenacia e sac
 
 Mazzarò rappresenta una nuova classe sociale di possedenti: privo di scrupoli, grazie al suo ingegno e alla sua avidità riesce a impadronirsi della "roba" del barone, colui che lo aveva cresciuto. Ossessionato dalla sua ricchezza, tormentato dalla paura di essere derubato della sua "roba" perfino dalla morte stessa.
 
-### Charles baudelaire
+### <a href="#indice" id="baudelaire">Charles Baudelaire</a>
 #### da "I fiori del Male"
 ##### <a href="https://www.scuolissima.com/2012/06/charles-baudelaire-spleen.html">p.194 Spleen</a>
 <small class="cornice">Tradotto: "Noia", prevalere dell'Angoscia sulla Speranza, originale: quartine di versi a rima alternata (ABAB)</small>
@@ -106,7 +119,7 @@ Nell'anima del poeta passa un **corteo funebre**: la speranza è vinta e l'angos
 
 Lo **Spleen** è una condizione di **cupa depressione**, di noia e torpore esistenziale. L'opposto dello spleen è "l'ideale", lo **slancio verso il bene e il bello**, sempre vanificato dall scontro con la realtà, con la società ostile e ottusa. Importanti le similitudini, metafore, allegorie che rispondono alla scelta di un registro alto.
 
-### Giovanni Pascoli
+### <a href="#indice" id="pascoli">Giovanni Pascoli</a>
 #### da "Il fanciullino"
 ##### È dentro di noi un fanciullino p.272
 <small class="cornice">1897, saggio pubblicato su "Il Marzocco", Pascoli enuncia le linee portanti della sua poetica, semplicità e purezza dello spirito poetico, la vera poesia è l'espressione del fanciullino che è in noi</small>
@@ -156,7 +169,7 @@ Composta nel 1901 per celebrare le nozze dell'amico Gabriele Brignati di Lucca.
 
 Questa poesia conferma il senso di **esclusione** del poeta dall'**amore coniugale**. Il desiderio di creare un nuovo nucleo familiare, rimasto inappagato in Pascoli. Viene vissuto in lui con contraddizione e turbamento. Nella lirica emerge questo sentimento ambivalente, espresso con il ricorso a due diverse immagini: accanto ai simboli di morte compaiono simboli che rimandano alla sfera sessuale, legati a un senso di estraneità all'amore.
 
-### Gabriele D'Annunzio
+### <a href="#indice" id="dannunzio">Gabriele D'Annunzio
 #### da "Il Piacere"
 ##### p.319 Il ritratto di un esteta
 <small class="cornice">1889, ritratto del protagonista Andrea Sperelli, educazione paterna, culto dell'arte e della bellezza, aspirazione al "vivere inimitabile"</small>
@@ -182,7 +195,7 @@ L'io poetico immagina di parlare alla sua donna mentre assieme a lei contempla, 
 - **Seconda strofa**: introduce il **canto delle cicale** che si unisce a quello dell'orchestra di alberi suonati dalle "dita" della pioggia. Subentra poi la ripresa del motivo panico con una vera e propria metamorfosi del poeta e di Ermione in creature silvestri, già avviata nella prima strofa ("volti silvani")
 - **Terza strofa**: le voci della natura si mescolano in un'ampia trama melodica: il coro delle cicale si attutisce, subentra quello delle rane e poi si spegne del tutto. Nel silenzio si sente solo il suono vario della pioggia
 
-### F.T. Marinetti
+### <a href="#indice" id="marinetti">F.T. Marinetti</a>
 ##### p.428 Zang Tumb Tumb. Il bombardamento di Adrianopoli
 <small class="cornice">1913, conflitto bulgaro-turco, celebrazione della guerra e delle macchine belliche</small>
 
@@ -196,7 +209,7 @@ Di fronte alla potenza delle macchine da guerra, cannoni e mitragliatrici, i cui
 
 Il componimento è un esempio di narrazione alla maniera futurista. L'autore ricostruisce le sensazioni simultanee che provò durante il bombardamento di Adrianopoli. elencando in successione confusa immagini, rumori, esplosioni, tensioni di cuori e di corpi in uno spasimo di fuoco, in un'esaltazione di eroismo. Le parole si susseguono **in libertà** senza legami logici.
 
-### Giuseppe Ungretti​
+### <a href="#indice" id="ungaretti">Giuseppe Ungretti​</a>
 #### da "L’allegria"
 ##### p.611 In memoria
 <small class="cornice">Scritta nel 1916, dedicata a Moammed Sceab, prima fase della produzione di Ungaretti, senso di sradicamento, ricerca dell'essenzialità espressiva</small>
@@ -246,7 +259,7 @@ Il componimento può essere diviso in quattro parti:
 - **Terza quartina**: si alternano ancora il futuro e il passato, che sembrano congiungersi nel riferimento alla stessa immagine
 - **Due strofe conclusive**: il poeta esprime il verificarsi del ricongiungimento atteso con la madre, dopo il perdono divino
 
-### Italo Svevo
+### <a href="#indice" id="svevo">Italo Svevo</a>
 #### da "La coscienza di Zeno"
 ##### p.472 L'ultima sigaretta
 <small class="cornice">Il contrastato e morboso rapporto di Zeno con le sigarette, il "tempo misto". l'ironia come strumento per evidenziare lo scarto tra dato oggettivo e interpretazione del personaggio</small>
