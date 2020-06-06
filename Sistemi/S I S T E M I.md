@@ -119,7 +119,6 @@ I successivi 2 byte sono chiamati **Tag Control Information** (**TCI** o **VLAN 
 
 ## <a href="#indice" id="U3">U3 - Tecniche crittografiche per la protezione dei dati</a>
 ### <a href="#indice" id="U3L1">L1 - La crittografia simmetrica</a>
-
 Ci sono diversi aspetti collegati al problema della sicurezza nelle reti:
 
 - **Segretezza**: le informazioni devono essere leggibili solo a chi ne ha i diritti
@@ -193,13 +192,16 @@ AES fu approvato da NSA per comunicazioni top-secret ed è tuttora il cifrario a
 Gli algoritmi simmetrici descritti presentano alcuni limiti tra i quali il problema più evidente: le persone che devono comunicare devono essere in possesso della stessa chiave e, di fatto, questo limita la diffusione e il suo utilizzo, in quanto non sono molti i sistemi a disposizione per la distribuzione delle chiavi.
 
 ### <a href="#indice" id="U2L2">La crittografia asimmetrica</a>
-
 Non è il metodo ideale per le comunicazioni su Internet principalmente perché il limte fonamentale è rappresentato dalla necessità di un canale sicuro e di un accordo preventivo per lo scambio delle chiavi. L'idea alla base delle **crittografie simmetriche** è quello di avere due chiavi diverse, una pubblica per la criptazione e una privata per la decriptazione.
 
 Con la **crittografia asimmetrica**:
 
 - si risolve il problema della **riservatezza**: criptando il messaggio con la chiave pubblica, solo il possessore della chiave privata è in grado di decriptarlo
 - si risolve il problema dell'**autenticità del mittente**: a ogni chiave pubblica è associata l'identità certa del proprietario
+
+Il principale svantaggio della *crittografia asimmetrica* è la complessità dei calcoli che rendono poco efficiente la loro implementazione sopratutto con l'aumentare della lunghezza della chiave.
+
+Per mantenere relativamente leggeri gli algoritmi asimmetrici viene estratta una sequenza di numeri dal messaggio originale
 
 ### fas
 - principi di crittografia
