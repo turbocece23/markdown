@@ -35,19 +35,16 @@
 		display: block;
 	}
 
+	.testocentro
+	{
+		text-align: center;
+	}
+
 	a:link { color: white; }
 	a:visited { color: white; }
 	ul a:link { color: black; }
 	ul a:visited { color: black; }
 	.hig/*hlight*/ { color:#1ba63d; }
- 
-	/*Per attivare la "dark mode"*/
-	/*p, li, ul{ color:white; }
-	html { color:white; background-color: black; }
-	a:link { color: white; }
-	a:visited { color: white; }
-	ul a:link { color: white; }
-	ul a:visited { color: white; }*/
 </style>
 
 # S I S T E M I
@@ -191,7 +188,7 @@ AES fu approvato da NSA per comunicazioni top-secret ed è tuttora il cifrario a
 
 Gli algoritmi simmetrici descritti presentano alcuni limiti tra i quali il problema più evidente: le persone che devono comunicare devono essere in possesso della stessa chiave e, di fatto, questo limita la diffusione e il suo utilizzo, in quanto non sono molti i sistemi a disposizione per la distribuzione delle chiavi.
 
-### <a href="#indice" id="U2L2">La crittografia asimmetrica</a>
+### <a href="#indice" id="U3L2">L2 - La crittografia asimmetrica</a>
 Non è il metodo ideale per le comunicazioni su Internet principalmente perché il limte fonamentale è rappresentato dalla necessità di un canale sicuro e di un accordo preventivo per lo scambio delle chiavi. L'idea alla base delle **crittografie simmetriche** è quello di avere due chiavi diverse, una pubblica per la criptazione e una privata per la decriptazione.
 
 Con la **crittografia asimmetrica**:
@@ -201,28 +198,53 @@ Con la **crittografia asimmetrica**:
 
 Il principale svantaggio della *crittografia asimmetrica* è la complessità dei calcoli che rendono poco efficiente la loro implementazione sopratutto con l'aumentare della lunghezza della chiave.
 
-Per mantenere relativamente leggeri gli algoritmi asimmetrici viene estratta una sequenza di numeri dal messaggio originale
+Per mantenere relativamente leggeri gli algoritmi asimmetrici viene estratta una sequenza di numeri dal messaggio originale chiamata **fingerprint** utilizzata per le funzioni di hash *MD4* e **MD5**.
 
-### fas
-- principi di crittografia
-- sicurezza nelle reti
-- crittografia
-- cifratura
-- crittoanalisi
-- crittografia simmetrica
-	- cifrario DES
-	- cifrario 3-DES
-	- cifrario AES
-	- cifrario IDEA
+#### <span class="hig">RSA</span>
 
-### <a href="#indice" id="U3L2">L2 - La crittografia asimmetrica</a>
-- cifratura asimmetrica
-	- meccanismo a chiave pubblica
-	- algoritmo RSA
-	- numeri coprimi
-	- cifratura ibrida
+L'algoritmo RSA lavora sfruttando i numeri primi e come chiave utilizza un numero n ottenutoproprio dal prodotto di due numeri primi **p** e **q** cioè **n = p * q**
+
+Usato per codificare un unico messaggio contenente una chiave segreta, tale chiave verrà poi utilizzata per scambiarsi messaggi tramite un algoritmo a chiave segreta (ad esempio **AES**)
+
+#### Crittografia ibrida
+
+Per gestire le chiavi pubbliche è necessario un sistema di **PKI** (**Public Key Infrastructure**) che si occupi della gestione e dello scambio delle chiavi.
+
+<table>
+	<thead>
+		<tr>
+			<th></th>
+			<th>Crittografia simmetirca</th>
+			<th>Crittografia asimmetrica</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<th>Pro</th>
+			<td class="testocentro">Molto veloce</td>
+			<td class="testocentro">Non serve un canale sicuro per lo scambio delle chiavi</td>
+		</tr>
+		<tr>
+			<th>Contro</th>
+			<td class="testocentro">Problema dello scambio delle chiavi</td>
+			<td class="testocentro">Molto lenta, a causa dei calcoli complessi da effettuare</td>
+		</tr>
+	</tbody>
+</table>
+
+In un **sistema a crittografia ibrida** utilizziamo la **chiave pubblica** soltanto per comunicare la **chiave segreta** che poi verrà usata per una normale comunicazione basata su crittografia simmetrica.
 
 ### <a href="#indice" id="U3L3">L3 - Certificati e firma digitale</a>
+
+La **firma digitale** è l'equivalente informatico di una tradizionale firma apposta su carta.
+
+Si basa su un sistema di crittografia a chiavi **asimmetriche** che consente:
+
+- la sottoscrizione di un documento informatico
+- la verifica, da parte dei destinatari, dell'identità del soggetto sottoscrittore
+- la certezza che l'informazione contenuta nel documento non sia stata alterata
+
+
 - generalità
 - firme digitali
 - funzione hash

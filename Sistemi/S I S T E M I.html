@@ -1092,19 +1092,16 @@ body .markdown-body
         display: block;
     }
 
+    .testocentro
+    {
+        text-align: center;
+    }
+
     a:link { color: white; }
     a:visited { color: white; }
     ul a:link { color: black; }
     ul a:visited { color: black; }
     .hig/*hlight*/ { color:#1ba63d; }
-
-    /*Per attivare la "dark mode"*/
-    /*p, li, ul{ color:white; }
-    html { color:white; background-color: black; }
-    a:link { color: white; }
-    a:visited { color: white; }
-    ul a:link { color: white; }
-    ul a:visited { color: white; }*/
 </style>
 
 <h1 id="s-i-s-t-e-m-i">S I S T E M I<a class="headerlink" href="#s-i-s-t-e-m-i" title="Permanent link"></a></h1>
@@ -1226,38 +1223,42 @@ body .markdown-body
 <p>AES fu approvato da NSA per comunicazioni top-secret ed è tuttora il cifrario a chiave segreta più usato negli ambienti informatici.</p>
 <h4 id="limiti-degli-algoritmi-simmetrici">Limiti degli algoritmi simmetrici<a class="headerlink" href="#limiti-degli-algoritmi-simmetrici" title="Permanent link"></a></h4>
 <p>Gli algoritmi simmetrici descritti presentano alcuni limiti tra i quali il problema più evidente: le persone che devono comunicare devono essere in possesso della stessa chiave e, di fatto, questo limita la diffusione e il suo utilizzo, in quanto non sono molti i sistemi a disposizione per la distribuzione delle chiavi.</p>
-<h3 id="la-crittografia-asimmetrica"><a href="#indice" id="U2L2">La crittografia asimmetrica</a><a class="headerlink" href="#la-crittografia-asimmetrica" title="Permanent link"></a></h3>
+<h3 id="l2-la-crittografia-asimmetrica"><a href="#indice" id="U3L2">L2 - La crittografia asimmetrica</a><a class="headerlink" href="#l2-la-crittografia-asimmetrica" title="Permanent link"></a></h3>
 <p>Non è il metodo ideale per le comunicazioni su Internet principalmente perché il limte fonamentale è rappresentato dalla necessità di un canale sicuro e di un accordo preventivo per lo scambio delle chiavi. L&rsquo;idea alla base delle <strong>crittografie simmetriche</strong> è quello di avere due chiavi diverse, una pubblica per la criptazione e una privata per la decriptazione.</p>
 <p>Con la <strong>crittografia asimmetrica</strong>:</p>
 <ul>
 <li>si risolve il problema della <strong>riservatezza</strong>: criptando il messaggio con la chiave pubblica, solo il possessore della chiave privata è in grado di decriptarlo</li>
 <li>si risolve il problema dell&rsquo;<strong>autenticità del mittente</strong>: a ogni chiave pubblica è associata l&rsquo;identità certa del proprietario</li>
 </ul>
-<h3 id="fas">fas<a class="headerlink" href="#fas" title="Permanent link"></a></h3>
-<ul>
-<li>principi di crittografia</li>
-<li>sicurezza nelle reti</li>
-<li>crittografia</li>
-<li>cifratura</li>
-<li>crittoanalisi</li>
-<li>crittografia simmetrica<ul>
-<li>cifrario DES</li>
-<li>cifrario 3-DES</li>
-<li>cifrario AES</li>
-<li>cifrario IDEA</li>
-</ul>
-</li>
-</ul>
-<h3 id="l2-la-crittografia-asimmetrica"><a href="#indice" id="U3L2">L2 - La crittografia asimmetrica</a><a class="headerlink" href="#l2-la-crittografia-asimmetrica" title="Permanent link"></a></h3>
-<ul>
-<li>cifratura asimmetrica<ul>
-<li>meccanismo a chiave pubblica</li>
-<li>algoritmo RSA</li>
-<li>numeri coprimi</li>
-<li>cifratura ibrida</li>
-</ul>
-</li>
-</ul>
+<p>Il principale svantaggio della <em>crittografia asimmetrica</em> è la complessità dei calcoli che rendono poco efficiente la loro implementazione sopratutto con l&rsquo;aumentare della lunghezza della chiave.</p>
+<p>Per mantenere relativamente leggeri gli algoritmi asimmetrici viene estratta una sequenza di numeri dal messaggio originale chiamata <strong>fingerprint</strong> utilizzata per le funzioni di hash <em>MD4</em> e <strong>MD5</strong>.</p>
+<h4 id="rsa"><span class="hig">RSA</span><a class="headerlink" href="#rsa" title="Permanent link"></a></h4>
+<p>L&rsquo;algoritmo RSA lavora sfruttando i numeri primi e come chiave utilizza un numero n ottenutoproprio dal prodotto di due numeri primi <strong>p</strong> e <strong>q</strong> cioè <strong>n = p * q</strong></p>
+<p>Usato per codificare un unico messaggio contenente una chiave segreta, tale chiave verrà poi utilizzata per scambiarsi messaggi tramite un algoritmo a chiave segreta (ad esempio <strong>AES</strong>)</p>
+<h4 id="crittografia-ibrida"><span class="hig">Crittografia ibrida</span><a class="headerlink" href="#crittografia-ibrida" title="Permanent link"></a></h4>
+<p>Per gestire le chiavi pubbliche è necessario un sistema di <strong>PKI</strong> (<strong>Public Key Infrastructure</strong>) che si occupi della gestione e dello scambio delle chiavi.</p>
+<table>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Crittografia simmetirca</th>
+            <th>Crittografia asimmetrica</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th>Pro</th>
+            <td class="testocentro">Molto veloce</td>
+            <td class="testocentro">Non serve un canale sicuro per lo scambio delle chiavi</td>
+        </tr>
+        <tr>
+            <th>Contro</th>
+            <td class="testocentro">Problema dello scambio delle chiavi</td>
+            <td class="testocentro">Molto lenta, a causa dei calcoli complessi da effettuare</td<>
+        </tr>
+    </tbody>
+</table>
+
 <h3 id="l3-certificati-e-firma-digitale"><a href="#indice" id="U3L3">L3 - Certificati e firma digitale</a><a class="headerlink" href="#l3-certificati-e-firma-digitale" title="Permanent link"></a></h3>
 <ul>
 <li>generalità</li>
