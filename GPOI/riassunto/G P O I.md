@@ -387,10 +387,10 @@ Gli elementi costituenti del progetto sono:
 
 |Nome|Descrizione|
 |:---:|:---|
-|<span class="hig">**Concezione**</span>|viene valutata l'utilità del progetto, se ha senso sfruttare le risorse per la sua realizzazione, creazione documento "studio di fattibilità" e "piano di progetto"|
-|<span class="hig">**Definizione**</span>|Il progetto viene pianificato in tutti i suoi aspetti|
-|<span class="hig">**Realizzazione**</span>|Creazione concentrata dell'output, momento di uso maggiore delle risorse|
-|<span class="hig">**Chiusura**</span>|L'output viene rilasciato per il funzionamento "a regime", passaggio di consegne tra chi ha gestito il progetto e chi dovrà gestire l'output|
+|<span class="hig">**Concezione**</span>|viene valutata l'utilità del progetto, se ha senso sfruttare le risorse per la sua realizzazione, creazione documento "studio di fattibilità"|
+|<span class="hig">**Definizione**</span>|Il progetto viene pianificato in tutti i suoi aspetti, "piano di progetto"|
+|<span class="hig">**Realizzazione**</span>|Creazione concentrata dell'output, momento di uso maggiore delle risorse, "diario di bordos"|
+|<span class="hig">**Chiusura**</span>|L'output viene rilasciato per il funzionamento "a regime", passaggio di consegne tra chi ha gestito il progetto e chi dovrà gestire l'output, "lesson learned"|
 
 ### <a href="#indice" id="U4L2">L2 - Il principio chiave nella gestione di un progetto e gli obiettivi di progetto</a>
 #### Anticipazione dei vincoli e delle opportunità
@@ -428,7 +428,7 @@ Gli obiettivi che ci poniamo devono essere sempre verificabili e devono seguire 
 		<td>per evitare conflitti e lavoro addizionale</td>
 	</tr>
 	<tr>
-		<td><b><span class="hig">R</span></b>realistici</td>
+		<td><b><span class="hig">R</span></b>ealistici</td>
 		<td>Raggiungibile all'interno dei limiti posti dal progetto</td>
 	</tr>
 	<tr>
@@ -440,12 +440,12 @@ Gli obiettivi che ci poniamo devono essere sempre verificabili e devono seguire 
 ### <a href="#indice" id="U4L3">L3 - L'organizzazione dei progetti</a>
 #### Le strutture organizzative
 
-- Nella **struttura funzionale** il progetto viene decomposto in sottoprogetti, assegnati a dei *responsabili funzionali*
-- Nella **Task Force (141)** il project manajer è fondamentale, si suddividono in gruppi di reparto stagni ben divisi fra di loro
+- Nella **struttura funzionale** il progetto viene decomposto in sottoprogetti, assegnati a dei *responsabili funzionali* (gruppi che si dedicano al progetto a tempo parziale, non ci sono project manager)
+- Nella **Task Force (141)** il project manajer è fondamentale, si suddividono in gruppi di reparto stagni ben divisi fra di loro (gruppi che si dedicano al progetto tutto tempo parziale)
 
 La prima privilegia l'efficienza nell'uso delle risorse a discapito dell'efficacia del progetto. La seconda viceversa, privilegia il progetto creando inefficienza nell'uso delle risorse.
 
-- La **struttura a matrice** cerca di mediare queste due soluzioni, viene nominato un Project Manager ma i membri del team non vengono staccati dalle funzioni di appartenenza
+- La **struttura a matrice** cerca di mediare queste due soluzioni, viene nominato un Project Manager ma i membri del team non vengono staccati dalle funzioni di appartenenza, il PM gestisce il lavoro mentre si lavora al progetto, il responsabile funzionale gestiesce il lavoro e le risorse durante il lavoro normale
 
 #### Il ruolo del project manager
 
@@ -467,18 +467,20 @@ Il *PM* è dotato di autorevolezza:
 - **Di merito**: data dalla qualità della persona, skill tecniche e manageriali, stile di leadership
 - **Di diritto**: si acquisisce in funzione di determinate condizioni organizzative
 
-Il *PM* possiede le conosccenze tecniche essenziali, indispensabili alla comprensione e conduzione delle attività di progetto ma sopratutto gli sono richieste elevate capacità gestionali e relazionali. Il PM si distingue da un manager tecnico perché ricerca soluzioni fattibili sotto i vincoli di tempo, budget e risorse e non soluzioni perfette e perché guarda i risultati globali di progetto e non solo l'output tecnico.
+Il *PM* possiede le conoscenze tecniche essenziali, indispensabili alla comprensione e conduzione delle attività di progetto ma sopratutto gli sono richieste elevate capacità gestionali e relazionali. Il PM si distingue da un manager tecnico perché ricerca soluzioni fattibili sotto i vincoli di tempo, budget e risorse e non soluzioni perfette e perché guarda i risultati globali di progetto e non solo l'output tecnico.
 
 Il *PM* è un ruolo multidimensionale, può essere visto come ruolo di confine (con i clienti), ruolo di interfaccia (scambio di informazioni), ruolo intermedio (tra linee gerarchice) e ruolo di agente del cambiamento (perché si occupa di progetti per loro natura innovativi)
 
 #### La gestione delle risorse umane e della comunicazione
 ##### Conflitto e fasi di creazione del gruppo di lavoro
 
-Quando si verifica un conflitto le vie percorribili sono:
+Quando si verifica un conflitto (in un progetto in cui vengono attribuite le responsabilità) le vie percorribili sono:
 
 - **Il compromesso**: dare qualcosa per ottenere qualcosa
 - **La pressione**: far prevalere la propria opinione
 - **Il confronto**: sviscerare il problema cercando un punto di incontro
+
+Per ridurre i conflitti si usa la matrice delle responsabilità, dove sono scritte le responsabiltià di ognuno.
 
 <table>
 	<tr>
@@ -571,16 +573,20 @@ Il **Gantt** (o diagramma a barre) è uno strumento puramente grafico in cui la 
 - **Pert**: permette di valutare le conseguenze di ritardi che concorrono sulle attività critiche e su quelle non critiche
 - **CPM** (Critical Path Method): consente di valutare la miglior allocazione delle risorse al fine di ridurre la lunghezza del cammino critico e quindi la durata del progetto
 
+Slack = LS - ES = LF - EF
+
+**Slack**: ritardo massimo che un'attività può subire senza diventare critica
+
 ### <a href="#indice" id="U4L5">L5 - La programmazione e il controllo dei costi e la gestione delle aree di rischio</a>
 #### La programmazione dei costi
 
 La **baseline** è la vera somma a disposizione per lo svolgimento delle attività connesse al progetto.
 
-- **BCWS** (Budgeted Cost of Work Scheduled): costo preventivo e budget del lavoro schedulato
+- **BCWS** (Budgeted Cost of Work Scheduled): costo preventivo o budget del lavoro schedulato
 - **ACWP** (Actual Cost of Work Performed): curva del lavoro effettivamente realizzato (performed)
 - **BCWP** (Budgeted Cost of Work Performed): curva del lavoro effettivamente realizzato ma a costi previsti (budgeted)
-- **CV** (Cost Variance): BCWP - ACWP
-- **SV** (Date Variance): BCWP - BCWS
+- **CV** (Cost Variance): BCWP - ACWP (se è positivo, sei in guadagno, se è negativo sei in perdita)
+- **SV** (Date o Scehdule Variance): BCWP - BCWS (se è positivo, sei in anticipo, se è negativo sei in ritardo)
 - **EAC**: Expected Overall Costs
 
 ## <a href="#indice" id="U5">U5 - Gestione di progetti informatici</a>
