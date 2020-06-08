@@ -357,29 +357,204 @@ Questi obiettivi sono tra loro connessi e generano altri aspetti collegati all'a
 - **Integrità**<br>La garanzia e la certezza che un documento sia originale e che il suo contenuto non sia stato letto e/o alterato e modificato da non autorizzati
 - **Paternità**<br>Ogni documento deve essere associato a un utente
 
+> Un documento elettronico ha valenza di prova in tribunale quando si può dimostrare l'autore del documento, cioè l'**identificazione** e l'**autenticazione** del **mittente** e l'**integrità** del documento
 
-- breve storia attacchi informatici
-- sicurezza sistema informativo
-- sicurezza informatica
-- valutazione dei rischi
-- principali tipologie di minacce
-- attacchi attivi e attacchi passivi
-- sicurezza nei sistemi distribuiti
+Le misure per ottenere la segretezza dei dati sono applicabili a diversi livelli della pila ISO/OSI:
+
+- livello fisico (1): cercare di impedire che avvengano intercettazioni di dati
+- livello data link (2): codifiche e cifrature dei dati trasmessi per renderli incomprensibili
+
+#### Valutazione dei rischi
+
+- Minacce alla sicurezza
+	- Minacce Naturali
+		- Inondazioni, incendi, terremoti, tempeste [...]
+	- Minacce Umane
+		- Intenzionali
+			- Utenti esterni come cracker o hacker
+			- Utenti interni come dipendenti scontenti
+		- Involontarie
+			- Dipendenti inesperti
+
+#### Principali tipologie di minacce
+
+Obiettivo + Metodo + Vulnerabilità = Attacco
+
+#### Attacchi passivi
+
+- Lettura del contenuto ad esempio mediante lo sniffing di pacchetti sulla LAN
+- Analisi del sistema e del traffico di rete, senza analizzare i contenuti
+
+#### Attacchi attivi
+
+- Intercettazione
+- Sostituzione di un host
+- Produzione
+- Phishing
+- Intrusione
+
+#### Sicurezza nei sistemi informativi distribuiti
+
+> L'obiettivo base è quello di garantire al sistema il **principio minimo di sicurezza** che consiste nella *protezione dagli attacchi passivi* e nel *riconoscimento degli attacchi attivi*
+
+Possiamo riassumere i tre "pilastri" della sicurezza in:
+
+- **prevenzione** (avoidance): mediante protezione dei sistemi e delle comunicazioni
+- **rilevazione** (detection): mediante il monitoraggio e il controllo degli accessi tramite autenticazione con password e certificati
+- **investigazione** (investigation): con l'analisi dei dati, il controllo interno con il confronto e la collaborazione degli utenti
+
+Tecniche minime per garantire questi tre pilastri:
+
+- **Uso della crittografia**
+- **Autenticazione degli utenti**<br>Sono collegate tre diverse problematiche
+	- identificazione (chi sei?)
+	- autenticazione (come ne sono sicuro?)
+	- autorizzazione (cosa puoi fare?)
+- **Firma elettronica**
 
 ### <a href="#indice" id="U4L2">L2 - La sicurezza delle connessioni con SSL/TLS</a>
-- protocollo SSL/TLS
-- HTTPS
+
+Lo standard più diffuso per la protezione dei servizi offerti tramite Internet è il **Secure Socket Layer** (**SSL**) ed è un insieme di protocolli crittografici che aggiungono funzionalità di cifratura e autenticazione a protocolli preesistenti
+
+Il protocollo SSL garantisce la sicurezza tramite tre funzionalità fondamentali:
+
+- **privatezza del collegamento**: il collegamento viene criptato tramite crittografia a chiave simmetrica
+- **autenticazione**: l'autenticazione dell'identità viene effettuata con la crittografia a chiave pubblica
+- **affidabilità**: il livello di trasporto include un controllo sull'integrità del messaggio chiamato MAC (**Message Authetication Code**)
 
 ### <a href="#indice" id="U4L3">L3 - Firewall, Proxy, ACL e DMZ</a>
-- i firewall
-- classificazione dei firewall
-	- personal firewall
-	- network firewall
-	- packet filter router
-	- ACL
-	- stateful inspection
-	- application proxy
-	- DMZ
+
+È necessario interpolare tra la LAN e il mondo esterno un meccanismo che consenta di controllare il traffico in transito: il **firewall**.
+
+> Un **firewall** è un apparato hardware-software dedicato alla *difesa perimetrale* di una rete che agisce filtrando il traffico di pacchetti entranti e/o uscenti secondo delle regole.
+
+#### Classificazione dei firewall
+
+Prima differenziazione fatta sul tipo di protezione che il firewall deve fare:
+
+- **Ingress firewall**: controlla i collegamenti *incoming*, gli accessi ai servizi che sono offerti all'esterno della LAN
+- **Egress firewall**: controlla i collegamenti *outgoing*, cioè l'attività del personale interno nella LAN verso l'esterno
+
+
+Seconda differenziazione fatta sul numero di host protetti contemporaneamente:
+
+- **Personal firewall**: proteggono il singolo host consentendo (generalmente) tutto il traffico outbound e bloccando tutto quello inbound
+- **Network firewall**: tra la LAN e Internet, controlla il traffico passante di una rete
+
+Terza differenziazione fatta a seconda del livello di intervento
+
+- **Filtri di pacchetto IP**: bloccano o abilitano selettivamente il traffico
+- **Serventi proxy**: una sorta di intermediario che si occupa di intrattenere le connessioni per conto di qualcun altro nella rete interna
+
+#### Personal Firewall
+
+Può essere un programma installato sul proprio PC che lo protegge. Il traffico verso l'esterno è consentito di default mentre il traffico dall'esterno verso l'interno è vietato di default.
+
+#### Network Firewall
+
+A seconda del livello di rete nel quale si fanno i controlli i network firewall possono essere classificati in:
+
+- **packet-filtering router**: network level gateway
+- **circuit gateway**: gateway a livello di trasporto
+- **proxy server**: gateway a livello di applicazione
+
+#### Packet Filter Router
+
+Analizza le informazioni contenute nell'header TCP/IP a livello di rete e di trasporto (packet inspetion) e individua:
+
+- IP del mittente o del destinatario
+- Indirizzo MAC sorgente o di destinazione
+- Numero di porta verso cui è destinato il pacchetto
+- Protocollo da utilizzare
+
+Il firewall decide se il pacchetto può essere accettato o meno attraverso un algoritmo di scelta che si basa su una lista di regole (in ordine di priorità), le filosofie applicabili sono quindi due, diametralmente opposte:
+
+- ciò che NON è specificatamente permesso, è proibito
+- ciò che NON è specificatamente proibito, è permesso
+
+Quindi in base a queste regole i pacchetti possono essere
+
+- accept/allow: il pacchetto passa
+- deny: il firewall scarta il pacchetto, viene inviato un messaggio di errore alla sorgente
+- discard/reject: il firewall scarta il pacchetto senza inviare nessun messaggio (metodologia *black hole*, elimina i pacchetto senza che la sua presenza venga rilevata)
+
+#### ACL Access Control List
+
+Le regole vengono disposte nelle **ACL** (**Access Control List**) dove è possibile dettagliare i filtri da applicare a ogni pacchetto in funzione delle informazioni presenti negli header TCP/IP.
+
+- **open security policy**: tutto è permesso di default, ciò che NON è specificatamente proibito, è permesso
+- **closed security policy**: tutto è negato di default, ciò che NON è specificatamente permesso, è proibito
+
+<table>
+	<thead>
+		<tr>
+			<th>Vantaggi</th>
+			<th>Svantaggi</th>
+		</tr>
+	</thead>
+	<tbody class="testocentro">
+		<tr>
+			<td>
+				trasparenza<br>
+				velocità<br>
+				immediatezza<br>
+			</td>
+			<td>
+				loggin limitato<br>
+				vulnerabile allo spoofing<br>
+				basso livello<br>
+				testing complesso
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+#### Stateful Inspection
+
+I **firewall stateful inspection** effettuano il filtraggio non sul singolo pacchetto ma sulla connessione (da qui il nome stateful). Alla richiesta di connessione, se questa viene accettata e non bloccata dalle regole di filtraggio, vengono memorizzate le sue caratteristiche in una *tabella di stato* in modo che i successivi pacchetti non vengano più analizzati.
+
+Lo stato della connessione in un firewall di questo tipo può essere:
+
+- **handshaking**: connessione nella fase iniziale, si raccolgono le informazioni e si salvano nella tabella di stato
+- **established**: connessione stabilita
+- **closing**: connessione terminata, quindi la entry corrispondente viene cancellata dalla tabella di stato
+
+#### Application Proxy
+
+Il **proxy** è un programma che viene eseguito sul gateway che funge da intermediario a livello di applicazione, ad esempio tra il computer dell'utente e internet, nelle applicazioni client-server un *application proxy* comunica con il client simulando di essere il server, e viceversa, comunica con il server simulando di essere il client.
+
+Un application proxy è in grado di ispezionare l'intera porzione dati del pacchetto ed è in grado di bloccare pacchetti FTP che contengono certi nomi dei file così da inibire la connessione con determinate pagine o siti Web.
+
+<table>
+	<thead>
+		<tr>
+			<th>Vantaggi</th>
+			<th>Svantaggi</th>
+		</tr>
+	</thead>
+	<tbody class="testocentro">
+		<tr>
+			<td>
+				controllo completo<br>
+				log dettagliati<br>
+				nessuna connessione diretta<br>
+				user-friendly
+			</td>
+			<td>
+				poco trasparente<br>
+				basse performance
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+#### DMZ
+
+La **DeMilitarized Zone** è una sezione della rete che separa la rete interna dalla rete esterna, i server nella DMZ sono accessibili dalla rete pubblica e devono essere segregati in quanto se venissero compromessi, questo non deve produrre effetti collaterali nella rete più interna.
+
+La principale difesa contro gli attacchi è una corretta *organizzazione topologica* della rete stessa.
+
+> Per essere definita la DMZ necessita di un *IP statico* e permette di esporre al WWW un solo indirizzo IP, quindi un solo computer, al quale vengono inoltrate tutte le richieste di connessione.
 
 ### CLASSROOM normativa sulla privacy
 - giurisprudenza informatica

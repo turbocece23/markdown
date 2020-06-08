@@ -1342,34 +1342,217 @@ body .markdown-body
 <p>Soggetti che hanno interessi personali ad acquisire le informazioni di un&rsquo;azienda o a limitare l&rsquo;operatività di un organizzazione. Possono essere causate da personale interno (<strong>attacco interno</strong>, minacce più pericolose perché il personale conosce la struttura) o da soggetti estranei (<strong>attacchi esterni</strong>).</p>
 <h4 id="sicurezza-di-un-sistema-informatico">Sicurezza di un sistema informatico<a class="headerlink" href="#sicurezza-di-un-sistema-informatico" title="Permanent link"></a></h4>
 <p>Con le reti locali di PC e con l&rsquo;avvento di Internet, le informazioni e l&rsquo;elaborazione non sono più concentrate ma distribuite e la comunicazione avviene in &ldquo;broadcast&rdquo; generalmente su linee condivise</p>
+<blockquote>
+<p>La <strong>sicurezza</strong> di un sistema informativo significa impedire a potenziali soggetti attaccanti l&rsquo;accesso o l&rsquo;uso non autorizzato di informazioni e risorse</p>
+</blockquote>
+<p>La sicurezza viene spesso indicata con l&rsquo;acronimo <strong>CIA</strong>:</p>
 <ul>
-<li>breve storia attacchi informatici</li>
-<li>sicurezza sistema informativo</li>
-<li>sicurezza informatica</li>
-<li>valutazione dei rischi</li>
-<li>principali tipologie di minacce</li>
-<li>attacchi attivi e attacchi passivi</li>
-<li>sicurezza nei sistemi distribuiti</li>
+<li>Data <strong>Confidentiality</strong>: mantenere la segretezza dei dati</li>
+<li>Data <strong>Integrity</strong>: evitare che i dati vengano alterati</li>
+<li>System <strong>Avalability</strong>: garantire che il sistema continuerà ad operare</li>
 </ul>
-<h3 id="l2-la-sicurezza-delle-connessioni-con-ssltls"><a href="#indice" id="U4L2">L2 - La sicurezza delle connessioni con SSL/TLS</a><a class="headerlink" href="#l2-la-sicurezza-delle-connessioni-con-ssltls" title="Permanent link"></a></h3>
+<p>Questi obiettivi sono tra loro connessi e generano altri aspetti collegati all&rsquo;analisi dei rischi della sicurezza:</p>
 <ul>
-<li>protocollo SSL/TLS</li>
-<li>HTTPS</li>
+<li><strong>Autenticazione</strong><br>Processo di riconoscimento delle credenziali dell&rsquo;utente in modo da assicurarsi dell&rsquo;identità di chi invia messaggi o esegue operazioni</li>
+<li><strong>Autorizzazione</strong><br>L&rsquo;utente autenticato deve avere associato l&rsquo;insieme delle autorizzazioni, cioè l&rsquo;elenco che specifica quali sono le azioni permesse e negate</li>
+<li><strong>Riservatezza</strong><br>Le informazioni devono essere leggibili e comprensibili solo a chi ne ha i diritti</li>
+<li><strong>Disponibilità</strong><br>Un documento deve essere disponibile in qualunque momento a chi ne è autorizzato, è necessario quindi garantire la continuità del servizio per ciascun utente che deve poter accedere e utilizzare le risorse e i dati in ogni momento</li>
+<li><strong>Integrità</strong><br>La garanzia e la certezza che un documento sia originale e che il suo contenuto non sia stato letto e/o alterato e modificato da non autorizzati</li>
+<li><strong>Paternità</strong><br>Ogni documento deve essere associato a un utente</li>
 </ul>
-<h3 id="l3-firewall-proxy-acl-e-dmz"><a href="#indice" id="U4L3">L3 - Firewall, Proxy, ACL e DMZ</a><a class="headerlink" href="#l3-firewall-proxy-acl-e-dmz" title="Permanent link"></a></h3>
+<blockquote>
+<p>Un documento elettronico ha valenza di prova in tribunale quando si può dimostrare l&rsquo;autore del documento, cioè l&rsquo;<strong>identificazione</strong> e l&rsquo;<strong>autenticazione</strong> del <strong>mittente</strong> e l&rsquo;<strong>integrità</strong> del documento</p>
+</blockquote>
+<p>Le misure per ottenere la segretezza dei dati sono applicabili a diversi livelli della pila ISO/OSI:</p>
 <ul>
-<li>i firewall</li>
-<li>classificazione dei firewall<ul>
-<li>personal firewall</li>
-<li>network firewall</li>
-<li>packet filter router</li>
-<li>ACL</li>
-<li>stateful inspection</li>
-<li>application proxy</li>
-<li>DMZ</li>
+<li>livello fisico (1): cercare di impedire che avvengano intercettazioni di dati</li>
+<li>livello data link (2): codifiche e cifrature dei dati trasmessi per renderli incomprensibili</li>
+</ul>
+<h4 id="valutazione-dei-rischi">Valutazione dei rischi<a class="headerlink" href="#valutazione-dei-rischi" title="Permanent link"></a></h4>
+<ul>
+<li>Minacce alla sicurezza<ul>
+<li>Minacce Naturali<ul>
+<li>Inondazioni, incendi, terremoti, tempeste [&hellip;]</li>
+</ul>
+</li>
+<li>Minacce Umane<ul>
+<li>Intenzionali<ul>
+<li>Utenti esterni come cracker o hacker</li>
+<li>Utenti interni come dipendenti scontenti</li>
+</ul>
+</li>
+<li>Involontarie<ul>
+<li>Dipendenti inesperti</li>
 </ul>
 </li>
 </ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="principali-tipologie-di-minacce">Principali tipologie di minacce<a class="headerlink" href="#principali-tipologie-di-minacce" title="Permanent link"></a></h4>
+<p>Obiettivo + Metodo + Vulnerabilità = Attacco</p>
+<h4 id="attacchi-passivi">Attacchi passivi<a class="headerlink" href="#attacchi-passivi" title="Permanent link"></a></h4>
+<ul>
+<li>Lettura del contenuto ad esempio mediante lo sniffing di pacchetti sulla LAN</li>
+<li>Analisi del sistema e del traffico di rete, senza analizzare i contenuti</li>
+</ul>
+<h4 id="attacchi-attivi">Attacchi attivi<a class="headerlink" href="#attacchi-attivi" title="Permanent link"></a></h4>
+<ul>
+<li>Intercettazione</li>
+<li>Sostituzione di un host</li>
+<li>Produzione</li>
+<li>Phishing</li>
+<li>Intrusione</li>
+</ul>
+<h4 id="sicurezza-nei-sistemi-informativi-distribuiti">Sicurezza nei sistemi informativi distribuiti<a class="headerlink" href="#sicurezza-nei-sistemi-informativi-distribuiti" title="Permanent link"></a></h4>
+<blockquote>
+<p>L&rsquo;obiettivo base è quello di garantire al sistema il <strong>principio minimo di sicurezza</strong> che consiste nella <em>protezione dagli attacchi passivi</em> e nel <em>riconoscimento degli attacchi attivi</em></p>
+</blockquote>
+<p>Possiamo riassumere i tre &ldquo;pilastri&rdquo; della sicurezza in:</p>
+<ul>
+<li><strong>prevenzione</strong> (avoidance): mediante protezione dei sistemi e delle comunicazioni</li>
+<li><strong>rilevazione</strong> (detection): mediante il monitoraggio e il controllo degli accessi tramite autenticazione con password e certificati</li>
+<li><strong>investigazione</strong> (investigation): con l&rsquo;analisi dei dati, il controllo interno con il confronto e la collaborazione degli utenti</li>
+</ul>
+<p>Tecniche minime per garantire questi tre pilastri:</p>
+<ul>
+<li><strong>Uso della crittografia</strong></li>
+<li><strong>Autenticazione degli utenti</strong><br>Sono collegate tre diverse problematiche<ul>
+<li>identificazione (chi sei?)</li>
+<li>autenticazione (come ne sono sicuro?)</li>
+<li>autorizzazione (cosa puoi fare?)</li>
+</ul>
+</li>
+<li><strong>Firma elettronica</strong></li>
+</ul>
+<h3 id="l2-la-sicurezza-delle-connessioni-con-ssltls"><a href="#indice" id="U4L2">L2 - La sicurezza delle connessioni con SSL/TLS</a><a class="headerlink" href="#l2-la-sicurezza-delle-connessioni-con-ssltls" title="Permanent link"></a></h3>
+<p>Lo standard più diffuso per la protezione dei servizi offerti tramite Internet è il <strong>Secure Socket Layer</strong> (<strong>SSL</strong>) ed è un insieme di protocolli crittografici che aggiungono funzionalità di cifratura e autenticazione a protocolli preesistenti</p>
+<p>Il protocollo SSL garantisce la sicurezza tramite tre funzionalità fondamentali:</p>
+<ul>
+<li><strong>privatezza del collegamento</strong>: il collegamento viene criptato tramite crittografia a chiave simmetrica</li>
+<li><strong>autenticazione</strong>: l&rsquo;autenticazione dell&rsquo;identità viene effettuata con la crittografia a chiave pubblica</li>
+<li><strong>affidabilità</strong>: il livello di trasporto include un controllo sull&rsquo;integrità del messaggio chiamato MAC (<strong>Message Authetication Code</strong>)</li>
+</ul>
+<h3 id="l3-firewall-proxy-acl-e-dmz"><a href="#indice" id="U4L3">L3 - Firewall, Proxy, ACL e DMZ</a><a class="headerlink" href="#l3-firewall-proxy-acl-e-dmz" title="Permanent link"></a></h3>
+<p>È necessario interpolare tra la LAN e il mondo esterno un meccanismo che consenta di controllare il traffico in transito: il <strong>firewall</strong>.</p>
+<blockquote>
+<p>Un <strong>firewall</strong> è un apparato hardware-software dedicato alla <em>difesa perimetrale</em> di una rete che agisce filtrando il traffico di pacchetti entranti e/o uscenti secondo delle regole.</p>
+</blockquote>
+<h4 id="classificazione-dei-firewall">Classificazione dei firewall<a class="headerlink" href="#classificazione-dei-firewall" title="Permanent link"></a></h4>
+<p>Prima differenziazione fatta sul tipo di protezione che il firewall deve fare:</p>
+<ul>
+<li><strong>Ingress firewall</strong>: controlla i collegamenti <em>incoming</em>, gli accessi ai servizi che sono offerti all&rsquo;esterno della LAN</li>
+<li><strong>Egress firewall</strong>: controlla i collegamenti <em>outgoing</em>, cioè l&rsquo;attività del personale interno nella LAN verso l&rsquo;esterno</li>
+</ul>
+<p>Seconda differenziazione fatta sul numero di host protetti contemporaneamente:</p>
+<ul>
+<li><strong>Personal firewall</strong>: proteggono il singolo host consentendo (generalmente) tutto il traffico outbound e bloccando tutto quello inbound</li>
+<li><strong>Network firewall</strong>: tra la LAN e Internet, controlla il traffico passante di una rete</li>
+</ul>
+<p>Terza differenziazione fatta a seconda del livello di intervento</p>
+<ul>
+<li><strong>Filtri di pacchetto IP</strong>: bloccano o abilitano selettivamente il traffico</li>
+<li><strong>Serventi proxy</strong>: una sorta di intermediario che si occupa di intrattenere le connessioni per conto di qualcun altro nella rete interna</li>
+</ul>
+<h4 id="personal-firewall">Personal Firewall<a class="headerlink" href="#personal-firewall" title="Permanent link"></a></h4>
+<p>Può essere un programma installato sul proprio PC che lo protegge. Il traffico verso l&rsquo;esterno è consentito di default mentre il traffico dall&rsquo;esterno verso l&rsquo;interno è vietato di default.</p>
+<h4 id="network-firewall">Network Firewall<a class="headerlink" href="#network-firewall" title="Permanent link"></a></h4>
+<p>A seconda del livello di rete nel quale si fanno i controlli i network firewall possono essere classificati in:</p>
+<ul>
+<li><strong>packet-filtering router</strong>: network level gateway</li>
+<li><strong>circuit gateway</strong>: gateway a livello di trasporto</li>
+<li><strong>proxy server</strong>: gateway a livello di applicazione</li>
+</ul>
+<h4 id="packet-filter-router">Packet Filter Router<a class="headerlink" href="#packet-filter-router" title="Permanent link"></a></h4>
+<p>Analizza le informazioni contenute nell&rsquo;header TCP/IP a livello di rete e di trasporto (packet inspetion) e individua:</p>
+<ul>
+<li>IP del mittente o del destinatario</li>
+<li>Indirizzo MAC sorgente o di destinazione</li>
+<li>Numero di porta verso cui è destinato il pacchetto</li>
+<li>Protocollo da utilizzare</li>
+</ul>
+<p>Il firewall decide se il pacchetto può essere accettato o meno attraverso un algoritmo di scelta che si basa su una lista di regole (in ordine di priorità), le filosofie applicabili sono quindi due, diametralmente opposte:</p>
+<ul>
+<li>ciò che NON è specificatamente permesso, è proibito</li>
+<li>ciò che NON è specificatamente proibito, è permesso</li>
+</ul>
+<p>Quindi in base a queste regole i pacchetti possono essere</p>
+<ul>
+<li>accept/allow: il pacchetto passa</li>
+<li>deny: il firewall scarta il pacchetto, viene inviato un messaggio di errore alla sorgente</li>
+<li>discard/reject: il firewall scarta il pacchetto senza inviare nessun messaggio (metodologia <em>black hole</em>, elimina i pacchetto senza che la sua presenza venga rilevata)</li>
+</ul>
+<h4 id="acl-access-control-list">ACL Access Control List<a class="headerlink" href="#acl-access-control-list" title="Permanent link"></a></h4>
+<p>Le regole vengono disposte nelle <strong>ACL</strong> (<strong>Access Control List</strong>) dove è possibile dettagliare i filtri da applicare a ogni pacchetto in funzione delle informazioni presenti negli header TCP/IP.</p>
+<ul>
+<li><strong>open security policy</strong>: tutto è permesso di default, ciò che NON è specificatamente proibito, è permesso</li>
+<li><strong>closed security policy</strong>: tutto è negato di default, ciò che NON è specificatamente permesso, è proibito</li>
+</ul>
+<table>
+    <thead>
+        <tr>
+            <th>Vantaggi</th>
+            <th>Svantaggi</th>
+        </tr>
+    </thead>
+    <tbody class="testocentro">
+        <tr>
+            <td>
+                trasparenza<br>
+                velocità<br>
+                immediatezza<br>
+            </td>
+            <td>
+                loggin limitato<br>
+                vulnerabile allo spoofing<br>
+                basso livello<br>
+                testing complesso
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h4 id="stateful-inspection">Stateful Inspection<a class="headerlink" href="#stateful-inspection" title="Permanent link"></a></h4>
+<p>I <strong>firewall stateful inspection</strong> effettuano il filtraggio non sul singolo pacchetto ma sulla connessione (da qui il nome stateful). Alla richiesta di connessione, se questa viene accettata e non bloccata dalle regole di filtraggio, vengono memorizzate le sue caratteristiche in una <em>tabella di stato</em> in modo che i successivi pacchetti non vengano più analizzati.</p>
+<p>Lo stato della connessione in un firewall di questo tipo può essere:</p>
+<ul>
+<li><strong>handshaking</strong>: connessione nella fase iniziale, si raccolgono le informazioni e si salvano nella tabella di stato</li>
+<li><strong>established</strong>: connessione stabilita</li>
+<li><strong>closing</strong>: connessione terminata, quindi la entry corrispondente viene cancellata dalla tabella di stato</li>
+</ul>
+<h4 id="application-proxy">Application Proxy<a class="headerlink" href="#application-proxy" title="Permanent link"></a></h4>
+<p>Il <strong>proxy</strong> è un programma che viene eseguito sul gateway che funge da intermediario a livello di applicazione, ad esempio tra il computer dell&rsquo;utente e internet, nelle applicazioni client-server un <em>application proxy</em> comunica con il client simulando di essere il server, e viceversa, comunica con il server simulando di essere il client.</p>
+<p>Un application proxy è in grado di ispezionare l&rsquo;intera porzione dati del pacchetto ed è in grado di bloccare pacchetti FTP che contengono certi nomi dei file così da inibire la connessione con determinate pagine o siti Web.</p>
+<table>
+    <thead>
+        <tr>
+            <th>Vantaggi</th>
+            <th>Svantaggi</th>
+        </tr>
+    </thead>
+    <tbody class="testocentro">
+        <tr>
+            <td>
+                controllo completo<br>
+                log dettagliati<br>
+                nessuna connessione diretta<br>
+                user-friendly
+            </td>
+            <td>
+                poco trasparente<br>
+                basse performance
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<h4 id="dmz">DMZ<a class="headerlink" href="#dmz" title="Permanent link"></a></h4>
+<p>La <strong>DeMilitarized Zone</strong> è una sezione della rete che separa la rete interna dalla rete esterna, i server nella DMZ sono accessibili dalla rete pubblica e devono essere segregati in quanto se venissero compromessi, questo non deve produrre effetti collaterali nella rete più interna.</p>
+<p>La principale difesa contro gli attacchi è una corretta <em>organizzazione topologica</em> della rete stessa.</p>
+<blockquote>
+<p>Per essere definita la DMZ necessita di un <em>IP statico</em> e permette di esporre al WWW un solo indirizzo IP, quindi un solo computer, al quale vengono inoltrate tutte le richieste di connessione.</p>
+</blockquote>
 <h3 id="classroom-normativa-sulla-privacy">CLASSROOM normativa sulla privacy<a class="headerlink" href="#classroom-normativa-sulla-privacy" title="Permanent link"></a></h3>
 <ul>
 <li>giurisprudenza informatica</li>
