@@ -26,7 +26,12 @@
 		padding-top: 0.7%;
 		padding-left: 0.7%;
 	}
-	h5 { color: #7C839D; }
+	h5
+	{
+		color: #3e5d36;
+		padding-top: 0.7%;
+		padding-left: 0.7%;
+	}
 	
 	img
 	{
@@ -120,7 +125,7 @@ Ci sono diversi aspetti collegati al problema della sicurezza nelle reti:
 
 - **Segretezza**: le informazioni devono essere leggibili solo a chi ne ha i diritti
 - **Autenticazione**: processo di riconoscimento delle credenziali dell'utente in modo di assicurarsi dell'identità di chi invia messaggi o esegue operazioni
-- **Affidabilità dei documenti**: avere la garanzia e la certezza che un documento sia originale, il mittente è certo e non è stato letto e/o alterato da persone non autorzzate
+- **Affidabilità dei documenti**: avere la garanzia e la certezza che un documento sia originale, il mittente è certo e non è stato letto e/o alterato da persone non autorizzate
 
 #### Crittografia
 
@@ -129,18 +134,18 @@ Desiderio di mantenere messaggi tra due interlocutori nascosti agli occhi di ter
 - **Codifica**: sostituisce parole con altre
 - **Cifratura**: sostituisce lettere o caratteri
 
-Quando la chiave di cifratura coincide con quella di decifratura lo schema crittografico si dice **simmetrico** e la chiave prende il nome di **chiave comune**.
+Quando la chiave di cifratura coincide con quella di de-cifratura lo schema crittografico si dice **simmetrico** e la chiave prende il nome di **chiave comune**.
 
-Quando la chiave di cifratura è diversa da quella di decifratura lo schema crittografico si dice **asimmetrico** e le due chiavi si chiamano:
+Quando la chiave di cifratura è diversa da quella di de-cifratura lo schema crittografico si dice **asimmetrico** e le due chiavi si chiamano:
 
 - **chiave pubblica**: usata per la cifratura, comune a tutti i mittenti e di pubblico dominio
-- **chiave privata**: utilizzata per la decifratura, segreta e di conoscenza solo del destinatario del messaggio
+- **chiave privata**: utilizzata per la de-cifratura, segreta e di conoscenza solo del destinatario del messaggio
 
 #### Crittoanalisi
 
 Studio dei metodi per ottenere il significato di informazioni cifrate: tipicamente si tratta delle operazioni effettuate alla ricerca della chiave segreta.
 
-Il **principio di Kerckhoffs** stabilisce che è la chiave l'elemento fondamentale per la sicurezza di un sistema informatico. La sicurezza di un crittosistema deve dipendere solo dalla segretezza della nchiave e non dalla segretezza dell'algoritmo usato.
+Il **principio di Kerckhoffs** stabilisce che è la chiave l'elemento fondamentale per la sicurezza di un sistema informatico. La sicurezza di un crittosistema deve dipendere solo dalla segretezza della chiave e non dalla segretezza dell'algoritmo usato.
 
 #### Cifrari e chiavi
 
@@ -154,12 +159,12 @@ La crittografia permette di:
 
 È un algoritmo simmetrico a chiave segreta di 64 bit, 8 sono di controllo, questa chiave prevede 16 trasformazioni successive applicate a ogni blocco del messaggio
 
-Il **DES** rispetta il principio di **Kerckhoffs**, cioè l'algoritmo è noto e la chiave è segreta ed è statp realizzato applicando i principi di **Shannon**:
+Il **DES** rispetta il principio di **Kerckhoffs**, cioè l'algoritmo è noto e la chiave è segreta ed è stato realizzato applicando i principi di **Shannon**:
 
 - **diffusione** dei caratteri consecutivi del messaggio in tutto il crittogramma
 - **confusione** del messaggio con la chiave
 
-Il *DES* viene anche usato per cifare file personali su un disco locale ma:
+Il *DES* viene anche usato per cifrare file personali su un disco locale ma:
 
 > Nel 1998 la *Electronic Frontier Foundation* diffuse un comunicato stampa con il quale annunciò la **sconfitta del DES** grazie a un calcolatore da 250.000 piotte, che in meno di 60 ore era capace di forzare un messaggio cifrato con DES.
 
@@ -189,7 +194,7 @@ AES fu approvato da NSA per comunicazioni top-secret ed è tuttora il cifrario a
 Gli algoritmi simmetrici descritti presentano alcuni limiti tra i quali il problema più evidente: le persone che devono comunicare devono essere in possesso della stessa chiave e, di fatto, questo limita la diffusione e il suo utilizzo, in quanto non sono molti i sistemi a disposizione per la distribuzione delle chiavi.
 
 ### <a href="#indice" id="U3L2">L2 - La crittografia asimmetrica</a>
-Non è il metodo ideale per le comunicazioni su Internet principalmente perché il limte fonamentale è rappresentato dalla necessità di un canale sicuro e di un accordo preventivo per lo scambio delle chiavi. L'idea alla base delle **crittografie simmetriche** è quello di avere due chiavi diverse, una pubblica per la criptazione e una privata per la decriptazione.
+Non è il metodo ideale per le comunicazioni su Internet principalmente perché il limite fondamentale è rappresentato dalla necessità di un canale sicuro e di un accordo preventivo per lo scambio delle chiavi. L'idea alla base delle **crittografie simmetriche** è quello di avere due chiavi diverse, una pubblica per la criptazione e una privata per la decriptazione.
 
 Con la **crittografia asimmetrica**:
 
@@ -202,7 +207,7 @@ Per mantenere relativamente leggeri gli algoritmi asimmetrici viene estratta una
 
 #### <span class="hig">RSA</span>
 
-L'algoritmo RSA lavora sfruttando i numeri primi e come chiave utilizza un numero n ottenutoproprio dal prodotto di due numeri primi **p** e **q** cioè **n = p * q**
+L'algoritmo RSA lavora sfruttando i numeri primi e come chiave utilizza un numero n ottenuto proprio dal prodotto di due numeri primi **p** e **q** cioè **n = p * q**
 
 Usato per codificare un unico messaggio contenente una chiave segreta, tale chiave verrà poi utilizzata per scambiarsi messaggi tramite un algoritmo a chiave segreta (ad esempio **AES**)
 
@@ -214,7 +219,7 @@ Per gestire le chiavi pubbliche è necessario un sistema di **PKI** (**Public Ke
 	<thead>
 		<tr>
 			<th></th>
-			<th>Crittografia simmetirca</th>
+			<th>Crittografia simmetrica</th>
 			<th>Crittografia asimmetrica</th>
 		</tr>
 	</thead>
@@ -244,23 +249,115 @@ Si basa su un sistema di crittografia a chiavi **asimmetriche** che consente:
 - la verifica, da parte dei destinatari, dell'identità del soggetto sottoscrittore
 - la certezza che l'informazione contenuta nel documento non sia stata alterata
 
+Durante l'apposizione della firma digitale,il file viene "incapsulato" in una **busta crittografica** e il risultato è un nuovo file, con estensione **.p7m**, la firma digitale in formato *p7m* consente di firmare qualunque tipo di file (rtf, doc, tiff, xls...)
 
-- generalità
-- firme digitali
-- funzione hash
-	- funzione MD5
-	- funzione SHA
-- algoritmo PGP
-- certificati
-	- certification authority
-	- PKI
-	- richiesta di certificato digitale
+#### Le frime digitali
+
+Tra le motivazioni per cui è nata la firma digitale c'è la lentezza dei sistemi di crittografia a chiave pubblica, incluso RSA: per rendere più efficiente il meccanismo si utilizza una funzione **hash** attraverso la quale si calcola una stringa identificativa del messaggio detta *fingerprint* o *message digest*.
+
+Le funzioni *Hash* più note sono:
+
+- **MD5**: standard per Internet, più insicuro ma veloce
+- **SHA**: standard governativo USA
+
+#### MD5
+
+**Message Digest 5** genera una stringa fissa di 128 bit, 32 caratteri chiamata *MD5 Checksum* o *MD5 Hash*.
+
+### Gli algoritmi SHA
+
+**Secure Hash Algorithm**, algoritmi sviluppati dalla NSA, nati come modifiche dell'MD4, ora è in uso lo SHA3.
+
+#### I certificati digitali
+
+Un certificato digitale è un documento informatico firmato digitalmente dal certificatore, i dati contenuti nel certificato sono:
+
+- dati del proprietario
+- dati del certificato
+- dati della Certification Authority
+
+Un **certificato digitale** può avere diversi formati:
+
+- PGP (a pagamento)
+- GPG (libero)
+- certificati X.509
+
+La differenza tra PGP/GPG e un X.509 è che è possibile creare il proprio certificato PGP/GPG in modo autonomo, mentre per X.509 è necessario rivolgersi a un ente certificatore.
+
+#### Public Key Infrastructure
+
+L'infrastruttura tecnica e organizzativa preposta alla creazione e distribuzione e revoca dei certificati di chiave pubblica è la **PKI** (**Public Key Infrastructure**). È organizzata come una foresta dove come radice e gestore del PKI vi è una **CA root**.
+
+Ogni *CA root* può firmare i certificati di altri enti che possono essere sia utenti finali (foglie) che altre aziende certificatrici.
+
+#### Richiedere un certificato digitale
+
+<ol>
+	<li>Generazione della coppia di chiavi asimmetriche da utilizzare per cifrare le comunicazioni</li>
+	<li>Il richiedente comunica informazioni circa la propria identità alla Certification Authority</li>
+	<li>La Registration Authority inizia la verifica dei dati ricevuti</li>
+	<li>La Certification Authority genera il certificato e lo firma digitalmente</li>
+	<li>Il certificato firmato viene inviato al richiedente</li>
+</ol>
 
 ## <a href="#indice" id="U4">U4 - La sicurezza delle reti</a>
 ### <a href="#indice" id="U4L1">L1 - La sicurezza nei sistemi informativi</a>
-- minacce naturale
-- minacce umane
-- minacce in rete
+
+#### La sicurezza dei dati
+
+Le informazioni devono essere protette per garantire la "sicurezza informatica".
+
+Le possibili situazioni che minacciano l'**integrità dei dati** sono di due tipologie:
+
+- **minacce naturali**
+- **minacce umane**
+
+#### Minacce naturali
+##### Can't stop 'em
+
+Le minacce naturali sono dovute a calamità naturali imprevedibili quali:
+
+- tempeste
+- inondazioni
+- fulmini
+- incendi
+- terremoti
+
+Che sono praticamente impossibili da impedire e prevenire.
+
+Per questa tipologia è necessario effettuare un'**analisi dei rischi** in quanto potrebbero causare solo periodi di inattività operativa. Tra queste minacce vengono considerati anche minacce dovuta a interventi umani, di fatto, imprevedibili:
+
+- atti vandalici
+- sommosse popolari
+- guerre
+- attacchi terroristici
+
+#### Minacce umane
+
+Soggetti che hanno interessi personali ad acquisire le informazioni di un'azienda o a limitare l'operatività di un organizzazione. Possono essere causate da personale interno (**attacco interno**, minacce più pericolose perché il personale conosce la struttura) o da soggetti estranei (**attacchi esterni**).
+
+#### Sicurezza di un sistema informatico
+
+Con le reti locali di PC e con l'avvento di Internet, le informazioni e l'elaborazione non sono più concentrate ma distribuite e la comunicazione avviene in "broadcast" generalmente su linee condivise
+
+> La **sicurezza** di un sistema informativo significa impedire a potenziali soggetti attaccanti l'accesso o l'uso non autorizzato di informazioni e risorse
+
+La sicurezza viene spesso indicata con l'acronimo **CIA**:
+
+- Data **Confidentiality**: mantenere la segretezza dei dati
+- Data **Integrity**: evitare che i dati vengano alterati
+- System **Avalability**: garantire che il sistema continuerà ad operare
+
+Questi obiettivi sono tra loro connessi e generano altri aspetti collegati all'analisi dei rischi della sicurezza:
+
+- **Autenticazione**<br>Processo di riconoscimento delle credenziali dell'utente in modo da assicurarsi dell'identità di chi invia messaggi o esegue operazioni
+- **Autorizzazione**<br>L'utente autenticato deve avere associato l'insieme delle autorizzazioni, cioè l'elenco che specifica quali sono le azioni permesse e negate
+- **Riservatezza**<br>Le informazioni devono essere leggibili e comprensibili solo a chi ne ha i diritti
+- **Disponibilità**<br>Un documento deve essere disponibile in qualunque momento a chi ne è autorizzato, è necessario quindi garantire la continuità del servizio per ciascun utente che deve poter accedere e utilizzare le risorse e i dati in ogni momento
+- **Integrità**<br>La garanzia e la certezza che un documento sia originale e che il suo contenuto non sia stato letto e/o alterato e modificato da non autorizzati
+- **Paternità**<br>Ogni documento deve essere associato a un utente
+
+
 - breve storia attacchi informatici
 - sicurezza sistema informativo
 - sicurezza informatica

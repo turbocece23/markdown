@@ -1083,7 +1083,12 @@ body .markdown-body
         padding-top: 0.7%;
         padding-left: 0.7%;
     }
-    h5 { color: #7C839D; }
+    h5
+    {
+        color: #3e5d36;
+        padding-top: 0.7%;
+        padding-left: 0.7%;
+    }
 
     img
     {
@@ -1173,7 +1178,7 @@ body .markdown-body
 <ul>
 <li><strong>Segretezza</strong>: le informazioni devono essere leggibili solo a chi ne ha i diritti</li>
 <li><strong>Autenticazione</strong>: processo di riconoscimento delle credenziali dell&rsquo;utente in modo di assicurarsi dell&rsquo;identità di chi invia messaggi o esegue operazioni</li>
-<li><strong>Affidabilità dei documenti</strong>: avere la garanzia e la certezza che un documento sia originale, il mittente è certo e non è stato letto e/o alterato da persone non autorzzate</li>
+<li><strong>Affidabilità dei documenti</strong>: avere la garanzia e la certezza che un documento sia originale, il mittente è certo e non è stato letto e/o alterato da persone non autorizzate</li>
 </ul>
 <h4 id="crittografia">Crittografia<a class="headerlink" href="#crittografia" title="Permanent link"></a></h4>
 <p>Desiderio di mantenere messaggi tra due interlocutori nascosti agli occhi di terzi.</p>
@@ -1181,15 +1186,15 @@ body .markdown-body
 <li><strong>Codifica</strong>: sostituisce parole con altre</li>
 <li><strong>Cifratura</strong>: sostituisce lettere o caratteri</li>
 </ul>
-<p>Quando la chiave di cifratura coincide con quella di decifratura lo schema crittografico si dice <strong>simmetrico</strong> e la chiave prende il nome di <strong>chiave comune</strong>.</p>
-<p>Quando la chiave di cifratura è diversa da quella di decifratura lo schema crittografico si dice <strong>asimmetrico</strong> e le due chiavi si chiamano:</p>
+<p>Quando la chiave di cifratura coincide con quella di de-cifratura lo schema crittografico si dice <strong>simmetrico</strong> e la chiave prende il nome di <strong>chiave comune</strong>.</p>
+<p>Quando la chiave di cifratura è diversa da quella di de-cifratura lo schema crittografico si dice <strong>asimmetrico</strong> e le due chiavi si chiamano:</p>
 <ul>
 <li><strong>chiave pubblica</strong>: usata per la cifratura, comune a tutti i mittenti e di pubblico dominio</li>
-<li><strong>chiave privata</strong>: utilizzata per la decifratura, segreta e di conoscenza solo del destinatario del messaggio</li>
+<li><strong>chiave privata</strong>: utilizzata per la de-cifratura, segreta e di conoscenza solo del destinatario del messaggio</li>
 </ul>
 <h4 id="crittoanalisi">Crittoanalisi<a class="headerlink" href="#crittoanalisi" title="Permanent link"></a></h4>
 <p>Studio dei metodi per ottenere il significato di informazioni cifrate: tipicamente si tratta delle operazioni effettuate alla ricerca della chiave segreta.</p>
-<p>Il <strong>principio di Kerckhoffs</strong> stabilisce che è la chiave l&rsquo;elemento fondamentale per la sicurezza di un sistema informatico. La sicurezza di un crittosistema deve dipendere solo dalla segretezza della nchiave e non dalla segretezza dell&rsquo;algoritmo usato.</p>
+<p>Il <strong>principio di Kerckhoffs</strong> stabilisce che è la chiave l&rsquo;elemento fondamentale per la sicurezza di un sistema informatico. La sicurezza di un crittosistema deve dipendere solo dalla segretezza della chiave e non dalla segretezza dell&rsquo;algoritmo usato.</p>
 <h4 id="cifrari-e-chiavi">Cifrari e chiavi<a class="headerlink" href="#cifrari-e-chiavi" title="Permanent link"></a></h4>
 <p>La crittografia permette di:</p>
 <ul>
@@ -1199,12 +1204,12 @@ body .markdown-body
 </ul>
 <h4 id="il-cifrario-des"><span class="hig">Il cifrario DES</span><a class="headerlink" href="#il-cifrario-des" title="Permanent link"></a></h4>
 <p>È un algoritmo simmetrico a chiave segreta di 64 bit, 8 sono di controllo, questa chiave prevede 16 trasformazioni successive applicate a ogni blocco del messaggio</p>
-<p>Il <strong>DES</strong> rispetta il principio di <strong>Kerckhoffs</strong>, cioè l&rsquo;algoritmo è noto e la chiave è segreta ed è statp realizzato applicando i principi di <strong>Shannon</strong>:</p>
+<p>Il <strong>DES</strong> rispetta il principio di <strong>Kerckhoffs</strong>, cioè l&rsquo;algoritmo è noto e la chiave è segreta ed è stato realizzato applicando i principi di <strong>Shannon</strong>:</p>
 <ul>
 <li><strong>diffusione</strong> dei caratteri consecutivi del messaggio in tutto il crittogramma</li>
 <li><strong>confusione</strong> del messaggio con la chiave</li>
 </ul>
-<p>Il <em>DES</em> viene anche usato per cifare file personali su un disco locale ma:</p>
+<p>Il <em>DES</em> viene anche usato per cifrare file personali su un disco locale ma:</p>
 <blockquote>
 <p>Nel 1998 la <em>Electronic Frontier Foundation</em> diffuse un comunicato stampa con il quale annunciò la <strong>sconfitta del DES</strong> grazie a un calcolatore da 250.000 piotte, che in meno di 60 ore era capace di forzare un messaggio cifrato con DES.</p>
 </blockquote>
@@ -1224,7 +1229,7 @@ body .markdown-body
 <h4 id="limiti-degli-algoritmi-simmetrici">Limiti degli algoritmi simmetrici<a class="headerlink" href="#limiti-degli-algoritmi-simmetrici" title="Permanent link"></a></h4>
 <p>Gli algoritmi simmetrici descritti presentano alcuni limiti tra i quali il problema più evidente: le persone che devono comunicare devono essere in possesso della stessa chiave e, di fatto, questo limita la diffusione e il suo utilizzo, in quanto non sono molti i sistemi a disposizione per la distribuzione delle chiavi.</p>
 <h3 id="l2-la-crittografia-asimmetrica"><a href="#indice" id="U3L2">L2 - La crittografia asimmetrica</a><a class="headerlink" href="#l2-la-crittografia-asimmetrica" title="Permanent link"></a></h3>
-<p>Non è il metodo ideale per le comunicazioni su Internet principalmente perché il limte fonamentale è rappresentato dalla necessità di un canale sicuro e di un accordo preventivo per lo scambio delle chiavi. L&rsquo;idea alla base delle <strong>crittografie simmetriche</strong> è quello di avere due chiavi diverse, una pubblica per la criptazione e una privata per la decriptazione.</p>
+<p>Non è il metodo ideale per le comunicazioni su Internet principalmente perché il limite fondamentale è rappresentato dalla necessità di un canale sicuro e di un accordo preventivo per lo scambio delle chiavi. L&rsquo;idea alla base delle <strong>crittografie simmetriche</strong> è quello di avere due chiavi diverse, una pubblica per la criptazione e una privata per la decriptazione.</p>
 <p>Con la <strong>crittografia asimmetrica</strong>:</p>
 <ul>
 <li>si risolve il problema della <strong>riservatezza</strong>: criptando il messaggio con la chiave pubblica, solo il possessore della chiave privata è in grado di decriptarlo</li>
@@ -1233,15 +1238,15 @@ body .markdown-body
 <p>Il principale svantaggio della <em>crittografia asimmetrica</em> è la complessità dei calcoli che rendono poco efficiente la loro implementazione sopratutto con l&rsquo;aumentare della lunghezza della chiave.</p>
 <p>Per mantenere relativamente leggeri gli algoritmi asimmetrici viene estratta una sequenza di numeri dal messaggio originale chiamata <strong>fingerprint</strong> utilizzata per le funzioni di hash <em>MD4</em> e <strong>MD5</strong>.</p>
 <h4 id="rsa"><span class="hig">RSA</span><a class="headerlink" href="#rsa" title="Permanent link"></a></h4>
-<p>L&rsquo;algoritmo RSA lavora sfruttando i numeri primi e come chiave utilizza un numero n ottenutoproprio dal prodotto di due numeri primi <strong>p</strong> e <strong>q</strong> cioè <strong>n = p * q</strong></p>
+<p>L&rsquo;algoritmo RSA lavora sfruttando i numeri primi e come chiave utilizza un numero n ottenuto proprio dal prodotto di due numeri primi <strong>p</strong> e <strong>q</strong> cioè <strong>n = p * q</strong></p>
 <p>Usato per codificare un unico messaggio contenente una chiave segreta, tale chiave verrà poi utilizzata per scambiarsi messaggi tramite un algoritmo a chiave segreta (ad esempio <strong>AES</strong>)</p>
-<h4 id="crittografia-ibrida"><span class="hig">Crittografia ibrida</span><a class="headerlink" href="#crittografia-ibrida" title="Permanent link"></a></h4>
+<h4 id="crittografia-ibrida">Crittografia ibrida<a class="headerlink" href="#crittografia-ibrida" title="Permanent link"></a></h4>
 <p>Per gestire le chiavi pubbliche è necessario un sistema di <strong>PKI</strong> (<strong>Public Key Infrastructure</strong>) che si occupi della gestione e dello scambio delle chiavi.</p>
 <table>
     <thead>
         <tr>
             <th></th>
-            <th>Crittografia simmetirca</th>
+            <th>Crittografia simmetrica</th>
             <th>Crittografia asimmetrica</th>
         </tr>
     </thead>
@@ -1254,34 +1259,90 @@ body .markdown-body
         <tr>
             <th>Contro</th>
             <td class="testocentro">Problema dello scambio delle chiavi</td>
-            <td class="testocentro">Molto lenta, a causa dei calcoli complessi da effettuare</td<>
+            <td class="testocentro">Molto lenta, a causa dei calcoli complessi da effettuare</td>
         </tr>
     </tbody>
 </table>
 
+<p>In un <strong>sistema a crittografia ibrida</strong> utilizziamo la <strong>chiave pubblica</strong> soltanto per comunicare la <strong>chiave segreta</strong> che poi verrà usata per una normale comunicazione basata su crittografia simmetrica.</p>
 <h3 id="l3-certificati-e-firma-digitale"><a href="#indice" id="U3L3">L3 - Certificati e firma digitale</a><a class="headerlink" href="#l3-certificati-e-firma-digitale" title="Permanent link"></a></h3>
+<p>La <strong>firma digitale</strong> è l&rsquo;equivalente informatico di una tradizionale firma apposta su carta.</p>
+<p>Si basa su un sistema di crittografia a chiavi <strong>asimmetriche</strong> che consente:</p>
 <ul>
-<li>generalità</li>
-<li>firme digitali</li>
-<li>funzione hash<ul>
-<li>funzione MD5</li>
-<li>funzione SHA</li>
+<li>la sottoscrizione di un documento informatico</li>
+<li>la verifica, da parte dei destinatari, dell&rsquo;identità del soggetto sottoscrittore</li>
+<li>la certezza che l&rsquo;informazione contenuta nel documento non sia stata alterata</li>
 </ul>
-</li>
-<li>algoritmo PGP</li>
-<li>certificati<ul>
-<li>certification authority</li>
-<li>PKI</li>
-<li>richiesta di certificato digitale</li>
+<p>Durante l&rsquo;apposizione della firma digitale,il file viene &ldquo;incapsulato&rdquo; in una <strong>busta crittografica</strong> e il risultato è un nuovo file, con estensione <strong>.p7m</strong>, la firma digitale in formato <em>p7m</em> consente di firmare qualunque tipo di file (rtf, doc, tiff, xls&hellip;)</p>
+<h4 id="le-frime-digitali">Le frime digitali<a class="headerlink" href="#le-frime-digitali" title="Permanent link"></a></h4>
+<p>Tra le motivazioni per cui è nata la firma digitale c&rsquo;è la lentezza dei sistemi di crittografia a chiave pubblica, incluso RSA: per rendere più efficiente il meccanismo si utilizza una funzione <strong>hash</strong> attraverso la quale si calcola una stringa identificativa del messaggio detta <em>fingerprint</em> o <em>message digest</em>.</p>
+<p>Le funzioni <em>Hash</em> più note sono:</p>
+<ul>
+<li><strong>MD5</strong>: standard per Internet, più insicuro ma veloce</li>
+<li><strong>SHA</strong>: standard governativo USA</li>
 </ul>
-</li>
+<h4 id="md5">MD5<a class="headerlink" href="#md5" title="Permanent link"></a></h4>
+<p><strong>Message Digest 5</strong> genera una stringa fissa di 128 bit, 32 caratteri chiamata <em>MD5 Checksum</em> o <em>MD5 Hash</em>.</p>
+<h3 id="gli-algoritmi-sha">Gli algoritmi SHA<a class="headerlink" href="#gli-algoritmi-sha" title="Permanent link"></a></h3>
+<p><strong>Secure Hash Algorithm</strong>, algoritmi sviluppati dalla NSA, nati come modifiche dell&rsquo;MD4, ora è in uso lo SHA3.</p>
+<h4 id="i-certificati-digitali">I certificati digitali<a class="headerlink" href="#i-certificati-digitali" title="Permanent link"></a></h4>
+<p>Un certificato digitale è un documento informatico firmato digitalmente dal certificatore, i dati contenuti nel certificato sono:</p>
+<ul>
+<li>dati del proprietario</li>
+<li>dati del certificato</li>
+<li>dati della Certification Authority</li>
 </ul>
+<p>Un <strong>certificato digitale</strong> può avere diversi formati:</p>
+<ul>
+<li>PGP (a pagamento)</li>
+<li>GPG (libero)</li>
+<li>certificati X.509</li>
+</ul>
+<p>La differenza tra PGP/GPG e un X.509 è che è possibile creare il proprio certificato PGP/GPG in modo autonomo, mentre per X.509 è necessario rivolgersi a un ente certificatore.</p>
+<h4 id="public-key-infrastructure">Public Key Infrastructure<a class="headerlink" href="#public-key-infrastructure" title="Permanent link"></a></h4>
+<p>L&rsquo;infrastruttura tecnica e organizzativa preposta alla creazione e distribuzione e revoca dei certificati di chiave pubblica è la <strong>PKI</strong> (<strong>Public Key Infrastructure</strong>). È organizzata come una foresta dove come radice e gestore del PKI vi è una <strong>CA root</strong>.</p>
+<p>Ogni <em>CA root</em> può firmare i certificati di altri enti che possono essere sia utenti finali (foglie) che altre aziende certificatrici.</p>
+<h4 id="richiedere-un-certificato-digitale">Richiedere un certificato digitale<a class="headerlink" href="#richiedere-un-certificato-digitale" title="Permanent link"></a></h4>
+<ol>
+    <li>Generazione della coppia di chiavi asimmetriche da utilizzare per cifrare le comunicazioni</li>
+    <li>Il richiedente comunica informazioni circa la propria identità alla Certification Authority</li>
+    <li>La Registration Authority inizia la verifica dei dati ricevuti</li>
+    <li>La Certification Authority genera il certificato e lo firma digitalmente</li>
+    <li>Il certificato firmato viene inviato al richiedente</li>
+</ol>
+
 <h2 id="u4-la-sicurezza-delle-reti"><a href="#indice" id="U4">U4 - La sicurezza delle reti</a><a class="headerlink" href="#u4-la-sicurezza-delle-reti" title="Permanent link"></a></h2>
 <h3 id="l1-la-sicurezza-nei-sistemi-informativi"><a href="#indice" id="U4L1">L1 - La sicurezza nei sistemi informativi</a><a class="headerlink" href="#l1-la-sicurezza-nei-sistemi-informativi" title="Permanent link"></a></h3>
+<h4 id="la-sicurezza-dei-dati">La sicurezza dei dati<a class="headerlink" href="#la-sicurezza-dei-dati" title="Permanent link"></a></h4>
+<p>Le informazioni devono essere protette per garantire la &ldquo;sicurezza informatica&rdquo;.</p>
+<p>Le possibili situazioni che minacciano l&rsquo;<strong>integrità dei dati</strong> sono di due tipologie:</p>
 <ul>
-<li>minacce naturale</li>
-<li>minacce umane</li>
-<li>minacce in rete</li>
+<li><strong>minacce naturali</strong></li>
+<li><strong>minacce umane</strong></li>
+</ul>
+<h4 id="minacce-naturali">Minacce naturali<a class="headerlink" href="#minacce-naturali" title="Permanent link"></a></h4>
+<h5 id="cant-stop-em">Can&rsquo;t stop &lsquo;em<a class="headerlink" href="#cant-stop-em" title="Permanent link"></a></h5>
+<p>Le minacce naturali sono dovute a calamità naturali imprevedibili quali:</p>
+<ul>
+<li>tempeste</li>
+<li>inondazioni</li>
+<li>fulmini</li>
+<li>incendi</li>
+<li>terremoti</li>
+</ul>
+<p>Che sono praticamente impossibili da impedire e prevenire.</p>
+<p>Per questa tipologia è necessario effettuare un&rsquo;<strong>analisi dei rischi</strong> in quanto potrebbero causare solo periodi di inattività operativa. Tra queste minacce vengono considerati anche minacce dovuta a interventi umani, di fatto, imprevedibili:</p>
+<ul>
+<li>atti vandalici</li>
+<li>sommosse popolari</li>
+<li>guerre</li>
+<li>attacchi terroristici</li>
+</ul>
+<h4 id="minacce-umane">Minacce umane<a class="headerlink" href="#minacce-umane" title="Permanent link"></a></h4>
+<p>Soggetti che hanno interessi personali ad acquisire le informazioni di un&rsquo;azienda o a limitare l&rsquo;operatività di un organizzazione. Possono essere causate da personale interno (<strong>attacco interno</strong>, minacce più pericolose perché il personale conosce la struttura) o da soggetti estranei (<strong>attacchi esterni</strong>).</p>
+<h4 id="sicurezza-di-un-sistema-informatico">Sicurezza di un sistema informatico<a class="headerlink" href="#sicurezza-di-un-sistema-informatico" title="Permanent link"></a></h4>
+<p>Con le reti locali di PC e con l&rsquo;avvento di Internet, le informazioni e l&rsquo;elaborazione non sono più concentrate ma distribuite e la comunicazione avviene in &ldquo;broadcast&rdquo; generalmente su linee condivise</p>
+<ul>
 <li>breve storia attacchi informatici</li>
 <li>sicurezza sistema informativo</li>
 <li>sicurezza informatica</li>
