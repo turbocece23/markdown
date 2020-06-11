@@ -28,6 +28,7 @@ Il titolo richiama un verso della IV Egloga di Virgilio *humiles myricae* (umili
 Apre con una dedica al padre, una Prefazione ed è costituita da 15 sezioni, inframezzate da testi sparsi.
 
 Temi di alcune delle poesie:
+
 - Lavandare
 	- Temi della solitudine e dell'abbandono
 - Novembre
