@@ -1111,19 +1111,45 @@ body .markdown-body
 <li><strong>Velocità</strong>: velocità con cui i nuovi dati vengono generati e rapidità dei dati nell&rsquo;essere inseriti in un sistema real-time</li>
 </ul>
 <p>Secondo una stima, nel 2014 sono stati generati 650 Exabyte (650 miliardi di GB) di dati risultati dal traffico di dati in internet [5].</p>
-<p>Una dimensione simile di dati è difficile da ammassare ed è ancora più difficile da analizzare perché le informazioni provengono da innumerevoli fonti e si presentano in formati diversi, la difficoltà del lavoro dei data scientist è proprio quello di ricercare un nesso che lega i dati fra di loro e che rappresenti gli &ldquo;umori&rdquo; del mercato e che dia un senso a tutte le informazioni che transitano attraverso internet [6].</p>
-<p><img src="/home/ubuntu-budgie/Desktop/github/markdown/2004_oggi.png" class="center"></p>
-<p><img src="/home/ubuntu-budgie/Desktop/github/markdown/ultimi_12_mesi.png" class="center"></p>
+<p>Una dimensione simile di dati è difficile da ammassare ed è ancora più difficile da analizzare perché le informazioni provengono da innumerevoli fonti e si presentano in formati diversi, la difficoltà nel trattare questo tipo di dati è quella di ricercare un nesso che lega i dati fra di loro e che rappresenti gli &ldquo;umori&rdquo; del mercato e che dia un senso a tutte le informazioni che transitano attraverso internet [6].</p>
+<p><span style="visibility: hidden; display: none;">6 minuti</span></p>
+<h3 id="per-sconfiggere-un-pirata">Per sconfiggere un pirata<a class="headerlink" href="#per-sconfiggere-un-pirata" title="Permanent link"></a></h3>
+<p>Ora che sappiamo quali sono le tecnologie coinvolte, come facciamo a combattere la pirateria?</p>
+<p>Per loro natura, le reti P2P che usano il protocollo BitTorrent per condividere file non dispongono di una figura centrale che serve il resto dei client, quindi avere una sola fonte di log è impossibile.</p>
+<p>Per poter utilizzare i big data a nostro favore e individuare il traffico dei nostri attori malevoli bisogna disporre di due cose:</p>
+<ol>
+    <li>Un server tracker</li>
+    <li>Un sistema informativo per analizzare i dati</li>
+</ol>
+
+<h4 id="1-il-server-tracker">1 - Il server tracker<a class="headerlink" href="#1-il-server-tracker" title="Permanent link"></a></h4>
+<p>Questa macchina si occupa di coordinare i rapporti tra utenti richiedenti un file e quelli che lo offrono, ha lo scopo di localizzare le altre sorgenti che possiedono il file o parte di esso.</p>
+<p>Ogni richiedente effettua una richiesta al nostro server tracker il quale tiene traccia di tutte le informazioni contenute nelle richieste che riceve (in particolare l&rsquo;IP) del richiedente e degli altri server tracker che vengono interpellati. [8]</p>
+<p>Ma siccome non tutto quello che passa in una rete P2P BitTorrent è materiale illegale bisogna costruire un database che possa tenere traccia di quali sorgenti sono affidabili e quali no.</p>
+<h4 id="2-il-sistema-informativo">2 - Il sistema informativo<a class="headerlink" href="#2-il-sistema-informativo" title="Permanent link"></a></h4>
+<p>Quando si progetta un database che deve gestire così tanti dati, percorrere la strada dei Database Relazionali potrebbe non essere l&rsquo;opzione migliore.</p>
+<p>L&rsquo;obiettivo primario è rispettare le proprietà basilari di un DB che deve essere:</p>
+<ul>
+<li>semplice</li>
+<li>efficiente</li>
+<li>efficace</li>
+<li>sicuro</li>
+</ul>
+<p>Per farlo si utilizzano spesso parallelamente sia i database relazionali e i non-relazionali: la differenza principale tra le due è che nel primo, viene usato il linguaggio per query strutturate SQL con le sue componenti DML e DDL, mentre nei database non-relazionali non viene definita una struttura a priori, bensì essa viene creata via via con l&rsquo;inserimento dei dati sotto forma di documenti JSON, infatti il nome con cui è conosciuta questa tecnologia è proprio NoSQL, Not Only SQL.</p>
+<h4 id="fallimento-del-sopa-e-altri-metodi">Fallimento del SOPA e altri metodi<a class="headerlink" href="#fallimento-del-sopa-e-altri-metodi" title="Permanent link"></a></h4>
+<p>Per combattere questo sistema negli anni sono stati adottai tantissimi sistemi, diversi tra loro. Un esempio è la casa videoludica Rockstar Games che ha incorporato un sistema anti-pirateria nel loro videogioco GTA IV il quale si attivava solo sulle copie che non disponevano di una chiave di attivazione valida modificando alcune impostazioni e rendendo l’intero prodotto ingiocabile.</p>
+<p>Un altro metodo che è stato adottato è quello del SOPA, il Stop Online Piracy Act, una legge promossa dal partito democratico statunitense USA all&rsquo;inizio del 2012 (ciò che ha causato quella diminuzione nella ricerca del termine streaming nel gennaio 2012) ma mai entrata in vigore. Questa legge fu soggetta a molte controversie in quanto molti esponenti del pensiero del software libero come il co-fondatore di Wikipedia, Jimmy Wales, sostenevano che questo tipo di provvedimento sarebbe stato un ostacolo al primo emendamento e una censura della libertà di parola in quanto alcuni dettagli tecnici di questo decreto sembravano puntare verso una &ldquo;privatizzazione&rdquo; di certi settori di internet.</p>
+<p><img src="/home/ubuntu-budgie/Desktop/github/markdown/2004_oggi.png" class="center" alt="Grafico dell'andamento delle ricerche dei termini Streaming e Netflix a confronto dal 2004"></p>
+<h3 id="la-nuova-frontiera-della-pirateria">La nuova frontiera della pirateria<a class="headerlink" href="#la-nuova-frontiera-della-pirateria" title="Permanent link"></a></h3>
+<p><img src="/home/ubuntu-budgie/Desktop/github/markdown/ultimi_12_mesi.png" class="center" alt="Grafico dell'andamento delle ricerche dei termini Streaming e Netflix a confronto negli ultimi 12 mesi"></p>
 <ul>
 <li><a href="https://www.consumer.ftc.gov/articles/0018-understanding-mobile-apps">4 Come le app generano revenue</a></li>
 <li><a href="https://science.sciencemag.org/content/332/6025/60">5 Quantità di  dati generati</a></li>
 <li><a href="https://it.wikipedia.org/wiki/Big_data">6 Big Data</a></li>
+<li><a href="https://www.youtube.com/watch?v=5X7GwsIERbo">7 SOPA (inizio 2012)</a></li>
+<li><a href="https://wiki.theory.org/index.php/BitTorrentSpecification">8 BitTorrent Specification</a></li>
 </ul>
-<h3 id="fra-pirati-non-ce-onore">Fra pirati non c&rsquo;è onore<a class="headerlink" href="#fra-pirati-non-ce-onore" title="Permanent link"></a></h3>
-<p>Uno dei rischi maggiori che si incontra quando si sceglie di utilizzare software piratati o &ldquo;craccati&rdquo; è quello di incappare in exploit posizionati da altri utenti, con il fine di prendere il controllo, danneggiare la macchina o estrapolare informazioni da utenti ignari. Questo pericolo esiste, ed è dato dalla natura delle reti (senza parlare strettamente di topologia di rete) che distribuiscono questi software: sono prive di entità centrali in grado di certificare la sicurezza dei programmi distribuiti. Questo perché le fonti e i nodi che costituiscono la rete di scambio sono molteplici e spesso difficili di rintracciare.</p>
-<h3 id="per-sconfiggere-un-pirata">Per sconfiggere un pirata<a class="headerlink" href="#per-sconfiggere-un-pirata" title="Permanent link"></a></h3>
-<p>Per combattere questo sistema negli anni sono stati adottai tantissimi sistemi, diversi tra loro. Un esempio è la casa videoludica Rockstar Games che ha incorporato un sistema anti-pirateria nel loro videogioco GTA IV il quale si attivava solo sulle copie che non disponevano di una chiave di attivazione valida modificando alcune impostazioni e rendendo l’intero prodotto ingiocabile.</p>
-<div style="visibility: hidden;">
+<div style="visibility: hidden; display: none;">
 
 ### Consiglio prof
 
@@ -1136,9 +1162,6 @@ Ogni attività viene monitorata, big data, (database con modello a oggetti, data
 
 https://lorenzogovoni.com/database-relazionali-e-big-data/
 https://www.rackone.it/big-data-con-database-nosql-unintroduzione-pratica/
-
-allungare definizione
-parlare di più di napster/utorrent e delle reti peer to peer
 
 https://it.wikipedia.org/wiki/%CE%9CTorrent
 https://it.wikipedia.org/wiki/EMule

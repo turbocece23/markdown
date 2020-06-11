@@ -76,25 +76,63 @@ Una volta che questi dati vengono raggruppati in un dataset prendono il nome di 
 
 Secondo una stima, nel 2014 sono stati generati 650 Exabyte (650 miliardi di GB) di dati risultati dal traffico di dati in internet [5].
 
-Una dimensione simile di dati è difficile da ammassare ed è ancora più difficile da analizzare perché le informazioni provengono da innumerevoli fonti e si presentano in formati diversi, la difficoltà del lavoro dei data scientist è proprio quello di ricercare un nesso che lega i dati fra di loro e che rappresenti gli "umori" del mercato e che dia un senso a tutte le informazioni che transitano attraverso internet [6].
+Una dimensione simile di dati è difficile da ammassare ed è ancora più difficile da analizzare perché le informazioni provengono da innumerevoli fonti e si presentano in formati diversi, la difficoltà nel trattare questo tipo di dati è quella di ricercare un nesso che lega i dati fra di loro e che rappresenti gli "umori" del mercato e che dia un senso a tutte le informazioni che transitano attraverso internet [6].
 
-<img src="2004_oggi.png" class="center">
+<span style="visibility: hidden; display: none;">6 minuti</span>
 
-<img src="ultimi_12_mesi.png" class="center">
+### Per sconfiggere un pirata
+
+Ora che sappiamo quali sono le tecnologie coinvolte, come facciamo a combattere la pirateria?
+
+Per loro natura, le reti P2P che usano il protocollo BitTorrent per condividere file non dispongono di una figura centrale che serve il resto dei client, quindi avere una sola fonte di log è impossibile.
+
+Per poter utilizzare i big data a nostro favore e individuare il traffico dei nostri attori malevoli bisogna disporre di due cose:
+
+<ol>
+	<li>Un server tracker</li>
+	<li>Un sistema informativo per analizzare i dati</li>
+</ol>
+
+#### 1 - Il server tracker
+
+Questa macchina si occupa di coordinare i rapporti tra utenti richiedenti un file e quelli che lo offrono, ha lo scopo di localizzare le altre sorgenti che possiedono il file o parte di esso.
+
+Ogni richiedente effettua una richiesta al nostro server tracker il quale tiene traccia di tutte le informazioni contenute nelle richieste che riceve (in particolare l'IP) del richiedente e degli altri server tracker che vengono interpellati. [8]
+
+Ma siccome non tutto quello che passa in una rete P2P BitTorrent è materiale illegale bisogna costruire un database che possa tenere traccia di quali sorgenti sono affidabili e quali no.
+
+#### 2 - Il sistema informativo
+
+Quando si progetta un database che deve gestire così tanti dati, percorrere la strada dei Database Relazionali potrebbe non essere l'opzione migliore.
+
+L'obiettivo primario è rispettare le proprietà basilari di un DB che deve essere:
+
+- semplice
+- efficiente
+- efficace
+- sicuro
+
+Per farlo si utilizzano spesso parallelamente sia i database relazionali e i non-relazionali: la differenza principale tra le due è che nel primo, viene usato il linguaggio per query strutturate SQL con le sue componenti DML e DDL, mentre nei database non-relazionali non viene definita una struttura a priori, bensì essa viene creata via via con l'inserimento dei dati sotto forma di documenti JSON, infatti il nome con cui è conosciuta questa tecnologia è proprio NoSQL, Not Only SQL.
+
+#### Fallimento del SOPA e altri metodi
+
+Per combattere questo sistema negli anni sono stati adottai tantissimi sistemi, diversi tra loro. Un esempio è la casa videoludica Rockstar Games che ha incorporato un sistema anti-pirateria nel loro videogioco GTA IV il quale si attivava solo sulle copie che non disponevano di una chiave di attivazione valida modificando alcune impostazioni e rendendo l’intero prodotto ingiocabile.
+
+Un altro metodo che è stato adottato è quello del SOPA, il Stop Online Piracy Act, una legge promossa dal partito democratico statunitense USA all'inizio del 2012 (ciò che ha causato quella diminuzione nella ricerca del termine streaming nel gennaio 2012) ma mai entrata in vigore. Questa legge fu soggetta a molte controversie in quanto molti esponenti del pensiero del software libero come il co-fondatore di Wikipedia, Jimmy Wales, sostenevano che questo tipo di provvedimento sarebbe stato un ostacolo al primo emendamento e una censura della libertà di parola in quanto alcuni dettagli tecnici di questo decreto sembravano puntare verso una "privatizzazione" di certi settori di internet.
+
+<img src="2004_oggi.png" class="center" alt="Grafico dell'andamento delle ricerche dei termini Streaming e Netflix a confronto dal 2004">
+
+### La nuova frontiera della pirateria
+
+<img src="ultimi_12_mesi.png" class="center" alt="Grafico dell'andamento delle ricerche dei termini Streaming e Netflix a confronto negli ultimi 12 mesi">
 
 - [4 Come le app generano revenue](https://www.consumer.ftc.gov/articles/0018-understanding-mobile-apps)
 - [5 Quantità di  dati generati](https://science.sciencemag.org/content/332/6025/60)
 - [6 Big Data](https://it.wikipedia.org/wiki/Big_data)
+- [7 SOPA (inizio 2012)](https://www.youtube.com/watch?v=5X7GwsIERbo)
+- [8 BitTorrent Specification](https://wiki.theory.org/index.php/BitTorrentSpecification)
 
-### Fra pirati non c'è onore
-
-Uno dei rischi maggiori che si incontra quando si sceglie di utilizzare software piratati o "craccati" è quello di incappare in exploit posizionati da altri utenti, con il fine di prendere il controllo, danneggiare la macchina o estrapolare informazioni da utenti ignari. Questo pericolo esiste, ed è dato dalla natura delle reti (senza parlare strettamente di topologia di rete) che distribuiscono questi software: sono prive di entità centrali in grado di certificare la sicurezza dei programmi distribuiti. Questo perché le fonti e i nodi che costituiscono la rete di scambio sono molteplici e spesso difficili di rintracciare.
-
-### Per sconfiggere un pirata
-
-Per combattere questo sistema negli anni sono stati adottai tantissimi sistemi, diversi tra loro. Un esempio è la casa videoludica Rockstar Games che ha incorporato un sistema anti-pirateria nel loro videogioco GTA IV il quale si attivava solo sulle copie che non disponevano di una chiave di attivazione valida modificando alcune impostazioni e rendendo l’intero prodotto ingiocabile.
-
-<div style="visibility: hidden;">
+<div style="visibility: hidden; display: none;">
 
 ### Consiglio prof
 
@@ -107,9 +145,6 @@ Ogni attività viene monitorata, big data, (database con modello a oggetti, data
 
 https://lorenzogovoni.com/database-relazionali-e-big-data/
 https://www.rackone.it/big-data-con-database-nosql-unintroduzione-pratica/
-
-allungare definizione
-parlare di più di napster/utorrent e delle reti peer to peer
 
 https://it.wikipedia.org/wiki/%CE%9CTorrent
 https://it.wikipedia.org/wiki/EMule
