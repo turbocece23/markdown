@@ -1,3 +1,12 @@
+<style>
+	.center
+	{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>
+
 # Traccia
 
 L'ultimo decennio è caratterizzato della diffusione di nuovi servizi digitali a disposizione dell'utente, è quindi inevitabile che la pirateria ha dovuto modificare le proprie strategie; lo studente descriva dettagliatamente il fenomeno, quali tecniche e architetture si possono utilizzare per contrastare il fenomeno.
@@ -11,32 +20,33 @@ Descrivere il fenomeno della pirateria, tecniche e architetture per contrastarla
 ## Possibile scaletta
 
 <ol>
-	<li>Definizione</li>
+	<li>Definizione di pirateria</li>
 	<li>Crescita dei servizi e nascita del fenomeno</li>
 	<li>Motivazioni dietro la nascita della pirateria</li>
+	<li>Il nuovo petrolio del 21esmio secolo</li>
 	<li>Fra pirati non c'è onore</li>
 	<li>Per sconfiggere un pirata</li>
 </ol>
 
-### Definizione
+### Definizione di pirateria
 
-Si potrebbe pensare che lo scopo di piratare prodotti informatici è quello di condividere software e reperti multimediali gratuitamente, è quindi facile pensare che la pirateria sia in qualche modo affiliata al pensiero del software libero ma non è assolutamente così.
+Si potrebbe pensare che lo scopo di piratare prodotti informatici è quello di condividere software e reperti multimediali gratuitamente, è quindi facile pensare che la pirateria sia in qualche modo affiliata al pensiero del software libero ma non è assolutamente così [1].
 
-Il software libero viene rilasciato con l'intento di essere condiviso a titolo gratuito con lo scopo di trasmettere cultura e aumentare la cooperazione tra le persone mentre la pirateria informatica ha scopi di natura lucrativa. La definizione più generica di pirateria è quella di "varie attività di natura illecita perpetrate tramite l'utilizzo di strumenti informatici, in violazione delle norme giuridiche di uno Stato".
+Il software libero viene rilasciato con l'intento di essere condiviso a titolo gratuito con lo scopo di trasmettere cultura e aumentare la cooperazione tra le persone [2] mentre la pirateria informatica ha scopi di natura lucrativa. La definizione più generica di pirateria è quella di "varie attività di natura illecita perpetrate tramite l'utilizzo di strumenti informatici, in violazione delle norme giuridiche di uno Stato" [3].
 
 Questa definizione, seppur corretta, non descrive al meglio la pirateria informatica e l'aspetto che ha assunto negli ultimi tempi. La pirateria non è più un taboo digitale, non riguarda più le attività criminose gravi quali attacchi informatici a corporazioni o furto di proprietà intellettuale, ora la pirateria ricade in una zona grigia dell'ambito legale in quanto più o meno tutti gli internauti si sono resi pirati.
 
-I termini più comunemente associati, come "video streaming" o "programmi craccati" ci possono orientare verso una definizione diversa: "la pirateria è l'insieme di tutte le attività mirate alla contraffazione o alla distribuzione illecita di prodotti in rete protetti da copyright e forniti al pubblico dietro una forma di pagamento"
+I termini più comunemente associati, come "video streaming" o "programmi craccati" ci possono orientare verso una definizione diversa: "la pirateria è l'insieme di tutte le attività mirate alla contraffazione o alla distribuzione illecita di prodotti presenti in rete protetti da copyright e forniti al pubblico dietro una forma di pagamento"
 
-- [Linux didattica sulla pirateria](http://linuxdidattica.org/docs/linuxmagazine/bernardi_25.html)
-- [Pirateria informatica - Wikipedia](https://it.wikipedia.org/wiki/Pirateria_informatica)
-- [Filosofia del software libero - Wikipedia](https://it.wikipedia.org/wiki/Software_libero#Aspetti_filosofici_e_sociali)
+- [1 Linux didattica sulla pirateria](http://linuxdidattica.org/docs/linuxmagazine/bernardi_25.html)
+- [2 Filosofia del software libero - Wikipedia](https://it.wikipedia.org/wiki/Software_libero#Aspetti_filosofici_e_sociali)
+- [3 Pirateria informatica - Wikipedia](https://it.wikipedia.org/wiki/Pirateria_informatica)
 
 ### Crescita dei servizi e nascita del fenomeno
 
 Il fenomeno della pirateria nasce con la progressiva diffusione dell'home computer, nient'altro che un mezzo utilizzato per ottenere un fine, lecito o illecito. Inizia ad essere usato per aggirare sistemi e ottenere dati e/o informazioni solitamente protetti e esclusi dal dominio pubblico.
 
-Queste informazioni sono per esempio, documenti legali, file protetti da copyright, informazioni su persone, credenziali di accesso ad un sistema e altri tipi di dati.
+Queste informazioni sono per esempio, documenti legali, file protetti da copyright, informazioni su persone, credenziali di accesso ad un sistema e altri tipi di dati [3].
 
 Le tecniche per raggiungere questi scopi col tempo si sono diversificate sempre più, alcune, avvicinandosi anche ad attaccare le "vulnerabilità psicologiche" dell'utente umano, allo stesso tempo conservando la loro natura di attacchi informatici fatti di programmi con comportamenti predeterminati da chi li crea.
 
@@ -56,20 +66,25 @@ Più il numero di utenti aumentava e più la pirateria si allontanava dallo scop
 
 Prendiamo ad esempio le app per mobile: se la maggior parte delle app presenti sul Play Store sono gratuite, come fanno queste a generare introiti?
 
-La risposta è collezionando dati (come informazioni sul calendario, log delle chiamate, posizione del dispositivo, cronologia del browser...) in modo da poterli rivendere [1].
+La risposta è collezionando dati (come informazioni sul calendario, log delle chiamate, posizione del dispositivo, cronologia del browser...) in modo da poterli rivendere [4].
 
-Una volta che questi dati vengono raggruppati in un dataset prendono il nome di Big Data.
-
-Ognuno di questi dataset è caratterizzato da tre caratteristiche, dette le "3V":
+Una volta che questi dati vengono raggruppati in un dataset prendono il nome di Big Data. Ognuno di questi dataset è caratterizzato da tre caratteristiche, dette le "3V":
 
 - **Volume**: quantità di dati e dimensione del dataset (GB,TB,PB...)
-- **varietà**: differenti tipologie di dati utilizzati, spesso eterogenei perché provengono da device diversi e trattano informazioni differenti (dati non strutturati e semi-strutturati)
+- **Varietà**: differenti tipologie di dati utilizzati, spesso eterogenei perché provengono da device diversi e trattano informazioni differenti (dati non strutturati e semi-strutturati)
 - **Velocità**: velocità con cui i nuovi dati vengono generati e rapidità dei dati nell'essere inseriti in un sistema real-time
 
-Secondo una stima, nel 2014 sono stati generati 650 Exabyte (650 miliardi di GB) di dati risultati dal traffico di internet [2]. 
+Secondo una stima, nel 2014 sono stati generati 650 Exabyte (650 miliardi di GB) di dati risultati dal traffico di dati in internet [5].
 
-- 1 [Come le app generano revenue](https://www.consumer.ftc.gov/articles/0018-understanding-mobile-apps)
-- 2 [Quantità di  dati generati](https://science.sciencemag.org/content/332/6025/60)
+Una dimensione simile di dati è difficile da ammassare ed è ancora più difficile da analizzare perché le informazioni provengono da innumerevoli fonti e si presentano in formati diversi, la difficoltà del lavoro dei data scientist è proprio quello di ricercare un nesso che lega i dati fra di loro e che rappresenti gli "umori" del mercato e che dia un senso a tutte le informazioni che transitano attraverso internet [6].
+
+<img src="2004_oggi.png" class="center">
+
+<img src="ultimi_12_mesi.png" class="center">
+
+- [4 Come le app generano revenue](https://www.consumer.ftc.gov/articles/0018-understanding-mobile-apps)
+- [5 Quantità di  dati generati](https://science.sciencemag.org/content/332/6025/60)
+- [6 Big Data](https://it.wikipedia.org/wiki/Big_data)
 
 ### Fra pirati non c'è onore
 
@@ -100,5 +115,6 @@ https://it.wikipedia.org/wiki/%CE%9CTorrent
 https://it.wikipedia.org/wiki/EMule
 https://it.wikipedia.org/wiki/Peer-to-peer
 https://it.wikipedia.org/wiki/Stop_Online_Piracy_Act#Contenuto_della_proposta_legislativa
+https://techpost.bsa.org/2015/04/23/malware-threats-from-unlicensed-software-the-critical-first-step-for-cyberrisk-management/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+BSATechpost+%28BSA+TechPost%29
 
 </div>
