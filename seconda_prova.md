@@ -129,8 +129,17 @@ Un altro metodo che è stato adottato è quello del SOPA, il Stop Online Piracy 
 - [4 Come le app generano revenue](https://www.consumer.ftc.gov/articles/0018-understanding-mobile-apps)
 - [5 Quantità di  dati generati](https://science.sciencemag.org/content/332/6025/60)
 - [6 Big Data](https://it.wikipedia.org/wiki/Big_data)
-- [7 SOPA (inizio 2012)](https://www.youtube.com/watch?v=5X7GwsIERbo)
-- [8 BitTorrent Specification](https://wiki.theory.org/index.php/BitTorrentSpecification)
+
+- [7 Peer to Peer - Wikipedia](https://it.wikipedia.org/wiki/Peer-to-peer)
+- [8 Protocollo BitTorrent](https://it.wikipedia.org/wiki/BitTorrent)
+- [9 BitTorrent Specification](https://wiki.theory.org/index.php/BitTorrentSpecification)
+- [10 MySQL e NoSQL](https://www.html.it/articoli/sql-e-nosql-a-documenti-il-confronto/)
+- [11 Esempi di NoSQL](https://www.rackone.it/big-data-con-database-nosql-unintroduzione-pratica/)
+- [12 Confronto tra MySQL e NoSQL](https://lorenzogovoni.com/database-relazionali-e-big-data/)
+- [13 SOPA](https://it.wikipedia.org/wiki/Stop_Online_Piracy_Act)
+- [14 SOPA (inizio 2012)](https://www.youtube.com/watch?v=5X7GwsIERbo)
+- [15 HADOPI](https://it.wikipedia.org/wiki/HADOPI)
+- [16 Previsioni sulla crescita della userbase di Netflix](https://www.corrierecomunicazioni.it/media/netflix-co-in-volata-ma-reggeranno-nel-lungo-periodo/)
 
 <div style="visibility: hidden; display: none;">
 
@@ -142,14 +151,5 @@ informatica: inserire i log nei databse non relazionali o relazionali
 collegamento con pcto: come ho fatto log durante l'alternanza e quali sono stati i rischi dei software contraffatti
 
 Ogni attività viene monitorata, big data, (database con modello a oggetti, database reticolari)
-
-https://lorenzogovoni.com/database-relazionali-e-big-data/
-https://www.rackone.it/big-data-con-database-nosql-unintroduzione-pratica/
-
-https://it.wikipedia.org/wiki/%CE%9CTorrent
-https://it.wikipedia.org/wiki/EMule
-https://it.wikipedia.org/wiki/Peer-to-peer
-https://it.wikipedia.org/wiki/Stop_Online_Piracy_Act#Contenuto_della_proposta_legislativa
-https://techpost.bsa.org/2015/04/23/malware-threats-from-unlicensed-software-the-critical-first-step-for-cyberrisk-management/?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+BSATechpost+%28BSA+TechPost%29
 
 </div>
