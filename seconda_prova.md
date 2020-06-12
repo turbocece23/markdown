@@ -126,20 +126,20 @@ Un altro metodo che è stato adottato è quello del SOPA, il Stop Online Piracy 
 
 <img src="ultimi_12_mesi.png" class="center" alt="Grafico dell'andamento delle ricerche dei termini Streaming e Netflix a confronto negli ultimi 12 mesi">
 
-- [4 Come le app generano revenue](https://www.consumer.ftc.gov/articles/0018-understanding-mobile-apps)
-- [5 Quantità di  dati generati](https://science.sciencemag.org/content/332/6025/60)
-- [6 Big Data](https://it.wikipedia.org/wiki/Big_data)
-
-- [7 Peer to Peer - Wikipedia](https://it.wikipedia.org/wiki/Peer-to-peer)
-- [8 Protocollo BitTorrent](https://it.wikipedia.org/wiki/BitTorrent)
-- [9 BitTorrent Specification](https://wiki.theory.org/index.php/BitTorrentSpecification)
-- [10 MySQL e NoSQL](https://www.html.it/articoli/sql-e-nosql-a-documenti-il-confronto/)
-- [11 Esempi di NoSQL](https://www.rackone.it/big-data-con-database-nosql-unintroduzione-pratica/)
-- [12 Confronto tra MySQL e NoSQL](https://lorenzogovoni.com/database-relazionali-e-big-data/)
-- [13 SOPA](https://it.wikipedia.org/wiki/Stop_Online_Piracy_Act)
-- [14 SOPA (inizio 2012)](https://www.youtube.com/watch?v=5X7GwsIERbo)
-- [15 HADOPI](https://it.wikipedia.org/wiki/HADOPI)
-- [16 Previsioni sulla crescita della userbase di Netflix](https://www.corrierecomunicazioni.it/media/netflix-co-in-volata-ma-reggeranno-nel-lungo-periodo/)
+- [ Grandi quantità di dati in tutto internet](https://blog.microfocus.com/how-much-data-is-created-on-the-internet-each-day/)
+- [ Come le app generano revenue](https://www.consumer.ftc.gov/articles/0018-understanding-mobile-apps)
+- [ Quantità di  dati generati](https://science.sciencemag.org/content/332/6025/60)
+- [ Big Data](https://it.wikipedia.org/wiki/Big_data)
+- [ Peer to Peer - Wikipedia](https://it.wikipedia.org/wiki/Peer-to-peer)
+- [ Protocollo BitTorrent](https://it.wikipedia.org/wiki/BitTorrent)
+- [ BitTorrent Specification](https://wiki.theory.org/index.php/BitTorrentSpecification)
+- [ MySQL e NoSQL](https://www.html.it/articoli/sql-e-nosql-a-documenti-il-confronto/)
+- [ Esempi di NoSQL](https://www.rackone.it/big-data-con-database-nosql-unintroduzione-pratica/)
+- [ Confronto tra MySQL e NoSQL](https://lorenzogovoni.com/database-relazionali-e-big-data/)
+- [ SOPA](https://it.wikipedia.org/wiki/Stop_Online_Piracy_Act)
+- [ SOPA (inizio 2012)](https://www.youtube.com/watch?v=5X7GwsIERbo)
+- [ HADOPI](https://it.wikipedia.org/wiki/HADOPI)
+- [ Previsioni sulla crescita della userbase di Netflix](https://www.corrierecomunicazioni.it/media/netflix-co-in-volata-ma-reggeranno-nel-lungo-periodo/)
 
 <div style="visibility: hidden; display: none;">
 
