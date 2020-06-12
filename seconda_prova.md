@@ -153,3 +153,8 @@ collegamento con pcto: come ho fatto log durante l'alternanza e quali sono stati
 Ogni attività viene monitorata, big data, (database con modello a oggetti, database reticolari)
 
 </div>
+
+BRUNELLO_CESARE (napo e la scaleia)
+BRUNELLO_CESARE_PRESENTAZIONE (napo e la scaleia)
+BRUNELLO_CESARE_PCTO
+BRUNELLO_CESARE_PCTO_INGLESE

@@ -107,7 +107,7 @@ Non accade, nel complesso la rivoluzione del 1905 è un fallimento.
 
 Il secondo Reich era nato dopo la guerra contro la Francia del 1870. 20 anni dopo nel 1890 Bismarck si dimise.
 
-La legislazione di Guglielmo II era la più avanzata dell’Europa, le industrie concorrono perfino con quelle inglesi. La borghesia però non riusciva ad imporsi e il potere rimane accentrato nelle mani del sovrano e della corte, per la maggior parte nobili prussiani.
+La legislazione di Guglielmo II era la più avanzata dell’Europa, le industrie concorrono perfino con quelle inglesi. La borghesia però non riusciva ad imporsi e il potere rimane accentrato nelle mani del sovrano e della corte, per la maggior parte nobili prussiani chiamati Junker.
 
 Riguardo alla politica estera tutti i paesi avevano paura dell’esercito tedesco e temevano una possibile supremazia continentale.
 
