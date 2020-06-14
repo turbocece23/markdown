@@ -1150,9 +1150,9 @@ body .markdown-body
 </li>
 <li><strong>Modelli Logici</strong>: Consentono una specifica rappresentazione dei dati<ul>
 <li><strong>Modello Gerarchico</strong>: record connessi tra loro secondo strutture ad albero, manutenzione complessa perché la cancellazione di una tupla comporta la cancellazione di tutti i record connessi</li>
-<li><strong>Modello Reticolare</strong>: evoluzione del modello ad albero, organizza i record gestendoli e legandoli attraverso un reticolo, struttura complessa a grafo</li>
-<li><strong>Modello Relazionale</strong>: basato sul concetto di insiemi e di record, le connessioni/corrispondenze/legami derivano da campi di record appartenenti a tabelle diverse</li>
-<li><strong>Modello a Oggetti</strong>: evoluzione del modello relazionale, estende alla base di dati il concetto di programmazione ad oggetti</li>
+<li><strong>Modello Reticolare</strong>: organizzato in un reticolo, struttura complessa a grafo</li>
+<li><strong>Modello Relazionale</strong>: basato sul concetto di insiemi e di record, le connessioni/corrispondenze derivano da record di tabelle diverse</li>
+<li><strong>Modello a Oggetti</strong>: estende alla base di dati il concetto di programmazione ad oggetti</li>
 </ul>
 </li>
 </ul>
@@ -1224,30 +1224,42 @@ body .markdown-body
 </ul>
 </li>
 </ul>
-<h2 id="vincoli"><a href="#vincoli" id="intro">Vincoli</a><a class="headerlink" href="#vincoli" title="Permanent link"></a></h2>
-<p>Vincoli <strong>intra</strong>-relazionali (all&rsquo;interno della tabella)</p>
+<h2 id="vincoli-di-integrita"><a href="#vincoli" id="intro">Vincoli di integrità</a><a class="headerlink" href="#vincoli-di-integrita" title="Permanent link"></a></h2>
+<p>Vincoli <strong>intra</strong>-relazionali (all&rsquo;interno della tabella):</p>
 <ul>
-<li>di tupla: vincolo valutabile su ciascuna tupla indipendentemente dalle altre</li>
-<li>di chiave: la chiave di una relazione non consente valori null</li>
-<li>not null: il campo con il seguente vincolo deve avere un valore</li>
-<li>di dominio: per ogni attributo bisogna specificare il tipo di dato</li>
+<li><strong>di tupla</strong>: coinvolge più valori della stessa tupla (come &ldquo;30&rdquo; e &ldquo;con Lode&rdquo;)</li>
+<li><strong>di chiave</strong>: la chiave di una relazione non consente valori null o duplicati</li>
+<li><strong>not null</strong>: il campo con il seguente vincolo deve avere un valore</li>
+<li><strong>di dominio</strong>: per ogni attributo bisogna specificare il tipo di dato</li>
 </ul>
-<p>Vincoli <strong>inter</strong>-relazionali (che riguardano le chiavi esterne)</p>
+<p>Vincoli <strong>inter</strong>-relazionali (che riguardano le chiavi esterne):</p>
 <ul>
-<li>integrità relazionale: gli attributi di una data tabella (slave) possono assumere soltanto dei valori specificati in un&rsquo;altra tabella (master)</li>
+<li><strong>Vincolo di integrità referenziale</strong>: gli attributi di una data tabella (slave) possono assumere soltanto dei valori specificati in un&rsquo;altra tabella (master). L&rsquo;<strong>integrità referenziale</strong> è l&rsquo;insieme di regole che garantiscono l&rsquo;integrità dei dati quando si hanno relazioni con chiave esterne.</li>
+</ul>
+<p>Vincoli di <strong>cancellazione</strong>:</p>
+<ul>
+<li><strong>Restrizione</strong>: cancella il padre solo se non ci sono figli</li>
+<li><strong>Cascata</strong>: cancella sia il padre che i figli</li>
+<li><strong>Nullo</strong>: la chiave esterna nel figlio viene impostata a null</li>
+<li><strong>Default</strong>: la chiave esterna nel figlio viene impostata ad un valore di default</li>
+<li><strong>Nessun effetto</strong>: non viene fatto il controllo di chiave esterna</li>
+</ul>
+<p>Vincoli di <strong>inserimento/modifica</strong>:</p>
+<ul>
+<li><strong>Dipendente</strong>: si può inserire/modificare un figlio solo se esiste un padre</li>
+<li><strong>Automatico</strong>: se il padre non esiste viene creato</li>
+<li><strong>Nullo</strong>: la chiave del padre nel figlio viene impostata a null</li>
+<li><strong>Default</strong>: la chiave del padre nel figlio viene impostata ad un valore di default</li>
+<li><strong>Nessun effetto</strong>: non viene fatto il controllo</li>
 </ul>
 <h2 id="sql"><a href="#indice" id="sql">SQL</a><a class="headerlink" href="#sql" title="Permanent link"></a></h2>
 <p>Structured Query Language, è un linguaggio per l&rsquo;interrogazione e la gestione di basi di dati</p>
 <p>Comandi SQL, divisi in 3 categorie: DDL,DML,DCL:</p>
 <ul>
-<li>DDL = Data Definition Language (Create, Alter, Drop)</li>
-<li>DML = Data Manipulation Language (Insert, Select, Delete, Update)</li>
-<li>DCL = Data Control Language</li>
+<li>DDL = Data Definition Language (Create, Alter, Drop) - agisce sullo schema del database</li>
+<li>DML = Data Manipulation Language (Insert, Select, Delete, Update) - agisce sui dati del tatabase</li>
+<li>DCL = Data Control Language - gestisce i permessi nel DB</li>
 </ul>
-<h3 id="ddl">DDL<a class="headerlink" href="#ddl" title="Permanent link"></a></h3>
-<p>Data Definition Language (Create, Alter, Drop)</p>
-<h3 id="dml">DML<a class="headerlink" href="#dml" title="Permanent link"></a></h3>
-<p>Data Manipulation Language (Insert, Select, Delete, Update)</p>
 <h2 id="transazioni"><a href="#indice" id="transazioni">Transazioni</a><a class="headerlink" href="#transazioni" title="Permanent link"></a></h2>
 <p>Una transazione è una sequenza di operazioni, che può concludersi positivamente o
 negativamente, in caso positivo il risultato delle operazioni deve essere permanente (<strong>commit work</strong>), mentre in caso negativo si deve tornare allo stato prima della transazione (<strong>rollback</strong>).</p>
@@ -1263,16 +1275,14 @@ negativamente, in caso positivo il risultato delle operazioni deve essere perman
 <p>Durante lo sviluppo di un applicazione client le richieste per l&rsquo;interrogazione di dati possono essere inviate direttamente al database. dal programma, tramite istruzioni, oppure è possibile creare piccoli programmi o funzioni all&rsquo;interno del database e poi farle eseguire dal programma esterno. Queste procedure si chiamano Stored Procedure.</p>
 <p>Fanno parte di una branca del linguaggio <em>SQL</em> che prende il nome di <strong>T-SQL</strong>.</p>
 <p>Una stored procedure può accettare parametri di input, restituire al client risultati tabellari o scalari, richiamare istruzioni DDL (Data Definition Language) e DML (Data Manipulation Language)</p>
-<p>Un linguaggio è detto <strong>dichiarativo</strong> o <strong>logico</strong> quando le istruzioni descrivono le relazioni che intercorrono tra i dati, lo sviluppatore descrive l&rsquo;insieme delle relazioni che sussistono tra i dati e il risultato atteso.</p>
-<p>Un linguaggio dichiarativo viene invece denominato <strong>procedurale</strong> quando per esso non si ragiona in termini di relazioni tra dati ma in termini di assegnazione di valori ad uno spazio di memoria, i linguaggi procedurali fanno infatti parte della più ampia famiglia dei linguaggi imperativi</p>
 <p>Le stored procedure accettano parametri in input (IN), parametri in output (OUT) e vi è anche una combinazione di questi due che si chiama (INOUT)</p>
 <h2 id="ristrutturazione"><a href="#indice" id="ristrutturazione">Ristrutturazione</a><a class="headerlink" href="#ristrutturazione" title="Permanent link"></a></h2>
 <p>Fasi:</p>
 <ul>
 <li><strong>Analisi delle ridondanze</strong>: si decidere se mantenere o eliminare eventuali ridondanze (ripetizioni) presenti nello schema</li>
-<li><strong>Partizionamento di entità e associazioni</strong>: si decide se è opportuno partizionare concetti dello schema, i più sotto-concetti più semplici, o viceversa, accorpare concetti separati in un unico concetto</li>
+<li><strong>Raggruppamento o divisione di entità e associazioni</strong>: si decide se è opportuno partizionare concetti dello schema, i più sotto-concetti più semplici, o viceversa, accorpare concetti separati in un unico concetto</li>
 <li><strong>Eliminazione delle gerarchie &ldquo;Is A&rdquo; (le generalizzazioni/specializzazioni)</strong>: il modello relazionale non rappresenta le gerarchie, e quindi vanno sono sostituite da entità e associazioni</li>
-<li><strong>Selezione delle chiavi primarie</strong>: si seleziona un identificatore per quelle entità che ne hanno più di uno. Vengono invece eliminate le identificazioni esterne</li>
+<li><strong>Selezione delle chiavi primarie</strong>: si seleziona un identificatore per quelle entità che ne hanno più di una. Vengono invece eliminate le identificazioni esterne</li>
 <li><strong>Normalizzazione</strong>: degli attributi composti o multipli</li>
 </ul>
 <h2 id="trigger"><a href="#indice" id="trigger">Trigger</a><a class="headerlink" href="#trigger" title="Permanent link"></a></h2>
@@ -1295,7 +1305,7 @@ negativamente, in caso positivo il risultato delle operazioni deve essere perman
 <li>TRIGGER_TIME: rappresenta il tipo di trigger (BEFORE o AFTER)</li>
 <li>TRIGGER_EVENT: indica il tipo che attiva il trigger (come insert)</li>
 </ul>
-<h2 id="algebra"><a href="#indice" id="algebra">Algebra</a><a class="headerlink" href="#algebra" title="Permanent link"></a></h2>
+<h2 id="algebra-relazionale"><a href="#indice" id="algebra">Algebra relazionale</a><a class="headerlink" href="#algebra-relazionale" title="Permanent link"></a></h2>
 <h3 id="definizione">Definizione<a class="headerlink" href="#definizione" title="Permanent link"></a></h3>
 <p>È un linguaggio:</p>
 <ul>

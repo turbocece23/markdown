@@ -93,9 +93,9 @@ Un **modello di dati** è un insieme di concetti e di costrutti utilizzati per o
 	- **Modello E-R**
 - **Modelli Logici**: Consentono una specifica rappresentazione dei dati
 	- **Modello Gerarchico**: record connessi tra loro secondo strutture ad albero, manutenzione complessa perché la cancellazione di una tupla comporta la cancellazione di tutti i record connessi
-	- **Modello Reticolare**: evoluzione del modello ad albero, organizza i record gestendoli e legandoli attraverso un reticolo, struttura complessa a grafo
-	- **Modello Relazionale**: basato sul concetto di insiemi e di record, le connessioni/corrispondenze/legami derivano da campi di record appartenenti a tabelle diverse
-	- **Modello a Oggetti**: evoluzione del modello relazionale, estende alla base di dati il concetto di programmazione ad oggetti
+	- **Modello Reticolare**: organizzato in un reticolo, struttura complessa a grafo
+	- **Modello Relazionale**: basato sul concetto di insiemi e di record, le connessioni/corrispondenze derivano da record di tabelle diverse
+	- **Modello a Oggetti**: estende alla base di dati il concetto di programmazione ad oggetti
 
 ### I DBMS
 Un DBMS (come SQL server, Access, MySQL..) è un insieme di strumenti software che, partendo dalle specifiche dell'utente, è in grado di gestire dati strutturali. È quindi un'interfaccia tra gli sviluppatori, gli utenti del DB e il sistema di elaborazione
@@ -156,34 +156,43 @@ La realtà di riferimento rappresentata in uno schema ER sarà descritta attrave
 
 
 
-## <a href="#vincoli" id="intro">Vincoli</a>
-Vincoli **intra**-relazionali (all'interno della tabella)
+## <a href="#vincoli" id="intro">Vincoli di integrità</a>
 
-- di tupla: vincolo valutabile su ciascuna tupla indipendentemente dalle altre
-- di chiave: la chiave di una relazione non consente valori null
-- not null: il campo con il seguente vincolo deve avere un valore
-- di dominio: per ogni attributo bisogna specificare il tipo di dato
+Vincoli **intra**-relazionali (all'interno della tabella):
 
-Vincoli **inter**-relazionali (che riguardano le chiavi esterne)
+- **di tupla**: coinvolge più valori della stessa tupla (come "30" e "con Lode")
+- **di chiave**: la chiave di una relazione non consente valori null o duplicati
+- **not null**: il campo con il seguente vincolo deve avere un valore
+- **di dominio**: per ogni attributo bisogna specificare il tipo di dato
 
-- integrità relazionale: gli attributi di una data tabella (slave) possono assumere soltanto dei valori specificati in un'altra tabella (master)
+Vincoli **inter**-relazionali (che riguardano le chiavi esterne):
 
+- **Vincolo di integrità referenziale**: gli attributi di una data tabella (slave) possono assumere soltanto dei valori specificati in un'altra tabella (master). L'**integrità referenziale** è l'insieme di regole che garantiscono l'integrità dei dati quando si hanno relazioni con chiave esterne.
 
+Vincoli di **cancellazione**:
+
+- **Restrizione**: cancella il padre solo se non ci sono figli
+- **Cascata**: cancella sia il padre che i figli
+- **Nullo**: la chiave esterna nel figlio viene impostata a null
+- **Default**: la chiave esterna nel figlio viene impostata ad un valore di default
+- **Nessun effetto**: non viene fatto il controllo di chiave esterna
+
+Vincoli di **inserimento/modifica**:
+
+- **Dipendente**: si può inserire/modificare un figlio solo se esiste un padre
+- **Automatico**: se il padre non esiste viene creato
+- **Nullo**: la chiave del padre nel figlio viene impostata a null
+- **Default**: la chiave del padre nel figlio viene impostata ad un valore di default
+- **Nessun effetto**: non viene fatto il controllo
 
 ## <a href="#indice" id="sql">SQL</a>
 Structured Query Language, è un linguaggio per l'interrogazione e la gestione di basi di dati
 
 Comandi SQL, divisi in 3 categorie: DDL,DML,DCL:
 
-- DDL = Data Definition Language (Create, Alter, Drop)
-- DML = Data Manipulation Language (Insert, Select, Delete, Update)
-- DCL = Data Control Language
-
-### DDL
-Data Definition Language (Create, Alter, Drop)
-
-### DML
-Data Manipulation Language (Insert, Select, Delete, Update)
+- DDL = Data Definition Language (Create, Alter, Drop) - agisce sullo schema del database
+- DML = Data Manipulation Language (Insert, Select, Delete, Update) - agisce sui dati del tatabase
+- DCL = Data Control Language - gestisce i permessi nel DB
 
 
 
@@ -209,10 +218,6 @@ Fanno parte di una branca del linguaggio *SQL* che prende il nome di **T-SQL**.
 
 Una stored procedure può accettare parametri di input, restituire al client risultati tabellari o scalari, richiamare istruzioni DDL (Data Definition Language) e DML (Data Manipulation Language)
 
-Un linguaggio è detto **dichiarativo** o **logico** quando le istruzioni descrivono le relazioni che intercorrono tra i dati, lo sviluppatore descrive l'insieme delle relazioni che sussistono tra i dati e il risultato atteso.
-
-Un linguaggio dichiarativo viene invece denominato **procedurale** quando per esso non si ragiona in termini di relazioni tra dati ma in termini di assegnazione di valori ad uno spazio di memoria, i linguaggi procedurali fanno infatti parte della più ampia famiglia dei linguaggi imperativi
-
 Le stored procedure accettano parametri in input (IN), parametri in output (OUT) e vi è anche una combinazione di questi due che si chiama (INOUT)
 
 
@@ -221,9 +226,9 @@ Le stored procedure accettano parametri in input (IN), parametri in output (OUT)
 Fasi:
 
 - **Analisi delle ridondanze**: si decidere se mantenere o eliminare eventuali ridondanze (ripetizioni) presenti nello schema
-- **Partizionamento di entità e associazioni**: si decide se è opportuno partizionare concetti dello schema, i più sotto-concetti più semplici, o viceversa, accorpare concetti separati in un unico concetto
+- **Raggruppamento o divisione di entità e associazioni**: si decide se è opportuno partizionare concetti dello schema, i più sotto-concetti più semplici, o viceversa, accorpare concetti separati in un unico concetto
 - **Eliminazione delle gerarchie "Is A" (le generalizzazioni/specializzazioni)**: il modello relazionale non rappresenta le gerarchie, e quindi vanno sono sostituite da entità e associazioni
-- **Selezione delle chiavi primarie**: si seleziona un identificatore per quelle entità che ne hanno più di uno. Vengono invece eliminate le identificazioni esterne
+- **Selezione delle chiavi primarie**: si seleziona un identificatore per quelle entità che ne hanno più di una. Vengono invece eliminate le identificazioni esterne
 - **Normalizzazione**: degli attributi composti o multipli
 
 
@@ -251,7 +256,7 @@ I trigger a livello di tupla vengono eseguiti tante volte quante sono le righe d
 
 
 
-## <a href="#indice" id="algebra">Algebra</a>
+## <a href="#indice" id="algebra">Algebra relazionale</a>
 ### Definizione
 È un linguaggio:
 
