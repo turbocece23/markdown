@@ -291,7 +291,7 @@ Tipi di Join
 - **Right Join**: restituisce tutti i valori della tabella a destra e solo quelli che soddisfano la condizione da quella di sinistra
 - **Self Join**: usata su una tabella serve a mettere in relazione alcuni dati all'interno della stessa tabella
 
-### <span style="color:#f76b2a">L'interrogazione dei dati</span>
+### L'interrogazione dei dati
 L'operazione fondamentale per manipolare una base di dati è l'*interrogazione*. Con l'interrogazione si esegue l'accesso ai dati desiderati, dopo aver ottenuto questo accesso è possibile:
 
 - modificarli (**update**)
