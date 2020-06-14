@@ -68,35 +68,96 @@
 </ol>
 
 ## <a id="intro" href="#indice">Introduzione</a>
-### Differenza tra sistema informatico e sistema informativo:
+### Introduzione alle basi di dati
+Una **base di dati** (o database) è una raccolta di *dati logicamente correlati* ed è utilizzata per *modellare una realtà*.
 
-- **Sistema informativo**: è un insiema organizzato di strumenti automatici, procedure, norme, risorse, dati, orientato alla gestione delle informazioni, con gestione si intende la raccolta, archiviazione e scambio delle informazioni necessarie alle attività operative, di gestione, di controllo dell’organizzazione. Per esempio il sistema informativo di un’università contiene i dati riguardanti gli studenti, i docenti, le relazioni fra insegnanti ed aule, i corsi...
-- **Sistema informatico**: è l’insieme degli strumenti informatici utilizzati per il trattamento automatico delle informazioni. Quindi potremmo dire che il sistema informatico è l’insieme dei strumenti informatici che consentono l’automazione (in genere solo parziale) del sistema informativo
+I dati sono memorizzati su un supporto di massa e progettati per essere fruiti da diverse applicazioni e utenti.
+
+Una base di dati deve essere:
+
+- **Sicura**: progettata in modo da impedire che venga danneggiata da danni accidentali
+- **Integra**: le operazioni effettuate da utenti autorizzate non provocano una perdita di consistenza dei dati
+- **Consistente**: i dati devono essere significativi ed effettivamente utilizzati nelle applicazioni
+- **Condivisibile**: applicazioni e utenti diversi devono poter accedere ai dati comuni
+- **Persistente**: deve avere un tempo di vita non limitato alle singole esecuzioni dei programmi che lo utilizzano (come le viste)
+- **Scalabile**: deve mantenere intatte le proprie performance all'aumentare della quantità di dati
+
+### Differenza tra sistema informatico e sistema informativo:
+- **Sistema informativo**:<br>è un insieme organizzato di strumenti automatici, procedure, norme, risorse, dati, orientato alla gestione delle informazioni. Con gestione si intende la raccolta, archiviazione e scambio delle informazioni necessarie alle attività operative, di gestione, di controllo dell'organizzazione. Per esempio il sistema informativo di un'università contiene i dati riguardanti gli studenti, i docenti, le relazioni fra insegnanti ed aule, i corsi...
+- **Sistema informatico**:<br>è l'insieme degli strumenti informatici utilizzati per il trattamento automatico delle informazioni. Quindi potremmo dire che il sistema informatico è l'insieme dei strumenti informatici che consentono l'automazione (in genere solo parziale) del sistema informativo
+
+### Modelli di dati
+Un **modello di dati** è un insieme di concetti e di costrutti utilizzati per organizzare i dati di interesse e descriverne la struttura e la dinamica.
+
+- **Modelli concettuali**: Permettono di rappresentare i concetti in modo indipendente da ogni sistema cercando di descrivere i concetti del mondo reale
+	- **Modello E-R**
+- **Modelli Logici**: Consentono una specifica rappresentazione dei dati
+	- **Modello Gerarchico**: record connessi tra loro secondo strutture ad albero, manutenzione complessa perché la cancellazione di una tupla comporta la cancellazione di tutti i record connessi
+	- **Modello Reticolare**: evoluzione del modello ad albero, organizza i record gestendoli e legandoli attraverso un reticolo, struttura complessa a grafo
+	- **Modello Relazionale**: basato sul concetto di insiemi e di record, le connessioni/corrispondenze/legami derivano da campi di record appartenenti a tabelle diverse
+	- **Modello a Oggetti**: evoluzione del modello relazionale, estende alla base di dati il concetto di programmazione ad oggetti
 
 ### I DBMS
+Un DBMS (come SQL server, Access, MySQL..) è un insieme di strumenti software che, partendo dalle specifiche dell'utente, è in grado di gestire dati strutturali. È quindi un'interfaccia tra gli sviluppatori, gli utenti del DB e il sistema di elaborazione
 
-Un DBMS (come SQL server, Access, MySQL..) è un insieme di strumenti software che, partendo dalle specifiche dell’utente, è in grado di gestire dati strutturali. È quindi un’interfaccia tra gli sviluppatori, gli utenti del DB e il sistema di elaborazione
+I dati gestiti sono:
+
+- tanti
+- importanti
+- condivisi
+- interrogati
+- aggiornati
+
+Un DBMS deve essere:
+
+- **Efficiente**: capace di svolgere sempre le operazioni richieste
+- **Efficace**: capace di rendere produttive e semplici le attività richieste dagli utenti
+
+Un DBMS deve permettere 4 le operazioni di:
+
+- **Creazione**
+- **Inserimento**
+- **Aggiornamento**
+- **Interrogazione**
 
 ### I livelli di un DBMS
-- Fisico: riguarda la memorizzazione dei dati, organizzati in file, record e strutture di accesso
-- Logico: Riguarda la struttura logica assunta dai dati registrati, quindi il loro schema  astratto
-- Esterno: si riferisce al modo in cui ciascun utente vede i dati che vengono messi a disposizione secondo il formato richiesto
+- **Fisico o Interno** (**DML**, Data Manipulation Language): riguarda la memorizzazione dei dati, organizzati in file, record e strutture di accesso
+- **Logico o Concettuale** (**DDL, DCL**, Data Definition Language e Data Control Language): Riguarda la struttura logica assunta dai dati registrati, quindi il loro schema  astratto
+- **Esterno** (**DMCL**, Device Media Control Language): si riferisce al modo in cui ciascun utente vede i dati che vengono messi a disposizione secondo il formato richiesto
 
 
 
 ## <a href="#indice" id="fasi">Fasi</a>
 ### Le fasi di progettazione di un database
 - **Concettuale**: permette di costruire e definire una rappresentazione corretta e completa della realtà di interesse.
-Presa in input una realtà di riferimento, genera un diagramma ER
-- **Logica**: trasforma il diagramma ER in uno schema logico, efficiente rispetto alle strutture del sistema di gestione che si intende utilizzare
-Preso in input un diagramma ER genera uno schema logico delle relazioni rappresentato tramite tabelle
-- **Fisica**: implementa lo schema logico definendone gli aspetti fisici di memorizzazione e rappresentazione in memoria di massa
-Preso in input lo schema logico con le tabelle le implementa nella memoria di massa
+	- Presa in input una realtà di riferimento, genera un diagramma ER
+- **Logica**: trasforma il diagramma ER in uno schema logico, efficiente rispetto alle strutture del sistema di gestione che si intende utilizzare.
+	- Preso in input un diagramma ER genera uno schema logico delle relazioni rappresentato tramite tabelle
+- **Fisica**: implementa lo schema logico definendone gli aspetti fisici di memorizzazione e rappresentazione in memoria di massa.
+	- Preso in input lo schema logico con le tabelle le implementa nella memoria di massa
+
+### La progettazione Concettuale
+La realtà di riferimento rappresentata in uno schema ER sarà descritta attraverso:
+
+- **Entità**, ciò che esiste all'interno della realtà e si vuole modellare in modo da rappresentarne le caratteristiche
+- **Attributi** che definiscono le caratteristiche dell'entità presa in esame, definiti da caratteristiche come:
+	- Nome
+	- Formato o Tipo di attributo
+	- Dimensione
+	- Valore
+	- Opzionalità
+- **Associazioni o Relazioni** che connettono le varie entità
+	- *Associazione totale*: il legame tra entità deve essere sempre presente
+	- *Associazione parziale*: quando il legame tra le entità può non esserci
+	- La molteplicità/cardinalità di un associazione indica quante istanze possono trovarsi in relazione tra le 2 entità, queste possono essere di diverse tipologie:
+		- 1:1 o biunivoca: a 1 istanza di A corrisponde 1 istanza di B
+		- 1:N o semplice: a 1 istanza di A possono corrispondere una o più istanze di B e a ogni istanza di B solo un istanza di A
+		- N:M o complessa: a ogni istanza di A possono corrispondere una o più istanze di B e viceversa
 
 
 
 ## <a href="#vincoli" id="intro">Vincoli</a>
-Vincoli **intra**-relazionali (all’interno della tabella)
+Vincoli **intra**-relazionali (all'interno della tabella)
 - di tupla
 - di chiave
 - not null
@@ -108,7 +169,7 @@ Vincoli **inter**-relazionali (che riguardano le chiavi esterne)
 
 
 ## <a href="#indice" id="sql">SQL</a>
-Structured Query Language, è un linguaggio per l’interrogazione e la gestione di basi di dati
+Structured Query Language, è un linguaggio per l'interrogazione e la gestione di basi di dati
 
 Comandi SQL, divisi in 3 categorie: DDL,DML,DCL:
 
@@ -144,7 +205,7 @@ Durante lo sviluppo di un applicazione client le richieste per l'interrogazione 
 
 Fanno parte di una branca del linguaggio *SQL* che prende il nome di **T-SQL**.
 
-Una stored procedure può accettare parametri di input, restituire al client risultati tabellari o scalari, richiamare istrudzioni DDL (Data Definition Language) e DML (Data Manipulation Language)
+Una stored procedure può accettare parametri di input, restituire al client risultati tabellari o scalari, richiamare istruzioni DDL (Data Definition Language) e DML (Data Manipulation Language)
 
 Un linguaggio è detto **dichiarativo** o **logico** quando le istruzioni descrivono le relazioni che intercorrono tra i dati, lo sviluppatore descrive l'insieme delle relazioni che sussistono tra i dati e il risultato atteso.
 
