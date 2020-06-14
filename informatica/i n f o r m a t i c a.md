@@ -158,13 +158,15 @@ La realtà di riferimento rappresentata in uno schema ER sarà descritta attrave
 
 ## <a href="#vincoli" id="intro">Vincoli</a>
 Vincoli **intra**-relazionali (all'interno della tabella)
-- di tupla
-- di chiave
-- not null
-- di dominio
- 
+
+- di tupla: vincolo valutabile su ciascuna tupla indipendentemente dalle altre
+- di chiave: la chiave di una relazione non consente valori null
+- not null: il campo con il seguente vincolo deve avere un valore
+- di dominio: per ogni attributo bisogna specificare il tipo di dato
+
 Vincoli **inter**-relazionali (che riguardano le chiavi esterne)
-- integrità relazionale
+
+- integrità relazionale: gli attributi di una data tabella (slave) possono assumere soltanto dei valori specificati in un'altra tabella (master)
 
 
 
@@ -219,8 +221,8 @@ Le stored procedure accettano parametri in input (IN), parametri in output (OUT)
 Fasi:
 
 - **Analisi delle rindondanze**: si decidere se mantenere o eliminare eventuali ridondanze (ripetizioni) presenti nello schema
-- **Partizionamento di entità e associazioni**: si decide se è opportuno partizionare concetti dello schema, i più sottoconcetti più semplici, o viceversa, accorpare concetti separati in un unico concetto
-- **Eliminazione delle gerarchie "Is A"**: il modello relazionale non rappresenta le gerarchie, e quindi vanno sono sostituite da entità e associazioni
+- **Partizionamento di entità e associazioni**: si decide se è opportuno partizionare concetti dello schema, i più sotto-concetti più semplici, o viceversa, accorpare concetti separati in un unico concetto
+- **Eliminazione delle gerarchie "Is A" (le generalizzazioni/specializzazioni)**: il modello relazionale non rappresenta le gerarchie, e quindi vanno sono sostituite da entità e associazioni
 - **Selezione delle chiavi primarie**: si seleziona un identificatore per quelle entità che ne hanno più di uno. Vengono invece eliminate le identificazioni esterne
 - **Normalizzazione**: degli attributi composti o multipli
 
@@ -274,6 +276,15 @@ ed è basato su *5* operazioni fondamentali:
 			- Join (Due triangoli distesi che si danno un bacino tipo ><)
 				- Semi-join (Due triangoli che si danno un bacino ma uno non ha il culo [la base])
 			- Divisione ÷
+
+Tipi di Join
+
+- **Inner Join**: fa corrispondere ad un elemento di una tabella un elemento uguale in un'altra tabella
+- **Cross Join**: seleziona tutte le possibili combinazioni di righe e colonne da entrambe le tabelle
+- **Full Join**: unisce tutte le righe di entrambe le tabelle, lasciando nulli i valori che non trovano corrispondenza
+- **Left Join**: restituisce tutti i valori della tabella a sinistra e solo quelli che soddisfano la condizione da quella di destra
+- **Right Join**: restituisce tutti i valori della tabella a destra e solo quelli che soddisfano la condizione da quella di sinistra
+- **Self Join**: usata su una tabella serve a mettere in relazione alcuni dati all'interno della stessa tabella
 
 ### <span style="color:#f76b2a">L'interrogazione dei dati</span>
 L'operazione fondamentale per manipolare una base di dati è l'*interrogazione*. Con l'interrogazione si esegue l'accesso ai dati desiderati, dopo aver ottentuo questo accesso è possibile:
