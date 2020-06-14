@@ -722,6 +722,8 @@ I requisiti software sono classificati secondo due punti di vista:
 
 Ciascuna fase del progetto prevede un elenco di possibili attività ed eventi, descritti nella WBS. La WBS non è altro che un metodo per la scomposizione di un progetto in sub componenti, il progetto viene strutturato in più livelli fino a che vengono individuate le attività elementari
 
+Danno un valore al progetto e lo misurano
+
 ### <a href="#indice" id="U5L5">L5 - Le metriche del software</a>
 
 Le mteriche del software sono stroumenti che forniscono misure quantitative del prodotto, le metriche sono importanti per il produttore e per l'utilizzatore finale
@@ -738,4 +740,8 @@ Grazie alle LOC è possibile stabilire l'impegno necessario per creare il nostro
 
 #### Cocomo base
 
-Il metodo COCOMO prevede che i coefficenti di difficoltà vengono tabellati e inseriti in una formula che ci darà un'idea dei mesi del lavoro complessivo necessari.
+p.245
+
+Il metodo COCOMO (non è proprietario e si applica al verificarsi di alcune situazioni, ciclo di sviluppo a cascata, requisiti stabili, mese composto da 19 giorni lavorativi p248) prevede che i coefficenti di difficoltà vengono tabellati e inseriti in una formula che ci darà un'idea dei mesi del lavoro complessivo necessari e le persone di cui abbiamo bisogno. Il valore che otteniamo è un valore LOC.
+
+#### Modelli di Sviluppo p.280
