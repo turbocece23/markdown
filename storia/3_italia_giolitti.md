@@ -25,6 +25,12 @@
 		padding-top: 0.7%;
 		padding-left: 0.7%;
 	}
+	small
+	{
+		background-color: #FF8811;
+		padding-top: 0.7%;
+		padding-left: 0.7%;
+	}
 	a:link { color: white; }
 	a:visited { color: white; }
 	ul a:link { color: black; }
@@ -54,6 +60,7 @@
 ## <a href="#indice" id="economia-secoli">Economia tra 19°e 20° secolo</a>
 
 ### <a href="#indice" id="sviluppo">Lo sviluppo demografico ed economico nella Belle époque</a>
+<small> Tra 1870 e 1913 incremento da 26 a 36 M grazie a condizioni alimentari/igieniche/sanitarie migliori. Pareggio di bilancio a inizio 1900, stabilità economica e della lira</small>
 
 Tra il 1870 e il 1913 la popolazione italiana crebbe da 26 a 36 milioni, un incremento determinato dalle migliorate condizioni alimentari, igieniche e sanitarie. Per esemio fu migliorato l'uso dell'acqua e l'efficienza degli impianti fognari, con la conseguente diminuzione delle malattie infettive.
 
@@ -66,6 +73,8 @@ Nel **settore agricolo**, le bonifiche, il miglioramento dei sistemi d'irrigazio
 Venne estesa la **rete stradale** e la **rete ferroviaria**. Quest'ultima nazionalizzata nel 1905, aumentò del doppio da circa 9000 km nel 1880 a 18.000 nel 1910. Anche se Regno Unito, Francia e Germania rimanevano lontani da raggiungere.
 
 ### <a href="#indice" id="industria">La potenza industriale italiana</a>
+<small>Crescita dei settori di interesse strategico finanziati dallo Stato. Fiat, Alfa, Lancia, Pirelli, AUTOMOBILISMO, Marzotto, Cantoni TESSILE Edison ENERGITCO</small>
+
 
 Il **settore secondario** garantiva il 25% del prodotto interno lordo, il numero di addetti cresceva costantemente mentre la stessa produzione appariva raddoppiata dal 1896.
 
@@ -86,6 +95,7 @@ Inoltre ebbero un impulso il comparto tessile, sopratutto il cotoniero, il chimi
 In **Lombardia**, **Liguria** e **Piemonte** trovava occupazione la metà di tutti gli operai italiani, circa un milione di lavoratori. E mentre il Centro dava a sua volta segni di crescita, era il Sud a offire le prospettive meno incoraggianti. Il Mezzogiorno d'Italia non solo non si avvicina alla parte più ricca del paese, ma veniva da essa distanziato.
 
 ### <a href="#indice" id="questione-sociale">La questione sociale</a>
+<small>Operai che chiedono migliori condizioni lavorative, compensi più elevati, un ruolo nella vita pubblica italiana, organizzati nel PSI di Turati diviso tra Riformisti (moderati) Massimalisti (rivoluzionari)</small>
 
 Ne sono i protagonisti gli operai che cercavano migliori condizioni lavorative. In primo luogo erano rappresentati dal **Partito Socialista Italiano**, nato nel 1895 da **Filippo Turati**. Nel 1906 nasce la CGL, Confederazione Generale del Lavoro, un sindacato nazionale degli addetti alla fabbrica. Inoltre in molte città operavano anche le Camere del lavoro, legate ai sindacati e al partito socialista.
 
@@ -102,11 +112,13 @@ Il movimento operaio comunque non era unito, il PSI era diviso tra:
 
 Altre influenti organizzazioni della sinistra italiana d'opposizione erano:
 
-- Gli **anarchici** erano sostenitori della rivoluzione e di un metodo di lotta violento
+Gli **anarchici** erano sostenitori della rivoluzione e di un metodo di lotta violento
+
 - I **repubblicani** eredi del pensiero mazziniano, avevano come primo obiettivo l'abbattimento della monarchia
 - I **radicali** infine lottavano per un allargamento dei diritti civili e per una maggiore democrazia sociale, ma avevano poco appoggio
 
 ### <a href="#indice" id="questione-meridionale">La "questione meridionale" e l'emigrazione verso l'estero</a>
+<small>Arretratezza economica del sud, settore primario basato su latifondo, arretratezza agricola e analfabetismo. La mancanza di prospettive causa l'emigrazione di massa</small>
 
 Stato di arretratezza economica e sociale del Sud d'Italia.
 
@@ -120,6 +132,7 @@ Nel Mezzogiorno il settore primario era basato sul latifondo e sullo sfruttament
 I dazi sui cereali importati dall'estero garantiva le rendite ai propietari terrieri e non li incoraggiava ad ammodernare le modalità di produzione.
 
 Generalmente:
+
 - carenze infrastrutturali diffuse, a cominciare da quelle nei trasporti, non permettevano una moderna economia
 - mancanza di borghesia capitalistica
 - assenza di grandi industrie
@@ -131,6 +144,7 @@ Generalmente:
 Tra il 1900 e il 1914 sono 8 milioni le persone che emigrano dall'Italia, in particolare dal meridione. Questo fenomeno alleggerì la pressione sulle scarse risorse disponibile e le rimesse (i soldi mandati indietro da chi è emigrato) divennero presto una voce fondamentale delle entrate italiane.
 
 ### La "questione cattolica": la partecipazione dei credenti alla vita pubblica nazionale
+<small>La chiesa cattolica proibiva ai fedeli di partecipare alla vita politica del governo (per via del Non Expedit) (aiutavano comunque i  lavoratori attraverso leghe bianche)</small>
 
 I cattolici italiani sono ancora ai margini della vita politica per via del **Non Expedit**, nel 1889 l'enciclica **Rerum Novarum** aveva l'obiettivo di sovvertire questa mentalità chiusa e creare una società più equa.
 
@@ -138,12 +152,14 @@ In quegli anni nascono le **leghe bianche**, diffuse nelle campagne dove organiz
 
 ## Giovanni Giolitti alla guida dell'Italia
 ### <a href="#indice" id="uccisione-umberto">Dall'uccisione di Umberto I al governo Zanardelli</a>
+<small>Entra in politica nel 1901 come ministro dell'interno quanto il re Vittorio Emanuele III elegge Zanardelli capo del governo</small>
 
 Il 29 luglio **1900** Gaetano Bresci uccide Umerto I per vendicare le morti durante le rivolte popolari a Milano due anni prima.
 
 Il nuovo re, Vittorio Emanuele III consapevole della situazione abbandona lo stretto autoritarismo del padre e tornò all'osservanza dello statuto Albertino nella speranza di instaurare un nuovo rapporto con le masse popolari. Nel 1901 affidò il compito di guidare l'esecutivo di Giuseppe Zanardelli, giurista e noto esponente della Sinistra liberale.
 
 ### <a href="#indice" id="giolitti-alla-guida">Giovanni Giolitti alla guida d'Italia</a>
+<small>Era un liberale di tendenze riformiste, convinto della necessità di un dialogo tra istituzioni e lavoratori</small>
 
 Tra il 1901 e il 1903 il ministro dell'Interno del governo Zanardelli fu **Giovanni Giolitti** (Gioleettee). Poi presidente del consiglio dal novembre del 1903 e quasi ininterottamente fino allo scoppio della Prima Guerra Mondiale.
 
@@ -154,6 +170,7 @@ Giolitti era un liberale di tendenze riformiste, convinto della necessità di un
 Giolitti si limitò a garantire l'ordine pubblico, incoraggiando le parti sociali a trattare e risolvere con accordi i contrasti del mondo del lavoro. In caso di conflitti di classe Giolitti assunse il ruolo di tutore delle leggi, lascianodo che le parti trovassero l'equilibrio senza intervenire direttamente.
 
 ### <a href="#indice" id="confronto-lavoratori">Il confronto con i lavoratori</a>
+<small>Trova dialogo tra istituzioni e lavoratori, garantisce il diritto di astensione dal lavoro, incremento delle retribuzioni, sostegno previdenziale, limitazione al lavoro femminile e minorile, istruzione elementare obbligatoria</small>
 
 I lavoratori rivendicavano il suffragio universale, un sistema fiscale più equo e una legislazione sociale più attenta ai loro problemi. Giolitti pensava che risolvere questi problemi avrebbe giovato all'intero corpo produttivo italiano quindi si adoperò per soddisfare le loro richieste.
 
@@ -166,13 +183,14 @@ Non da ultimo, Giolitti favorì la creazione dell'**Istituto nazionale per le as
 
 Sul terreno circoscritto dei **rapporti d'impiego**, i lavoratori chiedevano invece sopratutto salari più alti e una settimana lavorativa più breve. Giolitti però rimase saldo nella sua saggia e prudente politica di non ingerenza purché il conflitto non scadesse mai in violenza.
 
-Un duro banco di prova per tale politica si verificò in occasione del grande sciopero generale del 1904, primo del suo genere in Italia. Fu promosso dall'**ala massimalista** del **PSI**(quella meno moderata).
+Un duro banco di prova per tale politica si verificò in occasione del **grande sciopero generale del 1904**, primo del suo genere in Italia. Fu promosso dall'**ala massimalista** del **PSI**(quella meno moderata).
 
 Giolitti non perse mai il controllo della situazione, riuscendo a contenere lo sviluppo del movimento. Questa benevole politica del governo e la favorevole congiuntura economica interna e internazionale determinano un incremento delle retribuzioni, sia nell'industria e in misura maggiore nell'agricoltura.
 
 Giolitti offrì a Filippo Turati l'ingresso nell'esecutivo fin dal 1903, ma Turati non potè accettare a causa della netta opposizione dell'ala massimalista del suo partito. Nonostante questo Giolitti ottenne il voto parlamentare favorevole dei socialisti ogniqualvolta venivano all'esame importanti provvedimenti di riforma della società
 
 ### <a href="#indice" id="dialogo-cattolici">Dialogo e ingresso in politica dei cattolici</a>
+<small>Il Patto Gentiloni è un successo. Giolitti desiderava un impegno politico diretto dei cattolici (per compensare il crescente peso parlamentare dei socialisti), attraverso il ​Patto Gentiloni​, Pio X quindi concesse che alcuni cattolici sicandidassero e venissero eletti nelle liste liberali (indipendenti dalla chiesa cattolica)</small>
 
 Giolitti si dimostro particolarmente abile anche nel dare una svolta alla questione cattolica. Il *non expedit* di Pio IX era ancora in vigore, ma Pio X, si convinse della necessità di una magiore partecipazione dei credenti alla vita pubblica. Giolitti puntava al riavvicinamento alla Chiesa e desiderava un impegno politico diretto dei cattolici.
 
@@ -183,6 +201,7 @@ Il patto prevedeva: gli elettorali cattolici si impegnavano a votare i candidati
 Rappresenta il primo passo verso la partecipazione piena dei cattolici alla vita politica del paese.
 
 ### <a href="#indice" id="inefficacia-mezzogiorno">L'inefficacia dell'intervento statale nel Mezzogiorno</a>
+<small>La questione meridionale non migliorò</small>
 
 L'azione di Giolitti si mostrò particolarmente inefficace nel frontegiare le grafi difficoltà del Mezzogiorno d'Italia.
 
@@ -195,6 +214,7 @@ Giolitti fu definito "ministro della malavita" da Gaetano Salvemini, lo accusava
 Quando nel 1908 un terremoto rade al suolo Reggio Calabria e Messina, le risorse vengono contentrate nella ricostruzione delle città abbandonando il resto del territorio in condizioni di sottosviluppo. Negli anni del governo giolittiano la situazione del Mezzogiorno **non migliorò**.
 
 ### <a href="#indice" id="ombre-luci">Ombre e luci del governo giolittiano</a>
+<small>Gaetano Salvemini accusa Giolitti di usare il clientelismo e di essere colluso con la mafia, ruba le risorse del sud per darle al nord</small>
 
 Le accuse di Salvemini a Giolitti portavano in primo piano il principale difetto dell'azione politica di Giolitti. Infatti non esitò a servirsi del clientelismo e della corruzione prometendo ai notavbili vantaggi economici in cambio del voto delle comunità che essi controllavano. Fece inoltre ricorso all'intimidazione degli avversari.
 
