@@ -1119,7 +1119,7 @@ body .markdown-body
     <li><a href="#ristrutturazione">Ristrutturazione</a></li>
     <li><a href="#trigger">Trigger</a></li>
     <li><a href="#algebra">Algebra relazionale</a></li>
-    <li><a href="#normalizzazine">Normalizzazione</a></li>
+    <li><a href="#normalizzazione">Normalizzazione</a></li>
     <li><a href="#viste">Viste</a></li>
 </ol>
 
@@ -1264,12 +1264,12 @@ negativamente, in caso positivo il risultato delle operazioni deve essere perman
 <p>Fanno parte di una branca del linguaggio <em>SQL</em> che prende il nome di <strong>T-SQL</strong>.</p>
 <p>Una stored procedure può accettare parametri di input, restituire al client risultati tabellari o scalari, richiamare istruzioni DDL (Data Definition Language) e DML (Data Manipulation Language)</p>
 <p>Un linguaggio è detto <strong>dichiarativo</strong> o <strong>logico</strong> quando le istruzioni descrivono le relazioni che intercorrono tra i dati, lo sviluppatore descrive l&rsquo;insieme delle relazioni che sussistono tra i dati e il risultato atteso.</p>
-<p>Un linguaggio dichiarativo viene invece denominato <strong>procedurale</strong> quando per esso non si ragiona in termini di relazioni tra dati ma intermini di assegnazione di valori ad uno spazio di memoria, i linguaggi procedurali fanno infatti parte della più ampia famiglia dei linguaggi imperativi</p>
+<p>Un linguaggio dichiarativo viene invece denominato <strong>procedurale</strong> quando per esso non si ragiona in termini di relazioni tra dati ma in termini di assegnazione di valori ad uno spazio di memoria, i linguaggi procedurali fanno infatti parte della più ampia famiglia dei linguaggi imperativi</p>
 <p>Le stored procedure accettano parametri in input (IN), parametri in output (OUT) e vi è anche una combinazione di questi due che si chiama (INOUT)</p>
 <h2 id="ristrutturazione"><a href="#indice" id="ristrutturazione">Ristrutturazione</a><a class="headerlink" href="#ristrutturazione" title="Permanent link"></a></h2>
 <p>Fasi:</p>
 <ul>
-<li><strong>Analisi delle rindondanze</strong>: si decidere se mantenere o eliminare eventuali ridondanze (ripetizioni) presenti nello schema</li>
+<li><strong>Analisi delle ridondanze</strong>: si decidere se mantenere o eliminare eventuali ridondanze (ripetizioni) presenti nello schema</li>
 <li><strong>Partizionamento di entità e associazioni</strong>: si decide se è opportuno partizionare concetti dello schema, i più sotto-concetti più semplici, o viceversa, accorpare concetti separati in un unico concetto</li>
 <li><strong>Eliminazione delle gerarchie &ldquo;Is A&rdquo; (le generalizzazioni/specializzazioni)</strong>: il modello relazionale non rappresenta le gerarchie, e quindi vanno sono sostituite da entità e associazioni</li>
 <li><strong>Selezione delle chiavi primarie</strong>: si seleziona un identificatore per quelle entità che ne hanno più di uno. Vengono invece eliminate le identificazioni esterne</li>
@@ -1345,30 +1345,47 @@ negativamente, in caso positivo il risultato delle operazioni deve essere perman
 <li><strong>Self Join</strong>: usata su una tabella serve a mettere in relazione alcuni dati all&rsquo;interno della stessa tabella</li>
 </ul>
 <h3 id="linterrogazione-dei-dati"><span style="color:#f76b2a">L&rsquo;interrogazione dei dati</span><a class="headerlink" href="#linterrogazione-dei-dati" title="Permanent link"></a></h3>
-<p>L&rsquo;operazione fondamentale per manipolare una base di dati è l&rsquo;<em>interrogazione</em>. Con l&rsquo;interrogazione si esegue l&rsquo;accesso ai dati desiderati, dopo aver ottentuo questo accesso è possibile:</p>
+<p>L&rsquo;operazione fondamentale per manipolare una base di dati è l&rsquo;<em>interrogazione</em>. Con l&rsquo;interrogazione si esegue l&rsquo;accesso ai dati desiderati, dopo aver ottenuto questo accesso è possibile:</p>
 <ul>
 <li>modificarli (<strong>update</strong>)</li>
 <li>cancellarli (<strong>delete</strong>)</li>
 <li>inserirne di nuovi (<strong>insert</strong>)</li>
 <li>aggiungerne (<strong>append</strong>)</li>
-<li>ingorarli</li>
+<li>ignorarli</li>
 </ul>
 <h2 id="normalizzazione"><a href="#indice" id="normalizzazione">Normalizzazione</a><a class="headerlink" href="#normalizzazione" title="Permanent link"></a></h2>
-<p>Non è una metodologia di progettazione, è bensì una procedura che permette di trasformare schemi non normalizzati in schemi che soddisfano una forma normale</p>
+<p>Non è una metodologia di progettazione, è bensì una procedura che permette di trasformare schemi non normalizzati in schemi che soddisfano una forma normale. La <strong>normalizzazione</strong> quindi è un processo di tipo graduale che realizza un&rsquo;ottimizzazione progressiva a partire da relazioni non normalizzate fino a raggiungere un certo livello di normalizzazione.</p>
 <p>Se una relazione non è normalizzata essa presenta alcuni difetti:
-- Rindondanze
+- Ridondanze
 - Comportamenti poco desiderabili durante gli aggiornamenti</p>
-<p>La tabella iniziale vine scomposta in più tabelle che complessivamente forniscono le stesse informazioni della tabella di partenza, vengono mantenute le dipendenze tra attributi, ogni attributo però ora dipende direttamente da una chiave. Vengono quindi evitati problemi di rindondanza e di inconsistenza dei dati. Cosa importante, non ci deve essere perdita complessiva delle informazioni.</p>
+<p>La tabella iniziale vine scomposta in più tabelle che complessivamente forniscono le stesse informazioni della tabella di partenza, vengono mantenute le dipendenze tra attributi, ogni attributo però ora dipende direttamente da una chiave. Vengono quindi evitati problemi di ridondanza e di inconsistenza dei dati. Cosa importante, non ci deve essere perdita complessiva delle informazioni.</p>
+<p>L&rsquo;obiettivo è quello di:</p>
+<ul>
+<li>minimizzazione della ridondanza</li>
+<li>minimizzazione delle anomalie di<ul>
+<li>inserimento</li>
+<li>cancellazione</li>
+<li>modifica</li>
+</ul>
+</li>
+</ul>
+<p>Si ha <strong>dipendenza funzionale</strong> tra attributi quando il valore di un insieme di attributi <strong>A</strong> determina un singolo valore dell&rsquo;attributo <strong>B</strong> e si indica con <strong>A -&gt; B</strong>. Si dice anche che <strong>B</strong> dipende da <strong>A</strong> o che <strong>A</strong> è un determinante per <strong>B</strong>.</p>
+<p>Si ha dipendenza transitiva quando <strong>A</strong> determina <strong>B</strong> e <strong>B</strong> determina <strong>C</strong>. Si dice allora che <strong>C</strong> dipende transitivamente da <strong>A</strong></p>
+<blockquote>
+<p><span style="color:#14A1FA"><strong>Dipendenza transitiva</strong></span>: <strong>A -&gt; B -&gt; C</strong><br>C dipende transitivamente da A</p>
+<p><span style="color:#14A1FA"><strong>Dipendenza funzionale</strong></span>: <strong>A -&gt; B</strong><br>B dipende da A<br>A è un determinante di B</p>
+</blockquote>
 <h3 id="1fn">1FN<a class="headerlink" href="#1fn" title="Permanent link"></a></h3>
-<p>Ogni attributo è elementare, non ci sono righe uguali, non ci sono attributi di gruppo o ripetuti (come i figli a carico).</p>
+<p><strong>Il dominio di un attributo (valori che può assumere) deve comprendere solo valori atomici (semplici, indivisibili)</strong>. Ogni attributo è elementare, non ci sono righe uguali, non ci sono attributi di gruppo o ripetuti.</p>
 <h3 id="2fn">2FN<a class="headerlink" href="#2fn" title="Permanent link"></a></h3>
-<p>È in prima forma normale e non ci sono attributi non-chiave che dipendono parzialmente dalla chiave (A-&gt;B).</p>
+<p>È in prima forma normale e <strong>non ci sono attributi non-chiave che dipendono parzialmente dalla chiave</strong>.</p>
+<p>La seconda forma normale riguarda quindi le tabelle in cui la chiave primara sia composta da più attributi e stabilisce che tutte le colonne corrispondenti a quegli attributi dipendano dall&rsquo;intera chiave primaria (e non da una sua parte).</p>
 <h3 id="3fn">3FN<a class="headerlink" href="#3fn" title="Permanent link"></a></h3>
 <p>È in seconda forma normale e non ci sono attributi non chiave che dipendono transitivamente dalla chiave (non dipendono da attributi i quali dipendono dalla chiave, <strong>A</strong>-&gt;B-C)</p>
 <h3 id="bcnf">BCNF<a class="headerlink" href="#bcnf" title="Permanent link"></a></h3>
-<p>Una relazione è in forma normale di Boyce-Codd quando in essa ogni determinante è una chiave candidata, cioè ogni attributo dal quale dipendono altri attributi può svolgere la funzione di chiave (cosa?)</p>
 <p>Una relazione è in forma normale di <em>Boyce-Codd</em> se e solo se, per ogni dipendenza funzionale X-&gt;Y, X è una chiave candidata.</p>
 <p>Una relazione in <strong>BCNF</strong> (<em>Boyce-Codd Normal Form</em>) è anche in <strong>2FN</strong> e in <strong>3FN</strong>, perché la BCNF esclude che un determinante (X) possa essere composto solo da una parte della chiave (violerebbe la <strong>2FN</strong>), o che possa essere esterno alla chiave (violerebbe la <strong>3FN</strong>).</p>
-<p>Quindi una relazione che rispetta la forma normale di Boyce-Codd è anche in terza forma normale (è già in 1FN, in 2FN e quindi ora è in 3FN, tipo evoluzione finale di un Pokémon), ma non è vero l&rsquo;opposto, cioè che una relazione in <strong>3FN</strong> è anche in <strong>BCFN</strong>.</p>
+<p>Quindi una relazione che rispetta la forma normale di Boyce-Codd è anche in terza forma normale (è già in 1FN, in 2FN e quindi ora è in 3FN, tipo evoluzione finale di un Pokémon), ma non è vero l&rsquo;opposto, cioè che una relazione in <strong>3FN</strong> NON è anche in <strong>BCFN</strong>.</p>
+<p>Esistono quarta e quinta forme normali ma non le abbiamo studiate.</p>
 <h2 id="viste"><a href="#indice" id="viste">Viste</a><a class="headerlink" href="#viste" title="Permanent link"></a></h2>
-<p>Tabelle virtuali con &ldquo;durata temporanea&rdquo;, da usare in sostituzione alle <strong>Join</strong>, la vista viene aggiornata solo all&rsquo;esecuzione della query che la genera.</p></article></body></html>
+<p>Tabelle virtuali con &ldquo;durata temporanea&rdquo;, da usare in sostituzione alle <strong>JOIN</strong>, la vista viene aggiornata solo all&rsquo;esecuzione della query che la genera.</p></article></body></html>

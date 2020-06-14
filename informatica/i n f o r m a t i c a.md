@@ -63,7 +63,7 @@
 	<li><a href="#ristrutturazione">Ristrutturazione</a></li>
 	<li><a href="#trigger">Trigger</a></li>
 	<li><a href="#algebra">Algebra relazionale</a></li>
-	<li><a href="#normalizzazine">Normalizzazione</a></li>
+	<li><a href="#normalizzazione">Normalizzazione</a></li>
 	<li><a href="#viste">Viste</a></li>
 </ol>
 
@@ -211,7 +211,7 @@ Una stored procedure può accettare parametri di input, restituire al client ris
 
 Un linguaggio è detto **dichiarativo** o **logico** quando le istruzioni descrivono le relazioni che intercorrono tra i dati, lo sviluppatore descrive l'insieme delle relazioni che sussistono tra i dati e il risultato atteso.
 
-Un linguaggio dichiarativo viene invece denominato **procedurale** quando per esso non si ragiona in termini di relazioni tra dati ma intermini di assegnazione di valori ad uno spazio di memoria, i linguaggi procedurali fanno infatti parte della più ampia famiglia dei linguaggi imperativi
+Un linguaggio dichiarativo viene invece denominato **procedurale** quando per esso non si ragiona in termini di relazioni tra dati ma in termini di assegnazione di valori ad uno spazio di memoria, i linguaggi procedurali fanno infatti parte della più ampia famiglia dei linguaggi imperativi
 
 Le stored procedure accettano parametri in input (IN), parametri in output (OUT) e vi è anche una combinazione di questi due che si chiama (INOUT)
 
@@ -220,7 +220,7 @@ Le stored procedure accettano parametri in input (IN), parametri in output (OUT)
 ## <a href="#indice" id="ristrutturazione">Ristrutturazione</a>
 Fasi:
 
-- **Analisi delle rindondanze**: si decidere se mantenere o eliminare eventuali ridondanze (ripetizioni) presenti nello schema
+- **Analisi delle ridondanze**: si decidere se mantenere o eliminare eventuali ridondanze (ripetizioni) presenti nello schema
 - **Partizionamento di entità e associazioni**: si decide se è opportuno partizionare concetti dello schema, i più sotto-concetti più semplici, o viceversa, accorpare concetti separati in un unico concetto
 - **Eliminazione delle gerarchie "Is A" (le generalizzazioni/specializzazioni)**: il modello relazionale non rappresenta le gerarchie, e quindi vanno sono sostituite da entità e associazioni
 - **Selezione delle chiavi primarie**: si seleziona un identificatore per quelle entità che ne hanno più di uno. Vengono invece eliminate le identificazioni esterne
@@ -287,44 +287,61 @@ Tipi di Join
 - **Self Join**: usata su una tabella serve a mettere in relazione alcuni dati all'interno della stessa tabella
 
 ### <span style="color:#f76b2a">L'interrogazione dei dati</span>
-L'operazione fondamentale per manipolare una base di dati è l'*interrogazione*. Con l'interrogazione si esegue l'accesso ai dati desiderati, dopo aver ottentuo questo accesso è possibile:
+L'operazione fondamentale per manipolare una base di dati è l'*interrogazione*. Con l'interrogazione si esegue l'accesso ai dati desiderati, dopo aver ottenuto questo accesso è possibile:
 
 - modificarli (**update**)
 - cancellarli (**delete**)
 - inserirne di nuovi (**insert**)
 - aggiungerne (**append**)
-- ingorarli
+- ignorarli
 
 
 
 ## <a href="#indice" id="normalizzazione">Normalizzazione</a>
-Non è una metodologia di progettazione, è bensì una procedura che permette di trasformare schemi non normalizzati in schemi che soddisfano una forma normale
+Non è una metodologia di progettazione, è bensì una procedura che permette di trasformare schemi non normalizzati in schemi che soddisfano una forma normale. La **normalizzazione** quindi è un processo di tipo graduale che realizza un'ottimizzazione progressiva a partire da relazioni non normalizzate fino a raggiungere un certo livello di normalizzazione.
 
 Se una relazione non è normalizzata essa presenta alcuni difetti:
-- Rindondanze
+- Ridondanze
 - Comportamenti poco desiderabili durante gli aggiornamenti
 
-La tabella iniziale vine scomposta in più tabelle che complessivamente forniscono le stesse informazioni della tabella di partenza, vengono mantenute le dipendenze tra attributi, ogni attributo però ora dipende direttamente da una chiave. Vengono quindi evitati problemi di rindondanza e di inconsistenza dei dati. Cosa importante, non ci deve essere perdita complessiva delle informazioni.
+La tabella iniziale vine scomposta in più tabelle che complessivamente forniscono le stesse informazioni della tabella di partenza, vengono mantenute le dipendenze tra attributi, ogni attributo però ora dipende direttamente da una chiave. Vengono quindi evitati problemi di ridondanza e di inconsistenza dei dati. Cosa importante, non ci deve essere perdita complessiva delle informazioni.
+
+L'obiettivo è quello di:
+
+- minimizzazione della ridondanza
+- minimizzazione delle anomalie di
+	- inserimento
+	- cancellazione
+	- modifica
+
+Si ha **dipendenza funzionale** tra attributi quando il valore di un insieme di attributi **A** determina un singolo valore dell'attributo **B** e si indica con **A -> B**. Si dice anche che **B** dipende da **A** o che **A** è un determinante per **B**.
+
+Si ha dipendenza transitiva quando **A** determina **B** e **B** determina **C**. Si dice allora che **C** dipende transitivamente da **A**
+
+> <span style="color:#14A1FA">**Dipendenza transitiva**</span>: **A -> B -> C**<br>C dipende transitivamente da A
+
+> <span style="color:#14A1FA">**Dipendenza funzionale**</span>: **A -> B**<br>B dipende da A<br>A è un determinante di B
 
 ### 1FN
-Ogni attributo è elementare, non ci sono righe uguali, non ci sono attributi di gruppo o ripetuti (come i figli a carico).
+
+**Il dominio di un attributo (valori che può assumere) deve comprendere solo valori atomici (semplici, indivisibili)**. Ogni attributo è elementare, non ci sono righe uguali, non ci sono attributi di gruppo o ripetuti.
 
 ### 2FN
-È in prima forma normale e non ci sono attributi non-chiave che dipendono parzialmente dalla chiave (A->B).
+È in prima forma normale e **non ci sono attributi non-chiave che dipendono parzialmente dalla chiave**.
+
+La seconda forma normale riguarda quindi le tabelle in cui la chiave primara sia composta da più attributi e stabilisce che tutte le colonne corrispondenti a quegli attributi dipendano dall'intera chiave primaria (e non da una sua parte).
 
 ### 3FN
 È in seconda forma normale e non ci sono attributi non chiave che dipendono transitivamente dalla chiave (non dipendono da attributi i quali dipendono dalla chiave, **A**->B-C)
 
 ### BCNF
-Una relazione è in forma normale di Boyce-Codd quando in essa ogni determinante è una chiave candidata, cioè ogni attributo dal quale dipendono altri attributi può svolgere la funzione di chiave (cosa?)
-
 Una relazione è in forma normale di *Boyce-Codd* se e solo se, per ogni dipendenza funzionale X->Y, X è una chiave candidata.
 
 Una relazione in **BCNF** (*Boyce-Codd Normal Form*) è anche in **2FN** e in **3FN**, perché la BCNF esclude che un determinante (X) possa essere composto solo da una parte della chiave (violerebbe la **2FN**), o che possa essere esterno alla chiave (violerebbe la **3FN**).
 
-Quindi una relazione che rispetta la forma normale di Boyce-Codd è anche in terza forma normale (è già in 1FN, in 2FN e quindi ora è in 3FN, tipo evoluzione finale di un Pokémon), ma non è vero l'opposto, cioè che una relazione in **3FN** è anche in **BCFN**.
+Quindi una relazione che rispetta la forma normale di Boyce-Codd è anche in terza forma normale (è già in 1FN, in 2FN e quindi ora è in 3FN, tipo evoluzione finale di un Pokémon), ma non è vero l'opposto, cioè che una relazione in **3FN** NON è anche in **BCFN**.
 
-
+Esistono quarta e quinta forme normali ma non le abbiamo studiate.
 
 ## <a href="#indice" id="viste">Viste</a>
-Tabelle virtuali con "durata temporanea", da usare in sostituzione alle **Join**, la vista viene aggiornata solo all'esecuzione della query che la genera.
+Tabelle virtuali con "durata temporanea", da usare in sostituzione alle **JOIN**, la vista viene aggiornata solo all'esecuzione della query che la genera.
