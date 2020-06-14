@@ -1090,9 +1090,23 @@ body .markdown-body
 </li>
 <li>Viste</li>
 </ol>
+<h2 id="introduzione">Introduzione<a class="headerlink" href="#introduzione" title="Permanent link"></a></h2>
+<h3 id="differenza-tra-sistema-informatico-e-sistema-informativo">Differenza tra sistema informatico e sistema informativo:<a class="headerlink" href="#differenza-tra-sistema-informatico-e-sistema-informativo" title="Permanent link"></a></h3>
+<ul>
+<li><strong>Sistema informativo</strong>: è un insiema organizzato di strumenti automatici, procedure, norme, risorse, dati, orientato alla gestione delle informazioni, con gestione si intende la raccolta, archiviazione e scambio delle informazioni necessarie alle attività operative, di gestione, di controllo dell’organizzazione. Per esempio il sistema informativo di un’università contiene i dati riguardanti gli studenti, i docenti, le relazioni fra insegnanti ed aule, i corsi&hellip;</li>
+<li><strong>Sistema informatico</strong>: è l’insieme degli strumenti informatici utilizzati per il trattamento automatico delle informazioni. Quindi potremmo dire che il sistema informatico è l’insieme dei strumenti informatici che consentono l’automazione (in genere solo parziale) del sistema informativo</li>
+</ul>
+<h3 id="i-dbms">I DBMS<a class="headerlink" href="#i-dbms" title="Permanent link"></a></h3>
+<p>Un DBMS (come SQL server, Access, MySQL..) è un insieme di strumenti software che, partendo dalle specifiche dell’utente, è in grado di gestire dati strutturali. È quindi un’interfaccia tra gli sviluppatori, gli utenti del DB e il sistema di elaborazione</p>
+<h3 id="i-livelli-di-un-dbms">I livelli di un DBMS<a class="headerlink" href="#i-livelli-di-un-dbms" title="Permanent link"></a></h3>
+<ul>
+<li>Fisico: riguarda la memorizzazione dei dati, organizzati in file, record e strutture di accesso</li>
+<li>Logico: Riguarda la struttura logica assunta dai dati registrati, quindi il loro schema  astratto</li>
+<li>Esterno: si riferisce al modo in cui ciascun utente vede i dati che vengono messi a disposizione secondo il formato richiesto</li>
+</ul>
 <h2 id="_1"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_1" title="Permanent link"></a></h2>
-<h1 id="fasi">Fasi<a class="headerlink" href="#fasi" title="Permanent link"></a></h1>
-<h2 id="le-fasi-di-progettazione-di-un-database">Le fasi di progettazione di un database<a class="headerlink" href="#le-fasi-di-progettazione-di-un-database" title="Permanent link"></a></h2>
+<h2 id="fasi">Fasi<a class="headerlink" href="#fasi" title="Permanent link"></a></h2>
+<h3 id="le-fasi-di-progettazione-di-un-database">Le fasi di progettazione di un database<a class="headerlink" href="#le-fasi-di-progettazione-di-un-database" title="Permanent link"></a></h3>
 <ul>
 <li><strong>Concettuale</strong>: permette di costruire e definire una rappresentazione corretta e completa della realtà di interesse.
 Presa in input una realtà di riferimento, genera un diagramma ER</li>
@@ -1102,22 +1116,7 @@ Preso in input un diagramma ER genera uno schema logico delle relazioni rapprese
 Preso in input lo schema logico con le tabelle le implementa nella memoria di massa</li>
 </ul>
 <h2 id="_2"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_2" title="Permanent link"></a></h2>
-<h1 id="introduzione">Introduzione<a class="headerlink" href="#introduzione" title="Permanent link"></a></h1>
-<h2 id="differenza-tra-sistema-informatico-e-sistema-informativo">Differenza tra sistema informatico e sistema informativo:<a class="headerlink" href="#differenza-tra-sistema-informatico-e-sistema-informativo" title="Permanent link"></a></h2>
-<ul>
-<li><strong>Sistema informativo</strong>: è un insiema organizzato di strumenti automatici, procedure, norme, risorse, dati, orientato alla gestione delle informazioni, con gestione si intende la raccolta, archiviazione e scambio delle informazioni necessarie alle attività operative, di gestione, di controllo dell’organizzazione. Per esempio il sistema informativo di un’università contiene i dati riguardanti gli studenti, i docenti, le relazioni fra insegnanti ed aule, i corsi&hellip;</li>
-<li><strong>Sistema informatico</strong>: è l’insieme degli strumenti informatici utilizzati per il trattamento automatico delle informazioni. Quindi potremmo dire che il sistema informatico è l’insieme dei strumenti informatici che consentono l’automazione (in genere solo parziale) del sistema informativo</li>
-</ul>
-<h2 id="i-dbms">I DBMS<a class="headerlink" href="#i-dbms" title="Permanent link"></a></h2>
-<p>Un DBMS (come SQL server, Access, MySQL..) è un insieme di strumenti software che, partendo dalle specifiche dell’utente, è in grado di gestire dati strutturali. È quindi un’interfaccia tra gli sviluppatori, gli utenti del DB e il sistema di elaborazione</p>
-<h2 id="i-livelli-di-un-dbms">I livelli di un DBMS<a class="headerlink" href="#i-livelli-di-un-dbms" title="Permanent link"></a></h2>
-<ul>
-<li>Fisico: riguarda la memorizzazione dei dati, organizzati in file, record e strutture di accesso</li>
-<li>Logico: Riguarda la struttura logica assunta dai dati registrati, quindi il loro schema  astratto</li>
-<li>Esterno: si riferisce al modo in cui ciascun utente vede i dati che vengono messi a disposizione secondo il formato richiesto</li>
-</ul>
-<h2 id="_3"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_3" title="Permanent link"></a></h2>
-<h1 id="vincoli">Vincoli<a class="headerlink" href="#vincoli" title="Permanent link"></a></h1>
+<h2 id="vincoli">Vincoli<a class="headerlink" href="#vincoli" title="Permanent link"></a></h2>
 <p>Vincoli <strong>intra</strong>-relazionali (all’interno della tabella)
 - di tupla
 - di chiave
@@ -1125,8 +1124,8 @@ Preso in input lo schema logico con le tabelle le implementa nella memoria di ma
 - di dominio</p>
 <p>Vincoli <strong>inter</strong>-relazionali (che riguardano le chiavi esterne)
 - integrità relazionale</p>
-<h2 id="_4"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_4" title="Permanent link"></a></h2>
-<h1 id="sql">SQL<a class="headerlink" href="#sql" title="Permanent link"></a></h1>
+<h2 id="_3"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_3" title="Permanent link"></a></h2>
+<h2 id="sql">SQL<a class="headerlink" href="#sql" title="Permanent link"></a></h2>
 <p>Structured Query Language, è un linguaggio per l’interrogazione e la gestione di basi di dati</p>
 <p>Comandi SQL, divisi in 3 categorie: DDL,DML,DCL:</p>
 <ul>
@@ -1134,12 +1133,12 @@ Preso in input lo schema logico con le tabelle le implementa nella memoria di ma
 <li>DML = Data Manipulation Language (Insert, Select, Delete, Update)</li>
 <li>DCL = Data Control Language</li>
 </ul>
-<h2 id="ddl">DDL<a class="headerlink" href="#ddl" title="Permanent link"></a></h2>
+<h3 id="ddl">DDL<a class="headerlink" href="#ddl" title="Permanent link"></a></h3>
 <p>Data Definition Language (Create, Alter, Drop)</p>
-<h2 id="dml">DML<a class="headerlink" href="#dml" title="Permanent link"></a></h2>
+<h3 id="dml">DML<a class="headerlink" href="#dml" title="Permanent link"></a></h3>
 <p>Data Manipulation Language (Insert, Select, Delete, Update)</p>
-<h2 id="_5"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_5" title="Permanent link"></a></h2>
-<h1 id="transazioni">Transazioni<a class="headerlink" href="#transazioni" title="Permanent link"></a></h1>
+<h2 id="_4"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_4" title="Permanent link"></a></h2>
+<h2 id="transazioni">Transazioni<a class="headerlink" href="#transazioni" title="Permanent link"></a></h2>
 <p>Una transazione è una sequenza di operazioni, che può concludersi positivamente o
 negativamente, in caso positivo il risultato delle operazioni deve essere permanente (<strong>commit work</strong>), mentre in caso negativo si deve tornare allo stato prima della transazione (<strong>rollback</strong>).</p>
 <p>Le Transazioni rispettano le proprietà <strong>ACID</strong></p>
@@ -1150,16 +1149,16 @@ negativamente, in caso positivo il risultato delle operazioni deve essere perman
 <li><span style="color:#fa4545">Isolamento</span>: ogni transazione deve essere eseguita in modo isolato e indipendente dalle altre transazioni, l&rsquo;eventuale fallimento di una transazione non deve interferire con le altre transazioni in esecuzione.</li>
 <li><span style="color:#fa4545">Durabilità</span> detta anche persistenza, si riferisce al fatto che una volta che una transazione abbia richiesto un commit work, i cambiamenti apportati non dovranno essere più persi. Per evitare che nel lasso di tempo fra il momento in cui la base di dati si impegna a scrivere le modifiche e quello in cui li scrive effettivamente si verifichino perdite di dati dovuti a malfunzionamenti, vengono tenuti dei registri di log dove sono annotate tutte le operazioni sul DB.</li>
 </ul>
-<h2 id="_6"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_6" title="Permanent link"></a></h2>
-<h1 id="stored-procedures">Stored procedures<a class="headerlink" href="#stored-procedures" title="Permanent link"></a></h1>
+<h2 id="_5"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_5" title="Permanent link"></a></h2>
+<h2 id="stored-procedures">Stored procedures<a class="headerlink" href="#stored-procedures" title="Permanent link"></a></h2>
 <p>Durante lo sviluppo di un applicazione client le richieste per l&rsquo;interrogazione di dati possono essere inviate direttamente al database. dal programma, tramite istruzioni, oppure è possibile creare piccoli programmi o funzioni all&rsquo;interno del database e poi farle eseguire dal programma esterno. Queste procedure si chiamano Stored Procedure.</p>
 <p>Fanno parte di una branca del linguaggio <em>SQL</em> che prende il nome di <strong>T-SQL</strong>.</p>
 <p>Una stored procedure può accettare parametri di input, restituire al client risultati tabellari o scalari, richiamare istrudzioni DDL (Data Definition Language) e DML (Data Manipulation Language)</p>
 <p>Un linguaggio è detto <strong>dichiarativo</strong> o <strong>logico</strong> quando le istruzioni descrivono le relazioni che intercorrono tra i dati, lo sviluppatore descrive l&rsquo;insieme delle relazioni che sussistono tra i dati e il risultato atteso.</p>
 <p>Un linguaggio dichiarativo viene invece denominato <strong>procedurale</strong> quando per esso non si ragiona in termini di relazioni tra dati ma intermini di assegnazione di valori ad uno spazio di memoria, i linguaggi procedurali fanno infatti parte della più ampia famiglia dei linguaggi imperativi</p>
 <p>Le stored procedure accettano parametri in input (IN), parametri in output (OUT) e vi è anche una combinazione di questi due che si chiama (INOUT)</p>
-<h2 id="_7"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_7" title="Permanent link"></a></h2>
-<h1 id="ristrutturazione">Ristrutturazione<a class="headerlink" href="#ristrutturazione" title="Permanent link"></a></h1>
+<h2 id="_6"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_6" title="Permanent link"></a></h2>
+<h2 id="ristrutturazione">Ristrutturazione<a class="headerlink" href="#ristrutturazione" title="Permanent link"></a></h2>
 <p>Fasi:</p>
 <ul>
 <li><strong>Analisi delle rindondanze</strong>: si decidere se mantenere o eliminare eventuali ridondanze (ripetizioni) presenti nello schema</li>
@@ -1168,20 +1167,20 @@ negativamente, in caso positivo il risultato delle operazioni deve essere perman
 <li><strong>Selezione delle chiavi primarie</strong>: si seleziona un identificatore per quelle entità che ne hanno più di uno. Vengono invece eliminate le identificazioni esterne</li>
 <li><strong>Normalizzazione</strong>: degli attributi composti o multipli</li>
 </ul>
-<h2 id="_8"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_8" title="Permanent link"></a></h2>
-<h1 id="trigger">Trigger<a class="headerlink" href="#trigger" title="Permanent link"></a></h1>
+<h2 id="_7"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_7" title="Permanent link"></a></h2>
+<h2 id="trigger">Trigger<a class="headerlink" href="#trigger" title="Permanent link"></a></h2>
 <p>Sono eventi che vengono mandati in esecuzione quando si verificano determinate condizioni come di tempo o a seguito di altre operazioni avvenute sul database</p>
-<h2 id="il-paradigma-e-c-a">Il paradigma E C A<a class="headerlink" href="#il-paradigma-e-c-a" title="Permanent link"></a></h2>
+<h3 id="il-paradigma-e-c-a">Il paradigma E C A<a class="headerlink" href="#il-paradigma-e-c-a" title="Permanent link"></a></h3>
 <ul>
 <li>Evento: al verificarsi di un azione predeterminata, il trigger si attiva in maniera automatica </li>
 <li>Condizione: perché il mio trigger si attivi deve essere soddisfatta una determinata condizione</li>
 <li>Azione: il trigger, in base al risultato dell&rsquo;operazione ottenuta dalla condizione, ottengo un output descritto dal mio trigger</li>
 </ul>
-<h2 id="trigger-a-livello-di-istruzione">Trigger a livello di istruzione<a class="headerlink" href="#trigger-a-livello-di-istruzione" title="Permanent link"></a></h2>
+<h3 id="trigger-a-livello-di-istruzione">Trigger a livello di istruzione<a class="headerlink" href="#trigger-a-livello-di-istruzione" title="Permanent link"></a></h3>
 <p>I trigger a livello di istruzione vengono eseguiti una sola volta per ogni istruzione DML, per esempio se viene eseguita una singola istruzione DML <em>INSERT</em> avesse inserito 500 righe in una tabella, un trigger a livello di istruzione viene eseguito una sola volta.</p>
-<h2 id="trigger-a-livello-di-tupla">Trigger a livello di tupla<a class="headerlink" href="#trigger-a-livello-di-tupla" title="Permanent link"></a></h2>
+<h3 id="trigger-a-livello-di-tupla">Trigger a livello di tupla<a class="headerlink" href="#trigger-a-livello-di-tupla" title="Permanent link"></a></h3>
 <p>I trigger a livello di tupla vengono eseguiti tante volte quante sono le righe di una tabella specificata come ingresso, per esempio se esiste un trigger a livello di tupla per l&rsquo;esempio precedente, esso si attiva 500 volte, una volta per ogni riga della tabella.</p>
-<h2 id="sintassi">Sintassi<a class="headerlink" href="#sintassi" title="Permanent link"></a></h2>
+<h3 id="sintassi">Sintassi<a class="headerlink" href="#sintassi" title="Permanent link"></a></h3>
 <ul>
 <li>BEFORE e AFTER: si verificano prima o dopo di un&rsquo;istruzione predeterminata</li>
 <li>INSTEAD OF: si attivano e si sostituiscono ad una determinata azione</li>
@@ -1189,13 +1188,15 @@ negativamente, in caso positivo il risultato delle operazioni deve essere perman
 <li>TRIGGER_TIME: rappresenta il tipo di trigger (BEFORE o AFTER)</li>
 <li>TRIGGER_EVENT: indica il tipo che attiva il trigger (come insert)</li>
 </ul>
-<h2 id="_9"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_9" title="Permanent link"></a></h2>
-<h1 id="algebra">Algebra<a class="headerlink" href="#algebra" title="Permanent link"></a></h1>
-<h2 id="definizione">Definizione<a class="headerlink" href="#definizione" title="Permanent link"></a></h2>
-<p>È un linguaggio:
-- formale
-- procedurale
-- per formulare interrogazioni</p>
+<h2 id="_8"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_8" title="Permanent link"></a></h2>
+<h2 id="algebra">Algebra<a class="headerlink" href="#algebra" title="Permanent link"></a></h2>
+<h3 id="definizione">Definizione<a class="headerlink" href="#definizione" title="Permanent link"></a></h3>
+<p>È un linguaggio:</p>
+<ul>
+<li>formale</li>
+<li>procedurale</li>
+<li>per formulare interrogazioni</li>
+</ul>
 <p>ed è basato su <em>5</em> operazioni fondamentali:</p>
 <ul>
 <li>Operazioni<ul>
@@ -1228,7 +1229,7 @@ negativamente, in caso positivo il risultato delle operazioni deve essere perman
 </ul>
 </li>
 </ul>
-<h2 id="linterrogazione-dei-dati"><span style="color:#f76b2a">L&rsquo;interrogazione dei dati</span><a class="headerlink" href="#linterrogazione-dei-dati" title="Permanent link"></a></h2>
+<h3 id="linterrogazione-dei-dati"><span style="color:#f76b2a">L&rsquo;interrogazione dei dati</span><a class="headerlink" href="#linterrogazione-dei-dati" title="Permanent link"></a></h3>
 <p>L&rsquo;operazione fondamentale per manipolare una base di dati è l&rsquo;<em>interrogazione</em>. Con l&rsquo;interrogazione si esegue l&rsquo;accesso ai dati desiderati, dopo aver ottentuo questo accesso è possibile:</p>
 <ul>
 <li>modificarli (<strong>update</strong>)</li>
@@ -1237,24 +1238,24 @@ negativamente, in caso positivo il risultato delle operazioni deve essere perman
 <li>aggiungerne (<strong>append</strong>)</li>
 <li>ingorarli</li>
 </ul>
-<h2 id="_10"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_10" title="Permanent link"></a></h2>
-<h1 id="normalizzazione">Normalizzazione<a class="headerlink" href="#normalizzazione" title="Permanent link"></a></h1>
+<h2 id="_9"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_9" title="Permanent link"></a></h2>
+<h2 id="normalizzazione">Normalizzazione<a class="headerlink" href="#normalizzazione" title="Permanent link"></a></h2>
 <p>Non è una metodologia di progettazione, è bensì una procedura che permette di trasformare schemi non normalizzati in schemi che soddisfano una forma normale</p>
 <p>Se una relazione non è normalizzata essa presenta alcuni difetti:
 - Rindondanze
 - Comportamenti poco desiderabili durante gli aggiornamenti</p>
 <p>La tabella iniziale vine scomposta in più tabelle che complessivamente forniscono le stesse informazioni della tabella di partenza, vengono mantenute le dipendenze tra attributi, ogni attributo però ora dipende direttamente da una chiave. Vengono quindi evitati problemi di rindondanza e di inconsistenza dei dati. Cosa importante, non ci deve essere perdita complessiva delle informazioni.</p>
-<h2 id="1fn">1FN<a class="headerlink" href="#1fn" title="Permanent link"></a></h2>
+<h3 id="1fn">1FN<a class="headerlink" href="#1fn" title="Permanent link"></a></h3>
 <p>Ogni attributo è elementare, non ci sono righe uguali, non ci sono attributi di gruppo o ripetuti (come i figli a carico).</p>
-<h2 id="2fn">2FN<a class="headerlink" href="#2fn" title="Permanent link"></a></h2>
+<h3 id="2fn">2FN<a class="headerlink" href="#2fn" title="Permanent link"></a></h3>
 <p>È in prima forma normale e non ci sono attributi non-chiave che dipendono parzialmente dalla chiave (A-&gt;B).</p>
-<h2 id="3fn">3FN<a class="headerlink" href="#3fn" title="Permanent link"></a></h2>
+<h3 id="3fn">3FN<a class="headerlink" href="#3fn" title="Permanent link"></a></h3>
 <p>È in seconda forma normale e non ci sono attributi non chiave che dipendono transitivamente dalla chiave (non dipendono da attributi i quali dipendono dalla chiave, <strong>A</strong>-&gt;B-C)</p>
-<h2 id="bcnf">BCNF<a class="headerlink" href="#bcnf" title="Permanent link"></a></h2>
+<h3 id="bcnf">BCNF<a class="headerlink" href="#bcnf" title="Permanent link"></a></h3>
 <p>Una relazione è in forma normale di Boyce-Codd quando in essa ogni determinante è una chiave candidata, cioè ogni attributo dal quale dipendono altri attributi può svolgere la funzione di chiave (cosa?)</p>
 <p>Una relazione è in forma normale di <em>Boyce-Codd</em> se e solo se, per ogni dipendenza funzionale X-&gt;Y, X è una chiave candidata.</p>
 <p>Una relazione in <strong>BCNF</strong> (<em>Boyce-Codd Normal Form</em>) è anche in <strong>2FN</strong> e in <strong>3FN</strong>, perché la BCNF esclude che un determinante (X) possa essere composto solo da una parte della chiave (violerebbe la <strong>2FN</strong>), o che possa essere esterno alla chiave (violerebbe la <strong>3FN</strong>).</p>
 <p>Quindi una relazione che rispetta la forma normale di Boyce-Codd è anche in terza forma normale (è già in 1FN, in 2FN e quindi ora è in 3FN, tipo evoluzione finale di un Pokémon), ma non è vero l&rsquo;opposto, cioè che una relazione in <strong>3FN</strong> è anche in <strong>BCFN</strong>.</p>
-<h2 id="_11"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_11" title="Permanent link"></a></h2>
-<h1 id="viste">Viste<a class="headerlink" href="#viste" title="Permanent link"></a></h1>
+<h2 id="_10"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_10" title="Permanent link"></a></h2>
+<h2 id="viste">Viste<a class="headerlink" href="#viste" title="Permanent link"></a></h2>
 <p>Tabelle virtuali con &ldquo;durata temporanea&rdquo;, da usare in sostituzione alle <strong>Join</strong>, la vista viene aggiornata solo all&rsquo;esecuzione della query che la genera.</p></article></body></html>
