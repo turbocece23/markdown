@@ -1065,32 +1065,65 @@ body .markdown-body
     {
         color: #ee2020;
     }
+    h1 { color: #EF3E36; }
+    h2
+    {
+        padding-top: 0.7%;
+        padding-bottom: auto;
+        width: 100%;
+        text-align: center;
+        color: white;
+        background-color: #C01B2D;
+    }
+    h3
+    {
+        padding-top: 0.7%;
+        padding-bottom: auto;
+        text-align: center;
+        width: 100%;
+        background-color: #FF8811;
+        color:white;
+    }
+
+    h4
+    {
+        color: #384682;
+        background-color: #c2ceff;
+        padding-top: 0.7%;
+        padding-left: 0.7%;
+    }
+    h5 { color: #7C839D; }
+
+    img
+    {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    a:link { color: white; }
+    a:visited { color: white; }
+    ol a:link { color: black; }
+    ol a:visited { color: black; }
+    .hig/*hlight*/ { color:#32739C; }
 </style>
 
 <h1 id="indice">Indice<a class="headerlink" href="#indice" title="Permanent link"></a></h1>
 <ol>
-<li>Introduzione ai database</li>
-<li>Fasi di progettazione di un DB</li>
-<li>Vincoli di integrità</li>
-<li>Linguaggio SQL<ul>
-<li>DDL e DML</li>
-</ul>
-</li>
-<li>Transazioni</li>
-<li>Stored procedures</li>
-<li>Ristrutturazione</li>
-<li>Trigger</li>
-<li>Algebra relazionale</li>
-<li>Normalizzazione<ul>
-<li>1FN</li>
-<li>2FN</li>
-<li>3FN</li>
-<li>BCNF</li>
-</ul>
-</li>
-<li>Viste</li>
+    <li><a href="#intro">Introduzione ai database</a></li>
+    <li><a href="#fasi">Fasi di progettazione di un DB</a></li>
+    <li><a href="#vincoli">Vincoli di integrità</a></li>
+    <li><a href="#sql">Linguaggio SQL</a></li>
+    <li><a href="#transazioni">Transazioni</a></li>
+    <li><a href="#stored">Stored procedures</a></li>
+    <li><a href="#ristrutturazione">Ristrutturazione</a></li>
+    <li><a href="#trigger">Trigger</a></li>
+    <li><a href="#algebra">Algebra relazionale</a></li>
+    <li><a href="#normalizzazine">Normalizzazione</a></li>
+    <li><a href="#viste">Viste</a></li>
 </ol>
-<h2 id="introduzione">Introduzione<a class="headerlink" href="#introduzione" title="Permanent link"></a></h2>
+
+<h2 id="introduzione"><a id="intro" href="#indice">Introduzione</a><a class="headerlink" href="#introduzione" title="Permanent link"></a></h2>
 <h3 id="differenza-tra-sistema-informatico-e-sistema-informativo">Differenza tra sistema informatico e sistema informativo:<a class="headerlink" href="#differenza-tra-sistema-informatico-e-sistema-informativo" title="Permanent link"></a></h3>
 <ul>
 <li><strong>Sistema informativo</strong>: è un insiema organizzato di strumenti automatici, procedure, norme, risorse, dati, orientato alla gestione delle informazioni, con gestione si intende la raccolta, archiviazione e scambio delle informazioni necessarie alle attività operative, di gestione, di controllo dell’organizzazione. Per esempio il sistema informativo di un’università contiene i dati riguardanti gli studenti, i docenti, le relazioni fra insegnanti ed aule, i corsi&hellip;</li>
@@ -1104,8 +1137,7 @@ body .markdown-body
 <li>Logico: Riguarda la struttura logica assunta dai dati registrati, quindi il loro schema  astratto</li>
 <li>Esterno: si riferisce al modo in cui ciascun utente vede i dati che vengono messi a disposizione secondo il formato richiesto</li>
 </ul>
-<h2 id="_1"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_1" title="Permanent link"></a></h2>
-<h2 id="fasi">Fasi<a class="headerlink" href="#fasi" title="Permanent link"></a></h2>
+<h2 id="fasi"><a href="#indice" id="fasi">Fasi</a><a class="headerlink" href="#fasi" title="Permanent link"></a></h2>
 <h3 id="le-fasi-di-progettazione-di-un-database">Le fasi di progettazione di un database<a class="headerlink" href="#le-fasi-di-progettazione-di-un-database" title="Permanent link"></a></h3>
 <ul>
 <li><strong>Concettuale</strong>: permette di costruire e definire una rappresentazione corretta e completa della realtà di interesse.
@@ -1115,8 +1147,7 @@ Preso in input un diagramma ER genera uno schema logico delle relazioni rapprese
 <li><strong>Fisica</strong>: implementa lo schema logico definendone gli aspetti fisici di memorizzazione e rappresentazione in memoria di massa
 Preso in input lo schema logico con le tabelle le implementa nella memoria di massa</li>
 </ul>
-<h2 id="_2"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_2" title="Permanent link"></a></h2>
-<h2 id="vincoli">Vincoli<a class="headerlink" href="#vincoli" title="Permanent link"></a></h2>
+<h2 id="vincoli"><a href="#vincoli" id="intro">Vincoli</a><a class="headerlink" href="#vincoli" title="Permanent link"></a></h2>
 <p>Vincoli <strong>intra</strong>-relazionali (all’interno della tabella)
 - di tupla
 - di chiave
@@ -1124,8 +1155,7 @@ Preso in input lo schema logico con le tabelle le implementa nella memoria di ma
 - di dominio</p>
 <p>Vincoli <strong>inter</strong>-relazionali (che riguardano le chiavi esterne)
 - integrità relazionale</p>
-<h2 id="_3"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_3" title="Permanent link"></a></h2>
-<h2 id="sql">SQL<a class="headerlink" href="#sql" title="Permanent link"></a></h2>
+<h2 id="sql"><a href="#indice" id="sql">SQL</a><a class="headerlink" href="#sql" title="Permanent link"></a></h2>
 <p>Structured Query Language, è un linguaggio per l’interrogazione e la gestione di basi di dati</p>
 <p>Comandi SQL, divisi in 3 categorie: DDL,DML,DCL:</p>
 <ul>
@@ -1137,8 +1167,7 @@ Preso in input lo schema logico con le tabelle le implementa nella memoria di ma
 <p>Data Definition Language (Create, Alter, Drop)</p>
 <h3 id="dml">DML<a class="headerlink" href="#dml" title="Permanent link"></a></h3>
 <p>Data Manipulation Language (Insert, Select, Delete, Update)</p>
-<h2 id="_4"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_4" title="Permanent link"></a></h2>
-<h2 id="transazioni">Transazioni<a class="headerlink" href="#transazioni" title="Permanent link"></a></h2>
+<h2 id="transazioni"><a href="#indice" id="transazioni">Transazioni</a><a class="headerlink" href="#transazioni" title="Permanent link"></a></h2>
 <p>Una transazione è una sequenza di operazioni, che può concludersi positivamente o
 negativamente, in caso positivo il risultato delle operazioni deve essere permanente (<strong>commit work</strong>), mentre in caso negativo si deve tornare allo stato prima della transazione (<strong>rollback</strong>).</p>
 <p>Le Transazioni rispettano le proprietà <strong>ACID</strong></p>
@@ -1149,16 +1178,14 @@ negativamente, in caso positivo il risultato delle operazioni deve essere perman
 <li><span style="color:#fa4545">Isolamento</span>: ogni transazione deve essere eseguita in modo isolato e indipendente dalle altre transazioni, l&rsquo;eventuale fallimento di una transazione non deve interferire con le altre transazioni in esecuzione.</li>
 <li><span style="color:#fa4545">Durabilità</span> detta anche persistenza, si riferisce al fatto che una volta che una transazione abbia richiesto un commit work, i cambiamenti apportati non dovranno essere più persi. Per evitare che nel lasso di tempo fra il momento in cui la base di dati si impegna a scrivere le modifiche e quello in cui li scrive effettivamente si verifichino perdite di dati dovuti a malfunzionamenti, vengono tenuti dei registri di log dove sono annotate tutte le operazioni sul DB.</li>
 </ul>
-<h2 id="_5"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_5" title="Permanent link"></a></h2>
-<h2 id="stored-procedures">Stored procedures<a class="headerlink" href="#stored-procedures" title="Permanent link"></a></h2>
+<h2 id="stored-procedures"><a href="#indice" id="stored">Stored procedures</a><a class="headerlink" href="#stored-procedures" title="Permanent link"></a></h2>
 <p>Durante lo sviluppo di un applicazione client le richieste per l&rsquo;interrogazione di dati possono essere inviate direttamente al database. dal programma, tramite istruzioni, oppure è possibile creare piccoli programmi o funzioni all&rsquo;interno del database e poi farle eseguire dal programma esterno. Queste procedure si chiamano Stored Procedure.</p>
 <p>Fanno parte di una branca del linguaggio <em>SQL</em> che prende il nome di <strong>T-SQL</strong>.</p>
 <p>Una stored procedure può accettare parametri di input, restituire al client risultati tabellari o scalari, richiamare istrudzioni DDL (Data Definition Language) e DML (Data Manipulation Language)</p>
 <p>Un linguaggio è detto <strong>dichiarativo</strong> o <strong>logico</strong> quando le istruzioni descrivono le relazioni che intercorrono tra i dati, lo sviluppatore descrive l&rsquo;insieme delle relazioni che sussistono tra i dati e il risultato atteso.</p>
 <p>Un linguaggio dichiarativo viene invece denominato <strong>procedurale</strong> quando per esso non si ragiona in termini di relazioni tra dati ma intermini di assegnazione di valori ad uno spazio di memoria, i linguaggi procedurali fanno infatti parte della più ampia famiglia dei linguaggi imperativi</p>
 <p>Le stored procedure accettano parametri in input (IN), parametri in output (OUT) e vi è anche una combinazione di questi due che si chiama (INOUT)</p>
-<h2 id="_6"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_6" title="Permanent link"></a></h2>
-<h2 id="ristrutturazione">Ristrutturazione<a class="headerlink" href="#ristrutturazione" title="Permanent link"></a></h2>
+<h2 id="ristrutturazione"><a href="#indice" id="ristrutturazione">Ristrutturazione</a><a class="headerlink" href="#ristrutturazione" title="Permanent link"></a></h2>
 <p>Fasi:</p>
 <ul>
 <li><strong>Analisi delle rindondanze</strong>: si decidere se mantenere o eliminare eventuali ridondanze (ripetizioni) presenti nello schema</li>
@@ -1167,8 +1194,7 @@ negativamente, in caso positivo il risultato delle operazioni deve essere perman
 <li><strong>Selezione delle chiavi primarie</strong>: si seleziona un identificatore per quelle entità che ne hanno più di uno. Vengono invece eliminate le identificazioni esterne</li>
 <li><strong>Normalizzazione</strong>: degli attributi composti o multipli</li>
 </ul>
-<h2 id="_7"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_7" title="Permanent link"></a></h2>
-<h2 id="trigger">Trigger<a class="headerlink" href="#trigger" title="Permanent link"></a></h2>
+<h2 id="trigger"><a href="#indice" id="trigger">Trigger</a><a class="headerlink" href="#trigger" title="Permanent link"></a></h2>
 <p>Sono eventi che vengono mandati in esecuzione quando si verificano determinate condizioni come di tempo o a seguito di altre operazioni avvenute sul database</p>
 <h3 id="il-paradigma-e-c-a">Il paradigma E C A<a class="headerlink" href="#il-paradigma-e-c-a" title="Permanent link"></a></h3>
 <ul>
@@ -1188,8 +1214,7 @@ negativamente, in caso positivo il risultato delle operazioni deve essere perman
 <li>TRIGGER_TIME: rappresenta il tipo di trigger (BEFORE o AFTER)</li>
 <li>TRIGGER_EVENT: indica il tipo che attiva il trigger (come insert)</li>
 </ul>
-<h2 id="_8"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_8" title="Permanent link"></a></h2>
-<h2 id="algebra">Algebra<a class="headerlink" href="#algebra" title="Permanent link"></a></h2>
+<h2 id="algebra"><a href="#indice" id="algebra">Algebra</a><a class="headerlink" href="#algebra" title="Permanent link"></a></h2>
 <h3 id="definizione">Definizione<a class="headerlink" href="#definizione" title="Permanent link"></a></h3>
 <p>È un linguaggio:</p>
 <ul>
@@ -1238,8 +1263,7 @@ negativamente, in caso positivo il risultato delle operazioni deve essere perman
 <li>aggiungerne (<strong>append</strong>)</li>
 <li>ingorarli</li>
 </ul>
-<h2 id="_9"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_9" title="Permanent link"></a></h2>
-<h2 id="normalizzazione">Normalizzazione<a class="headerlink" href="#normalizzazione" title="Permanent link"></a></h2>
+<h2 id="normalizzazione"><a href="#indice" id="normalizzazione">Normalizzazione</a><a class="headerlink" href="#normalizzazione" title="Permanent link"></a></h2>
 <p>Non è una metodologia di progettazione, è bensì una procedura che permette di trasformare schemi non normalizzati in schemi che soddisfano una forma normale</p>
 <p>Se una relazione non è normalizzata essa presenta alcuni difetti:
 - Rindondanze
@@ -1256,6 +1280,5 @@ negativamente, in caso positivo il risultato delle operazioni deve essere perman
 <p>Una relazione è in forma normale di <em>Boyce-Codd</em> se e solo se, per ogni dipendenza funzionale X-&gt;Y, X è una chiave candidata.</p>
 <p>Una relazione in <strong>BCNF</strong> (<em>Boyce-Codd Normal Form</em>) è anche in <strong>2FN</strong> e in <strong>3FN</strong>, perché la BCNF esclude che un determinante (X) possa essere composto solo da una parte della chiave (violerebbe la <strong>2FN</strong>), o che possa essere esterno alla chiave (violerebbe la <strong>3FN</strong>).</p>
 <p>Quindi una relazione che rispetta la forma normale di Boyce-Codd è anche in terza forma normale (è già in 1FN, in 2FN e quindi ora è in 3FN, tipo evoluzione finale di un Pokémon), ma non è vero l&rsquo;opposto, cioè che una relazione in <strong>3FN</strong> è anche in <strong>BCFN</strong>.</p>
-<h2 id="_10"><span class="sep">════════════════════════════</span><a class="headerlink" href="#_10" title="Permanent link"></a></h2>
-<h2 id="viste">Viste<a class="headerlink" href="#viste" title="Permanent link"></a></h2>
+<h2 id="viste"><a href="#indice" id="viste">Viste</a><a class="headerlink" href="#viste" title="Permanent link"></a></h2>
 <p>Tabelle virtuali con &ldquo;durata temporanea&rdquo;, da usare in sostituzione alle <strong>Join</strong>, la vista viene aggiornata solo all&rsquo;esecuzione della query che la genera.</p></article></body></html>

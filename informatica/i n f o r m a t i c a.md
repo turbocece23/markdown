@@ -8,28 +8,66 @@
 	{
 		color: #ee2020;
 	}
+	h1 { color: #EF3E36; }
+	h2
+	{
+		padding-top: 0.7%;
+		padding-bottom: auto;
+		width: 100%;
+		text-align: center;
+		color: white;
+		background-color: #C01B2D;
+	}
+	h3
+	{
+		padding-top: 0.7%;
+		padding-bottom: auto;
+		text-align: center;
+		width: 100%;
+		background-color: #FF8811;
+		color:white;
+	}
+
+	h4
+	{
+		color: #384682;
+		background-color: #c2ceff;
+		padding-top: 0.7%;
+		padding-left: 0.7%;
+	}
+	h5 { color: #7C839D; }
+	
+	img
+	{
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	a:link { color: white; }
+	a:visited { color: white; }
+	ol a:link { color: black; }
+	ol a:visited { color: black; }
+	.hig/*hlight*/ { color:#32739C; }
 </style>
 
 # Indice
 
-1. Introduzione ai database
-2. Fasi di progettazione di un DB
-3. Vincoli di integrità
-4. Linguaggio SQL
-	- DDL e DML
-5. Transazioni
-6. Stored procedures
-7. Ristrutturazione
-8. Trigger
-9. Algebra relazionale
-10. Normalizzazione
-	- 1FN
-	- 2FN
-	- 3FN
-	- BCNF
-11. Viste
+<ol>
+	<li><a href="#intro">Introduzione ai database</a></li>
+	<li><a href="#fasi">Fasi di progettazione di un DB</a></li>
+	<li><a href="#vincoli">Vincoli di integrità</a></li>
+	<li><a href="#sql">Linguaggio SQL</a></li>
+	<li><a href="#transazioni">Transazioni</a></li>
+	<li><a href="#stored">Stored procedures</a></li>
+	<li><a href="#ristrutturazione">Ristrutturazione</a></li>
+	<li><a href="#trigger">Trigger</a></li>
+	<li><a href="#algebra">Algebra relazionale</a></li>
+	<li><a href="#normalizzazine">Normalizzazione</a></li>
+	<li><a href="#viste">Viste</a></li>
+</ol>
 
-## Introduzione
+## <a id="intro" href="#indice">Introduzione</a>
 ### Differenza tra sistema informatico e sistema informativo:
 
 - **Sistema informativo**: è un insiema organizzato di strumenti automatici, procedure, norme, risorse, dati, orientato alla gestione delle informazioni, con gestione si intende la raccolta, archiviazione e scambio delle informazioni necessarie alle attività operative, di gestione, di controllo dell’organizzazione. Per esempio il sistema informativo di un’università contiene i dati riguardanti gli studenti, i docenti, le relazioni fra insegnanti ed aule, i corsi...
@@ -44,10 +82,9 @@ Un DBMS (come SQL server, Access, MySQL..) è un insieme di strumenti software c
 - Logico: Riguarda la struttura logica assunta dai dati registrati, quindi il loro schema  astratto
 - Esterno: si riferisce al modo in cui ciascun utente vede i dati che vengono messi a disposizione secondo il formato richiesto
 
-## <span class="sep">════════════════════════════</span>
 
-## Fasi
 
+## <a href="#indice" id="fasi">Fasi</a>
 ### Le fasi di progettazione di un database
 - **Concettuale**: permette di costruire e definire una rappresentazione corretta e completa della realtà di interesse.
 Presa in input una realtà di riferimento, genera un diagramma ER
@@ -56,9 +93,9 @@ Preso in input un diagramma ER genera uno schema logico delle relazioni rapprese
 - **Fisica**: implementa lo schema logico definendone gli aspetti fisici di memorizzazione e rappresentazione in memoria di massa
 Preso in input lo schema logico con le tabelle le implementa nella memoria di massa
 
-## <span class="sep">════════════════════════════</span>
 
-## Vincoli
+
+## <a href="#vincoli" id="intro">Vincoli</a>
 Vincoli **intra**-relazionali (all’interno della tabella)
 - di tupla
 - di chiave
@@ -68,9 +105,9 @@ Vincoli **intra**-relazionali (all’interno della tabella)
 Vincoli **inter**-relazionali (che riguardano le chiavi esterne)
 - integrità relazionale
 
-## <span class="sep">════════════════════════════</span>
 
-## SQL
+
+## <a href="#indice" id="sql">SQL</a>
 Structured Query Language, è un linguaggio per l’interrogazione e la gestione di basi di dati
 
 Comandi SQL, divisi in 3 categorie: DDL,DML,DCL:
@@ -85,9 +122,9 @@ Data Definition Language (Create, Alter, Drop)
 ### DML
 Data Manipulation Language (Insert, Select, Delete, Update)
 
-## <span class="sep">════════════════════════════</span>
 
-## Transazioni
+
+## <a href="#indice" id="transazioni">Transazioni</a>
 Una transazione è una sequenza di operazioni, che può concludersi positivamente o
 negativamente, in caso positivo il risultato delle operazioni deve essere permanente (**commit work**), mentre in caso negativo si deve tornare allo stato prima della transazione (**rollback**).
 
@@ -100,9 +137,9 @@ Le Transazioni rispettano le proprietà **ACID**
 - <span style="color:#fa4545">Isolamento</span>: ogni transazione deve essere eseguita in modo isolato e indipendente dalle altre transazioni, l'eventuale fallimento di una transazione non deve interferire con le altre transazioni in esecuzione.
 - <span style="color:#fa4545">Durabilità</span> detta anche persistenza, si riferisce al fatto che una volta che una transazione abbia richiesto un commit work, i cambiamenti apportati non dovranno essere più persi. Per evitare che nel lasso di tempo fra il momento in cui la base di dati si impegna a scrivere le modifiche e quello in cui li scrive effettivamente si verifichino perdite di dati dovuti a malfunzionamenti, vengono tenuti dei registri di log dove sono annotate tutte le operazioni sul DB.
 
-## <span class="sep">════════════════════════════</span>
 
-## Stored procedures
+
+## <a href="#indice" id="stored">Stored procedures</a>
 Durante lo sviluppo di un applicazione client le richieste per l'interrogazione di dati possono essere inviate direttamente al database. dal programma, tramite istruzioni, oppure è possibile creare piccoli programmi o funzioni all'interno del database e poi farle eseguire dal programma esterno. Queste procedure si chiamano Stored Procedure.
 
 Fanno parte di una branca del linguaggio *SQL* che prende il nome di **T-SQL**.
@@ -115,9 +152,9 @@ Un linguaggio dichiarativo viene invece denominato **procedurale** quando per es
 
 Le stored procedure accettano parametri in input (IN), parametri in output (OUT) e vi è anche una combinazione di questi due che si chiama (INOUT)
 
-## <span class="sep">════════════════════════════</span>
 
-## Ristrutturazione
+
+## <a href="#indice" id="ristrutturazione">Ristrutturazione</a>
 Fasi:
 
 - **Analisi delle rindondanze**: si decidere se mantenere o eliminare eventuali ridondanze (ripetizioni) presenti nello schema
@@ -126,9 +163,9 @@ Fasi:
 - **Selezione delle chiavi primarie**: si seleziona un identificatore per quelle entità che ne hanno più di uno. Vengono invece eliminate le identificazioni esterne
 - **Normalizzazione**: degli attributi composti o multipli
 
-## <span class="sep">════════════════════════════</span>
 
-## Trigger
+
+## <a href="#indice" id="trigger">Trigger</a>
 Sono eventi che vengono mandati in esecuzione quando si verificano determinate condizioni come di tempo o a seguito di altre operazioni avvenute sul database
 
 ### Il paradigma E C A
@@ -149,10 +186,9 @@ I trigger a livello di tupla vengono eseguiti tante volte quante sono le righe d
 - TRIGGER_TIME: rappresenta il tipo di trigger (BEFORE o AFTER)
 - TRIGGER_EVENT: indica il tipo che attiva il trigger (come insert)
 
-## <span class="sep">════════════════════════════</span>
 
-## Algebra
 
+## <a href="#indice" id="algebra">Algebra</a>
 ### Definizione
 È un linguaggio:
 
@@ -187,9 +223,9 @@ L'operazione fondamentale per manipolare una base di dati è l'*interrogazione*.
 - aggiungerne (**append**)
 - ingorarli
 
-## <span class="sep">════════════════════════════</span>
 
-## Normalizzazione
+
+## <a href="#indice" id="normalizzazione">Normalizzazione</a>
 Non è una metodologia di progettazione, è bensì una procedura che permette di trasformare schemi non normalizzati in schemi che soddisfano una forma normale
 
 Se una relazione non è normalizzata essa presenta alcuni difetti:
@@ -216,7 +252,7 @@ Una relazione in **BCNF** (*Boyce-Codd Normal Form*) è anche in **2FN** e in **
 
 Quindi una relazione che rispetta la forma normale di Boyce-Codd è anche in terza forma normale (è già in 1FN, in 2FN e quindi ora è in 3FN, tipo evoluzione finale di un Pokémon), ma non è vero l'opposto, cioè che una relazione in **3FN** è anche in **BCFN**.
 
-## <span class="sep">════════════════════════════</span>
 
-## Viste
+
+## <a href="#indice" id="viste">Viste</a>
 Tabelle virtuali con "durata temporanea", da usare in sostituzione alle **Join**, la vista viene aggiornata solo all'esecuzione della query che la genera.
