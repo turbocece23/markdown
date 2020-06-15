@@ -87,4 +87,6 @@ Il 23 marzo 1919 Mussolini creò i **Fasci italiani di combattimento**, inizialm
 
 Il termine **Fasci** deriva dal fascio littorio romano, ovvero un fascio di verghe che avvolge le scure, portato su una spalla dai littori incaricati di scortare i magistrati.
 
-Mussolini cambiò strategia: i Fasci si dichiararono contro il movimento operaio e socialista.
+Mussolini cambiò strategia: i Fasci si dichiararono contro il movimento operaio e socialista e tentarono di rappresentare la grande e piccola borghesia minacciate dall'avanzata dei lavoratori e impoverite dall'inflazione.
+
+Le **squadre d'azione** chiamate anche **camicie nere** cominciarono ad intervenire in maniera violenta contro operai e contadini. I fascisti assaltarono le sedi dei sindacati, le redazioni giornalistiche. 
