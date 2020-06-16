@@ -41,8 +41,7 @@ Per bilanciare il peso del Parlamento furono riconosciute importanti prerogative
 - <span style="color:#1982C4;">**Ostacoli politici:**</span> l'uso accentuato delle prerogative presidenziali determinò uno sbilanciamento dell'equilibrio costituzionale a favore del presidente stesso. Col tempo indebolì la repubblica, lasciando campo libero all'avvento del nazismo al principio degli anni Trenta (che come sappiamo, non è una cosa buona).
 - <span style="color:#1982C4;">**Ostacoli economici:**</span> la Germania, ancora in difficoltà dopo la fine della prima guerra mondiale, soffriva di un alto tasso di disoccupazione e una spaventosa inflazione. Oltre a questo doveva anche versare dei pagamenti per le riparazioni a Francia e Regno Unito per un totale di 132 miliardi di marchi (tanti).
 
-### <span class="dom">**9 Nel 1923 la Francia occupò militarmente il bacino minerario della Ruhr, ai confini con la Germania, in seguito al 
-mancato pagamento dei danni di guerra. Questo cosa causò all'interno della Germania? Quali effetti, quali ricadute ebbe quest'azione?**</span>
+### <span class="dom">**9 Nel 1923 la Francia occupò militarmente il bacino minerario della Ruhr, ai confini con la Germania, in seguito al mancato pagamento dei danni di guerra. Questo cosa causò all'interno della Germania? Quali effetti, quali ricadute ebbe quest'azione?**</span>
 
 L'economia tedesca crollò. Produzione e commerci calarono, mentre l'inflazione iniziò a salire velocemente alimentata dall'enorme quantità di banconote stampate e messe in circolazione dalla banca centrale tedesca (nel giro di pochi mesi un chilo di pane arrivò a costare 400 miliardi di marchi, un litro di latte 360, e un chilo di burro 5000 miliardi). Nel novembre del 1923 un dollaro equivaleva a 4000 miliardi di marchi.
 
