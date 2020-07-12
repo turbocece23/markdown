@@ -29,6 +29,7 @@ Privilegiano alcuni aspetti:
 - il sogno
 
  La poetica è ispirata ad alcuni movimenti:
+ 
  - attenzione per le esperienze quotidiane, il vero, anche più squallido
  - anticonformismo e ribellione contro la borghesia e i suoi modelli
  - una certa predilezione per il patologico, l'orrido e il macabro
